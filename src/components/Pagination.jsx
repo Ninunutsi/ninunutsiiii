@@ -1,12 +1,12 @@
-import { useState } from 'react';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import products from '../data/products';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 const ProductList = () => {
 
   const productsPerPage = 20;
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useLocalStorage('currentPage', 1)
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
   const currentProducts = products.slice(startIndex, endIndex);
@@ -33,6 +33,7 @@ const ProductList = () => {
       </div>
       <Stack spacing={2}>
         <Pagination
+          className="pagination"
           count={Math.ceil(products.length / productsPerPage)}
           page={currentPage}
           onChange={handlePageChange}
