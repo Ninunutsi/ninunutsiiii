@@ -141,3 +141,91 @@ table {
   padding: 0 40px;
   margin: 0 auto;
 }
+
+
+.main-photo-container{
+  position: relative;
+  width: 100%;
+}
+
+.main-page-photo{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo{
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: auto; 
+  color: white;
+}
+
+.popular-collection{
+  background-color: black;
+  padding: 30px;
+  color: white;
+}
+
+.popular-collection-title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-family: Noto Sans;
+  font-size: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* .popular-collection-gallary{
+  margin: 10px;
+} */
+
+.slider-images{
+  width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: gray !important;
+}
+
+
+/* CSS for ProductList component */
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  margin: 5px;
+}
+
+.product-container {
+  width: 25%;
+  padding: 5px;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.product-price {
+  font-size: 20px; 
+}
+
+.product-image {
+  width: 100%;
+}
+
+body{
+  font-family: Noto sans;
+}

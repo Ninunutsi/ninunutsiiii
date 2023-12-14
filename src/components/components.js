@@ -14,6 +14,7 @@ export const HeaderBg = styled.div`
   right: 0;
   top: 0;
   transition: 0.3s ease;
+  z-index: 999;
 `;
 
 export const HeaderContent = styled.header`

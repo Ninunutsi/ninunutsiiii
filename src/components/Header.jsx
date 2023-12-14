@@ -23,7 +23,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to={"/woman"}>
+              <Link to={"/products"}>
                 {language === "georgian" ? "ქალი" : "Woman"}
               </Link>
             </li>
