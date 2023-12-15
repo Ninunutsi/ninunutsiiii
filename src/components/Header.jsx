@@ -2,11 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HeaderBg, HeaderContent, Navigation, Parameters } from "./components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMagnifyingGlass,
-  faCircleUser,
-  faHeart,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faCircleUser, faHeart} from "@fortawesome/free-solid-svg-icons";
 import { useLanguage } from "../contexts/LanguageContext";
 
 const Header = () => {

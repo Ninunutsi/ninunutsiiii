@@ -5,9 +5,9 @@ import styled from "styled-components";
 export const HeaderBg = styled.div`
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.5),
-    rgba(223, 223, 223, 0.6)
+    rgba(255, 255, 255, 1),
+    rgba(240, 250, 250, 1),
+    rgba(223, 223, 223, 1)
   );
   position: fixed;
   left: 0;

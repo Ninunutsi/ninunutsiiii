@@ -15,7 +15,6 @@ const MainPage = () => {
                 <img className="main-page-photo" src={promoPhoto} alt="" />
                 <img className="logo" src={Capstone} alt="" />
             </div>
-            
             <div className="popular-collection">
                 <h3 className="popular-collection-title">on sale/popular picks</h3>
                 <div className="popular-collection-gallary">
