@@ -3,7 +3,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 import MainPage from "../pages/MainPage";
-import ProductsListPage from "../pages/ProductsListPage";
+import WomanProducts from "../pages/WomanProducts";
+import KidsProducts from "../pages/KidsProducts";
+import DetailedProductPage from "../pages/DetailedProductPage"
 
 const routes = [
   {
@@ -22,9 +24,21 @@ const routes = [
         index: true,
       },
       {
-        element: <ProductsListPage />,
-        path: "products",
+        element: <WomanProducts />,
+        path: "woman",
       },
+      {
+        element: <KidsProducts />,
+        path: "kids"
+      },
+      {
+        element: <DetailedProductPage />,
+        path: "woman/products/:productId"
+      },
+      {
+        element: <DetailedProductPage />,
+        path: "kids/products/:productId"
+      }
     ],
   },
 ];

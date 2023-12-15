@@ -1,9 +1,9 @@
 import ProductList from "../components/Pagination"
 
-const ProductsListPage = () => {
+const KidsProducts = () => {
 
 
     return <ProductList />
 }
 
-export default ProductsListPage
+export default KidsProducts
