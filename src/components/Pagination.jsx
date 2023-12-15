@@ -2,6 +2,9 @@ import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import products from '../data/products';
 import useLocalStorage from '../hooks/useLocalStorage';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilter } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const ProductList = () => {
 
@@ -19,16 +22,21 @@ const ProductList = () => {
     setCurrentPage(value);
   };
 
+  
 
   return (
     <div>
+      <div className="product-list-top-section">
+        <h2 className='new-collection-title'>New Collection</h2>
+        <FontAwesomeIcon className="filter-icon" icon={faFilter}/>
+      </div>
       <div className="product-grid">
         {currentProducts.map((product) => (
-          <div className="product-container" key={product.id}>
+          <Link to={`products/${product.id}`} className="product-container" key={product.id}>
             <img className="product-image"src={product.image} alt="" />
             <h2 className="product-name">{product.name}</h2>
             <h3 className='product-price'>{product.price}</h3>
-          </div>
+          </Link>
         ))}
       </div>
       <Stack spacing={2}>
