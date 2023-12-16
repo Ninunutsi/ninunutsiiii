@@ -6,7 +6,6 @@ import WomanProducts from "../pages/WomanProducts";
 import KidsProducts from "../pages/KidsProducts";
 import DetailedProductPage from "../pages/DetailedProductPage";
 import { AuthorizationProvider } from "../contexts/AuthorizationContext";
-import UserRegister from "../components/UserInformation/UserRegister";
 
 const routes = [
   {
@@ -40,15 +39,7 @@ const routes = [
       {
         element: <DetailedProductPage />,
         path: "kids/products/:productId",
-      },
-      // {
-      //   element: <UserAutorization />,
-      //   path: "/",
-      // },
-      {
-        element: <UserRegister />,
-        path: "Register",
-      },
+      }
     ],
   },
 ];
