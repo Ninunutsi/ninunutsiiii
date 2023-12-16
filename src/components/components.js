@@ -7,7 +7,7 @@ export const HeaderBg = styled.div`
     to bottom,
     rgba(255, 255, 255, 1),
     rgba(240, 250, 250, 1),
-    rgba(223, 223, 223, 1)
+    rgba(223, 223, 223, .9)
   );
   position: fixed;
   left: 0;

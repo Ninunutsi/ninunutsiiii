@@ -1,9 +1,7 @@
-import ProductList from "../components/Pagination"
+import ProductList from "../components/Pagination";
 
 const KidsProducts = () => {
+  return <ProductList />;
+};
 
-
-    return <ProductList />
-}
-
-export default KidsProducts
+export default KidsProducts;
