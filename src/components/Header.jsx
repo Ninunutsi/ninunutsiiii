@@ -1,35 +1,38 @@
 import React from "react";
+import Logo from "../assets/MA.png";
 import { Link } from "react-router-dom";
 import { HeaderBg, HeaderContent, Navigation, Parameters } from "./components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass, faCircleUser, faHeart} from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faCircleUser, faHeart, } from "@fortawesome/free-solid-svg-icons";
 import { useLanguage } from "../contexts/LanguageContext";
+import { useAuthorization } from "../contexts/AuthorizationContext";
+import UserAuthorization from "./UserInformation/UserAuthorization";
 
 const Header = () => {
   const { toggleLanguage, language } = useLanguage();
+  const { openAuthorization, isOpen } = useAuthorization();
 
   return (
     <HeaderBg>
+      {isOpen && <UserAuthorization />}
       <HeaderContent className="container">
         <nav>
           <Navigation>
             <li>
-              <Link to={"/"}>
-                {language === "georgian" ? "მთავარი" : "Main"}
-              </Link>
-            </li>
-            <li>
-              <Link to={"/products"}>
+              <Link to={"/woman"}>
                 {language === "georgian" ? "ქალი" : "Woman"}
               </Link>
             </li>
             <li>
-              <Link to={"/child"}>
+              <Link to={"/kids"}>
                 {language === "georgian" ? "ბავშვი" : "Kids"}
               </Link>
             </li>
           </Navigation>
         </nav>
+        <div>
+          <Link to={"/"}><img src={Logo} alt="Logo" /></Link>
+        </div>
         <Parameters>
           <form>
             <input
@@ -45,7 +48,9 @@ const Header = () => {
               </button>
             </div>
             <div>
-              <FontAwesomeIcon icon={faCircleUser} />
+              <div onClick={openAuthorization}>
+                <FontAwesomeIcon icon={faCircleUser} />
+              </div>
             </div>
             <div>
               <FontAwesomeIcon icon={faHeart} />

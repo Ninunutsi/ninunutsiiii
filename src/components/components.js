@@ -7,7 +7,7 @@ export const HeaderBg = styled.div`
     to bottom,
     rgba(255, 255, 255, 1),
     rgba(240, 250, 250, 1),
-    rgba(223, 223, 223, 1)
+    rgba(223, 223, 223, .9)
   );
   position: fixed;
   left: 0;
@@ -25,6 +25,7 @@ export const HeaderContent = styled.header`
 `;
 
 export const Navigation = styled.nav`
+  width: 300px;
   display: flex;
   align-items: center;
   gap: 40px;
