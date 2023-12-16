@@ -25,6 +25,7 @@ export const HeaderContent = styled.header`
 `;
 
 export const Navigation = styled.nav`
+  width: 300px;
   display: flex;
   align-items: center;
   gap: 40px;
