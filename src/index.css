@@ -269,8 +269,68 @@ table {
   margin: auto;
   margin-top: 100px;
   gap: 30px;
+  height:991px;
 }
 
 .detailed-product-details{
   padding: 10px;
+  margin-top: 172px;
 }
+
+.detailed-product-image{
+  width: 45%;
+  position: relative;
+}
+
+.detailed-product-name{
+  font-size: 22px;
+}
+
+.detailed-product-price{
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.d-p-id{
+  color: rgba(0, 0, 0, 0.40);
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.similar-products-title{
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.d-p-bookmark{
+  border: 1px solid black;
+  padding: 5px 15px;
+  border-radius: 10px;
+  gap: 10px;
+  display: flex;
+  margin-top: 30px;
+}
+
+.detailed-slider-images{
+  width: 100%;
+}
+
+/* .detailed-slider{
+} */
+
+.photo-swiper-container{
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    left: -80px;
+    bottom: 0px;
+    width: 30%;
+    z-index: 2;
+    transition: transform 0.5s ease-in-out;
+}
+
+
