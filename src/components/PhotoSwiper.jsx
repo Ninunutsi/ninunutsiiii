@@ -1,16 +1,16 @@
 // PhotoSwiper.jsx
 import React, { useRef, useEffect } from 'react';
-import { useDetailedPhotoContext } from '../contexts/DetailedPhotoContextProvider';
+import { useDetailedPageContext } from '../contexts/DetailedPageContextProvider';
 
 const PhotoSwiper = ({ photos, id }) => {
   const containerRef = useRef(null);
-  const {setMainPhoto, setCurrentId} = useDetailedPhotoContext()
+  const {setMainPhoto, setCurrentId} = useDetailedPageContext()
 
   useEffect(() => {
-    const container = containerRef.current;
+    const container = containerRef.current
 
     const handleMouseWheel = (event) => {
-      container.scrollLeft += event.deltaY;
+      container.scrollLeft += event.deltaY
       event.preventDefault()
 
       if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {

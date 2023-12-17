@@ -7,7 +7,7 @@ import KidsProducts from "../pages/KidsProducts";
 import DetailedProductPage from "../pages/DetailedProductPage";
 import { AuthorizationProvider } from "../contexts/AuthorizationContext";
 import ErrorPage from "../pages/ErrorPage";
-import DetailedPhotoContextProvider from "../contexts/DetailedPhotoContextProvider";
+import DetailedPageContextProvider from "../contexts/DetailedPageContextProvider";
 import Subscription from "../components/Subscription";
 
 const routes = [
@@ -16,9 +16,9 @@ const routes = [
       <div>
         <AuthorizationProvider>
           <Header />
-          <DetailedPhotoContextProvider>
+          <DetailedPageContextProvider>
             <Outlet />
-          </DetailedPhotoContextProvider>
+          </DetailedPageContextProvider>
           <Subscription />
           <Footer />
         </AuthorizationProvider>
