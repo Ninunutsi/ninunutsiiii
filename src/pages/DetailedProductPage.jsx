@@ -6,10 +6,10 @@ import popularCollection2 from "../assets/popular-collection-2.png";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PhotoSwiper from "../components/PhotoSwiper";
-import { useDetailedPhotoContext } from "../contexts/DetailedPhotoContextProvider";
+import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
 const DetailedProductPage = () => {
   const { productId } = useParams()
-  const {mainPhoto, currentId} = useDetailedPhotoContext()
+  const {mainPhoto, currentId, isFavorited, addFav: addtoFav} = useDetailedPageContext()
 
   const images = [
     popularCollection1,
@@ -20,6 +20,9 @@ const DetailedProductPage = () => {
     popularCollection2
   ]
   
+    const favText = isFavorited ? "Added To Favorites" : "Add To Favorites"
+    const favIcon = isFavorited ? 'black' : 'brown'
+
   return (
     <div>
       {products?.map(
@@ -40,9 +43,9 @@ const DetailedProductPage = () => {
                   <h2 className="product-size">L</h2>
                   <h2 className="product-size">XL</h2>
                 </div>
-                <div className="d-p-bookmark">
-                  <h2>Add To Favorites</h2>
-                  <FontAwesomeIcon icon={faHeart} />
+                <div onClick={() => addtoFav(prod)} className="d-p-favorite">
+                  <h2>{favText}</h2>
+                  <FontAwesomeIcon icon={faHeart} style={{color: favIcon}} />
                 </div>
                 <h5 className="product-description">Description</h5>
                 <h5 className="product-description-text">{prod.description}</h5>
