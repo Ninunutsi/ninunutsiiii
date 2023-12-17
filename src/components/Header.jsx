@@ -7,16 +7,18 @@ import { faMagnifyingGlass, faCircleUser, faHeart, } from "@fortawesome/free-sol
 import { useLanguage } from "../contexts/LanguageContext";
 import { useAuthorization } from "../contexts/AuthorizationContext";
 import UserAuthorization from "./UserInformation/UserAuthorization";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 const Header = () => {
   const { toggleLanguage, language } = useLanguage();
   const { openAuthorization, isOpen } = useAuthorization();
+  const { handleClick } = useScrollToTop();
 
   return (
     <HeaderBg>
       {isOpen && <UserAuthorization />}
       <HeaderContent className="container">
-        <nav>
+        <div>
           <Navigation>
             <li>
               <Link to={"/woman"}>
@@ -29,10 +31,8 @@ const Header = () => {
               </Link>
             </li>
           </Navigation>
-        </nav>
-        <div>
-          <Link to={"/"}><img src={Logo} alt="Logo" /></Link>
         </div>
+        <div onClick={handleClick}><Link to={"/"}><img src={Logo} alt="Logo" /></Link></div>
         <Parameters>
           <form>
             <input
