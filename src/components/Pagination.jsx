@@ -5,6 +5,7 @@ import useLocalStorage from "../hooks/useLocalStorage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 const ProductList = () => {
   const productsPerPage = 20;
@@ -12,6 +13,7 @@ const ProductList = () => {
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
   const currentProducts = products.slice(startIndex, endIndex);
+  const {handleClick} = useScrollToTop()
 
   const handlePageChange = (event, value) => {
     window.scrollTo({
@@ -29,15 +31,19 @@ const ProductList = () => {
       </div>
       <div className="product-grid">
         {currentProducts.map((product) => (
-          <Link
-            to={`products/${product.id}`}
+          <div
             className="product-container"
             key={product.id}
+            onClick={handleClick}>
+          <Link
+            style={{color: "black"}}
+            to={`products/${product.id}`}
           >
             <img className="product-image" src={product.image} alt="" />
             <h2 className="product-name">{product.name}</h2>
             <h3 className="product-price">{product.price}</h3>
           </Link>
+          </div>
         ))}
       </div>
       <Stack spacing={2}>

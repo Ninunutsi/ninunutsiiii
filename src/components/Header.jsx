@@ -20,12 +20,12 @@ const Header = () => {
       <HeaderContent className="container">
         <div>
           <Navigation>
-            <li>
+            <li onClick={handleClick}>
               <Link to={"/woman"}>
                 {language === "georgian" ? "ქალი" : "Woman"}
               </Link>
             </li>
-            <li>
+            <li onClick={handleClick}>
               <Link to={"/kids"}>
                 {language === "georgian" ? "ბავშვი" : "Kids"}
               </Link>
