@@ -1,7 +1,11 @@
+import image from "../popular-collection-2.png"
+import image1 from "../popular-collection-1.png"
+
+
 export const Data = [
   {
     id: 1,
-    image: "http://dummyimage.com/248x100.png/cc0000/ffffff",
+    image: image,
   },
   {
     id: 2,
@@ -21,7 +25,7 @@ export const Data = [
   },
   {
     id: 6,
-    image: "http://dummyimage.com/108x100.png/cc0000/ffffff",
+    image: image1,
   },
   {
     id: 7,
@@ -41,7 +45,7 @@ export const Data = [
   },
   {
     id: 11,
-    image: "http://dummyimage.com/163x100.png/ff4444/ffffff",
+    image: image,
   },
   {
     id: 12,

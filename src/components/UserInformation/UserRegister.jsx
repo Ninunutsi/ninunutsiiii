@@ -3,7 +3,7 @@ import { Authorization, UserForm } from "./UserInformation";
 import Logo from "../../assets/MA.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faEyeSlash, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesLeft, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import useToggle from "../../hooks/useToggle";
 import { useAuthorization } from "../../contexts/AuthorizationContext";
 
@@ -15,11 +15,9 @@ const UserRegister = () => {
   return (
     <Authorization>
       <div className="Heading">
-        <Link to={"/"}>
-          <img src={Logo} alt="Logo" />
-        </Link>
+        <Link to={"/"}><img src={Logo} alt="Logo" /></Link>
         <div className="closeBtn">
-          <FontAwesomeIcon onClick={closeRegistration} icon={faXmark} />
+          <FontAwesomeIcon onClick={closeRegistration} icon={faAnglesLeft} />
         </div>
       </div>
       <div className="title">

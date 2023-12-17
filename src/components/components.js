@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 // Header Style
 
+// For Header -->
+
 export const HeaderBg = styled.div`
   background: linear-gradient(
     to bottom,
@@ -106,10 +108,6 @@ export const Parameters = styled.div`
   }
 `;
 
-export const FooterDiv = styled.div`
-  padding-top: 100px;
-`;
-
 export const SubmitButton = styled.button`
   padding: 10px 0;
   width: 195px;
@@ -126,5 +124,160 @@ export const SubmitButton = styled.button`
     background-color: white;
     color: black;
     transition: 0.5s;
+  }
+`;
+
+export const SubscriptionStyle = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 54px;
+    text-transform: capitalize;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 38px;
+
+    label {
+      margin-bottom: 13px;
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 29px;
+    }
+
+    input {
+      width: 324px;
+      height: 34px;
+      border: 1px solid black;
+      border-radius: 24px;
+      padding-left: 20px;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 25px;
+      color: rgba(0, 0, 0, 0.3);
+      outline: none;
+      margin-bottom: 50px;
+    }
+
+    button {
+      padding: 13px 0;
+      width: 136px;
+      border-radius: 10px;
+    }
+  }
+`;
+
+export const LoadingDiv = styled.div`
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+export const ErrorMessage = styled.div`
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+export const Loading = styled.div`
+  width: 4em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    background-color: #fc2f70;
+  }
+
+  div:nth-of-type(1) {
+    transform: translateX(-100%);
+    animation: left-swing 0.5s ease-in alternate infinite;
+  }
+
+  div:nth-of-type(3) {
+    transform: translateX(-95%);
+    animation: right-swing 0.5s ease-out alternate infinite;
+  }
+
+  @keyframes left-swing {
+    50%,
+    100% {
+      transform: translateX(95%);
+    }
+  }
+
+  @keyframes right-swing {
+    50% {
+      transform: translateX(-95%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+`;
+
+export const FooterDiv = styled.div`
+  background-color: rgba(34, 34, 34, 1);
+  padding: 40px 71px;
+  display: flex;
+  flex-direction: column;
+
+  .navHeader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    padding-bottom: 78px;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+    .navMenu nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+
+      a {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: white;
+
+        &:hover {
+          color: brown;
+        }
+      }
+    }
+  }
+
+  .socials {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    svg {
+      font-size: 28px;
+      color: white;
+      transition: 0.3s;
+
+      &:hover {
+        color: brown;
+      }
+    }
   }
 `;
