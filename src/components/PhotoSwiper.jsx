@@ -7,10 +7,10 @@ const PhotoSwiper = ({ photos, id }) => {
   const {setMainPhoto, setCurrentId} = useDetailedPageContext()
 
   useEffect(() => {
-    const container = containerRef.current;
+    const container = containerRef.current
 
     const handleMouseWheel = (event) => {
-      container.scrollLeft += event.deltaY;
+      container.scrollLeft += event.deltaY
       event.preventDefault()
 
       if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {

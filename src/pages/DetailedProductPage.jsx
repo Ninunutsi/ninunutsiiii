@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import products from "../data/products";
+// import products from "../data/products";
 import Slider from "../components/Slider";
 import popularCollection1 from "../assets/popular-collection-1.png";
 import popularCollection2 from "../assets/popular-collection-2.png";
@@ -9,7 +9,7 @@ import PhotoSwiper from "../components/PhotoSwiper";
 import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
 const DetailedProductPage = () => {
   const { productId } = useParams()
-  const {mainPhoto, currentId, isFavorited, addFav: addtoFav} = useDetailedPageContext()
+  const {mainPhoto, currentId, isFavorited, addFav: addtoFav, clothes} = useDetailedPageContext()
 
   const images = [
     popularCollection1,
@@ -20,12 +20,9 @@ const DetailedProductPage = () => {
     popularCollection2
   ]
   
-    const favText = isFavorited ? "Added To Favorites" : "Add To Favorites"
-    const favIcon = isFavorited ? 'black' : 'brown'
-
-  return (
+    return (
     <div>
-      {products?.map(
+      {clothes?.map(
         (prod) =>
           prod.id === productId && (
             <div className="detailed-product-container" key={prod.id}>
@@ -44,8 +41,9 @@ const DetailedProductPage = () => {
                   <h2 className="product-size">XL</h2>
                 </div>
                 <div onClick={() => addtoFav(prod)} className="d-p-favorite">
-                  <h2>{favText}</h2>
-                  <FontAwesomeIcon icon={faHeart} style={{color: favIcon}} />
+                  { }
+                  <h2>{prod.isFavorited ?  "Added To Favorites" : "Add To Favorites"}</h2>
+                  <FontAwesomeIcon icon={faHeart} style={{color: prod.isFavorited ? 'brown' : 'black'}} />
                 </div>
                 <h5 className="product-description">Description</h5>
                 <h5 className="product-description-text">{prod.description}</h5>

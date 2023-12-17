@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import products from "../data/products";
 
 
 const DetailedPageContext = createContext(null)
@@ -8,24 +9,42 @@ const DetailedPageContextProvider = ({children}) => {
     const [mainPhoto, setMainPhoto] = useState(null)
     const [currentId, setCurrentId] = useState(null)
     const [favorites, setFavorites] = useState([])
-    const [isFavorited, setIsfavorited] = useState(false)
+    const [clothes, setClothes] = useState(products)
 
     const addFav = (product) => {
-        setIsfavorited(prevState => !prevState)
-        isFavorited ?
-        setFavorites(prevState => [product, ...prevState]) :
-        setFavorites(prevState => prevState.map((prod, index) => 
-            prod === product && prevState.splice(index)
-            ))
-    }
-
+        setClothes((prevState) =>
+          prevState.map((cloth) =>
+            cloth.id === product.id ? { ...cloth, isFavorited: !cloth.isFavorited } : cloth
+          )
+        )
+      
+        setFavorites((prevState) => {
+          const index = prevState.findIndex((fav) => fav.id === product.id)
+      
+          if (index !== -1) {
+            if (!prevState[index].isFavorited) {
+              const newFav = [...prevState]
+              newFav.splice(index, 1)
+              return newFav
+            }
+          } else {
+            return [...prevState, product]
+          }
+      
+          return prevState
+        })
+      }
+      
+      
+    console.log(favorites)
     const contextValue = {
         mainPhoto,
         setMainPhoto,
         currentId,
         setCurrentId,
-        isFavorited,
-        addFav
+        addFav,
+        favorites,
+        clothes
       }
 
     return <DetailedPageContext.Provider value={contextValue}>
