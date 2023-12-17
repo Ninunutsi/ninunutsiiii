@@ -7,7 +7,7 @@ export const HeaderBg = styled.div`
     to bottom,
     rgba(255, 255, 255, 1),
     rgba(240, 250, 250, 1),
-    rgba(223, 223, 223, .9)
+    rgba(223, 223, 223, 0.9)
   );
   position: fixed;
   left: 0;
@@ -108,4 +108,23 @@ export const Parameters = styled.div`
 
 export const FooterDiv = styled.div`
   padding-top: 100px;
+`;
+
+export const SubmitButton = styled.button`
+  padding: 10px 0;
+  width: 195px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  transition: 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+  }
 `;

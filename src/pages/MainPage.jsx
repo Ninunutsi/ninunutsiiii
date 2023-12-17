@@ -3,6 +3,7 @@ import popularCollection1 from "../assets/popular-collection-1.png";
 import popularCollection2 from "../assets/popular-collection-2.png";
 import Capstone from "../assets/Capstone.png";
 import Slider from "../components/Slider";
+import SwiperSlider from "../components/Swiper/SwiperSlider";
 
 const MainPage = () => {
   const images = [
@@ -25,6 +26,7 @@ const MainPage = () => {
           <Slider images={images} />
         </div>
       </div>
+      <SwiperSlider />
     </div>
   );
 };
