@@ -13,6 +13,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -29,6 +30,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -45,6 +47,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -61,6 +64,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -77,6 +81,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -93,6 +98,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -109,6 +115,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -125,6 +132,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -141,6 +149,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -157,6 +166,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -173,6 +183,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -189,6 +200,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -205,6 +217,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -221,6 +234,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -237,6 +251,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -253,6 +268,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -269,6 +285,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -285,6 +302,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -301,6 +319,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -317,6 +336,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -333,6 +353,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -349,6 +370,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -365,6 +387,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -381,6 +404,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -397,6 +421,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -413,6 +438,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -429,6 +455,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -445,6 +472,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -461,6 +489,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -477,6 +506,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -493,6 +523,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -509,6 +540,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -525,6 +557,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -541,6 +574,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -557,6 +591,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -573,6 +608,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -589,6 +625,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -605,6 +642,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -621,6 +659,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -637,6 +676,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -653,6 +693,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -669,6 +710,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -685,6 +727,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -701,6 +744,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -717,6 +761,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -733,6 +778,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -749,6 +795,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -765,6 +812,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -781,6 +829,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -797,6 +846,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -813,6 +863,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -829,6 +880,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -845,6 +897,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -861,6 +914,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -877,6 +931,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -893,6 +948,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -909,6 +965,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -925,6 +982,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -941,6 +999,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -957,6 +1016,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -973,6 +1033,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -989,6 +1050,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1005,6 +1067,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1021,6 +1084,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1037,6 +1101,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1053,6 +1118,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1069,6 +1135,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1085,6 +1152,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1101,6 +1169,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1117,6 +1186,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1133,6 +1203,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1149,6 +1220,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1165,6 +1237,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1181,6 +1254,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1197,6 +1271,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1213,6 +1288,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1229,6 +1305,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1245,6 +1322,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1261,6 +1339,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1277,6 +1356,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1293,6 +1373,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1309,6 +1390,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1325,6 +1407,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1341,6 +1424,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1357,6 +1441,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1373,6 +1458,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1389,6 +1475,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1405,6 +1492,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1421,6 +1509,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1437,6 +1526,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1453,6 +1543,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1469,6 +1560,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1485,6 +1577,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1501,6 +1594,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1517,6 +1611,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1533,6 +1628,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1549,6 +1645,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1565,6 +1662,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1581,6 +1679,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -1597,6 +1696,7 @@ const products = [
     image: forProductList,
     price: "10$",
     isFavorited: false,
+    category: "woman",
     moreImages: [
       detailedImage1,
       detailedImage2,

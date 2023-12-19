@@ -12,7 +12,7 @@ import useScrollToTop from "../hooks/useScrollToTop";
 const Header = () => {
   const { toggleLanguage, language } = useLanguage();
   const { openAuthorization, isOpen } = useAuthorization();
-  const { handleClick } = useScrollToTop();
+  const { handleClick } = useScrollToTop("smooth");
 
   return (
     <HeaderBg>
@@ -53,7 +53,9 @@ const Header = () => {
               </div>
             </div>
             <div>
+              <Link to="/favorites">
               <FontAwesomeIcon icon={faHeart} />
+              </Link>
             </div>
           </div>
         </Parameters>

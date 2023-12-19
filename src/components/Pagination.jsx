@@ -13,7 +13,7 @@ const ProductList = () => {
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
   const currentProducts = products.slice(startIndex, endIndex);
-  const {handleClick} = useScrollToTop()
+  const {handleClick} = useScrollToTop("auto")
 
   const handlePageChange = (event, value) => {
     window.scrollTo({

@@ -1,8 +1,5 @@
 import { useParams } from "react-router-dom";
-// import products from "../data/products";
 import Slider from "../components/Slider";
-import popularCollection1 from "../assets/popular-collection-1.png";
-import popularCollection2 from "../assets/popular-collection-2.png";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PhotoSwiper from "../components/PhotoSwiper";
@@ -11,14 +8,8 @@ const DetailedProductPage = () => {
   const { productId } = useParams()
   const {mainPhoto, currentId, isFavorited, addFav: addtoFav, clothes} = useDetailedPageContext()
 
-  const images = [
-    popularCollection1,
-    popularCollection2,
-    popularCollection1,
-    popularCollection2,
-    popularCollection1,
-    popularCollection2
-  ]
+  const imagesForSlider = clothes.filter(product => product.id !== productId)
+  console.log(imagesForSlider)
   
     return (
     <div>
@@ -34,12 +25,12 @@ const DetailedProductPage = () => {
                 <h1 className="detailed-product-name">{prod.name}</h1>
                 <h2 className="d-p-id">{prod.id.slice(-6)}</h2>
                 <h2 className="detailed-product-price">{prod.price}</h2>
-                <div className="product-sizes">
+                {/* <div className="product-sizes">
                   <h2 className="product-size">S</h2>
                   <h2 className="product-size">M</h2>
                   <h2 className="product-size">L</h2>
                   <h2 className="product-size">XL</h2>
-                </div>
+                </div> */}
                 <div onClick={() => addtoFav(prod)} className="d-p-favorite">
                   { }
                   <h2>{prod.isFavorited ?  "Added To Favorites" : "Add To Favorites"}</h2>
@@ -52,7 +43,7 @@ const DetailedProductPage = () => {
           )
       )}
       <h3 className="similar-products-title">Similar Products</h3>
-      <Slider images={images} />
+      <Slider images={imagesForSlider} imagesPerView={4} />
     </div>
   );
 };
