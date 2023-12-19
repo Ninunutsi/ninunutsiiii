@@ -9,6 +9,7 @@ import { AuthorizationProvider } from "../contexts/AuthorizationContext";
 import ErrorPage from "../pages/ErrorPage";
 import DetailedPageContextProvider from "../contexts/DetailedPageContextProvider";
 import Subscription from "../components/Subscription";
+import FavoritesPage from "../pages/FavoritesPage";
 
 const routes = [
   {
@@ -45,6 +46,10 @@ const routes = [
       {
         element: <DetailedProductPage />,
         path: "kids/products/:productId",
+      },
+      {
+        element: <FavoritesPage />,
+        path: "favorites",
       },
       {
         element: <ErrorPage />,
