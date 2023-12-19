@@ -1,9 +1,9 @@
 import { useCallback, useEffect } from "react";
 
-const useScrollToTop = (mouseBehavior) => {
+const useScrollToTop = (mouseBehavior = "smooth") => {
   const scrollToTop = useCallback(() => {
     window.scrollTo({ top: 0, behavior: mouseBehavior });
-  }, []);
+  }, [mouseBehavior]);
 
   useEffect(() => {
     scrollToTop();

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import useScrollToTop from "../hooks/useScrollToTop";
 
 const Slider = ({ images, imagesPerView }) => {
-  const {handleClick} = useScrollToTop("auto")
+  const {handleClick} = useScrollToTop("instant")
 
   return (
     <Swiper

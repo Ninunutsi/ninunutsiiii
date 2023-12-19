@@ -1,27 +1,25 @@
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
-import products from "../data/products";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilter } from "@fortawesome/free-solid-svg-icons";
+import { faFilter, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import useScrollToTop from "../hooks/useScrollToTop";
 
-const ProductList = () => {
-  const productsPerPage = 20;
-  const [currentPage, setCurrentPage] = useLocalStorage("currentPage", 1);
-  const startIndex = (currentPage - 1) * productsPerPage;
-  const endIndex = startIndex + productsPerPage;
-  const currentProducts = products.slice(startIndex, endIndex);
-  const {handleClick} = useScrollToTop("auto")
+const ProductList = ({products, productsPerPage, category}) => {
+  const [currentPage, setCurrentPage] = useLocalStorage(category, 1)
+  const startIndex = (currentPage - 1) * productsPerPage
+  const endIndex = startIndex + productsPerPage
+  const currentProducts = products.slice(startIndex, endIndex)
+  const {handleClick} = useScrollToTop()
 
   const handlePageChange = (event, value) => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-    setCurrentPage(value);
-  };
+    setCurrentPage(value)
+  }
 
   return (
     <div>
@@ -40,7 +38,10 @@ const ProductList = () => {
             to={`products/${product.id}`}
           >
             <img className="product-image" src={product.image} alt="" />
-            <h2 className="product-name">{product.name}</h2>
+            <div className="product-name-and-icon">
+              <h2 className="product-name">{product.name}</h2>
+              {product.isFavorited && <FontAwesomeIcon style={{color: "brown"}} icon={faHeart}/>}
+            </div>
             <h3 className="product-price">{product.price}</h3>
           </Link>
           </div>
@@ -58,4 +59,4 @@ const ProductList = () => {
   );
 };
 
-export default ProductList;
+export default ProductList

@@ -1,11 +1,9 @@
-// import { nanoid } from "nanoid"
 import forProductList from "../assets/forProductList.png"
+import popularCollection from "../assets/popular-collection-1.png"
 import detailedImage1 from "../assets/detailed-image-1.png"
 import weddingPhoto from "../assets/wedding-photo.png"
 import detailedImage2 from "../assets/detailed-image-2.png"
 
-
-// const numberOfProducts = 100
 const products = [
   {
     id: "V0bA_wyAL5vX_Nfg5NguJ",
@@ -1706,7 +1704,1707 @@ const products = [
       weddingPhoto
     ],
     description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
-  }
+  },
+    {
+      id: "P5Y4qT6NymhtgHgujj_Qh",
+      name: "Product 1",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "4HniWl8rUwp00jawDBci_",
+      name: "Product 2",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "bW8uqv4mnnNGLpUN7jnJq",
+      name: "Product 3",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "oTHj1VR43rRqM9C8NUnsA",
+      name: "Product 4",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "OA7CojB_7gKc7uOygeMq9",
+      name: "Product 5",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "lfQbvfeleV3IflO3UEFHH",
+      name: "Product 6",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "7UP3lhz26xXG-Bp91Y0Ht",
+      name: "Product 7",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "5Z3LTPypInQYh1U6A-nGD",
+      name: "Product 8",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "2Rf7VDeCy0g1crDDUzeZG",
+      name: "Product 9",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "J6OW6hMpMHqgZSex8c6Oy",
+      name: "Product 10",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "PiRCXWWavrZnpCk0GKeXY",
+      name: "Product 11",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "lTFtTZLrdjyz_-Mh_LD9f",
+      name: "Product 12",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "6v7E9QiruDYx4MAuJCYX8",
+      name: "Product 13",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "kGIaszhwfiOaYaO7gXTln",
+      name: "Product 14",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "9NLdHCir4nCdOXRJqXgsm",
+      name: "Product 15",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "WuxjoCaILshmtxCc_F3B-",
+      name: "Product 16",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "LDxfdL9vMcoaKlj2q5OzF",
+      name: "Product 17",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "JnGRW6Kunh_UQJfTedruD",
+      name: "Product 18",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "Ra8hbsC3Lf2Lp1Y_DBIUw",
+      name: "Product 19",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "FmT0EYQ-X9FUo3b6ZnC0k",
+      name: "Product 20",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "bb4vPl_DcpaImCy8axmqU",
+      name: "Product 21",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "QaDeg5zzHOxK9DFG2FLBa",
+      name: "Product 22",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "0n2XdEw5j1LzTXarEJQdd",
+      name: "Product 23",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "9RzDej-Jh3CbyrMe48yEx",
+      name: "Product 24",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "3xwqNEVo2w0uHzfZPTyAQ",
+      name: "Product 25",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "2rHvpNsviP3dqyS0J7hX1",
+      name: "Product 26",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "QNWD2ItEJ2F68v61qDC-G",
+      name: "Product 27",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "JbeQeCU6VyCtcj5pDASWb",
+      name: "Product 28",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "8pD5FlG0cSwBBO2wmchlP",
+      name: "Product 29",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "K_1cCexalIeswhCpNySu-",
+      name: "Product 30",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "cEFMKvT2zbgvzVNWGmua0",
+      name: "Product 31",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "dRc6cR21yl12-fIx_F3XC",
+      name: "Product 32",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "zaO5U8Ph0Njh3E897cO46",
+      name: "Product 33",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "0Bws54Ul1Ln-k3TsNvbjF",
+      name: "Product 34",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "3zH2y2bqm18OaNdZmxFVX",
+      name: "Product 35",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "bOLehKcBhejoGCiFJwDkV",
+      name: "Product 36",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "UGScrs7SBvWiXSN5QSRhF",
+      name: "Product 37",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "m_crssqLSEn63ZtD_FYAx",
+      name: "Product 38",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "DRd54CuXTyOUmloTXNr8S",
+      name: "Product 39",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "Tf7_kBEU40rEEnFIsK5qq",
+      name: "Product 40",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "CMOviwusmOfcm8dzKAsvT",
+      name: "Product 41",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "B1CenPADoCXi2oGrrgAbf",
+      name: "Product 42",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "bqYwCrBwSacLIeTdKbQ24",
+      name: "Product 43",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "Vo0cvyyV_AzSecDvpFVxH",
+      name: "Product 44",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "FafbedxJ-nMZP_qH55y7X",
+      name: "Product 45",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "CJ2AUw-fMk3LhqNph7zlf",
+      name: "Product 46",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "A845iyJ5pGI4jkrOsG3lU",
+      name: "Product 47",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "aebPg3YaCMAs2aev1qOGS",
+      name: "Product 48",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "ZOOLpka7R6J7k3wOwrPAA",
+      name: "Product 49",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "Hc_udY8g5nc7zl6RX-VN5",
+      name: "Product 50",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "-hfZuST4anGf_Pek4ZhNY",
+      name: "Product 51",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "QtDqK8nmgLAN0vtmc8-_0",
+      name: "Product 52",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "1Z-LfRKwD1jXHLJ1ieXxo",
+      name: "Product 53",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "t_9vEWILgweW3g3ocepFm",
+      name: "Product 54",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "7aS7tIffZv5cadtVNY8Wh",
+      name: "Product 55",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "6zmrGR8JjpFMgxAQKAAvK",
+      name: "Product 56",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "r34DCatyLJjyWAZpvOAUt",
+      name: "Product 57",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "HOY3o9pGjEvvtI1goMgOR",
+      name: "Product 58",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "XQr3c2XTcYSm7_s6E1Y-y",
+      name: "Product 59",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "Zr3zRrw9JY5YvxO4o_fec",
+      name: "Product 60",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "lcezTRejhZv9solKl6iRb",
+      name: "Product 61",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "MQd7B0V-a4IhYpx83rNUn",
+      name: "Product 62",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "594MEA4asqupFpzzc8WJ1",
+      name: "Product 63",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "V97Co8n9q81TwLvHbnGY4",
+      name: "Product 64",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "-4et4nOUsrLx1JRK0d3t8",
+      name: "Product 65",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "nU62WYmsAo6rM5EfenDI-",
+      name: "Product 66",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "LIoIzzhHyCa1zfSZQe7es",
+      name: "Product 67",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "wX7UWzHfRhhaiycqf1D74",
+      name: "Product 68",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "y-QvjOPAfGVlbxHkBaE1b",
+      name: "Product 69",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "FYMfRkmCn2dbZiJW18m-G",
+      name: "Product 70",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "4czZ_KNpqkL9SUTZBYJwg",
+      name: "Product 71",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "WDFcMoswQfDesRFLpxLnc",
+      name: "Product 72",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "KFiAmISZnRl1O7KFdjJ1J",
+      name: "Product 73",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "rW6fzV2thxtiqM8J8Ae6-",
+      name: "Product 74",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "eAWzmF26KcFdX0x8NMI3F",
+      name: "Product 75",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "hBOsawp77UFc6DbGIIrON",
+      name: "Product 76",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "pXhDO0b6sT_qaCii4a-AB",
+      name: "Product 77",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "j3U27e1RjWEIk4Pa3vqxy",
+      name: "Product 78",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "C_gRVTzdAWWa2JH2LTojM",
+      name: "Product 79",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "zIvxKOOnSUvD0laEGPabA",
+      name: "Product 80",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "v4qhgWTcPOX3Yrv7F5VX6",
+      name: "Product 81",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "Ndm0XIU3nRD8TFA3fXKq0",
+      name: "Product 82",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "jbRPbI6pilN2TmW_kU0oO",
+      name: "Product 83",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "sj0UDsWy8gm-A2g5EimpU",
+      name: "Product 84",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "l1Y4eREDsfLLx7qGPT3Ci",
+      name: "Product 85",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "4K8Wq6SUX89pJOg-aNOHR",
+      name: "Product 86",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "PrpNaPJ9N49vO3Bp9WA4S",
+      name: "Product 87",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "37ymXR4eNQheb40CFHVYr",
+      name: "Product 88",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "gZDqc4YFHfeJjDFRrWBmD",
+      name: "Product 89",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "O3yhQbtPOhyhXuHNGVutX",
+      name: "Product 90",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "u1jqtryHKSyfJgVJIRfAg",
+      name: "Product 91",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "icpM9fGgSOrtJfDXD_9cg",
+      name: "Product 92",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "TV1umJKD8Y3c92Tx8VYb0",
+      name: "Product 93",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "0Ya_KVAnR8GH_BE8VuEYU",
+      name: "Product 94",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "cx71vlChgTWAsxnwstWNe",
+      name: "Product 95",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "apcCnOI6B2LzoIHpcPxLE",
+      name: "Product 96",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "7I7zjhEA-LS4XoEm_cCLj",
+      name: "Product 97",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "xKKsid3dSpMzk1IjcJCaI",
+      name: "Product 98",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "zHECC_HYbTBQWqte5onAn",
+      name: "Product 99",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    },
+    {
+      id: "xrY9cOffwphWCz7pfHVje",
+      name: "Product 100",
+      image: popularCollection,
+      price: "10$",
+      isFavorited: false,
+      category: "kids",
+       moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto
+    ],
+      description: "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim."
+    }
 ]
 
 

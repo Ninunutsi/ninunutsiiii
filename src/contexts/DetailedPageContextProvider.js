@@ -17,27 +17,10 @@ const DetailedPageContextProvider = ({children}) => {
             cloth.id === product.id ? { ...cloth, isFavorited: !cloth.isFavorited } : cloth
           )
         )
-      
-        setFavorites((prevState) => {
-          const index = prevState.findIndex((fav) => fav.id === product.id)
-      
-          if (index !== -1) {
-            if (!prevState[index].isFavorited) {
-              const newFav = [...prevState]
-              newFav.splice(index, 1)
-              return newFav
-            }
-          } else {
-            return [...prevState, product]
-          }
-      
-          return prevState
-        })
+        setFavorites(clothes.filter(prod => prod.isFavorited))
       }
-      
-      
-    console.log(favorites)
-    const contextValue = {
+
+        const contextValue = {
         mainPhoto,
         setMainPhoto,
         currentId,
