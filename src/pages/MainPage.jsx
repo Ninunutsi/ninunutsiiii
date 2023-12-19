@@ -15,7 +15,7 @@ const MainPage = () => {
       <div className="popular-collection">
         <h3 className="popular-collection-title">on sale/popular picks</h3>
         <div className="popular-collection-gallary">
-          <Slider images={clothes} imagesPerView={5}/>
+          <Slider images={clothes} imagesPerView={4}/>
         </div>
       </div>
       <SwiperSlider />

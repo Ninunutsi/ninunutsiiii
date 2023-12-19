@@ -1,8 +1,15 @@
+import ProductList from "../components/Pagination"
+import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider"
+
 const FavoritesPage = () => {
+const {favorites} = useDetailedPageContext()
+
     return(
-        <div>
-            Favorites Page
-        </div>
+        <ProductList
+            products={favorites}
+            productsPerPage={8}
+            category="favoriteProducts"
+        />
     )
 }
 

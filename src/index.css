@@ -219,6 +219,12 @@ table {
   cursor: pointer;
 }
 
+.product-name-and-icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .product-name {
   font-size: 20px;
   font-weight: 300;

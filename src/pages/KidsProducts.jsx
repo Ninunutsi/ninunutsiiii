@@ -1,7 +1,18 @@
 import ProductList from "../components/Pagination";
+import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
 
 const KidsProducts = () => {
-  return <ProductList />;
+  const {clothes} = useDetailedPageContext()
+  const kidsClothes = clothes.filter(prod => prod.category === "kids")
+
+  return (
+      <ProductList
+        products={kidsClothes}
+        productsPerPage={20}
+        category="kidsProducts"
+      />
+    )
+
 };
 
 export default KidsProducts;

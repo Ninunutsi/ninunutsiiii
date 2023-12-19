@@ -94,6 +94,7 @@ export const Parameters = styled.div`
 
   svg,
   button {
+    color: black;
     cursor: pointer;
     transition: 0.3s;
   }

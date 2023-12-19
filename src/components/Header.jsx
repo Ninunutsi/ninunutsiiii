@@ -52,7 +52,7 @@ const Header = () => {
                 <FontAwesomeIcon icon={faCircleUser} />
               </div>
             </div>
-            <div>
+            <div onClick={handleClick}>
               <Link to="/favorites">
               <FontAwesomeIcon icon={faHeart} />
               </Link>
