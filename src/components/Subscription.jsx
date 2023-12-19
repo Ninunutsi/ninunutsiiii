@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 import useRequest from "../hooks/useRequest";
 import EmailForm from "./Requests/EmailForm";
 import { Loading } from "./components";
 
 const Subscription = () => {
+  const { t } = useTranslation();
   const { loading, sentEmail, sendRequest } = useRequest({
     url: "/api/v1/users",
     method: "POST",
@@ -20,7 +22,7 @@ const Subscription = () => {
     </Loading>
   );
 
-  const emailSent = <p>Thank you for Subscription</p>;
+  const emailSent = <p>{t("Thank you for Subscription")}</p>;
 
   if (loading) return <EmailForm loading={loadingProces} />;
   if (sentEmail) return <EmailForm sentEmail={emailSent} />;

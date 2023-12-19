@@ -6,8 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCreative } from "swiper/modules";
 import { Data } from "../../assets/imgData/ImageData";
 import SubmitBtn from "../Buttons/SubmitBtn";
+import { useTranslation } from "react-i18next";
 
 const SwiperSlider = () => {
+  const { t } = useTranslation();
+
   const getImageData = Data;
   return (
     <div className="swiper-slide">
@@ -39,7 +42,7 @@ const SwiperSlider = () => {
               );
             })}
         </Swiper>
-        <SubmitBtn name={"Submit"} nav={""} />
+        <SubmitBtn name={t("Submit")} nav={""} />
       </div>
       <div className="swiper_content">
         <Swiper
@@ -69,7 +72,7 @@ const SwiperSlider = () => {
               );
             })}
         </Swiper>
-        <SubmitBtn name={"Woman"} nav={"woman"} />
+        <SubmitBtn name={t("Woman")} nav={"woman"} />
       </div>
       <div className="swiper_content">
         <Swiper
@@ -99,7 +102,7 @@ const SwiperSlider = () => {
               );
             })}
         </Swiper>
-        <SubmitBtn name={"Kids"} nav={"kids"} />
+        <SubmitBtn name={t("Kids")} nav={"kids"} />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 {
-  "woman": "ქალი",
+  "Woman": "ქალი",
   "Kids": "ბავშვები",
   "Search": "ძებნა",
   "About Us": "ჩვენს შესახებ",
@@ -11,7 +11,7 @@
   "Continue with Facebook": "განაგრძეთ Facebook ით",
   "Continue with Google": "განაგრძეთ Google ით",
   "or": "ან",
-  "Email address": "Email",
+  "Email address": "იმეილი",
   "Password": "პაროლი",
   "Recover Password": "პაროლის აღდგენა",
   "Log in": "შესვლა",
@@ -23,10 +23,14 @@
   "Subscribe to our newsletter": "გამოიწერეთ",
   "subscribe to receive our latest news": "გამოიწერეთ სიახლეებისთვის",
   "Please enter a valid email address": "გთხოვთ შეიყვანოთ სწორი Email",
-  "Submit": "დადასტურება",
+  "Submit": "გაგზავნა",
   "Description": "აღწერა",
   "Similar Products": "ერთეული პროდუქტი",
   "Page is unavailable": "გვერდი ვერ მოიძებნა, სცადეთ ხელთავიდან ან დაგვიკავშირდით",
   "Our phone number": "ჩვენი ტელეფონის ნომერი",
-  "on sale/popular picks": "ფასდაკლება / პოპულარული არჩევანი"
+  "on sale/popular picks": "ფასდაკლება / პოპულარული არჩევანი",
+  "enter E-mail": "შეიყვანეთ იმეილი",
+  "productName" : "პროდუქტი",
+  "Added To Favorites": "დამატებულია ფავორიტებში",
+  "Add To Favorites": "დაამატე ფავორიტებში"
 }

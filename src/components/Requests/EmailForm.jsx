@@ -1,9 +1,11 @@
 import { useRef, useState } from "react";
 import { ErrorMessage, LoadingDiv, SubmitButton, SubscriptionStyle} from "../components";
+import { useTranslation } from "react-i18next";
 
 const EmailForm = ({ onFormSubmit, loading, sentEmail }) => {
   const emailRef = useRef();
   const [isValidEmail, setIsValidEmail] = useState(true);
+  const { t } = useTranslation()
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -21,10 +23,10 @@ const EmailForm = ({ onFormSubmit, loading, sentEmail }) => {
   return (
     <SubscriptionStyle>
       <LoadingDiv>{loading}</LoadingDiv>
-        <h1>Subscribe to our newsletter</h1>
+        <h1>{t("Subscribe to our newsletter")}</h1>
         <form onSubmit={onSubmit}>
           <label htmlFor="subscription">
-            subscribe to receive our latest news
+            {t("subscribe to receive our latest news")}
           </label>
           <input
             style={{
@@ -32,16 +34,16 @@ const EmailForm = ({ onFormSubmit, loading, sentEmail }) => {
             }}
             id="subscription"
             type="text"
-            placeholder="enter E-mail"
+            placeholder={t("enter E-mail")}
             ref={emailRef}
           />
           <ErrorMessage style={{color: "green"}}>{sentEmail}</ErrorMessage>
           {!isValidEmail && (
             <ErrorMessage className="error-message">
-              Please enter a valid email address
+              {t("Please enter a valid email address")}
             </ErrorMessage>
           )}
-          <SubmitButton>Submit</SubmitButton>
+          <SubmitButton>{t("Submit")}</SubmitButton>
         </form>
     </SubscriptionStyle>
   );
