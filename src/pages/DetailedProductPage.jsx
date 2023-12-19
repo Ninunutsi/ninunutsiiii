@@ -6,7 +6,7 @@ import PhotoSwiper from "../components/PhotoSwiper";
 import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
 const DetailedProductPage = () => {
   const { productId } = useParams()
-  const {mainPhoto, currentId, isFavorited, addFav: addtoFav, clothes} = useDetailedPageContext()
+  const {mainPhoto, currentId, addFav: addtoFav, clothes} = useDetailedPageContext()
 
   const imagesForSlider = clothes.filter(product => product.id !== productId)
   console.log(imagesForSlider)
