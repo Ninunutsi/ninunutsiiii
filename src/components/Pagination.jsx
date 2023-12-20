@@ -1,14 +1,14 @@
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
-import useLocalStorage from "../hooks/useLocalStorage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import useScrollToTop from "../hooks/useScrollToTop";
 import { useTranslation } from "react-i18next";
+import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
 
 const ProductList = ({products, productsPerPage, category}) => {
-  const [currentPage, setCurrentPage] = useLocalStorage(category, 1)
+  const {currentPage, setCurrentPage} = useDetailedPageContext()
   const startIndex = (currentPage - 1) * productsPerPage
   const endIndex = startIndex + productsPerPage
   const currentProducts = products.slice(startIndex, endIndex)
@@ -39,11 +39,16 @@ const ProductList = ({products, productsPerPage, category}) => {
             style={{color: "black"}}
             to={`/${product.category}/products/${product.id}`}
           >
-            <img className="product-image" src={product.image} alt="" />
-            <div className="product-name-and-icon">
-              <h2 className="product-name">{t('productName')}</h2>
-              {product.isFavorited && <FontAwesomeIcon style={{color: "brown"}} icon={faHeart}/>}
+            <div className="product-img-and-icon">
+              <img className="product-image" src={product.image} alt="" />
+              {product.isFavorited && 
+                <FontAwesomeIcon 
+                  size="lg"
+                  className="product-heart-icon"
+                  icon={faHeart}
+                  />}
             </div>
+            <h2 className="product-name">{product.name}</h2>  
             <h3 className="product-price">{product.price}</h3>
           </Link>
           </div>

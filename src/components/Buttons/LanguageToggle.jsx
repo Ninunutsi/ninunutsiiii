@@ -9,7 +9,12 @@ const LanguageToggle = () => {
   };
 
   return (
-    <button style={{width: "26px"}} onClick={toggleLanguage}>
+    <button
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        width: "26px"}}
+      onClick={toggleLanguage}>
       {i18n.language === "ge" ? "GE" : "EN"}
     </button>
   );
