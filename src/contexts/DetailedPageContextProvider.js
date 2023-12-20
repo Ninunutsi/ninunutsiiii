@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 import products from "../data/products";
 
 
@@ -17,8 +17,11 @@ const DetailedPageContextProvider = ({children}) => {
             cloth.id === product.id ? { ...cloth, isFavorited: !cloth.isFavorited } : cloth
           )
         )
-        setFavorites(clothes.filter(prod => prod.isFavorited))
       }
+
+    useEffect(() => {
+      setFavorites(clothes.filter(prod => prod.isFavorited))
+    },[clothes])
 
         const contextValue = {
         mainPhoto,

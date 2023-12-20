@@ -37,7 +37,7 @@ const ProductList = ({products, productsPerPage, category}) => {
             onClick={handleClick}>
           <Link
             style={{color: "black"}}
-            to={`products/${product.id}`}
+            to={`/${product.category}/products/${product.id}`}
           >
             <img className="product-image" src={product.image} alt="" />
             <div className="product-name-and-icon">

@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import Logo from "../assets/MA.png";
 import { Link } from "react-router-dom";
 import { HeaderBg, HeaderContent, Navigation, Parameters } from "./components";
@@ -8,11 +8,22 @@ import { useAuthorization } from "../contexts/AuthorizationContext";
 import { useTranslation } from "react-i18next";
 import UserAuthorization from "./UserInformation/UserAuthorization";
 import useScrollToTop from "../hooks/useScrollToTop";
+import useLocalStorage from "../hooks/useLocalStorage";
 import LanguageToggle from "./Buttons/LanguageToggle";
+
 
 const Header = () => {
   const { openAuthorization, isOpen } = useAuthorization();
   const { handleClick } = useScrollToTop("smooth");
+  const [, setCurrentWomanPage] = useLocalStorage("womanProducts", 1)
+  const [, setCurrentKidsPage] = useLocalStorage("kidsProducts", 1)
+  const [, setCurrentFavoritesPage] = useLocalStorage("favoriteProducts", 1)
+
+  useEffect(() => {
+    setCurrentWomanPage(1)
+    setCurrentKidsPage(1)
+    setCurrentFavoritesPage(1)
+  }, [handleClick])
   const { t } = useTranslation();
 
   return (
