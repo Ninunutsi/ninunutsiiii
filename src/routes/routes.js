@@ -8,8 +8,11 @@ import DetailedProductPage from "../pages/DetailedProductPage";
 import { AuthorizationProvider } from "../contexts/AuthorizationContext";
 import ErrorPage from "../pages/ErrorPage";
 import DetailedPageContextProvider from "../contexts/DetailedPageContextProvider";
-import Subscription from "../components/Subscription";
 import FavoritesPage from "../pages/FavoritesPage";
+import AboutUsPage from "../pages/AboutUsPage";
+import ContactUsPage from "../pages/ContactUsPage";
+import ReturnPolicyPage from "../pages/ReturnPolicyPage";
+import PrivacyPolicyPage from "../pages/PrivacyPolicyPage";
 
 const routes = [
   {
@@ -20,7 +23,6 @@ const routes = [
           <DetailedPageContextProvider>
             <Outlet />
           </DetailedPageContextProvider>
-          <Subscription />
           <Footer />
         </AuthorizationProvider>
       </div>
@@ -50,6 +52,22 @@ const routes = [
       {
         element: <FavoritesPage />,
         path: "favorites",
+      },
+      {
+        element: <AboutUsPage />,
+        path: "aboutUs",
+      },
+      {
+        element: <ContactUsPage />,
+        path: "contact",
+      },
+      {
+        element: <ReturnPolicyPage />,
+        path: "returnPolicy",
+      },
+      {
+        element: <PrivacyPolicyPage />,
+        path: "privacyPolicy",
       },
       {
         element: <ErrorPage />,

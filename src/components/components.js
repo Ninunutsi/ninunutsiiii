@@ -146,10 +146,10 @@ export const SubscriptionStyle = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 38px;
+    margin-top: 25px;
 
     label {
-      margin-bottom: 13px;
+      margin-bottom: 15px;
       font-weight: 300;
       font-size: 21px;
       line-height: 29px;
@@ -245,8 +245,12 @@ export const FooterDiv = styled.div`
     padding-bottom: 78px;
     border-bottom: 1px solid rgba(255, 255, 255, 1);
 
+    a img {
+      margin-left: 160px
+    }
+
     .navMenu nav {
-      width: 100%;
+      width: 250px;
       display: flex;
       flex-direction: column;
       align-items: start;
