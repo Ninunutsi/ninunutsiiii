@@ -1,5 +1,10 @@
 import React from "react";
-import { Authorization, Overlay, UserContent, UserForm } from "./UserInformation";
+import {
+  Authorization,
+  Overlay,
+  UserContent,
+  UserForm,
+} from "./UserInformation";
 import Logo from "../../assets/MA.png";
 import Facebook from "../../assets/facebook.png";
 import Google from "../../assets/google.png";
@@ -14,8 +19,13 @@ import { useTranslation } from "react-i18next";
 const UserAuthorization = () => {
   const { t } = useTranslation();
   const { showPassword, togglePassword } = useToggle(false);
-  const { closeAuthorization, isRegOpen, openRegister } =
+  const { closeRegistration, closeAuthorization, isRegOpen, openRegister } =
     useAuthorization(false);
+
+  const handleOverlayClick = () => {
+    closeAuthorization();
+    closeRegistration();
+  };
 
   return (
     <UserContent>
@@ -69,7 +79,7 @@ const UserAuthorization = () => {
           </div>
         </UserForm>
       </Authorization>
-      <Overlay></Overlay>
+      <Overlay onClick={handleOverlayClick}></Overlay>
     </UserContent>
   );
 };
