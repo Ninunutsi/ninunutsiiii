@@ -8,7 +8,6 @@ const DetailedPageContext = createContext(null)
 const DetailedPageContextProvider = ({children}) => {
 
     const [mainPhoto, setMainPhoto] = useState(null)
-    const [currentId, setCurrentId] = useState(null)
     const [favorites, setFavorites] = useState([])
     const [clothes, setClothes] = useState(products)
     const [currentPage, setCurrentPage] = useLocalStorage("currentPage", 1)
@@ -28,8 +27,6 @@ const DetailedPageContextProvider = ({children}) => {
         const contextValue = {
         mainPhoto,
         setMainPhoto,
-        currentId,
-        setCurrentId,
         addFav,
         favorites,
         clothes,

@@ -8,10 +8,10 @@ import { useTranslation } from "react-i18next";
 
 const DetailedProductPage = () => {
   const { productId } = useParams()
-  const { mainPhoto, currentId, addFav: addtoFav, clothes} = useDetailedPageContext()
+  const { mainPhoto, addFav: addtoFav, clothes} = useDetailedPageContext()
   const { t } = useTranslation()
   const imagesForSlider = clothes.filter(product => product.id !== productId)
-  
+
     return (
     <div>
       {clothes?.map(
@@ -21,7 +21,7 @@ const DetailedProductPage = () => {
               <div className="detailed-slider">
                 <PhotoSwiper photos={prod.moreImages} id={prod.id}/>
               </div>
-              <img className="detailed-product-image" src={(prod.id === currentId && mainPhoto) || prod.image} alt="" />
+              <img className="detailed-product-image" src={mainPhoto || prod.image} alt="" />
               <div className="detailed-product-details">
                 <h1 className="detailed-product-name">{prod.name}</h1>
                 <h2 className="d-p-id">{prod.id.slice(-6)}</h2>

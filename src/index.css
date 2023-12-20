@@ -374,3 +374,34 @@ table {
   width: 300px;
   margin-top: 10px;
 }
+
+/* Favorites Page */
+
+.favorites-page{
+  min-height: 600px;
+}
+
+.favorites-no-products{
+  margin-top: 200px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.favorites-text{
+  font-size: 28px;
+  margin-bottom: 80px;
+}
+
+.favorites-back-button{
+  border: 1px solid black;
+  padding: 10px 15px;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.favorites-back-button:hover{
+  background-color: black;
+  color: white;
+}
