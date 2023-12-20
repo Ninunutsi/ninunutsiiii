@@ -4,7 +4,7 @@ import { useDetailedPageContext } from '../contexts/DetailedPageContextProvider'
 
 const PhotoSwiper = ({ photos, id }) => {
   const containerRef = useRef(null);
-  const {setMainPhoto, setCurrentId} = useDetailedPageContext()
+  const {setMainPhoto} = useDetailedPageContext()
 
   useEffect(() => {
     const container = containerRef.current
@@ -33,7 +33,6 @@ const PhotoSwiper = ({ photos, id }) => {
 
   const handleClick = (photo, id) => {
     setMainPhoto(photo)
-    setCurrentId(id)
   }
 
   return (

@@ -2,18 +2,24 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter, faHeart } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useScrollToTop from "../hooks/useScrollToTop";
 import { useTranslation } from "react-i18next";
 import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
+import { useEffect } from "react";
 
-const ProductList = ({products, productsPerPage, category}) => {
-  const {currentPage, setCurrentPage} = useDetailedPageContext()
+const ProductList = ({products, productsPerPage}) => {
+  const {setMainPhoto, currentPage, setCurrentPage} = useDetailedPageContext()
   const startIndex = (currentPage - 1) * productsPerPage
   const endIndex = startIndex + productsPerPage
   const currentProducts = products.slice(startIndex, endIndex)
   const {handleClick} = useScrollToTop()
   const { t } = useTranslation();
+  const {productId} = useParams()
+
+  useEffect(() => {
+    setMainPhoto(null)
+  }, [productId, setMainPhoto])
 
   const handlePageChange = (event, value) => {
     window.scrollTo({

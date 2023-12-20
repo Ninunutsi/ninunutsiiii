@@ -142,7 +142,7 @@ table {
   margin: 0 auto;
 }
 
-
+/* Main Page */
 .main-photo-container{
   position: relative;
   width: 100%;
@@ -164,6 +164,8 @@ table {
   color: white;
 }
 
+/* Main Page - popular collection */
+
 .popular-collection{
   background-color: black;
   padding: 30px 30px 60px 30px;
@@ -179,10 +181,8 @@ table {
   font-weight: 300;
   text-transform: uppercase;
 }
-
-/* .popular-collection-gallary{
-  margin: 10px;
-} */
+/* slider component that is used in 
+Main Page and Detailed Product Page  */
 
 .slider-images{
   width: 100%;
@@ -199,7 +199,9 @@ table {
 }
 
 
-/* CSS for ProductList component */
+/* CSS for ProductList/Pagination component
+    that is used in Woman Page, Kids Page, Favorites Page
+*/
 
 .product-grid {
   display: flex;
@@ -229,7 +231,6 @@ table {
   top: 15px;
   right: 15px;
 }
-
 
 .product-name {
   font-size: 20px;
@@ -275,6 +276,8 @@ table {
   color: brown;
 }
 
+/* Detailed Product Page */
+
 .detailed-product-container{
   display: flex;
   justify-content: center;
@@ -292,7 +295,6 @@ table {
 .detailed-product-image{
   width: 660px;
   flex-shrink: 0;
-  /* position: relative;  */
 }
 
 .detailed-product-name{
@@ -330,27 +332,6 @@ table {
   cursor: pointer;
 }
 
-.detailed-slider-images{
-  width: 100%;
-}
-
-/* .detailed-slider{
-} */
-
-.photo-swiper-container{
-    display: flex;
-    overflow: auto;
-    position: absolute;
-    left: 0px;
-    bottom: 95px;
-    width: 28%;
-    z-index: 2;
-    transition-timing-function: linear;
-    gap: 19px;
-    height: 400px;
-    cursor: pointer;
-}
-
 .product-description{
   margin-top: 41px;
 }
@@ -373,4 +354,55 @@ table {
 .product-description-text{
   width: 300px;
   margin-top: 10px;
+}
+
+/* Mini photo slider for  Detailed Product Page */
+
+.detailed-slider-images{
+  width: 100%;
+}
+
+.photo-swiper-container{
+    display: flex;
+    overflow: auto;
+    position: absolute;
+    left: 0px;
+    bottom: 95px;
+    width: 28%;
+    z-index: 2;
+    transition-timing-function: linear;
+    gap: 19px;
+    height: 400px;
+    cursor: pointer;
+}
+
+/* Favorites Page */
+
+.favorites-page{
+  min-height: 600px;
+}
+
+.favorites-no-products{
+  margin-top: 200px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.favorites-text{
+  font-size: 28px;
+  margin-bottom: 80px;
+}
+
+.favorites-back-button{
+  border: 1px solid black;
+  padding: 10px 15px;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.favorites-back-button:hover{
+  background-color: black;
+  color: white;
 }

@@ -8,7 +8,6 @@ const WomanProducts = () => {
   return <ProductList 
       products={womanClothes}
       productsPerPage={20}
-      category="womanProducts"
     />;
 };
 

@@ -9,7 +9,6 @@ const KidsProducts = () => {
       <ProductList
         products={kidsClothes}
         productsPerPage={20}
-        category="kidsProducts"
       />
     )
 
