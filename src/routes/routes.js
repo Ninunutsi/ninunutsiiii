@@ -18,9 +18,9 @@ const routes = [
   {
     element: (
       <div>
-        <AuthorizationProvider>
-          <Header />
+        <AuthorizationProvider> 
           <DetailedPageContextProvider>
+            <Header />
             <Outlet />
           </DetailedPageContextProvider>
           <Footer />

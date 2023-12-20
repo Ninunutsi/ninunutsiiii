@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import products from "../data/products";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 
 const DetailedPageContext = createContext(null)
@@ -10,6 +11,7 @@ const DetailedPageContextProvider = ({children}) => {
     const [currentId, setCurrentId] = useState(null)
     const [favorites, setFavorites] = useState([])
     const [clothes, setClothes] = useState(products)
+    const [currentPage, setCurrentPage] = useLocalStorage("currentPage", 1)
 
     const addFav = (product) => {
         setClothes((prevState) =>
@@ -19,7 +21,7 @@ const DetailedPageContextProvider = ({children}) => {
         )
       }
 
-    useEffect(() => {
+      useEffect(() => {
       setFavorites(clothes.filter(prod => prod.isFavorited))
     },[clothes])
 
@@ -30,7 +32,9 @@ const DetailedPageContextProvider = ({children}) => {
         setCurrentId,
         addFav,
         favorites,
-        clothes
+        clothes,
+        currentPage,
+        setCurrentPage
       }
 
     return <DetailedPageContext.Provider value={contextValue}>

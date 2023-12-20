@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../assets/MA.png";
 import { Link } from "react-router-dom";
 import { HeaderBg, HeaderContent, Navigation, Parameters } from "./components";
@@ -8,29 +8,27 @@ import { useAuthorization } from "../contexts/AuthorizationContext";
 import { useTranslation } from "react-i18next";
 import UserAuthorization from "./UserInformation/UserAuthorization";
 import useScrollToTop from "../hooks/useScrollToTop";
-import useLocalStorage from "../hooks/useLocalStorage";
 import LanguageToggle from "./Buttons/LanguageToggle";
+import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
 
 
 const Header = () => {
   const { openAuthorization, isOpen } = useAuthorization();
   const { handleClick } = useScrollToTop("smooth");
-  const [, setCurrentWomanPage] = useLocalStorage("womanProducts", 1)
-  const [, setCurrentKidsPage] = useLocalStorage("kidsProducts", 1)
-  const [, setCurrentFavoritesPage] = useLocalStorage("favoriteProducts", 1)
+  const {setCurrentPage} = useDetailedPageContext()
+  const [click, setClick] = useState(false)
 
   useEffect(() => {
-    setCurrentWomanPage(1)
-    setCurrentKidsPage(1)
-    setCurrentFavoritesPage(1)
-  }, [handleClick])
+    setCurrentPage(1)
+  }, [click, setCurrentPage])
+
   const { t } = useTranslation();
 
   return (
     <HeaderBg>
       {isOpen && <UserAuthorization />}
       <HeaderContent className="container">
-        <div>
+        <div onClick={() => setClick(!click)}>
           <Navigation>
             <li onClick={handleClick}>
               <Link to={"/woman"}>{t("Woman")}</Link>

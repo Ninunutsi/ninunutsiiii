@@ -219,11 +219,17 @@ table {
   cursor: pointer;
 }
 
-.product-name-and-icon{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.product-img-and-icon{
+  position: relative;
 }
+
+.product-heart-icon{
+  color: brown;
+  position:absolute;
+  top: 15px;
+  right: 15px;
+}
+
 
 .product-name {
   font-size: 20px;
