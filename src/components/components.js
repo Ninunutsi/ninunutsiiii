@@ -27,7 +27,7 @@ export const HeaderContent = styled.header`
 `;
 
 export const Navigation = styled.nav`
-  width: 300px;
+  width: 350px;
   display: flex;
   align-items: center;
   gap: 40px;
@@ -110,8 +110,7 @@ export const Parameters = styled.div`
 `;
 
 export const SubmitButton = styled.button`
-  padding: 10px 0;
-  width: 195px;
+  padding: 10px 30px;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -246,7 +245,7 @@ export const FooterDiv = styled.div`
     border-bottom: 1px solid rgba(255, 255, 255, 1);
 
     a img {
-      margin-left: 160px
+      margin-left: 160px;
     }
 
     .navMenu nav {

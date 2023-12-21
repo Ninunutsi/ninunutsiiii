@@ -3,7 +3,7 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import HTTPApi from "i18next-http-backend";
 
-const selectedLanguage = localStorage.getItem("selectedLanguage") || "ge";
+const selectedLanguage = "ge" || localStorage.getItem("selectedLanguage");
 
 i18next
   .use(initReactI18next)

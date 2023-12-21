@@ -61,6 +61,11 @@ export const Authorization = styled.div`
       gap: 10px;
       padding: 10px 0;
       cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.9;
+      }
     }
   }
 
@@ -176,11 +181,21 @@ export const UserForm = styled.form`
         border-radius: 3px;
         background-color: transparent;
         cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          opacity: 0.5;
+        }
     }
 
     button:first-child {
         background-color: black;
         color: white;
+        transition: 0.3s;
+
+        &:hover {
+         opacity: 0.9;
+        }
     }
   }
 `;

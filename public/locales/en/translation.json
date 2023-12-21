@@ -29,8 +29,10 @@
   "Page is unavailable": "Page is unavailable at the moment please come back later",
   "Our phone number": "Our phone number",
   "on sale/popular picks": "On sale / popular picks",
-  "enter E-mail" : "enter E-mail",
-  "productName" : "product",
+  "enter E-mail": "enter E-mail",
+  "productName": "product",
   "Added To Favorites": "Added To Favorites",
-  "Add To Favorites": "Add To Favorites"
+  "Add To Favorites": "Add To Favorites",
+  "not added": "You have not added products yet",
+  "Back to Products": "Back to Products"
 }
