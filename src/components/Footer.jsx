@@ -5,12 +5,15 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useScrollToTop from "../hooks/useScrollToTop";
 import { useTranslation } from "react-i18next";
+import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
 
 const Footer = () => {
   const { handleClick } = useScrollToTop();
   const { t } = useTranslation();
-  
+  const {loading} = useDetailedPageContext()
+
   return (
+    !loading &&
     <FooterDiv>
       <div className="navHeader">
         <Link onClick={handleClick} >

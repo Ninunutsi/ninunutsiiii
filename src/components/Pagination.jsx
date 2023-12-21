@@ -1,21 +1,23 @@
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilter, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faFilter, faHeart, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { Link, useParams } from "react-router-dom";
 import useScrollToTop from "../hooks/useScrollToTop";
 import { useTranslation } from "react-i18next";
 import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const ProductList = ({products, productsPerPage}) => {
-  const {setMainPhoto, currentPage, setCurrentPage} = useDetailedPageContext()
+  const { setMainPhoto, currentPage, setCurrentPage} = useDetailedPageContext()
   const startIndex = (currentPage - 1) * productsPerPage
   const endIndex = startIndex + productsPerPage
   const currentProducts = products.slice(startIndex, endIndex)
   const {handleClick} = useScrollToTop()
   const { t } = useTranslation();
   const {productId} = useParams()
+  const [isHovered, setIsHovered] = useState()
+  const [photoLoaded, setPhotoLoaded] = useState(false);
 
   useEffect(() => {
     setMainPhoto(null)
@@ -46,20 +48,36 @@ const ProductList = ({products, productsPerPage}) => {
             to={`/${product.category}/products/${product.id}`}
           >
             <div className="product-img-and-icon">
-              <img className="product-image" src={product.image} alt="" />
+              <img
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                className="product-image"
+                src={product.image}
+                alt=""
+                onLoad={() => setPhotoLoaded(true)}
+              />
               {product.isFavorited && 
                 <FontAwesomeIcon 
                   size="lg"
                   className="product-heart-icon"
                   icon={faHeart}
                   />}
+              {isHovered && 
+                <FontAwesomeIcon 
+                  size="lg"
+                  className="product-plus-icon"
+                  icon={faPenToSquare}
+                />}
+
             </div>
-            <h2 className="product-name">{product.name}</h2>  
-            <h3 className="product-price">{product.price}</h3>
+            {photoLoaded && <h2 className="product-name">{product.name}</h2>}  
+            {photoLoaded && <h3 className="product-price">{product.price}</h3>}
           </Link>
           </div>
         ))}
       </div>
+      {
+        photoLoaded &&
       <Stack spacing={2}>
         <Pagination
           className="pagination"
@@ -68,6 +86,7 @@ const ProductList = ({products, productsPerPage}) => {
           onChange={handlePageChange}
         />
       </Stack>
+      }
     </div>
   );
 };
