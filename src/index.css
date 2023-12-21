@@ -144,8 +144,21 @@ table {
 
 /* Main Page */
 .main-photo-container{
-  position: relative;
+  /* position: relative; */
   width: 100%;
+}
+
+.main-photo-container,
+.main-page {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.main-page.loaded .main-photo-container,
+.main-page.loaded {
+  visibility: visible;
+  opacity: 1;
 }
 
 .main-page-photo{
