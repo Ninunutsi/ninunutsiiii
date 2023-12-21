@@ -245,6 +245,19 @@ Main Page and Detailed Product Page  */
   right: 15px;
 }
 
+.product-plus-icon{
+  position: absolute;
+  top: 50px;
+  right: 5px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product-img-and-icon:hover .product-plus-icon {
+  opacity: 1;
+}
+
 .product-name {
   font-size: 20px;
   font-weight: 300;
