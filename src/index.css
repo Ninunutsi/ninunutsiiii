@@ -144,8 +144,21 @@ table {
 
 /* Main Page */
 .main-photo-container{
-  position: relative;
+  /* position: relative; */
   width: 100%;
+}
+
+.main-photo-container,
+.main-page {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.main-page.loaded .main-photo-container,
+.main-page.loaded {
+  visibility: visible;
+  opacity: 1;
 }
 
 .main-page-photo{
@@ -357,23 +370,45 @@ Main Page and Detailed Product Page  */
 }
 
 /* Mini photo slider for  Detailed Product Page */
-
-.detailed-slider-images{
-  width: 100%;
+.detailed-slider-images {
+  object-fit: cover;
+  width: 266px;
+  height: 400px;
 }
 
-.photo-swiper-container{
-    display: flex;
-    overflow: auto;
-    position: absolute;
-    left: 0px;
-    bottom: 95px;
-    width: 28%;
-    z-index: 2;
-    transition-timing-function: linear;
-    gap: 19px;
-    height: 400px;
-    cursor: pointer;
+.photo-swiper-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 19px;
+  position: absolute;
+  left: 0px;
+  bottom: 95px;
+  width: 28%;
+  z-index: 2;
+  transition-timing-function: linear;
+  height: auto; 
+  cursor: pointer;
+  flex-wrap: nowrap; 
+  scrollbar-color: transparent transparent;
+}
+
+.photo-swiper-container img {
+  aspect-ratio: 266/400;
+  flex-shrink: 0;
+  height: 100%; 
+  min-width: 0; 
+}
+
+.photo-swiper-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.photo-swiper-container::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+}
+
+.photo-swiper-container::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
 /* Favorites Page */
