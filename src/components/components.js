@@ -285,3 +285,110 @@ export const FooterDiv = styled.div`
     }
   }
 `;
+
+export const ModalPopupStyle = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  transition: 0.5s;
+
+  position: fixed;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(217, 217, 217, 1);
+  z-index: 5;
+
+  .image {
+    width: 520px;
+    height: 100%;
+  }
+
+  .modal {
+    width: 480px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+
+    .loading {
+      position: absolute;
+      left: 50%;
+      top: 46%;
+      transform: translate(-50%, -50%);
+
+      div {
+        height: 10px;
+      }
+    }
+
+    form {
+      text-align: center;
+
+      .email {
+        width: 320px;
+        border-radius: 23px;
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        color: rgba(0, 0, 0, 0.3);
+        background-color: transparent;
+        outline: none;
+        padding: 6px 0 6px 20px;
+        margin-bottom: 20px;
+      }
+
+      .submitBtn {
+        padding: 13px 26px 13px 26px;
+        border: 1px solid black;
+        color: white;
+        background: black;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 28px;
+        border-radius: 10px;
+      }
+
+      .error-message {
+        top: -20px;
+        left: 240px;
+        width: 300px;
+      }
+
+      .correct-message {
+        top: -20px;
+        left: 270px;
+        width: 300px;
+      }
+    }
+
+    .popup_btn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      cursor: pointer;
+    }
+
+    .percent,
+    .off {
+      align-self: start;
+      font-size: 132px;
+      font-weight: 600;
+      line-height: 158px;
+      color: black;
+    }
+
+    .off {
+      align-self: end;
+    }
+
+    .text {
+      text-align: center;
+      color: black;
+      font-size: 27px;
+      font-weight: 600;
+      line-height: 32px;
+      margin-bottom: 24px;
+    }
+  }
+`;
