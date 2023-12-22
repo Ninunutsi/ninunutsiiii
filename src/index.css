@@ -189,7 +189,7 @@ table {
 /* Main Page - popular collection */
 
 .popular-collection {
-  background-color: black;
+  background-color: rgba(34, 34, 34, 1);;
   padding: 30px 30px 60px 30px;
   color: white;
 }
@@ -202,6 +202,7 @@ table {
   font-size: 26px;
   font-weight: 300;
   text-transform: uppercase;
+  padding: 20px 0px;
 }
 /* slider component that is used in 
 Main Page and Detailed Product Page  */
@@ -221,8 +222,7 @@ Main Page and Detailed Product Page  */
 }
 
 /* CSS for ProductList/Pagination component
-    that is used in Woman Page, Kids Page, Favorites Page
-*/
+that is used in Woman Page, Kids Page, Favorites Page*/
 
 .product-grid {
   display: flex;

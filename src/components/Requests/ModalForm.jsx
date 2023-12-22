@@ -1,34 +1,24 @@
-import React, { useEffect, useState } from "react";
-import modalPhoto from "../../assets/promo-photo.png";
+import modalPhoto from "../../assets/modalPhoto.png";
 import { Overlay } from "../UserInformation/UserInformation";
 import useEmailForm from "../../hooks/useEmailForm";
 import { ErrorMessage, ModalPopupStyle } from "../components";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import useLocalStorage from "../../hooks/useLocalStorage";
 
 function ModalForm({ onFormSubmit, loading, sentEmail }) {
-  const [showModal, setShowModal] = useState(true);
   const { emailRef, isValidEmail, onSubmit } = useEmailForm(onFormSubmit);
   const { t } = useTranslation();
-
-  useEffect(() => {
-    const isModalClosed = localStorage.getItem("isModalClosed");
-
-    if (isModalClosed) {
-      setShowModal(false);
-    }
-  }, []);
+  const [isModalClosed, setIsModalClosed] = useLocalStorage("isModalClosed", false)
 
   const closeModal = () => {
-    setShowModal(false);
-
-    localStorage.setItem("isModalClosed", "true");
+    setIsModalClosed(true)
   };
-
+console.log(localStorage)
   return (
     <div>
-      {showModal && (
+      {!isModalClosed && (
         <div>
           <ModalPopupStyle>
             <img className="image" src={modalPhoto} alt="something" />
