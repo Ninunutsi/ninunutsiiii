@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import i18next from "i18next";
+
+const isEnglish = i18next.language === "en";
+const FontFamily = isEnglish ? "Helvetica" : "Montserrat";
 
 export const ErrorElement = styled.div`
   display: flex;
@@ -7,6 +11,7 @@ export const ErrorElement = styled.div`
   margin-bottom: 100px;
 
   h1 {
+    font-family: ${FontFamily};
     padding-top: 63px;
     font-size: 435px;
     font-weight: 500;
@@ -15,6 +20,7 @@ export const ErrorElement = styled.div`
   }
 
   h2 {
+    font-family: ${FontFamily};
     font-size: 40px;
     font-weght: 600;
     line-height: 48px;
@@ -22,6 +28,7 @@ export const ErrorElement = styled.div`
   }
 
   h3 {
+    font-family: ${FontFamily};
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;

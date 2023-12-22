@@ -1,4 +1,8 @@
+import i18next from "i18next";
 import styled from "styled-components";
+
+const isEnglish = i18next.language === "en";
+const FontFamily = isEnglish ? "Helvetica" : "Montserrat";
 
 // Header Style
 
@@ -27,7 +31,7 @@ export const HeaderContent = styled.header`
 `;
 
 export const Navigation = styled.nav`
-  width: 350px;
+  width: 380px;
   display: flex;
   align-items: center;
   gap: 40px;
@@ -36,6 +40,8 @@ export const Navigation = styled.nav`
   a {
     color: black;
     transition: 0.3s ease;
+    font-family: ${FontFamily};
+    font-weight: 500;
 
     &:hover {
       color: brown;
@@ -46,10 +52,10 @@ export const Navigation = styled.nav`
 export const Parameters = styled.div`
   display: flex;
   align-items: center;
-  gap: 40px;
 
   form {
     position: relative;
+    margin-right: 40px;
 
     input {
       width: 230px;
@@ -61,10 +67,14 @@ export const Parameters = styled.div`
       padding: 5px 15px;
       background-color: transparent;
       transition: 0.3s ease;
+      font-family: ${FontFamily};
+      font-weight: 500;
     }
 
     input::placeholder {
       color: rgba(0, 0, 0, 1);
+      font-family: ${FontFamily};
+      font-weight: 500;
     }
 
     svg {
@@ -84,6 +94,8 @@ export const Parameters = styled.div`
       border: 2px solid rgba(0, 0, 0, 1);
       color: var(--text-color, black);
       background-color: transparent;
+      font-family: ${FontFamily};
+      font-weight: 500;
     }
 
     svg {
@@ -112,7 +124,8 @@ export const Parameters = styled.div`
 export const SubmitButton = styled.button`
   padding: 10px 30px;
   font-size: 24px;
-  font-weight: 400;
+  font-family: ${FontFamily};
+  font-weight: 700;
   line-height: 36px;
   color: white;
   background-color: black;
@@ -135,6 +148,7 @@ export const SubscriptionStyle = styled.div`
   padding: 60px 0;
 
   h1 {
+    font-family: ${FontFamily};
     font-size: 40px;
     font-weight: 300;
     line-height: 54px;
@@ -148,6 +162,7 @@ export const SubscriptionStyle = styled.div`
     margin-top: 25px;
 
     label {
+      font-family: ${FontFamily};
       margin-bottom: 15px;
       font-weight: 300;
       font-size: 21px;
@@ -155,14 +170,15 @@ export const SubscriptionStyle = styled.div`
     }
 
     input {
+      font-family: ${FontFamily};
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 25px;
       width: 324px;
       height: 34px;
       border: 1px solid black;
       border-radius: 24px;
       padding-left: 20px;
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 25px;
       color: rgba(0, 0, 0, 0.3);
       outline: none;
       margin-bottom: 50px;
@@ -256,6 +272,7 @@ export const FooterDiv = styled.div`
       gap: 20px;
 
       a {
+        font-family: ${FontFamily};
         font-weight: 600;
         font-size: 18px;
         line-height: 22px;
@@ -292,7 +309,7 @@ export const ModalPopupStyle = styled.div`
   transition: 0.5s;
 
   position: fixed;
-  height: 600px;
+  height: 550px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -313,22 +330,12 @@ export const ModalPopupStyle = styled.div`
     justify-content: flex-start;
     padding: 10px 20px;
 
-    .loading {
-      position: absolute;
-      left: 50%;
-      top: 46%;
-      transform: translate(-50%, -50%);
-
-      div {
-        height: 10px;
-      }
-    }
-
     form {
       text-align: center;
 
       .email {
         width: 320px;
+        font-family: ${FontFamily};
         border-radius: 23px;
         border: 2px solid rgba(0, 0, 0, 0.3);
         color: rgba(0, 0, 0, 0.3);
@@ -343,6 +350,7 @@ export const ModalPopupStyle = styled.div`
         border: 1px solid black;
         color: white;
         background: black;
+        font-family: ${FontFamily};
         font-weight: 700;
         font-size: 23px;
         line-height: 28px;
@@ -350,15 +358,28 @@ export const ModalPopupStyle = styled.div`
       }
 
       .error-message {
+        font-family: ${FontFamily};
         top: -20px;
         left: 240px;
         width: 300px;
       }
 
       .correct-message {
+        font-family: ${FontFamily};
         top: -20px;
         left: 270px;
         width: 300px;
+      }
+
+      .loading {
+        position: absolute;
+        left: 50%;
+        top: -20px;
+        transform: translate(-50%, -50%);
+
+        div {
+          height: 8px;
+        }
       }
     }
 
@@ -371,10 +392,11 @@ export const ModalPopupStyle = styled.div`
 
     .percent,
     .off {
+      font-family: ${FontFamily};
       align-self: start;
       font-size: 132px;
       font-weight: 600;
-      line-height: 158px;
+      line-height: 140px;
       color: black;
     }
 
@@ -383,12 +405,13 @@ export const ModalPopupStyle = styled.div`
     }
 
     .text {
+      font-family: ${FontFamily};
       text-align: center;
       color: black;
       font-size: 27px;
       font-weight: 600;
       line-height: 32px;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
   }
 `;

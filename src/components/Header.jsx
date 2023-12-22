@@ -25,13 +25,10 @@ const Header = () => {
 
   useEffect(() => {
     setCurrentPage(1);
-
-    // Show ModalPopup after 3 seconds
     const timer = setTimeout(() => {
       setShowModal(true);
     }, 3000);
 
-    // Clear the timer to prevent showing the modal if the component unmounts
     return () => clearTimeout(timer);
   }, [click, setCurrentPage]);
 

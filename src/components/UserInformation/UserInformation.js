@@ -1,4 +1,8 @@
 import styled, { keyframes } from "styled-components";
+import i18next from "i18next";
+
+const isEnglish = i18next.language === "en";
+const FontFamily = isEnglish ? "Helvetica" : "Montserrat";
 
 const fadeIn = keyframes`
   from {
@@ -47,7 +51,7 @@ export const Authorization = styled.div`
     gap: 20px;
 
     button {
-      font-family: "Noto Sans", sans-serif;
+      font-family: ${FontFamily};
       font-weight: 500;
       font-size: 16px;
       line-height: 22px;
@@ -121,7 +125,7 @@ export const UserForm = styled.form`
 
     label {
       align-self: start;
-      font-family: "Noto Sans", sans-serif;
+      font-family: ${FontFamily};
       color: black;
       font-size: 16px;
       font-weight: 600;
@@ -135,12 +139,14 @@ export const UserForm = styled.form`
       outline: none;
       border: 1px solid black;
       color: rgba(180, 180, 180, 1);
+      font-family: ${FontFamily};
       font-weight: 600;
       font-size: 12px;
       line-height: 15px;
     }
 
     .ResPass {
+      font-family: ${FontFamily};
       font-size: 10px;
       font-weight: 600;
       line-height: 12px;
@@ -173,6 +179,7 @@ export const UserForm = styled.form`
 
     button {
         height: 54px;
+        font-family: ${FontFamily};
         font-size: 18px;
         font-weight: 700;
         line:height: 24px;

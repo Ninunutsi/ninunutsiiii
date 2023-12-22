@@ -4,6 +4,8 @@ import { Overlay } from "../UserInformation/UserInformation";
 import useEmailForm from "../../hooks/useEmailForm";
 import { ErrorMessage, ModalPopupStyle } from "../components";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function ModalForm({ onFormSubmit, loading, sentEmail }) {
   const [showModal, setShowModal] = useState(true);
@@ -11,18 +13,15 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
   const { t } = useTranslation();
 
   useEffect(() => {
-    if (!localStorage.getItem("visited")) {
-      setShowModal(true);
-      localStorage.setItem("visited", "true");
+    const isModalClosed = localStorage.getItem("isModalClosed");
+    if (isModalClosed) {
+      setShowModal(false);
     }
   }, []);
 
-  // useEffect(() => {
-  //   setShowModal(true);
-  // }, []);
-
   const closeModal = () => {
     setShowModal(false);
+    localStorage.setItem("isModalClosed", "true");
   };
 
   return (
@@ -33,12 +32,12 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
             <img className="image" src={modalPhoto} alt="something" />
             <div className="modal">
               <span className="popup_btn" onClick={closeModal}>
-                ×
+                <FontAwesomeIcon icon={faXmark} />
               </span>
               <h1 className="percent">15%</h1>
               <p className="text">{t("Sign up")}</p>
-              <div className="loading">{loading}</div>
               <form onSubmit={onSubmit}>
+                <div className="loading">{loading}</div>
                 <input
                   style={{
                     border: isValidEmail ? "1px solid black" : "1px solid red",
