@@ -16,7 +16,7 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
     const isModalClosed = localStorage.getItem("isModalClosed");
 
     if (isModalClosed) {
-      setShowModal(false);
+      setShowModal(false); // Change this line to setShowModal(false)
     }
   }, []);
 
