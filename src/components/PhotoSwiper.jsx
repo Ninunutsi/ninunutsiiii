@@ -14,7 +14,7 @@ const PhotoSwiper = ({ photos, id }) => {
       event.preventDefault()
 
       if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
-        container.scrollLeft = 0
+        container.scrollLeft = 320
       } else if (container.scrollLeft <= 0 && event.deltaY < 0) {
         container.scrollLeft = container.scrollWidth - container.clientWidth;
       }

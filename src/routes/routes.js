@@ -22,8 +22,8 @@ const routes = [
           <DetailedPageContextProvider>
             <Header />
             <Outlet />
+            <Footer />
           </DetailedPageContextProvider>
-          <Footer />
         </AuthorizationProvider>
       </div>
     ),
