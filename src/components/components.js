@@ -27,7 +27,8 @@ export const HeaderContent = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 `;
 
 export const Navigation = styled.nav`
@@ -130,7 +131,7 @@ export const SubmitButton = styled.button`
   color: white;
   background-color: black;
   border: 1px solid black;
-  border-radius: 6px;
+  // border-radius: 6px;
   transition: 0.5s;
   cursor: pointer;
 
@@ -173,22 +174,26 @@ export const SubscriptionStyle = styled.div`
     input {
       font-family: ${FontFamily};
       font-size: 18px;
-      font-weight: 300;
+      font-weight: 500;
       line-height: 25px;
       width: 324px;
       height: 34px;
       border: 1px solid black;
       border-radius: 24px;
       padding-left: 20px;
-      color: rgba(0, 0, 0, 0.3);
+      color: rgba(0, 0, 0, 1);
       outline: none;
       margin-bottom: 50px;
+    }
+
+    ::placeholder {
+      color: rgba(180, 180, 180, 1);
     }
 
     button {
       padding: 13px 0;
       width: 136px;
-      border-radius: 10px;
+      // border-radius: 10px;
     }
   }
 `;
@@ -314,7 +319,7 @@ export const ModalPopupStyle = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #F3EBDE;
+  background-color: #f3ebde;
   z-index: 5;
 
   .image {
@@ -368,7 +373,7 @@ export const ModalPopupStyle = styled.div`
       .correct-message {
         font-family: ${FontFamily};
         top: -20px;
-        left: 270px;
+        left: 250px;
         width: 300px;
       }
 

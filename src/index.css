@@ -145,9 +145,16 @@ table {
 }
 
 .container {
-  max-width: 1440px;
-  width: 100%;
+  /* max-width: 1440px; */
+  /* width: 100%; */
   padding: 0 40px;
+  margin: 0 auto;
+}
+
+.swiper_container {
+  /* max-width: 1440px; */
+  /* width: 100%; */
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -189,7 +196,7 @@ table {
 /* Main Page - popular collection */
 
 .popular-collection {
-  background-color: rgba(34, 34, 34, 1);;
+  background-color: rgba(34, 34, 34, 1);
   padding: 30px 30px 60px 30px;
   color: white;
 }

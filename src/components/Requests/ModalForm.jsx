@@ -6,16 +6,18 @@ import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import useLocalStorage from "../../hooks/useLocalStorage";
-
+import { useEffect } from "react";
 function ModalForm({ onFormSubmit, loading, sentEmail }) {
   const { emailRef, isValidEmail, onSubmit } = useEmailForm(onFormSubmit);
   const { t } = useTranslation();
-  const [isModalClosed, setIsModalClosed] = useLocalStorage("isModalClosed", false)
-
+  const [isModalClosed, setIsModalClosed] = useLocalStorage(
+    "isModalClosed",
+    false
+  );
+  useEffect(() => {}, [isModalClosed]);
   const closeModal = () => {
-    setIsModalClosed(true)
+    setIsModalClosed(true);
   };
-console.log(localStorage)
   return (
     <div>
       {!isModalClosed && (
@@ -64,5 +66,4 @@ console.log(localStorage)
     </div>
   );
 }
-
 export default ModalForm;

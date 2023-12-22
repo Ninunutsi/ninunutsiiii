@@ -58,7 +58,7 @@ export const Authorization = styled.div`
       color: rgba(255, 255, 255, 1);
       background-color: black;
       border: none;
-      border-radius: 3px;
+      // border-radius: 3px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -138,11 +138,15 @@ export const UserForm = styled.form`
       background-color: transparent;
       outline: none;
       border: 1px solid black;
-      color: rgba(180, 180, 180, 1);
+      color: rgba(0, 0, 0, 0.5);
       font-family: ${FontFamily};
       font-weight: 600;
       font-size: 12px;
       line-height: 15px;
+
+      ::placeholder {
+        color: rgba(180, 180, 180, 1);
+      }
     }
 
     .ResPass {
@@ -185,7 +189,7 @@ export const UserForm = styled.form`
         line:height: 24px;
         color: black;
         border: 1px solid black;
-        border-radius: 3px;
+        // border-radius: 3px;
         background-color: transparent;
         cursor: pointer;
         transition: 0.3s;

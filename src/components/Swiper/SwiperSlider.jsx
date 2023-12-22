@@ -13,7 +13,7 @@ const SwiperSlider = () => {
 
   const getImageData = Data;
   return (
-    <div className="swiper-slide">
+    <div className="swiper-slide swiper_container">
       <div className="swiper_content">
         <Swiper
           grabCursor={true}
