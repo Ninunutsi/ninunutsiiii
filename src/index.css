@@ -253,7 +253,7 @@ Main Page and Detailed Product Page  */
   right: 15px;
 }
 
-.product-plus-icon{
+.product-plus-icon {
   position: absolute;
   top: 50px;
   right: 5px;
@@ -292,7 +292,7 @@ Main Page and Detailed Product Page  */
   display: flex;
   margin: 40px;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 140px;
 }
 
 .new-collection-title {

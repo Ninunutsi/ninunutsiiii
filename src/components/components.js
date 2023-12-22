@@ -130,6 +130,7 @@ export const SubmitButton = styled.button`
   color: white;
   background-color: black;
   border: 1px solid black;
+  border-radius: 6px;
   transition: 0.5s;
   cursor: pointer;
 
