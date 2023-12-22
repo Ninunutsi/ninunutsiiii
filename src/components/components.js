@@ -314,16 +314,16 @@ export const ModalPopupStyle = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(217, 217, 217, 1);
+  background-color: #F3EBDE;
   z-index: 5;
 
   .image {
-    width: 520px;
+    width: 466px;
     height: 100%;
   }
 
   .modal {
-    width: 480px;
+    width: 466px;
     position: relative;
     display: flex;
     flex-direction: column;
