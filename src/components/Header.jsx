@@ -25,6 +25,7 @@ const Header = () => {
 
   useEffect(() => {
     setCurrentPage(1);
+
     const timer = setTimeout(() => {
       setShowModal(true);
     }, 3000);

@@ -14,6 +14,7 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
 
   useEffect(() => {
     const isModalClosed = localStorage.getItem("isModalClosed");
+
     if (isModalClosed) {
       setShowModal(false);
     }
@@ -21,6 +22,7 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
 
   const closeModal = () => {
     setShowModal(false);
+
     localStorage.setItem("isModalClosed", "true");
   };
 
