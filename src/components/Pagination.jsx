@@ -2,7 +2,6 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFilter,
   faHeart,
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
@@ -12,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
 import { useEffect, useState } from "react";
 import { ProductGrid, ProductsListTop } from "../pages/AllPages";
+import Filter from "./Filter/Filter";
 
 const ProductList = ({ products, productsPerPage }) => {
   const { setMainPhoto, currentPage, setCurrentPage } =
@@ -41,7 +41,7 @@ const ProductList = ({ products, productsPerPage }) => {
     <div>
       <ProductsListTop>
         <h2 className="new-collection-title">{t("New Collection")}</h2>
-        <FontAwesomeIcon className="filter-icon" icon={faFilter} />
+        <Filter />
       </ProductsListTop>
       <ProductGrid>
         {currentProducts.map((product) => (
