@@ -1,4 +1,4 @@
-import modalPhoto from "../../assets/modalPhoto.png";
+import modalPhoto from "../../assets/popupimage.jpg";
 import { Overlay } from "../UserInformation/UserInformation";
 import useEmailForm from "../../hooks/useEmailForm";
 import { ErrorMessage, ModalPopupStyle } from "../components";
@@ -14,10 +14,12 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
     "isModalClosed",
     false
   );
+
   useEffect(() => {}, [isModalClosed]);
   const closeModal = () => {
     setIsModalClosed(true);
   };
+
   return (
     <div>
       {!isModalClosed && (

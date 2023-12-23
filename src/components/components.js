@@ -323,12 +323,12 @@ export const ModalPopupStyle = styled.div`
   z-index: 5;
 
   .image {
-    width: 466px;
+    width: 477px;
     height: 100%;
   }
 
   .modal {
-    width: 466px;
+    width: 455px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -341,14 +341,19 @@ export const ModalPopupStyle = styled.div`
 
       .email {
         width: 320px;
-        font-family: ${FontFamily};
+        // font-family: ${FontFamily};
+        font-weight: 700;
         border-radius: 23px;
         border: 2px solid rgba(0, 0, 0, 0.3);
-        color: rgba(0, 0, 0, 0.3);
+        color: rgba(0, 0, 0, 0.8);
         background-color: transparent;
         outline: none;
         padding: 6px 0 6px 20px;
         margin-bottom: 20px;
+
+        ::placeholder {
+          color: rgba(180, 180, 180, 1);
+        }
       }
 
       .submitBtn {
@@ -360,13 +365,13 @@ export const ModalPopupStyle = styled.div`
         font-weight: 700;
         font-size: 23px;
         line-height: 28px;
-        border-radius: 10px;
+        border-radius: 3px;
       }
 
       .error-message {
         font-family: ${FontFamily};
         top: -20px;
-        left: 240px;
+        left: 220px;
         width: 300px;
       }
 
@@ -401,7 +406,7 @@ export const ModalPopupStyle = styled.div`
       font-family: ${FontFamily};
       align-self: start;
       font-size: 132px;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 140px;
       color: black;
     }
@@ -415,7 +420,7 @@ export const ModalPopupStyle = styled.div`
       text-align: center;
       color: black;
       font-size: 27px;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 32px;
       margin-bottom: 20px;
     }
