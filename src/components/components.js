@@ -42,10 +42,10 @@ export const Navigation = styled.nav`
     color: black;
     transition: 0.3s ease;
     font-family: ${FontFamily};
-    font-weight: 500;
+    font-weight: 700;
 
     &:hover {
-      color: brown;
+      color: rgba(0, 0, 142, 1);
     }
   }
 `;
@@ -113,12 +113,12 @@ export const Parameters = styled.div`
   }
 
   svg:hover {
-    color: brown;
+    color: rgba(0, 0, 142, 1);
   }
 
   button:hover {
-    color: brown;
-    border-color: brown;
+    color: rgba(0, 0, 142, 1);
+    border-color: rgba(0, 0, 142, 1) c;
   }
 `;
 
@@ -137,7 +137,8 @@ export const SubmitButton = styled.button`
 
   &:hover {
     background-color: white;
-    color: black;
+    color: rgba(0, 0, 142, 1);
+    border: 1px solid rgba(0, 0, 142, 1);
     transition: 0.5s;
   }
 `;
@@ -207,6 +208,7 @@ export const LoadingDiv = styled.div`
 
 export const ErrorMessage = styled.div`
   position: absolute;
+  color: #96281b;
   top: 62%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -285,7 +287,7 @@ export const FooterDiv = styled.div`
         color: white;
 
         &:hover {
-          color: brown;
+          color: gray;
         }
       }
     }
@@ -303,7 +305,7 @@ export const FooterDiv = styled.div`
       transition: 0.3s;
 
       &:hover {
-        color: brown;
+        color: gray;
       }
     }
   }

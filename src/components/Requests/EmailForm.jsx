@@ -21,14 +21,14 @@ const EmailForm = ({ onFormSubmit, loading, sentEmail }) => {
         </label>
         <input
           style={{
-            border: isValidEmail ? "1px solid black" : "1px solid red",
+            border: isValidEmail ? "1px solid black" : "1px solid #96281b",
           }}
           id="subscription"
           type="text"
           placeholder={t("enter E-mail")}
           ref={emailRef}
         />
-        <ErrorMessage style={{ color: "green" }}>{sentEmail}</ErrorMessage>
+        <ErrorMessage style={{ color: "#1e824c" }}>{sentEmail}</ErrorMessage>
         {!isValidEmail && (
           <ErrorMessage className="error-message">
             {t("Please enter a valid email address")}

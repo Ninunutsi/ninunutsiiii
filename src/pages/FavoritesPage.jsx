@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ProductList from "../components/Pagination";
 import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
+import { FavoritePage } from "./AllPages";
 import { useTranslation } from "react-i18next";
 
 const FavoritesPage = () => {
@@ -8,7 +9,7 @@ const FavoritesPage = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="favorites-page">
+    <FavoritePage>
       {favorites.length > 0 ? (
         <ProductList products={favorites} productsPerPage={8} />
       ) : (
@@ -19,7 +20,7 @@ const FavoritesPage = () => {
           </Link>
         </div>
       )}
-    </div>
+    </FavoritePage>
   );
 };
 

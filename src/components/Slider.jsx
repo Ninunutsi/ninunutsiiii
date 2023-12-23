@@ -4,12 +4,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Link } from "react-router-dom";
 import useScrollToTop from "../hooks/useScrollToTop";
+import { SlidesImages, SwiperContainer } from "../pages/AllPages";
 
 const Slider = ({ images, imagesPerView }) => {
   const { handleClick } = useScrollToTop("instant");
 
   return (
-    <div className="swiper_container">
+    <SwiperContainer>
       <Swiper
         modules={[Navigation, Keyboard]}
         spaceBetween={10}
@@ -26,13 +27,13 @@ const Slider = ({ images, imagesPerView }) => {
           <SwiperSlide key={product.id}>
             <div style={{ width: "100%" }} onClick={handleClick}>
               <Link to={`/${product.category}/products/${product.id}`} replace>
-                <img className="slider-images" src={product.image} alt="" />
+                <SlidesImages src={product.image} alt="" />
               </Link>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </SwiperContainer>
   );
 };
 

@@ -1,42 +1,46 @@
 // PhotoSwiper.jsx
-import React, { useRef, useEffect } from 'react';
-import { useDetailedPageContext } from '../contexts/DetailedPageContextProvider';
+import React, { useRef, useEffect } from "react";
+import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
+import { PhotoSwiperContainer } from "../pages/AllPages";
 
 const PhotoSwiper = ({ photos, id }) => {
   const containerRef = useRef(null);
-  const {setMainPhoto} = useDetailedPageContext()
+  const { setMainPhoto } = useDetailedPageContext();
 
   useEffect(() => {
-    const container = containerRef.current
+    const container = containerRef.current;
 
     const handleMouseWheel = (event) => {
-      container.scrollLeft += event.deltaY
-      event.preventDefault()
+      container.scrollLeft += event.deltaY;
+      event.preventDefault();
 
-      if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
-        container.scrollLeft = 320
+      if (
+        container.scrollLeft + container.clientWidth >=
+        container.scrollWidth
+      ) {
+        container.scrollLeft = 320;
       } else if (container.scrollLeft <= 0 && event.deltaY < 0) {
         container.scrollLeft = container.scrollWidth - container.clientWidth;
       }
-    }
+    };
 
     if (container) {
-      container.addEventListener('wheel', handleMouseWheel, { passive: false });
+      container.addEventListener("wheel", handleMouseWheel, { passive: false });
     }
 
     return () => {
       if (container) {
-        container.removeEventListener('wheel', handleMouseWheel);
+        container.removeEventListener("wheel", handleMouseWheel);
       }
-    }
-  }, [containerRef, setMainPhoto])
+    };
+  }, [containerRef, setMainPhoto]);
 
   const handleClick = (photo, id) => {
-    setMainPhoto(photo)
-  }
+    setMainPhoto(photo);
+  };
 
   return (
-    <div className="photo-swiper-container" ref={containerRef}>
+    <PhotoSwiperContainer ref={containerRef}>
       {photos.map((photo, index) => (
         <img
           onClick={() => handleClick(photo, id)}
@@ -44,10 +48,10 @@ const PhotoSwiper = ({ photos, id }) => {
           className="detailed-slider-images"
           src={photo}
           alt={`${index + 1}`}
-          style={{ marginRight: '10px' }}
+          style={{ marginRight: "10px" }}
         />
       ))}
-    </div>
+    </PhotoSwiperContainer>
   );
 };
 

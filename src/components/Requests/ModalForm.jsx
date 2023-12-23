@@ -36,7 +36,9 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
                 <div className="loading">{loading}</div>
                 <input
                   style={{
-                    border: isValidEmail ? "1px solid black" : "1px solid red",
+                    border: isValidEmail
+                      ? "1px solid black"
+                      : "1px solid #96281b",
                   }}
                   className="email"
                   type="text"
@@ -46,7 +48,7 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
                 />
                 <ErrorMessage
                   className="correct-message"
-                  style={{ color: "green" }}
+                  style={{ color: "#1e824c" }}
                 >
                   {sentEmail}
                 </ErrorMessage>

@@ -159,17 +159,6 @@ table {
 }
 
 /* Main Page */
-.main-photo-container {
-  /* position: relative; */
-  width: 100%;
-}
-
-.main-photo-container,
-.main-page {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s ease-in-out;
-}
 
 .main-page.loaded .main-photo-container,
 .main-page.loaded {
@@ -177,133 +166,13 @@ table {
   opacity: 1;
 }
 
-.main-page-photo {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.logo {
-  position: absolute;
-  top: 15%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  width: 35%;
-  height: auto;
-  color: white;
-}
-
-/* Main Page - popular collection */
-
-.popular-collection {
-  background-color: rgba(34, 34, 34, 1);
-  padding: 30px 30px 60px 30px;
-  color: white;
-}
-
-.popular-collection-title {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-  font-family: Noto Sans;
-  font-size: 26px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding: 20px 0px;
-}
 /* slider component that is used in 
 Main Page and Detailed Product Page  */
-
-.slider-images {
-  width: 100%;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: white !important;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: gray !important;
-}
-
-/* CSS for ProductList/Pagination component
-that is used in Woman Page, Kids Page, Favorites Page*/
-
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-  margin: 5px;
-}
-
-.product-container {
-  width: 25%;
-  padding: 5px;
-  margin: 12px 0px;
-  color: black;
-}
-
-.product-container:hover {
-  cursor: pointer;
-}
-
-.product-img-and-icon {
-  position: relative;
-}
-
-.product-heart-icon {
-  color: brown;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.product-plus-icon {
-  position: absolute;
-  top: 50px;
-  right: 5px;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.product-img-and-icon:hover .product-plus-icon {
-  opacity: 1;
-}
-
-.product-name {
-  font-size: 20px;
-  font-weight: 300;
-  text-transform: capitalize;
-  margin: 9px 0px;
-}
-
-.product-price {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.product-image {
-  width: 100%;
-}
 
 .pagination {
   display: flex;
   justify-content: center;
   padding: 50px;
-}
-
-.product-list-top-section {
-  display: flex;
-  margin: 40px;
-  justify-content: space-between;
-  margin-top: 140px;
-}
-
-.new-collection-title {
-  font-size: 28px;
 }
 
 .filter-icon {
@@ -314,111 +183,10 @@ that is used in Woman Page, Kids Page, Favorites Page*/
 }
 
 .filter-icon:hover {
-  color: brown;
-}
-
-/* Detailed Product Page */
-
-.detailed-product-container {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-top: 100px;
-  gap: 30px;
-  height: 991px;
-}
-
-.detailed-product-details {
-  padding: 10px;
-  margin-top: 172px;
-}
-
-.detailed-product-image {
-  width: 660px;
-  flex-shrink: 0;
-}
-
-.detailed-product-name {
-  font-size: 22px;
-}
-
-.detailed-product-price {
-  font-size: 22px;
-  margin-top: 10px;
-  font-weight: 700;
-}
-
-.d-p-id {
-  color: rgba(0, 0, 0, 0.4);
-  font-weight: 300;
-  margin-top: 5px;
-}
-
-.similar-products-title {
-  font-size: 28px;
-  font-weight: 300;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-.d-p-favorite {
-  border: 1px solid black;
-  padding: 5px 15px;
-  border-radius: 10px;
-  gap: 10px;
-  display: inline-flex;
-  margin-top: 30px;
-  width: auto;
-  cursor: pointer;
-}
-
-.product-description {
-  margin-top: 41px;
-}
-
-.product-sizes {
-  display: flex;
-  gap: 10px;
-}
-
-.product-size {
-  border-radius: 10px;
-  border: 1px solid black;
-  padding: 10px 12px;
-  width: 35px;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.product-description-text {
-  width: 300px;
-  margin-top: 10px;
+  color: #043b5c;
 }
 
 /* Mini photo slider for  Detailed Product Page */
-.detailed-slider-images {
-  object-fit: cover;
-  width: 266px;
-  height: 400px;
-}
-
-.photo-swiper-container {
-  display: flex;
-  overflow-x: auto;
-  gap: 19px;
-  position: absolute;
-  left: 0px;
-  bottom: 95px;
-  width: 28%;
-  z-index: 2;
-  transition-timing-function: linear;
-  height: auto;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  scrollbar-color: transparent transparent;
-}
 
 .photo-swiper-container img {
   aspect-ratio: 266/400;
@@ -437,35 +205,4 @@ that is used in Woman Page, Kids Page, Favorites Page*/
 
 .photo-swiper-container::-webkit-scrollbar-track {
   background-color: transparent;
-}
-
-/* Favorites Page */
-
-.favorites-page {
-  min-height: 600px;
-}
-
-.favorites-no-products {
-  margin-top: 200px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.favorites-text {
-  font-size: 28px;
-  margin-bottom: 80px;
-}
-
-.favorites-back-button {
-  border: 1px solid black;
-  padding: 10px 15px;
-  background-color: white;
-  color: black;
-  transition: 0.3s;
-  font-size: 20px;
-}
-
-.favorites-back-button:hover {
-  background-color: black;
-  color: white;
 }
