@@ -12,7 +12,9 @@ const ProductsContextProvider = ({children}) => {
     const [clothes, setClothes] = useState(products)
     const [currentPage, setCurrentPage] = useLocalStorage("currentPage", 1)
     const [loading, setLoading] = useState(true)
-    const [sortBy, setSortBy] = useState(null)
+    const [sortByPrice, setSortByPrice] = useState(null)
+    const [filterByColor, setFilterByColor] = useState("")
+
 
     const addFav = (product) => {
         setClothes((prevState) =>
@@ -34,13 +36,21 @@ const ProductsContextProvider = ({children}) => {
 
 
     useEffect(() => {
-      if (sortBy === 'low-to-high') {
+      if (sortByPrice === 'low-to-high') {
         setClothes(prevState => prevState.sort((a, b) => a.price - b.price))
-      } else if (sortBy === 'high-to-low') {
+      } else if (sortByPrice === 'high-to-low') {
         setClothes(prevState => prevState.sort((a, b) => b.price - a.price))
       }
       setCurrentPage(1)
-    }, [sortBy, setCurrentPage])
+    }, [sortByPrice, setCurrentPage])
+
+    useEffect(() => {
+      setClothes(products)
+      if(filterByColor.length > 0){
+        setClothes(prevState => prevState.filter(product => product.color === filterByColor))
+        setCurrentPage(1)
+      }
+    }, [filterByColor, setCurrentPage])
 
       const contextValue = {
       mainPhoto,
@@ -51,7 +61,8 @@ const ProductsContextProvider = ({children}) => {
       currentPage,
       setCurrentPage,
       loading,
-      setSortBy
+      setSortByPrice,
+      setFilterByColor
     }
 
     return <ProductsContext.Provider value={contextValue}>

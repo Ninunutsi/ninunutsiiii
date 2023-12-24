@@ -75,7 +75,10 @@ const ProductList = ({ products, productsPerPage, category }) => {
               </div>
               {photoLoaded && <h2 className="product-name">{product.name}</h2>}
               {photoLoaded && (
-                <h3 className="product-price">{`${product.price}$`}</h3>
+                <div style={{display: "flex", gap: "5px"}}>
+                  <h3 className="product-price">{`${product.price}$`}</h3>
+                  <span style={{backgroundColor: `${product.color}`}}>.</span>
+                </div>
               )}
             </Link>
           </div>

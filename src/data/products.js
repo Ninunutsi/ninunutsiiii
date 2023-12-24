@@ -20,6 +20,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -38,6 +39,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -56,6 +58,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -74,6 +77,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -92,6 +96,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -110,6 +115,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -128,6 +134,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -146,6 +153,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -164,6 +172,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -182,6 +191,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -200,6 +210,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -218,6 +229,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -236,6 +248,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -254,6 +267,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -272,6 +286,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -290,6 +305,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -308,6 +324,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -326,6 +343,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -344,6 +362,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -362,6 +381,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -380,6 +400,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -398,6 +419,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -416,6 +438,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -434,6 +457,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -452,6 +476,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -470,6 +495,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -488,6 +514,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -506,6 +533,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -524,6 +552,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -542,6 +571,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -560,6 +590,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -578,6 +609,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -596,6 +628,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -614,6 +647,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -632,6 +666,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -650,6 +685,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -668,6 +704,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -686,6 +723,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -704,6 +742,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -722,6 +761,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -740,6 +780,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -758,6 +799,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -776,6 +818,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -794,6 +837,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -812,6 +856,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -830,6 +875,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -848,6 +894,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -866,6 +913,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -884,6 +932,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -902,6 +951,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -920,6 +970,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -938,6 +989,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -956,6 +1008,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -974,6 +1027,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -992,6 +1046,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1010,6 +1065,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1028,6 +1084,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1046,6 +1103,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1064,6 +1122,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1082,6 +1141,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1100,6 +1160,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1118,6 +1179,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1136,6 +1198,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1154,6 +1217,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1172,6 +1236,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1190,6 +1255,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1208,6 +1274,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1226,6 +1293,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1244,6 +1312,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1262,6 +1331,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1280,6 +1350,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1298,6 +1369,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1316,6 +1388,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1334,6 +1407,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1352,6 +1426,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1370,6 +1445,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1388,6 +1464,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1406,6 +1483,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1424,6 +1502,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1442,6 +1521,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1460,6 +1540,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1478,6 +1559,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1496,6 +1578,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1514,6 +1597,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1532,6 +1616,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1550,6 +1635,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1568,6 +1654,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1586,6 +1673,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1604,6 +1692,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1622,6 +1711,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1640,6 +1730,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1658,6 +1749,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1676,6 +1768,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1694,6 +1787,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1712,6 +1806,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1730,6 +1825,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1748,6 +1844,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1766,6 +1863,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1784,6 +1882,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1802,6 +1901,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1820,6 +1920,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1838,6 +1939,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1856,6 +1958,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1874,6 +1977,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1892,6 +1996,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1910,6 +2015,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1928,6 +2034,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1946,6 +2053,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1964,6 +2072,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1982,6 +2091,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2000,6 +2110,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2018,6 +2129,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2036,6 +2148,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2054,6 +2167,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2072,6 +2186,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2090,6 +2205,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2108,6 +2224,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2126,6 +2243,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2144,6 +2262,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2162,6 +2281,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2180,6 +2300,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2198,6 +2319,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2216,6 +2338,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2234,6 +2357,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2252,6 +2376,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2270,6 +2395,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2288,6 +2414,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2306,6 +2433,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2324,6 +2452,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2342,6 +2471,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2360,6 +2490,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2378,6 +2509,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2396,6 +2528,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2414,6 +2547,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2432,6 +2566,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2450,6 +2585,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2468,6 +2604,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2486,6 +2623,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2504,6 +2642,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2522,6 +2661,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2540,6 +2680,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2558,6 +2699,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2576,6 +2718,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2594,6 +2737,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2612,6 +2756,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2630,6 +2775,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2648,6 +2794,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2666,6 +2813,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2684,6 +2832,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2702,6 +2851,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2720,6 +2870,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2738,6 +2889,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2756,6 +2908,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2774,6 +2927,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2792,6 +2946,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "black",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2810,6 +2965,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2828,6 +2984,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2846,6 +3003,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2864,6 +3022,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2882,6 +3041,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "blue",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2900,6 +3060,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2918,6 +3079,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2936,6 +3098,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2954,6 +3117,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2972,6 +3136,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2990,6 +3155,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3008,6 +3174,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3026,6 +3193,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3044,6 +3212,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3062,6 +3231,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3080,6 +3250,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3098,6 +3269,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3116,6 +3288,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3134,6 +3307,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3152,6 +3326,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3170,6 +3345,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3188,6 +3364,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3206,6 +3383,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3224,6 +3402,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3242,6 +3421,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3260,6 +3440,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3278,6 +3459,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3296,6 +3478,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3314,6 +3497,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3332,6 +3516,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3350,6 +3535,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3368,6 +3554,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3386,6 +3573,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3404,6 +3592,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3422,6 +3611,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3440,6 +3630,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3458,6 +3649,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3476,6 +3668,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3494,6 +3687,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3512,6 +3706,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3530,6 +3725,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3548,6 +3744,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3566,6 +3763,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3584,6 +3782,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3602,6 +3801,7 @@ const products = [
       detailedImage2,
       weddingPhoto,
     ],
+    color: "red",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },

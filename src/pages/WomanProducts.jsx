@@ -3,11 +3,11 @@ import ProductList from "../components/Pagination";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 
 const WomanProducts = () => {
-  const { sortBy, clothes } = useProductsContext();
+  const { clothes } = useProductsContext();
   const womanClothes = clothes.filter((prod) => prod.category === "woman");
 
   const { t } = useTranslation();
-  console.log(sortBy)
+  
   return (
     <ProductList
       products={womanClothes}

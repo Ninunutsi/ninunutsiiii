@@ -8,26 +8,29 @@ const Filter = () => {
   const [selectedPriceOption, setSelectedPriceOption] = useState("");
   const [selectedColorOption, setSelectedColorOption] = useState("");
   const { t } = useTranslation();
-  const {setSortBy} = useProductsContext()
+  const {setSortByPrice, setFilterByColor} = useProductsContext()
 
   useEffect(() => {
-    setSortBy(selectedPriceOption)
-  }, [selectedPriceOption, setSortBy])
+    setSortByPrice(selectedPriceOption)
+  }, [selectedPriceOption, setSortByPrice])
 
+  useEffect(() => {
+    setFilterByColor(selectedColorOption)
+  }, [selectedColorOption, setFilterByColor])
 
   const handleClick = () => {
-    setShowFilter((prevState) => !prevState);
-  };
+    setShowFilter((prevState) => !prevState)
+  }
 
   const handlePriceChange = (event) => {
-    setSelectedPriceOption(event.target.value);
-    setShowFilter(false);
-  };
+    setSelectedPriceOption(event.target.value)
+    setShowFilter(false)
+  }
 
   const handleColorChange = (event) => {
-    setSelectedColorOption(event.target.value);
-    setShowFilter(false);
-  };
+    setSelectedColorOption(event.target.value)
+    setShowFilter(false)
+  }
 
   return (
     <div className="filter-container">
