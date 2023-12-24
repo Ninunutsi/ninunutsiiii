@@ -3,9 +3,9 @@ import products from "../data/products";
 import useLocalStorage from "../hooks/useLocalStorage";
 
 
-const DetailedPageContext = createContext(null)
+const ProductsContext = createContext(null)
 
-const DetailedPageContextProvider = ({children}) => {
+const ProductsContextProvider = ({children}) => {
 
     const [mainPhoto, setMainPhoto] = useState(null)
     const [favorites, setFavorites] = useState([])
@@ -42,13 +42,13 @@ const DetailedPageContextProvider = ({children}) => {
       loading
     }
 
-    return <DetailedPageContext.Provider value={contextValue}>
+    return <ProductsContext.Provider value={contextValue}>
         {children}
-    </DetailedPageContext.Provider>
+    </ProductsContext.Provider>
 }
-    export const useDetailedPageContext = () => {
-        const contextValue = useContext(DetailedPageContext)
+    export const useProductsContext = () => {
+        const contextValue = useContext(ProductsContext)
         return contextValue
     }
 
-    export default DetailedPageContextProvider
+    export default ProductsContextProvider

@@ -4,12 +4,12 @@ import promoPhoto from "../assets/promo-photo.png";
 import Slider from "../components/Slider";
 import Subscription from "../components/Subscription";
 import SwiperSlider from "../components/Swiper/SwiperSlider";
-import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
+import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { MainContainer, PopularCollections } from "./AllPages";
 import SubmitBtn from "../components/Buttons/SubmitBtn";
 
 const MainPage = () => {
-  const { clothes } = useDetailedPageContext();
+  const { clothes } = useProductsContext();
   const { t } = useTranslation();
   const [promoPhotoLoaded, setPromoPhotoLoaded] = useState(false);
 

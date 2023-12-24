@@ -4,14 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { Link, useParams } from "react-router-dom";
 import useScrollToTop from "../hooks/useScrollToTop";
-import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
+import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { useEffect, useState } from "react";
 import { ProductGrid, ProductsListTop } from "../pages/AllPages";
 import Filter from "./Filter/Filter";
 
 const ProductList = ({ products, productsPerPage, category }) => {
   const { setMainPhoto, currentPage, setCurrentPage } =
-    useDetailedPageContext();
+    useProductsContext();
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
   const currentProducts = products.slice(startIndex, endIndex);

@@ -7,7 +7,7 @@ import KidsProducts from "../pages/KidsProducts";
 import DetailedProductPage from "../pages/DetailedProductPage";
 import { AuthorizationProvider } from "../contexts/AuthorizationContext";
 import ErrorPage from "../pages/ErrorPage";
-import DetailedPageContextProvider from "../contexts/DetailedPageContextProvider";
+import ProductsContextProvider from "../contexts/ProductsContextProvider";
 import FavoritesPage from "../pages/FavoritesPage";
 import AboutUsPage from "../pages/AboutUsPage";
 import ContactUsPage from "../pages/ContactUsPage";
@@ -22,11 +22,11 @@ const routes = [
     element: (
       <div>
         <AuthorizationProvider>
-          <DetailedPageContextProvider>
+          <ProductsContextProvider>
             <Header />
             <Outlet />
             <Footer />
-          </DetailedPageContextProvider>
+          </ProductsContextProvider>
         </AuthorizationProvider>
       </div>
     ),
