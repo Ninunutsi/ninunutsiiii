@@ -1,28 +1,31 @@
-import { useState, useEffect } from "react";
-import './FilterStyle.css'
+import { useState } from "react";
+import "./FilterStyle.css";
 
 const Filter = () => {
-  const [showFilter, setShowFilter] = useState(false)
-  const [selectedPriceOption, setSelectedPriceOption] = useState("")
-  const [selectedColorOption, setSelectedColorOption] = useState("")
+  const [showFilter, setShowFilter] = useState(false);
+  const [selectedPriceOption, setSelectedPriceOption] = useState("");
+  const [selectedColorOption, setSelectedColorOption] = useState("");
 
   const handleClick = () => {
-    setShowFilter((prevState) => !prevState)
-  }
+    setShowFilter((prevState) => !prevState);
+  };
 
   const handlePriceChange = (event) => {
-    setSelectedPriceOption(event.target.value)
-    setShowFilter(false)
-  }
+    setSelectedPriceOption(event.target.value);
+    setShowFilter(false);
+  };
 
   const handleColorChange = (event) => {
-    setSelectedColorOption(event.target.value)
-    setShowFilter(false)
-  }
+    setSelectedColorOption(event.target.value);
+    setShowFilter(false);
+  };
 
   return (
     <div className="filter-container">
-      <span className="material-symbols-outlined filter-icon" onClick={handleClick}>
+      <span
+        className="material-symbols-outlined filter-icon"
+        onClick={handleClick}
+      >
         page_info
       </span>
       {showFilter && (
