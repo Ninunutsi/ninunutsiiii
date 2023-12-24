@@ -12,6 +12,7 @@ const ProductsContextProvider = ({children}) => {
     const [clothes, setClothes] = useState(products)
     const [currentPage, setCurrentPage] = useLocalStorage("currentPage", 1)
     const [loading, setLoading] = useState(true)
+    const [sortBy, setSortBy] = useState(null)
 
     const addFav = (product) => {
         setClothes((prevState) =>
@@ -31,6 +32,16 @@ const ProductsContextProvider = ({children}) => {
       setFavorites(clothes.filter(prod => prod.isFavorited))
     },[clothes])
 
+
+    useEffect(() => {
+      if (sortBy === 'low-to-high') {
+        setClothes(prevState => prevState.sort((a, b) => a.price - b.price))
+      } else if (sortBy === 'high-to-low') {
+        setClothes(prevState => prevState.sort((a, b) => b.price - a.price))
+      }
+      setCurrentPage(1)
+    }, [sortBy, setCurrentPage])
+
       const contextValue = {
       mainPhoto,
       setMainPhoto,
@@ -39,7 +50,8 @@ const ProductsContextProvider = ({children}) => {
       clothes,
       currentPage,
       setCurrentPage,
-      loading
+      loading,
+      setSortBy
     }
 
     return <ProductsContext.Provider value={contextValue}>

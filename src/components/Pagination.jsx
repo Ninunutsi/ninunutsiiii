@@ -75,7 +75,7 @@ const ProductList = ({ products, productsPerPage, category }) => {
               </div>
               {photoLoaded && <h2 className="product-name">{product.name}</h2>}
               {photoLoaded && (
-                <h3 className="product-price">{product.price}</h3>
+                <h3 className="product-price">{`${product.price}$`}</h3>
               )}
             </Link>
           </div>
