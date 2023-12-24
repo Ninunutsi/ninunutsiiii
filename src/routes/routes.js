@@ -38,11 +38,11 @@ const routes = [
       },
       {
         element: <AllProducts />,
-        path: "/allProducts",
+        path: "allProducts",
       },
       {
         element: <NewProductsPage />,
-        path: "/newProducts",
+        path: "newProducts",
       },
       {
         element: <WomanProducts />,

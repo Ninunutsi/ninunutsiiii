@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Logo from "../assets/MA.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { HeaderBg, HeaderContent, Navigation, Parameters } from "./components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -19,9 +19,10 @@ import ModalPopup from "./ModalPopup";
 const Header = () => {
   const { openAuthorization, isOpen } = useAuthorization();
   const { handleClick } = useScrollToTop("smooth");
-  const { setCurrentPage } = useProductsContext();
+  const { setCurrentPage, setSearch, search } = useProductsContext();
   const [click, setClick] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setCurrentPage(1);
@@ -34,6 +35,11 @@ const Header = () => {
   }, [click, setCurrentPage]);
 
   const { t } = useTranslation();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    search();
+  };
 
   return (
     <HeaderBg>
@@ -50,15 +56,20 @@ const Header = () => {
           </Navigation>
         </div>
         <div onClick={handleClick}>
-          {" "}
           <Link to={"/"}>
             <img src={Logo} alt="Logo" />
           </Link>
         </div>
         <Parameters>
-          <form>
-            <input type="search" placeholder={t("Search")} />
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <form onSubmit={handleSubmit}>
+            <input
+              onChange={(e) => setSearch(e.target.value)}
+              type="search"
+              placeholder={t("Search")}
+            />
+            <div onClick={() => navigate("/allProducts")}>
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </div>
           </form>
           <div>
             <div>

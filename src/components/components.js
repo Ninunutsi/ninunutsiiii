@@ -80,8 +80,10 @@ export const Parameters = styled.div`
 
     svg {
       position: absolute;
-      right: 15px;
+      right: 10px;
       top: 8px;
+      width: 15px;
+      height: 15px;
     }
   }
 
