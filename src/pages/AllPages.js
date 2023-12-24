@@ -48,6 +48,26 @@ export const MainContainer = styled.div`
     height: auto;
     display: block;
   }
+
+  .main-content {
+    position: relative;
+
+    .mainBtn {
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      button {
+        background-color: transparent;
+        border: 1px solid white;
+
+        &:hover {
+          border: 1px solid rgba(0, 0, 142, 1);
+        }
+      }
+    }
+  }
 `;
 
 export const PopularCollections = styled.div`
@@ -59,11 +79,26 @@ export const PopularCollections = styled.div`
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-    font-family: Noto Sans;
+    font-family: ${FontFamily};
     font-size: 26px;
     font-weight: 300;
     text-transform: uppercase;
     padding: 20px 0px;
+  }
+
+  .mainBtn {
+    display: flex;
+    justify-content: end;
+    margin: 0 10px 15px 0;
+
+    button {
+      background-color: transparent;
+      border: 1px solid white;
+
+      &:hover {
+        border: 1px solid rgba(0, 0, 142, 1);
+      }
+    }
   }
 `;
 
@@ -125,6 +160,7 @@ export const ProductGrid = styled.div`
   }
 
   .product-name {
+    font-family: ${FontFamily};
     font-size: 20px;
     font-weight: 300;
     text-transform: capitalize;
@@ -132,6 +168,7 @@ export const ProductGrid = styled.div`
   }
 
   .product-price {
+    font-family: ${FontFamily};
     font-size: 20px;
     font-weight: 400;
   }
@@ -148,6 +185,7 @@ export const ProductsListTop = styled.div`
   margin-top: 140px;
 
   .new-collection-title {
+    font-family: ${FontFamily};
     font-size: 28px;
   }
 `;
@@ -173,10 +211,12 @@ export const DetailedProducts = styled.div`
   }
 
   .detailed-product-name {
+    font-family: ${FontFamily};
     font-size: 22px;
   }
 
   .detailed-product-price {
+    font-family: ${FontFamily};
     font-size: 22px;
     margin-top: 10px;
     font-weight: 700;
@@ -225,6 +265,7 @@ export const DetailedProducts = styled.div`
 `;
 
 export const SimilarProductTitle = styled.h3`
+  font-family: ${FontFamily};
   font-size: 28px;
   font-weight: 300;
   text-align: center;
@@ -272,11 +313,13 @@ export const FavoritePage = styled.div`
   }
 
   .favorites-text {
+    font-family: ${FontFamily};
     font-size: 28px;
     margin-bottom: 80px;
   }
 
   .favorites-back-button {
+    font-family: ${FontFamily};
     border: 1px solid black;
     padding: 10px 15px;
     background-color: white;

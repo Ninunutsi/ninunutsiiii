@@ -1,10 +1,12 @@
 import { useState } from "react";
 import "./FilterStyle.css";
+import { useTranslation } from "react-i18next";
 
 const Filter = () => {
   const [showFilter, setShowFilter] = useState(false);
   const [selectedPriceOption, setSelectedPriceOption] = useState("");
   const [selectedColorOption, setSelectedColorOption] = useState("");
+  const { t } = useTranslation();
 
   const handleClick = () => {
     setShowFilter((prevState) => !prevState);
@@ -36,9 +38,9 @@ const Filter = () => {
             value={selectedPriceOption}
             onChange={handlePriceChange}
           >
-            <option value="price">Price</option>
-            <option value="low-to-high">Low to High</option>
-            <option value="high-to-low">High to Low</option>
+            <option value="price">{t("Price")}</option>
+            <option value="low-to-high">{t("Low to High")}</option>
+            <option value="high-to-low">{t("High to Low")}</option>
           </select>
           <select
             className="filter-select-options"
@@ -46,14 +48,14 @@ const Filter = () => {
             value={selectedColorOption}
             onChange={handleColorChange}
           >
-            <option value="color">Color</option>
-            <option value="red">Red</option>
-            <option value="blue">Blue</option>
-            <option value="white">White</option>
-            <option value="black">Black</option>
+            <option value="color">{t("Color")}</option>
+            <option value="red">{t("Red")}</option>
+            <option value="blue">{t("Blue")}</option>
+            <option value="white">{t("White")}</option>
+            <option value="black">{t("Black")}</option>
           </select>
-          <span className="filter-options">With Discount</span>
-          <span className="filter-options">Newest</span>
+          <span className="filter-options">{t("With Discount")}</span>
+          <span className="filter-options">{t("Newest")}</span>
         </div>
       )}
     </div>

@@ -192,8 +192,7 @@ export const SubscriptionStyle = styled.div`
     }
 
     button {
-      padding: 13px 0;
-      width: 136px;
+      padding: 10px 30px;
       // border-radius: 10px;
     }
   }

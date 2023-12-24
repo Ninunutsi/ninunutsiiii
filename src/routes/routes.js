@@ -13,12 +13,15 @@ import AboutUsPage from "../pages/AboutUsPage";
 import ContactUsPage from "../pages/ContactUsPage";
 import ReturnPolicyPage from "../pages/ReturnPolicyPage";
 import PrivacyPolicyPage from "../pages/PrivacyPolicyPage";
+import NewProductsPage from "../pages/NewProductsPage";
+import AllProducts from "../pages/AllProducts";
+import FilteredPage from "../pages/FilteredPage";
 
 const routes = [
   {
     element: (
       <div>
-        <AuthorizationProvider> 
+        <AuthorizationProvider>
           <DetailedPageContextProvider>
             <Header />
             <Outlet />
@@ -32,6 +35,14 @@ const routes = [
       {
         element: <MainPage />,
         index: true,
+      },
+      {
+        element: <AllProducts />,
+        path: "/allProducts",
+      },
+      {
+        element: <NewProductsPage />,
+        path: "/newProducts",
       },
       {
         element: <WomanProducts />,
@@ -48,6 +59,10 @@ const routes = [
       {
         element: <DetailedProductPage />,
         path: "kids/products/:productId",
+      },
+      {
+        element: <FilteredPage />,
+        path: "Filtered",
       },
       {
         element: <FavoritesPage />,

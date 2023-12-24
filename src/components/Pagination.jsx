@@ -1,26 +1,21 @@
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHeart,
-  faPenToSquare,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { Link, useParams } from "react-router-dom";
 import useScrollToTop from "../hooks/useScrollToTop";
-import { useTranslation } from "react-i18next";
 import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
 import { useEffect, useState } from "react";
 import { ProductGrid, ProductsListTop } from "../pages/AllPages";
 import Filter from "./Filter/Filter";
 
-const ProductList = ({ products, productsPerPage }) => {
+const ProductList = ({ products, productsPerPage, category }) => {
   const { setMainPhoto, currentPage, setCurrentPage } =
     useDetailedPageContext();
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
   const currentProducts = products.slice(startIndex, endIndex);
   const { handleClick } = useScrollToTop();
-  const { t } = useTranslation();
   const { productId } = useParams();
   const [isHovered, setIsHovered] = useState();
   const [photoLoaded, setPhotoLoaded] = useState(false);
@@ -40,7 +35,7 @@ const ProductList = ({ products, productsPerPage }) => {
   return (
     <div>
       <ProductsListTop>
-        <h2 className="new-collection-title">{t("New Collection")}</h2>
+        <h2 className="new-collection-title">{category}</h2>
         <Filter />
       </ProductsListTop>
       <ProductGrid>

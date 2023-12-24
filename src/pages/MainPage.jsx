@@ -6,6 +6,7 @@ import Subscription from "../components/Subscription";
 import SwiperSlider from "../components/Swiper/SwiperSlider";
 import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
 import { MainContainer, PopularCollections } from "./AllPages";
+import SubmitBtn from "../components/Buttons/SubmitBtn";
 
 const MainPage = () => {
   const { clothes } = useDetailedPageContext();
@@ -21,25 +22,31 @@ const MainPage = () => {
       <MainContainer
         className={`main-photo-container ${promoPhotoLoaded ? "loaded" : ""}`}
       >
-        <img
-          className="main-page-photo"
-          src={promoPhoto}
-          alt=""
-          onLoad={handlePromoPhotoLoad}
-        />
+        <div className="main-content">
+          <img
+            className="main-page-photo"
+            src={promoPhoto}
+            alt=""
+            onLoad={handlePromoPhotoLoad}
+          />
+          <div className="mainBtn">
+            <SubmitBtn name={t("new")} nav={"newProducts"} />
+          </div>
+        </div>
         {promoPhotoLoaded && (
-          <>
+          <div>
             <PopularCollections>
-              <h3 className="popular-collection-title">
-                {t("on sale/popular picks")}
-              </h3>
+              <h3 className="popular-collection-title">{t("Popular")}</h3>
               <div className="popular-collection-gallary">
+                <div className="mainBtn">
+                  <SubmitBtn name={t("View All")} nav={"allProducts"} />
+                </div>
                 <Slider images={clothes} imagesPerView={4} />
               </div>
             </PopularCollections>
             <SwiperSlider />
             <Subscription />
-          </>
+          </div>
         )}
       </MainContainer>
     </MainContainer>
