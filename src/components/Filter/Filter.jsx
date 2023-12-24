@@ -1,26 +1,36 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./FilterStyle.css";
 import { useTranslation } from "react-i18next";
+import { useProductsContext } from "../../contexts/ProductsContextProvider";
 
 const Filter = () => {
   const [showFilter, setShowFilter] = useState(false);
   const [selectedPriceOption, setSelectedPriceOption] = useState("");
   const [selectedColorOption, setSelectedColorOption] = useState("");
   const { t } = useTranslation();
+  const {setSortByPrice, setFilterByColor} = useProductsContext()
+
+  useEffect(() => {
+    setSortByPrice(selectedPriceOption)
+  }, [selectedPriceOption, setSortByPrice])
+
+  useEffect(() => {
+    setFilterByColor(selectedColorOption)
+  }, [selectedColorOption, setFilterByColor])
 
   const handleClick = () => {
-    setShowFilter((prevState) => !prevState);
-  };
+    setShowFilter((prevState) => !prevState)
+  }
 
   const handlePriceChange = (event) => {
-    setSelectedPriceOption(event.target.value);
-    setShowFilter(false);
-  };
+    setSelectedPriceOption(event.target.value)
+    setShowFilter(false)
+  }
 
   const handleColorChange = (event) => {
-    setSelectedColorOption(event.target.value);
-    setShowFilter(false);
-  };
+    setSelectedColorOption(event.target.value)
+    setShowFilter(false)
+  }
 
   return (
     <div className="filter-container">

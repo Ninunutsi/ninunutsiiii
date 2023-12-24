@@ -5,12 +5,12 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useScrollToTop from "../hooks/useScrollToTop";
 import { useTranslation } from "react-i18next";
-import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
+import { useProductsContext } from "../contexts/ProductsContextProvider";
 
 const Footer = () => {
   const { handleClick } = useScrollToTop();
   const { t } = useTranslation();
-  const { loading } = useDetailedPageContext();
+  const { loading } = useProductsContext();
 
   return (
     !loading && (

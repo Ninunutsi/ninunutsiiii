@@ -3,13 +3,13 @@ import Slider from "../components/Slider";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PhotoSwiper from "../components/PhotoSwiper";
-import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
+import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { useTranslation } from "react-i18next";
 import { DetailedProducts, SimilarProductTitle } from "./AllPages";
 
 const DetailedProductPage = () => {
   const { productId } = useParams();
-  const { mainPhoto, addFav: addtoFav, clothes } = useDetailedPageContext();
+  const { mainPhoto, addFav: addtoFav, clothes } = useProductsContext();
   const { t } = useTranslation();
   const imagesForSlider = clothes.filter((product) => product.id !== productId);
 

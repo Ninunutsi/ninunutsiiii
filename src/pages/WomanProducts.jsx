@@ -1,12 +1,13 @@
 import { useTranslation } from "react-i18next";
 import ProductList from "../components/Pagination";
-import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
+import { useProductsContext } from "../contexts/ProductsContextProvider";
 
 const WomanProducts = () => {
-  const { clothes } = useDetailedPageContext();
+  const { clothes } = useProductsContext();
   const womanClothes = clothes.filter((prod) => prod.category === "woman");
-  const { t } = useTranslation();
 
+  const { t } = useTranslation();
+  
   return (
     <ProductList
       products={womanClothes}

@@ -1,11 +1,11 @@
 // PhotoSwiper.jsx
 import React, { useRef, useEffect } from "react";
-import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
+import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { PhotoSwiperContainer } from "../pages/AllPages";
 
 const PhotoSwiper = ({ photos, id }) => {
   const containerRef = useRef(null);
-  const { setMainPhoto } = useDetailedPageContext();
+  const { setMainPhoto } = useProductsContext();
 
   useEffect(() => {
     const container = containerRef.current;

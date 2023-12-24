@@ -13,13 +13,13 @@ import { useTranslation } from "react-i18next";
 import UserAuthorization from "./UserInformation/UserAuthorization";
 import useScrollToTop from "../hooks/useScrollToTop";
 import LanguageToggle from "./Buttons/LanguageToggle";
-import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
+import { useProductsContext } from "../contexts/ProductsContextProvider";
 import ModalPopup from "./ModalPopup";
 
 const Header = () => {
   const { openAuthorization, isOpen } = useAuthorization();
   const { handleClick } = useScrollToTop("smooth");
-  const { setCurrentPage } = useDetailedPageContext();
+  const { setCurrentPage } = useProductsContext();
   const [click, setClick] = useState(false);
   const [showModal, setShowModal] = useState(false);
 

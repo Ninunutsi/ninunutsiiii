@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import ProductList from "../components/Pagination";
-import { useDetailedPageContext } from "../contexts/DetailedPageContextProvider";
+import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { FavoritePage } from "./AllPages";
 import { useTranslation } from "react-i18next";
 
 const FavoritesPage = () => {
-  const { favorites } = useDetailedPageContext();
+  const { favorites } = useProductsContext();
   const { t } = useTranslation();
 
   return (
