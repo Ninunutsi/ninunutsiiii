@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import "./FilterStyle.css";
 import { useTranslation } from "react-i18next";
 import { useProductsContext } from "../../contexts/ProductsContextProvider";
@@ -27,11 +27,18 @@ const Filter = () => {
     setShowFilter(false)
   }
 
-  const handleColorChange = (event) => {
-    setSelectedColorOption(event.target.value)
-    setShowFilter(false)
-  }
-
+  const handleColorChange = useCallback(
+    (event) => {
+      setSelectedColorOption((prevColor) => {
+        if (event.target.value !== prevColor) {
+          setShowFilter(false)
+        }
+        return event.target.value;
+      })
+    },
+    [setSelectedColorOption, setShowFilter]
+  )
+  
   return (
     <div className="filter-container">
       <span

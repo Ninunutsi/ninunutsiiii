@@ -14,6 +14,8 @@ const ProductsContextProvider = ({ children }) => {
   const [filterByColor, setFilterByColor] = useState("");
   const [search, setSearch] = useState("");
   // const [filteredData, setFilteredData] = useState(products);
+  const [currentCategory, setCurrentCategory] = useState("")
+
 
   useEffect(() => {
     if (search === "") {
@@ -56,24 +58,27 @@ const ProductsContextProvider = ({ children }) => {
     setFavorites(clothes.filter((prod) => prod.isFavorited));
   }, [clothes]);
 
-  useEffect(() => {
-    if (sortByPrice === "low-to-high") {
-      setClothes((prevState) => prevState.sort((a, b) => a.price - b.price));
-    } else if (sortByPrice === "high-to-low") {
-      setClothes((prevState) => prevState.sort((a, b) => b.price - a.price));
-    }
-    setCurrentPage(1);
-  }, [sortByPrice, setCurrentPage]);
+ useEffect(() => {
+  setClothes(products)
+  if (sortByPrice === "low-to-high") {
+    setClothes((prevState) => [...prevState].sort((a, b) => a.price - b.price))
+  } else if (sortByPrice === "high-to-low") {
+    setClothes((prevState) => [...prevState].sort((a, b) => b.price - a.price))
+  }
+  setCurrentPage(1)
+}, [sortByPrice, setCurrentPage, currentCategory])
 
   useEffect(() => {
-    setClothes(products);
-    if (filterByColor.length > 0) {
-      setClothes((prevState) =>
-        prevState.filter((product) => product.color === filterByColor)
-      );
-      setCurrentPage(1);
+    let filteredClothes = products
+  
+    if (filterByColor.length > 0 && filterByColor !== "color") {
+      filteredClothes = filteredClothes.filter((product) => product.color === filterByColor)
+      setCurrentPage(1)
     }
-  }, [filterByColor, setCurrentPage]);
+  
+    setClothes(filteredClothes)
+  }, [filterByColor, setCurrentPage])
+  
 
   const contextValue = {
     setSearch,
@@ -88,6 +93,7 @@ const ProductsContextProvider = ({ children }) => {
     loading,
     setSortByPrice,
     setFilterByColor,
+    setCurrentCategory
   };
 
   return (

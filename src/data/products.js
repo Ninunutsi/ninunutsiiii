@@ -8,7 +8,7 @@ const products = [
   {
     id: "V0bA_wyAL5vX_Nfg5NguJ",
     name: "Product 1",
-    image: weddingPhoto,
+    image: forProductList,
     price: 10,
     isFavorited: false,
     category: "woman",
