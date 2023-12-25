@@ -19,7 +19,7 @@ import ModalPopup from "./ModalPopup";
 const Header = () => {
   const { openAuthorization, isOpen } = useAuthorization();
   const { handleClick } = useScrollToTop("smooth");
-  const { setCurrentPage, setSearch, search } = useProductsContext();
+  const { setCurrentPage, setSearch } = useProductsContext();
   const [click, setClick] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
