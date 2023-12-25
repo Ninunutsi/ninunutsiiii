@@ -38,7 +38,8 @@ const Header = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    search();
+    navigate("/allProducts");
+    setSearch("");
   };
 
   return (
@@ -66,10 +67,11 @@ const Header = () => {
               onChange={(e) => setSearch(e.target.value)}
               type="search"
               placeholder={t("Search")}
+              // value={search}
             />
-            <div onClick={() => navigate("/allProducts")}>
+            <button type="submit">
               <FontAwesomeIcon icon={faMagnifyingGlass} />
-            </div>
+            </button>
           </form>
           <div>
             <div>
