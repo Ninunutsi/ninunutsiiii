@@ -15,7 +15,6 @@ const ProductsContextProvider = ({ children }) => {
   const [search, setSearch] = useState("");
   // const [filteredData, setFilteredData] = useState(products);
 
-  console.log(search);
   useEffect(() => {
     if (search === "") {
       setClothes(products);

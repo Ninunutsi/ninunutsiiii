@@ -39,7 +39,6 @@ const Header = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate("/allProducts");
-    setSearch("");
   };
 
   return (
