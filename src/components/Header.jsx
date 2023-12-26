@@ -19,7 +19,7 @@ import ModalPopup from "./ModalPopup";
 const Header = () => {
   const { openAuthorization, isOpen } = useAuthorization();
   const { handleClick } = useScrollToTop("smooth");
-  const { setCurrentPage, setSearch } = useProductsContext();
+  const { setCurrentPage, search, setSearch } = useProductsContext();
   const [click, setClick] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
@@ -39,6 +39,7 @@ const Header = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate("/allProducts");
+    setSearch("")
   };
 
   return (
@@ -66,6 +67,7 @@ const Header = () => {
               onChange={(e) => setSearch(e.target.value)}
               type="search"
               placeholder={t("Search")}
+              value={search}
             />
             <button className="formBtn" type="submit">
               <FontAwesomeIcon icon={faMagnifyingGlass} />
