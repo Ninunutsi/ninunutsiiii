@@ -3,23 +3,23 @@ import ProductList from "../components/Pagination";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { useEffect } from "react";
 
-const WomanProducts = () => {
+const BanquetProducts = () => {
   const { clothes, setCurrentCategory } = useProductsContext();
-  const womanClothes = clothes.filter((prod) => prod.category === "woman");
+  const filteredClothes = clothes.filter((prod) => prod.category === "Banquet");
 
   const { t } = useTranslation();
 
   useEffect(() => {
-    setCurrentCategory("woman");
-  }, [womanClothes, setCurrentCategory]);
+    setCurrentCategory("kids");
+  }, [filteredClothes, setCurrentCategory]);
 
   return (
     <ProductList
-      products={womanClothes}
+      products={filteredClothes}
       productsPerPage={20}
-      category={t("Woman")}
+      category={t("Banquet")}
     />
   );
 };
 
-export default WomanProducts;
+export default BanquetProducts;

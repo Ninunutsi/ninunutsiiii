@@ -15,7 +15,8 @@ import ReturnPolicyPage from "../pages/ReturnPolicyPage";
 import PrivacyPolicyPage from "../pages/PrivacyPolicyPage";
 import NewProductsPage from "../pages/NewProductsPage";
 import AllProducts from "../pages/AllProducts";
-import FilteredPage from "../pages/FilteredPage";
+import WeddingProducts from "../pages/WeddingProducts";
+import BanquetProducts from "../pages/BanquetProducts";
 
 const routes = [
   {
@@ -57,12 +58,24 @@ const routes = [
         path: "woman/products/:productId",
       },
       {
+        element: <BanquetProducts />,
+        path: "Banquet/products/:productId",
+      },
+      {
         element: <DetailedProductPage />,
         path: "kids/products/:productId",
       },
       {
-        element: <FilteredPage />,
+        element: <DetailedProductPage />,
+        path: "Banquet/products/:productId",
+      },
+      {
+        element: <WeddingProducts />,
         path: "Filtered",
+      },
+      {
+        element: <DetailedProductPage />,
+        path: "Wedding/products/:productId",
       },
       {
         element: <FavoritesPage />,
