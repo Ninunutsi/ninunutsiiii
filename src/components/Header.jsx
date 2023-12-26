@@ -15,22 +15,19 @@ import useScrollToTop from "../hooks/useScrollToTop";
 import LanguageToggle from "./Buttons/LanguageToggle";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 import ModalPopup from "./ModalPopup";
-
 const Header = () => {
   const { openAuthorization, isOpen } = useAuthorization();
   const { handleClick } = useScrollToTop("smooth");
-  const { setCurrentPage, search, setSearch } = useProductsContext();
+  const { setCurrentPage, setSearch } = useProductsContext();
   const [click, setClick] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
     setCurrentPage(1);
-
     const timer = setTimeout(() => {
       setShowModal(true);
     }, 3000);
-
     return () => clearTimeout(timer);
   }, [click, setCurrentPage]);
 
@@ -39,7 +36,6 @@ const Header = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate("/allProducts");
-    setSearch("")
   };
 
   return (
@@ -65,9 +61,8 @@ const Header = () => {
           <form onSubmit={handleSubmit}>
             <input
               onChange={(e) => setSearch(e.target.value)}
-              type="search"
+              type="text"
               placeholder={t("Search")}
-              value={search}
             />
             <button className="formBtn" type="submit">
               <FontAwesomeIcon icon={faMagnifyingGlass} />
@@ -94,5 +89,4 @@ const Header = () => {
     </HeaderBg>
   );
 };
-
 export default Header;

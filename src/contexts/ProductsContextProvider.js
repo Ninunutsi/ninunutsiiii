@@ -12,14 +12,12 @@ const ProductsContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [sortByPrice, setSortByPrice] = useState(null);
   const [filterByColor, setFilterByColor] = useState("");
-  const [search, setSearch] = useState(" ");
+  const [search, setSearch] = useState("");
   const [currentCategory, setCurrentCategory] = useState("");
 
   useEffect(() => {
-    if (search === " ") {
+    if (search === "") {
       setClothes(products);
-    } else if(search === ""){
-      
     } else {
       const filteredResult = products.filter((item) => {
         const nameMatch = item.name
