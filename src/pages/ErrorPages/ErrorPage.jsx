@@ -1,9 +1,8 @@
 import { useTranslation } from "react-i18next";
-import { ErrorElement } from "./AllPages";
+import { ErrorElement } from "../AllPages";
 
 const ErrorPage = () => {
-
-  const {t} = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <ErrorElement>

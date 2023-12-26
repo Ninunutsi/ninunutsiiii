@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import ProductList from "../components/Pagination";
-import { useProductsContext } from "../contexts/ProductsContextProvider";
+import ProductList from "../../components/Pagination";
+import { useProductsContext } from "../../contexts/ProductsContextProvider";
 
 const KidsProducts = () => {
   const { clothes, setCurrentCategory } = useProductsContext();
@@ -9,8 +9,8 @@ const KidsProducts = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    setCurrentCategory("kids")
-  }, [kidsClothes, setCurrentCategory])
+    setCurrentCategory("kids");
+  }, [kidsClothes, setCurrentCategory]);
 
   return (
     <ProductList

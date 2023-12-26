@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import ProductList from "../components/Pagination";
-import { useProductsContext } from "../contexts/ProductsContextProvider";
-import { FavoritePage } from "./AllPages";
+import ProductList from "../../components/Pagination";
+import { useProductsContext } from "../../contexts/ProductsContextProvider";
+import { FavoritePage } from "../AllPages";
 import { useTranslation } from "react-i18next";
 
 const FavoritesPage = () => {
@@ -10,8 +10,8 @@ const FavoritesPage = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    setCurrentCategory("favorites")
-  }, [favorites, setCurrentCategory])
+    setCurrentCategory("favorites");
+  }, [favorites, setCurrentCategory]);
 
   return (
     <FavoritePage>

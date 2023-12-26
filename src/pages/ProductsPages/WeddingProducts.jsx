@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import ProductList from "../components/Pagination";
-import { useProductsContext } from "../contexts/ProductsContextProvider";
+import ProductList from "../../components/Pagination";
+import { useProductsContext } from "../../contexts/ProductsContextProvider";
 import { useEffect } from "react";
 
 const WeddingProducts = () => {

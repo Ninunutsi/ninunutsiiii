@@ -2,21 +2,21 @@ import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MainPage from "../pages/MainPage";
-import WomanProducts from "../pages/WomanProducts";
-import KidsProducts from "../pages/KidsProducts";
-import DetailedProductPage from "../pages/DetailedProductPage";
+import WomanProducts from "../pages/ProductsPages/WomanProducts";
+import KidsProducts from "../pages/ProductsPages/KidsProducts";
+import DetailedProductPage from "../pages/ProductsPages/DetailedProductPage";
 import { AuthorizationProvider } from "../contexts/AuthorizationContext";
-import ErrorPage from "../pages/ErrorPage";
+import ErrorPage from "../pages/ErrorPages/ErrorPage";
 import ProductsContextProvider from "../contexts/ProductsContextProvider";
-import FavoritesPage from "../pages/FavoritesPage";
-import AboutUsPage from "../pages/AboutUsPage";
-import ContactUsPage from "../pages/ContactUsPage";
-import ReturnPolicyPage from "../pages/ReturnPolicyPage";
-import PrivacyPolicyPage from "../pages/PrivacyPolicyPage";
-import NewProductsPage from "../pages/NewProductsPage";
-import AllProducts from "../pages/AllProducts";
-import WeddingProducts from "../pages/WeddingProducts";
-import BanquetProducts from "../pages/BanquetProducts";
+import FavoritesPage from "../pages/ProductsPages/FavoritesPage";
+import AboutUsPage from "../pages/FooterLinkPages/AboutUsPage";
+import ContactUsPage from "../pages/FooterLinkPages/ContactUsPage";
+import ReturnPolicyPage from "../pages/FooterLinkPages/ReturnPolicyPage";
+import PrivacyPolicyPage from "../pages/FooterLinkPages/PrivacyPolicyPage";
+import NewProductsPage from "../pages/ProductsPages/NewProductsPage";
+import AllProducts from "../pages/ProductsPages/AllProducts";
+import WeddingProducts from "../pages/ProductsPages/WeddingProducts";
+import BanquetProducts from "../pages/ProductsPages/BanquetProducts";
 
 const routes = [
   {

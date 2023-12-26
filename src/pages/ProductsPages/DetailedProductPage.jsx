@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
-import Slider from "../components/Slider";
+import Slider from "../../components/Slider";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import PhotoSwiper from "../components/PhotoSwiper";
-import { useProductsContext } from "../contexts/ProductsContextProvider";
+import PhotoSwiper from "../../components/PhotoSwiper";
+import { useProductsContext } from "../../contexts/ProductsContextProvider";
 import { useTranslation } from "react-i18next";
-import { DetailedProducts, SimilarProductTitle } from "./AllPages";
+import { DetailedProducts, SimilarProductTitle } from "../AllPages";
 
 const DetailedProductPage = () => {
   const { productId } = useParams();
