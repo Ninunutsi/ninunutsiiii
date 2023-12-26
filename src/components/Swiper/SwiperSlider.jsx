@@ -42,7 +42,7 @@ const SwiperSlider = () => {
               );
             })}
         </Swiper>
-        <SubmitBtn name={t("Banquet")} nav={"Filtered"} />
+        <SubmitBtn name={t("Banquet")} nav={"Filtered"} category={"Banquet"} />
       </div>
       <div className="swiper_content">
         <Swiper
@@ -72,7 +72,7 @@ const SwiperSlider = () => {
               );
             })}
         </Swiper>
-        <SubmitBtn name={t("Wedding")} nav={"Filtered"} />
+        <SubmitBtn name={t("Wedding")} nav={"Filtered"} category={"Wedding"} />
       </div>
       <div className="swiper_content">
         <Swiper

@@ -29,7 +29,10 @@ const ProductsContextProvider = ({ children }) => {
         const colorMatch = item.color
           .toLowerCase()
           .includes(search.toLowerCase());
-        return nameMatch || categoryMatch || colorMatch;
+        const newMatch = item?.result
+          ?.toLowerCase()
+          .includes(search.toLowerCase());
+        return nameMatch || categoryMatch || colorMatch || newMatch;
       });
 
       setClothes(filteredResult);

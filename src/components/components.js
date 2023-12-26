@@ -78,12 +78,17 @@ export const Parameters = styled.div`
       font-weight: 500;
     }
 
-    svg {
-      position: absolute;
-      right: 10px;
-      top: 8px;
-      width: 15px;
-      height: 15px;
+    .formBtn {
+      background: transparent;
+      border: none;
+
+      svg {
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        width: 15px;
+        height: 15px;
+      }
     }
   }
 

@@ -66,9 +66,8 @@ const Header = () => {
               onChange={(e) => setSearch(e.target.value)}
               type="search"
               placeholder={t("Search")}
-              // value={search}
             />
-            <button type="submit">
+            <button className="formBtn" type="submit">
               <FontAwesomeIcon icon={faMagnifyingGlass} />
             </button>
           </form>
