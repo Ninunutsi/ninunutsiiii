@@ -32,7 +32,11 @@ export const SearchProvider = ({ children }) => {
     }
   };
 
-  useEffect(() => {setFilteredData(clothes)}, [currentCategory, clothes]);
+  useEffect(() => {
+    if(currentCategory !== "allProducts"){
+      setFilteredData(clothes)
+    }
+  }, [currentCategory, clothes]);
 
   return (
     <SearchContext.Provider
