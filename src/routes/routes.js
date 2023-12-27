@@ -1,13 +1,7 @@
-import { Outlet } from "react-router-dom";
+import MainPage from "../pages/MainPage";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import MainPage from "../pages/MainPage";
-import WomanProducts from "../pages/ProductsPages/WomanProducts";
-import KidsProducts from "../pages/ProductsPages/KidsProducts";
-import DetailedProductPage from "../pages/ProductsPages/DetailedProductPage";
-import { AuthorizationProvider } from "../contexts/AuthorizationContext";
 import ErrorPage from "../pages/ErrorPages/ErrorPage";
-import ProductsContextProvider from "../contexts/ProductsContextProvider";
 import FavoritesPage from "../pages/ProductsPages/FavoritesPage";
 import AboutUsPage from "../pages/FooterLinkPages/AboutUsPage";
 import ContactUsPage from "../pages/FooterLinkPages/ContactUsPage";
@@ -17,6 +11,13 @@ import NewProductsPage from "../pages/ProductsPages/NewProductsPage";
 import AllProducts from "../pages/ProductsPages/AllProducts";
 import WeddingProducts from "../pages/ProductsPages/WeddingProducts";
 import BanquetProducts from "../pages/ProductsPages/BanquetProducts";
+import WomanProducts from "../pages/ProductsPages/WomanProducts";
+import KidsProducts from "../pages/ProductsPages/KidsProducts";
+import DetailedProductPage from "../pages/ProductsPages/DetailedProductPage";
+import ProductsContextProvider from "../contexts/ProductsContextProvider";
+import { Outlet } from "react-router-dom";
+import { AuthorizationProvider } from "../contexts/AuthorizationContext";
+import { SearchProvider } from "../contexts/SearchFilterContext";
 
 const routes = [
   {
@@ -24,9 +25,11 @@ const routes = [
       <div>
         <AuthorizationProvider>
           <ProductsContextProvider>
-            <Header />
-            <Outlet />
-            <Footer />
+            <SearchProvider>
+              <Header />
+              <Outlet />
+              <Footer />
+            </SearchProvider>
           </ProductsContextProvider>
         </AuthorizationProvider>
       </div>

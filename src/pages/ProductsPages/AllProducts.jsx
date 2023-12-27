@@ -1,12 +1,11 @@
-import { useTranslation } from "react-i18next";
 import ProductList from "../../components/Pagination";
-import { useProductsContext } from "../../contexts/ProductsContextProvider";
+import { useTranslation } from "react-i18next";
+import { useSearch } from "../../contexts/SearchFilterContext";
 
 const AllProducts = () => {
-  const { clothes } = useProductsContext();
-  const AllProducts = clothes.map((prod) => prod);
-
   const { t } = useTranslation();
+  const { filteredData } = useSearch();
+  const AllProducts = filteredData.map((prod) => prod);
 
   return (
     <ProductList

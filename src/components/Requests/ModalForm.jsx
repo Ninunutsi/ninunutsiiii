@@ -1,12 +1,13 @@
+import useEmailForm from "../../hooks/useEmailForm";
 import modalPhoto from "../../assets/popupimage.jpg";
 import { Overlay } from "../UserInformation/UserInformation";
-import useEmailForm from "../../hooks/useEmailForm";
+import useLocalStorage from "../../hooks/useLocalStorage";
 import { ErrorMessage, ModalPopupStyle } from "../components";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import useLocalStorage from "../../hooks/useLocalStorage";
 import { useEffect } from "react";
+
 function ModalForm({ onFormSubmit, loading, sentEmail }) {
   const { emailRef, isValidEmail, onSubmit } = useEmailForm(onFormSubmit);
   const { t } = useTranslation();

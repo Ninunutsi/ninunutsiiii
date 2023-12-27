@@ -1,6 +1,6 @@
-import { useTranslation } from "react-i18next";
 import useRequest from "../hooks/useRequest";
 import EmailForm from "./Requests/EmailForm";
+import { useTranslation } from "react-i18next";
 import { Loading } from "./components";
 
 const Subscription = () => {

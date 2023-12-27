@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 
-const AuthorizationContext = createContext();
+const AuthorizationContext = createContext(null);
 
 export const AuthorizationProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);

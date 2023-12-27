@@ -1,16 +1,16 @@
-import { useParams } from "react-router-dom";
 import Slider from "../../components/Slider";
+import PhotoSwiper from "../../components/PhotoSwiper";
+import { useTranslation } from "react-i18next";
+import { useParams } from "react-router-dom";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import PhotoSwiper from "../../components/PhotoSwiper";
 import { useProductsContext } from "../../contexts/ProductsContextProvider";
-import { useTranslation } from "react-i18next";
 import { DetailedProducts, SimilarProductTitle } from "../AllPages";
 
 const DetailedProductPage = () => {
+  const { t } = useTranslation();
   const { productId } = useParams();
   const { mainPhoto, addFav: addtoFav, clothes } = useProductsContext();
-  const { t } = useTranslation();
   const imagesForSlider = clothes.filter((product) => product.id !== productId);
 
   return (

@@ -1,13 +1,13 @@
+import ProductList from "../../components/Pagination";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import ProductList from "../../components/Pagination";
 import { useProductsContext } from "../../contexts/ProductsContextProvider";
 import { FavoritePage } from "../AllPages";
 import { useTranslation } from "react-i18next";
 
 const FavoritesPage = () => {
-  const { favorites, setCurrentCategory } = useProductsContext();
   const { t } = useTranslation();
+  const { favorites, setCurrentCategory } = useProductsContext();
 
   useEffect(() => {
     setCurrentCategory("favorites");

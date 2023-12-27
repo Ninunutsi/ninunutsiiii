@@ -1,5 +1,5 @@
-import { useEffect, useState, useCallback } from "react";
 import "./FilterStyle.css";
+import { useEffect, useState, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { useProductsContext } from "../../contexts/ProductsContextProvider";
 
@@ -8,37 +8,37 @@ const Filter = () => {
   const [selectedPriceOption, setSelectedPriceOption] = useState("");
   const [selectedColorOption, setSelectedColorOption] = useState("");
   const { t } = useTranslation();
-  const {setSortByPrice, setFilterByColor} = useProductsContext()
+  const { setSortByPrice, setFilterByColor } = useProductsContext();
 
   useEffect(() => {
-    setSortByPrice(selectedPriceOption)
-  }, [selectedPriceOption, setSortByPrice])
+    setSortByPrice(selectedPriceOption);
+  }, [selectedPriceOption, setSortByPrice]);
 
   useEffect(() => {
-    setFilterByColor(selectedColorOption)
-  }, [selectedColorOption, setFilterByColor])
+    setFilterByColor(selectedColorOption);
+  }, [selectedColorOption, setFilterByColor]);
 
   const handleClick = () => {
-    setShowFilter((prevState) => !prevState)
-  }
+    setShowFilter((prevState) => !prevState);
+  };
 
   const handlePriceChange = (event) => {
-    setSelectedPriceOption(event.target.value)
-    setShowFilter(false)
-  }
+    setSelectedPriceOption(event.target.value);
+    setShowFilter(false);
+  };
 
   const handleColorChange = useCallback(
     (event) => {
       setSelectedColorOption((prevColor) => {
         if (event.target.value !== prevColor) {
-          setShowFilter(false)
+          setShowFilter(false);
         }
         return event.target.value;
-      })
+      });
     },
     [setSelectedColorOption, setShowFilter]
-  )
-  
+  );
+
   return (
     <div className="filter-container">
       <span

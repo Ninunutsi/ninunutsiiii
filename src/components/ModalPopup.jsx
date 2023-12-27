@@ -1,12 +1,12 @@
-import { useTranslation } from "react-i18next";
 import useRequest from "../hooks/useRequest";
-import { Loading } from "./components";
 import ModalForm from "./Requests/ModalForm";
 import { useState } from "react";
+import { Loading } from "./components";
+import { useTranslation } from "react-i18next";
 
 const ModalPopup = () => {
   const { t } = useTranslation();
-  const [isSubmited, setIsSubmited] = useState(false)
+  const [isSubmited, setIsSubmited] = useState(false);
 
   const { loading, sentEmail, sendRequest } = useRequest({
     url: "/api/v1/users",
@@ -15,7 +15,7 @@ const ModalPopup = () => {
 
   const onSubmit = (email) => {
     sendRequest([{ email }]).catch((err) => console.log(err));
-    setIsSubmited(true)
+    setIsSubmited(true);
   };
 
   const loadingProces = (
@@ -32,10 +32,11 @@ const ModalPopup = () => {
   if (sentEmail) return <ModalForm sentEmail={emailSent} />;
 
   return (
-    !isSubmited &&
-    <div>
-      <ModalForm onFormSubmit={onSubmit} />
-    </div>
+    !isSubmited && (
+      <div>
+        <ModalForm onFormSubmit={onSubmit} />
+      </div>
+    )
   );
 };
 

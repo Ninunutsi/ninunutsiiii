@@ -1,27 +1,25 @@
-import { useEffect, useState } from "react";
 import Logo from "../assets/MA.png";
-import { Link, useNavigate } from "react-router-dom";
-import { HeaderBg, HeaderContent, Navigation, Parameters } from "./components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMagnifyingGlass,
-  faCircleUser,
-  faHeart,
-} from "@fortawesome/free-solid-svg-icons";
-import { useAuthorization } from "../contexts/AuthorizationContext";
-import { useTranslation } from "react-i18next";
 import UserAuthorization from "./UserInformation/UserAuthorization";
 import useScrollToTop from "../hooks/useScrollToTop";
 import LanguageToggle from "./Buttons/LanguageToggle";
-import { useProductsContext } from "../contexts/ProductsContextProvider";
 import ModalPopup from "./ModalPopup";
+import FilterForm from "./Forms/FilterForm";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleUser, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { useAuthorization } from "../contexts/AuthorizationContext";
+import { useProductsContext } from "../contexts/ProductsContextProvider";
+import { HeaderBg, HeaderContent, Navigation, Parameters } from "./components";
+
 const Header = () => {
+  const { t } = useTranslation();
   const { openAuthorization, isOpen } = useAuthorization();
+  const { setCurrentPage } = useProductsContext();
   const { handleClick } = useScrollToTop("smooth");
-  const { setCurrentPage, setSearch } = useProductsContext();
   const [click, setClick] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     setCurrentPage(1);
@@ -30,13 +28,6 @@ const Header = () => {
     }, 3000);
     return () => clearTimeout(timer);
   }, [click, setCurrentPage]);
-
-  const { t } = useTranslation();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    navigate("/allProducts");
-  };
 
   return (
     <HeaderBg>
@@ -58,16 +49,7 @@ const Header = () => {
           </Link>
         </div>
         <Parameters>
-          <form onSubmit={handleSubmit}>
-            <input
-              onChange={(e) => setSearch(e.target.value)}
-              type="text"
-              placeholder={t("Search")}
-            />
-            <button className="formBtn" type="submit">
-              <FontAwesomeIcon icon={faMagnifyingGlass} />
-            </button>
-          </form>
+          <FilterForm nav={"/allProducts"} />
           <div>
             <div>
               <LanguageToggle />

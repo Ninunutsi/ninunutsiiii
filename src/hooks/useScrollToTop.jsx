@@ -10,7 +10,9 @@ const useScrollToTop = (mouseBehavior = "smooth") => {
   }, [scrollToTop]);
 
   const handleClick = (event) => {
-    event.preventDefault();
+    if (event) {
+      event.preventDefault();
+    }
     scrollToTop();
   };
 

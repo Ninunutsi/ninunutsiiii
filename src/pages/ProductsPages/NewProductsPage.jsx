@@ -1,12 +1,11 @@
-import { useTranslation } from "react-i18next";
 import ProductList from "../../components/Pagination";
+import { useTranslation } from "react-i18next";
 import { useProductsContext } from "../../contexts/ProductsContextProvider";
 
 const NewProductsPage = () => {
+  const { t } = useTranslation();
   const { clothes } = useProductsContext();
   const newClothes = clothes.filter((prod) => prod.result === "new product");
-
-  const { t } = useTranslation();
 
   return (
     <ProductList

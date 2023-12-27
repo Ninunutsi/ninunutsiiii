@@ -1,6 +1,6 @@
-import { createContext, useContext, useState, useEffect } from "react";
 import products from "../data/products";
 import useLocalStorage from "../hooks/useLocalStorage";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const ProductsContext = createContext(null);
 
@@ -12,32 +12,7 @@ const ProductsContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [sortByPrice, setSortByPrice] = useState(null);
   const [filterByColor, setFilterByColor] = useState("");
-  const [search, setSearch] = useState("");
   const [currentCategory, setCurrentCategory] = useState("");
-
-  useEffect(() => {
-    if (search === "") {
-      setClothes(products);
-    } else {
-      const filteredResult = products.filter((item) => {
-        const nameMatch = item.name
-          .toLowerCase()
-          .includes(search.toLowerCase());
-        const categoryMatch = item.category
-          .toLowerCase()
-          .includes(search.toLowerCase());
-        const colorMatch = item.color
-          .toLowerCase()
-          .includes(search.toLowerCase());
-        const newMatch = item?.result
-          ?.toLowerCase()
-          .includes(search.toLowerCase());
-        return nameMatch || categoryMatch || colorMatch || newMatch;
-      });
-
-      setClothes(filteredResult);
-    }
-  }, [search]);
 
   const addFav = (product) => {
     setClothes((prevState) =>
@@ -87,8 +62,6 @@ const ProductsContextProvider = ({ children }) => {
   }, [filterByColor, setCurrentPage]);
 
   const contextValue = {
-    setSearch,
-    search,
     mainPhoto,
     setMainPhoto,
     addFav,

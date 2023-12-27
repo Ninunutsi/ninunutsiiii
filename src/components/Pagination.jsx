@@ -1,17 +1,16 @@
-import Pagination from "@mui/material/Pagination";
+import Filter from "./Filter/Filter";
 import Stack from "@mui/material/Stack";
+import Pagination from "@mui/material/Pagination";
+import useScrollToTop from "../hooks/useScrollToTop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { Link, useParams } from "react-router-dom";
-import useScrollToTop from "../hooks/useScrollToTop";
+import { ProductGrid, ProductsListTop } from "../pages/AllPages";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { useEffect, useState } from "react";
-import { ProductGrid, ProductsListTop } from "../pages/AllPages";
-import Filter from "./Filter/Filter";
 
 const ProductList = ({ products, productsPerPage, category }) => {
-  const { setMainPhoto, currentPage, setCurrentPage } =
-    useProductsContext();
+  const { setMainPhoto, currentPage, setCurrentPage } = useProductsContext();
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
   const currentProducts = products.slice(startIndex, endIndex);
@@ -75,9 +74,9 @@ const ProductList = ({ products, productsPerPage, category }) => {
               </div>
               {photoLoaded && <h2 className="product-name">{product.name}</h2>}
               {photoLoaded && (
-                <div style={{display: "flex", gap: "5px"}}>
+                <div style={{ display: "flex", gap: "5px" }}>
                   <h3 className="product-price">{`${product.price}$`}</h3>
-                  <span style={{backgroundColor: `${product.color}`}}>.</span>
+                  <span style={{ backgroundColor: `${product.color}` }}>.</span>
                 </div>
               )}
             </Link>

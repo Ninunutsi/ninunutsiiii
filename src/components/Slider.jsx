@@ -1,9 +1,9 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Link } from "react-router-dom";
 import useScrollToTop from "../hooks/useScrollToTop";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Keyboard } from "swiper/modules";
+import { Link } from "react-router-dom";
 import { SlidesImages, SwiperContainer } from "../pages/AllPages";
 
 const Slider = ({ images, imagesPerView }) => {

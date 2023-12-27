@@ -1,16 +1,16 @@
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import promoPhoto from "../assets/promo-photo.png";
 import Slider from "../components/Slider";
+import promoPhoto from "../assets/promo-photo.png";
 import Subscription from "../components/Subscription";
 import SwiperSlider from "../components/Swiper/SwiperSlider";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { MainContainer, PopularCollections } from "./AllPages";
 import SubmitBtn from "../components/Buttons/SubmitBtn";
 
 const MainPage = () => {
-  const { clothes } = useProductsContext();
   const { t } = useTranslation();
+  const { clothes } = useProductsContext();
   const [promoPhotoLoaded, setPromoPhotoLoaded] = useState(false);
 
   const handlePromoPhotoLoad = () => {

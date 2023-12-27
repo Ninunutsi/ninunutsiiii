@@ -1,16 +1,16 @@
 import footerLogo from "../assets/Footerlogo.png";
+import useScrollToTop from "../hooks/useScrollToTop";
 import { Link } from "react-router-dom";
 import { FooterDiv, Navigation } from "./components";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import useScrollToTop from "../hooks/useScrollToTop";
 import { useTranslation } from "react-i18next";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 
 const Footer = () => {
   const { handleClick } = useScrollToTop();
-  const { t } = useTranslation();
   const { loading } = useProductsContext();
+  const { t } = useTranslation();
 
   return (
     !loading && (

@@ -1,12 +1,12 @@
+import ProductList from "../../components/Pagination";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import ProductList from "../../components/Pagination";
 import { useProductsContext } from "../../contexts/ProductsContextProvider";
 
 const KidsProducts = () => {
+  const { t } = useTranslation();
   const { clothes, setCurrentCategory } = useProductsContext();
   const kidsClothes = clothes.filter((prod) => prod.category === "kids");
-  const { t } = useTranslation();
 
   useEffect(() => {
     setCurrentCategory("kids");
