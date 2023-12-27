@@ -10,8 +10,8 @@ const FilterContextProvider = ({ children }) => {
   const [sortByPrice, setSortByPrice] = useState(null);
   const [filterByColor, setFilterByColor] = useState("");
   const { currentCategory} = useProductsContext()
-  const [filteredProducts, setFilteredProducts] = useState()
   const {filteredData} = useSearch()
+  const [filteredProducts, setFilteredProducts] = useState(filteredData)
 
   useEffect(() => {
     setFilteredProducts(filteredData);

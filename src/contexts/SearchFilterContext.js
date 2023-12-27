@@ -33,7 +33,7 @@ export const SearchProvider = ({ children }) => {
   };
 
   useEffect(() => {setFilteredData(clothes)}, [currentCategory, clothes]);
-  console.log(filteredData)
+
   return (
     <SearchContext.Provider
       value={{ search, setSearch, filteredData, handleFilter }}
