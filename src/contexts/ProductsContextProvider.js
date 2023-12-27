@@ -13,7 +13,6 @@ const ProductsContextProvider = ({ children }) => {
   const [currentCategory, setCurrentCategory] = useState("");
 
   const addFav = (product) => {
-    console.log(product)
     setClothes((prevState) =>
       prevState.map((cloth) =>
         cloth.id === product.id
