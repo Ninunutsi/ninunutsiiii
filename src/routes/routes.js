@@ -18,6 +18,7 @@ import ProductsContextProvider from "../contexts/ProductsContextProvider";
 import { Outlet } from "react-router-dom";
 import { AuthorizationProvider } from "../contexts/AuthorizationContext";
 import { SearchProvider } from "../contexts/SearchFilterContext";
+import FilterContextProvider from "../contexts/FilterContextProvider";
 
 const routes = [
   {
@@ -26,9 +27,11 @@ const routes = [
         <AuthorizationProvider>
           <ProductsContextProvider>
             <SearchProvider>
-              <Header />
-              <Outlet />
-              <Footer />
+              <FilterContextProvider>
+                <Header />
+                <Outlet />
+                <Footer />
+              </FilterContextProvider>
             </SearchProvider>
           </ProductsContextProvider>
         </AuthorizationProvider>

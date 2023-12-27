@@ -1,14 +1,14 @@
 import "./FilterStyle.css";
 import { useEffect, useState, useCallback } from "react";
 import { useTranslation } from "react-i18next";
-import { useProductsContext } from "../../contexts/ProductsContextProvider";
+import { useFilterContext } from "../../contexts/FilterContextProvider";
 
 const Filter = () => {
   const [showFilter, setShowFilter] = useState(false);
   const [selectedPriceOption, setSelectedPriceOption] = useState("");
   const [selectedColorOption, setSelectedColorOption] = useState("");
   const { t } = useTranslation();
-  const { setSortByPrice, setFilterByColor } = useProductsContext();
+  const { setSortByPrice, setFilterByColor } = useFilterContext();
 
   useEffect(() => {
     setSortByPrice(selectedPriceOption);

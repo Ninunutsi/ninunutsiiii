@@ -1,17 +1,18 @@
-import products from "../data/products";
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
+import { useProductsContext } from "./ProductsContextProvider";
 
 const SearchContext = createContext(null);
 
 export const SearchProvider = ({ children }) => {
   const [search, setSearch] = useState("");
-  const [filteredData, setFilteredData] = useState(products);
+  const {clothes, currentCategory} = useProductsContext()
+  const [filteredData, setFilteredData] = useState(clothes);
 
   const handleFilter = () => {
     if (search === "") {
-      setFilteredData(products);
+      setFilteredData(clothes);
     } else {
-      const filteredResult = products.filter((item) => {
+      const filteredResult = clothes.filter((item) => {
         const nameMatch = item.name
           .toLowerCase()
           .includes(search.toLowerCase());
@@ -30,6 +31,8 @@ export const SearchProvider = ({ children }) => {
       setFilteredData(filteredResult);
     }
   };
+
+  useEffect(() => {setFilteredData(clothes)}, [currentCategory, clothes]);
 
   return (
     <SearchContext.Provider
