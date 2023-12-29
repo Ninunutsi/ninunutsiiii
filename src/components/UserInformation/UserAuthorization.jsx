@@ -6,8 +6,6 @@ import {
   UserForm,
 } from "./UserInformation";
 import Logo from "../../assets/MA.png";
-import Facebook from "../../assets/facebook.png";
-import Google from "../../assets/google.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash, faXmark } from "@fortawesome/free-solid-svg-icons";

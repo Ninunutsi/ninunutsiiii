@@ -49,7 +49,7 @@ export const MainContainer = styled.div`
     display: block;
 
     @media screen and (max-width: 767px) {
-      height: 440px;
+      height: 481px;
     }
   }
 
@@ -125,6 +125,7 @@ export const SwiperContainer = styled.div`
 
   .swiper-button-next,
   .swiper-button-prev {
+    display: block;
     color: white;
     transition: 0.3s;
   }
@@ -132,6 +133,13 @@ export const SwiperContainer = styled.div`
   .swiper-button-next:hover,
   .swiper-button-prev:hover {
     color: gray;
+  }
+
+  @media screen and (max-width: 767px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
   }
 `;
 

@@ -151,6 +151,16 @@ table {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .popular-collection-gallary .iffcA-d {
+    padding: 0;
+  }
+}
+
 .swiper_container {
   /* max-width: 1440px; */
   /* width: 100%; */

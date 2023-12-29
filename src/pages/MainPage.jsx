@@ -19,7 +19,7 @@ const MainPage = () => {
 
   return (
     <MainContainer className={`main-page ${promoPhotoLoaded ? "loaded" : ""}`}>
-      <MainContainer
+      <div
         className={`main-photo-container ${promoPhotoLoaded ? "loaded" : ""}`}
       >
         <div className="main-content">
@@ -48,7 +48,7 @@ const MainPage = () => {
             <Subscription />
           </div>
         )}
-      </MainContainer>
+      </div>
     </MainContainer>
   );
 };
