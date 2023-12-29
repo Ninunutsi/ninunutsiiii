@@ -1,4 +1,5 @@
 import Logo from "../assets/MA.png";
+import MediaLogo from "../assets/Footerlogo.png";
 import UserAuthorization from "./UserInformation/UserAuthorization";
 import useScrollToTop from "../hooks/useScrollToTop";
 import LanguageToggle from "./Buttons/LanguageToggle";
@@ -8,7 +9,11 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleUser, faHeart } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faCircleUser,
+  faHeart,
+} from "@fortawesome/free-solid-svg-icons";
 import { useAuthorization } from "../contexts/AuthorizationContext";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { HeaderBg, HeaderContent, Navigation, Parameters } from "./components";
@@ -34,7 +39,10 @@ const Header = () => {
       {isOpen && <UserAuthorization />}
       <HeaderContent className="container">
         <div onClick={() => setClick(!click)}>
-          <Navigation>
+          <Navigation className="BurgerMenu">
+            <FontAwesomeIcon icon={faBars} />
+          </Navigation>
+          <Navigation className="MainMenu">
             <li onClick={handleClick}>
               <Link to={"/woman"}>{t("Woman")}</Link>
             </li>
@@ -43,15 +51,18 @@ const Header = () => {
             </li>
           </Navigation>
         </div>
-        <div onClick={handleClick}>
-          <Link to={"/"}>
-            <img src={Logo} alt="Logo" />
+        <div className="logoDiv" onClick={handleClick}>
+          <Link to="/">
+            <img className="MediaLogo" src={MediaLogo} alt="Logo" />
+          </Link>
+          <Link to="/">
+            <img className="Logo" src={Logo} alt="Logo" />
           </Link>
         </div>
         <Parameters>
           <FilterForm nav={"/allProducts"} />
           <div>
-            <div>
+            <div className="displayed">
               <LanguageToggle />
             </div>
             <div>

@@ -21,6 +21,37 @@ export const HeaderBg = styled.div`
   top: 0;
   transition: 0.3s ease;
   z-index: 999;
+
+  .MainMenu {
+    display: flex;
+  }
+
+  .BurgerMenu {
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    display: none;
+    
+    &:hover {
+        color: rgba(0, 0, 142, 1);
+      }
+    }
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    background: transparent;
+
+    .MainMenu {
+      display: none;
+    }
+
+    .BurgerMenu {
+      display: block
+    }
+      
+    }
+  }
 `;
 
 export const HeaderContent = styled.header`
@@ -29,6 +60,37 @@ export const HeaderContent = styled.header`
   justify-content: space-between;
   padding-top: 15px;
   padding-bottom: 15px;
+  width: 100%;
+
+  .Logo {
+    display: block;
+  }
+
+  .MediaLogo {
+    display: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    .logoDiv {
+      .Logo {
+        display: none;
+      }
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      .MediaLogo {
+        display: block;
+      }
+
+      img {
+        width: 38px;
+        height: 25px;
+      }
+    }
+  }
 `;
 
 export const Navigation = styled.nav`
@@ -47,6 +109,10 @@ export const Navigation = styled.nav`
     &:hover {
       color: rgba(0, 0, 142, 1);
     }
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 0;
   }
 `;
 
@@ -90,6 +156,34 @@ export const Parameters = styled.div`
         height: 15px;
       }
     }
+
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      top: 70px;
+      left: 50%;
+      width: 100%;
+      padding: 0 35px;
+      transform: translate(-50%, -50%);
+
+      input {
+        border: 1px solid white;
+        color: white;
+        width: 100%;
+        width: 100%;
+
+        &::placeholder {
+          color: white;
+        }
+      }
+
+      .formBtn {
+        svg {
+          font-size: 16px;
+          color: white;
+          right: 50px;
+        }
+      }
+    }
   }
 
   div {
@@ -104,11 +198,28 @@ export const Parameters = styled.div`
       background-color: transparent;
       font-family: ${FontFamily};
       font-weight: 500;
+
+      &:hover {
+        border-color: rgba(0, 0, 142, 1);
+      }
     }
 
     svg {
       font-size: 22px;
       width: 22px;
+    }
+
+    @media screen and (max-width: 767px) {
+      gap: 10px;
+
+      .displayed {
+        display: none;
+      }
+
+      svg {
+        color: white;
+        font-size: 16px;
+      }
     }
   }
 
@@ -141,6 +252,12 @@ export const SubmitButton = styled.button`
   // border-radius: 6px;
   transition: 0.5s;
   cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    padding: 4px 20px;
+    font-size: 20px;
+    line-height: 23px;
+  }
 
   &:hover {
     background-color: white;

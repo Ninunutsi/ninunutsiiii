@@ -47,6 +47,10 @@ export const MainContainer = styled.div`
     width: 100%;
     height: auto;
     display: block;
+
+    @media screen and (max-width: 767px) {
+      height: 440px;
+    }
   }
 
   .main-content {
@@ -98,6 +102,19 @@ export const PopularCollections = styled.div`
       &:hover {
         border: 1px solid rgba(0, 0, 142, 1);
       }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 10px 16px 40px;
+
+    .popular-collection-title {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .mainBtn {
+      display: none;
     }
   }
 `;

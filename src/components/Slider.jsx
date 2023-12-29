@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import useScrollToTop from "../hooks/useScrollToTop";
@@ -6,15 +7,32 @@ import { Navigation, Keyboard } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { SlidesImages, SwiperContainer } from "../pages/AllPages";
 
-const Slider = ({ images, imagesPerView }) => {
+const Slider = ({ images }) => {
   const { handleClick } = useScrollToTop("instant");
+  const [slidesPerView, setSlidesPerView] = useState(getInitialSlidesPerView());
+
+  function getInitialSlidesPerView() {
+    return window.innerWidth < 767 ? 3 : 4;
+  }
+
+  useEffect(() => {
+    function handleResize() {
+      setSlidesPerView(window.innerWidth < 767 ? 2 : 4);
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <SwiperContainer>
       <Swiper
+        className="SwipperClassed"
         modules={[Navigation, Keyboard]}
         spaceBetween={10}
-        slidesPerView={imagesPerView}
+        slidesPerView={slidesPerView}
         navigation
         keyboard={true}
         loop={true}
