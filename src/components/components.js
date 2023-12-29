@@ -27,8 +27,8 @@ export const HeaderContent = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 `;
 
 export const Navigation = styled.nav`

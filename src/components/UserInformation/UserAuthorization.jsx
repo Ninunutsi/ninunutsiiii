@@ -39,7 +39,10 @@ const UserAuthorization = () => {
             <FontAwesomeIcon icon={faXmark} />
           </div>
         </div>
-        <div className="buttons">
+        <div>
+          <h2 className="AuthoText">{t("Authorization")}</h2>
+        </div>
+        {/* <div className="buttons">
           <button>
             <img src={Facebook} alt="facebook" />
             {t("Continue with Facebook")}
@@ -48,10 +51,10 @@ const UserAuthorization = () => {
             <img src={Google} alt="google" />
             {t("Continue with Google")}
           </button>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <h2 className="chooseReg">{t("or")}</h2>
-        </div>
+        </div> */}
         <UserForm>
           <div className="input">
             <label htmlFor="Email">{t("Email address")}</label>

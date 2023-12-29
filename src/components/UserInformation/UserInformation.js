@@ -73,33 +73,41 @@ export const Authorization = styled.div`
     }
   }
 
-  .chooseReg {
-    position: relative;
-    color: rgba(0, 0, 0, 0.68);
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 25px;
+  .AuthoText {
+    font-family: ${FontFamily};
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    padding: 60px 0 40px;
   }
 
-  .chooseReg::after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 10px;
-    width: 45%;
-    height: 2px;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+  // .chooseReg {
+  //   position: relative;
+  //   color: rgba(0, 0, 0, 0.68);
+  //   font-size: 18px;
+  //   font-weight: 600;
+  //   margin-bottom: 25px;
+  // }
 
-  .chooseReg::before {
-    content: "";
-    position: absolute;
-    right: 5px;
-    top: 10px;
-    width: 45%;
-    height: 2px;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+  // .chooseReg::after {
+  //   content: "";
+  //   position: absolute;
+  //   left: 5px;
+  //   top: 10px;
+  //   width: 45%;
+  //   height: 2px;
+  //   background-color: rgba(0, 0, 0, 0.3);
+  // }
+
+  // .chooseReg::before {
+  //   content: "";
+  //   position: absolute;
+  //   right: 5px;
+  //   top: 10px;
+  //   width: 45%;
+  //   height: 2px;
+  //   background-color: rgba(0, 0, 0, 0.3);
+  // }
 
   .loginHeading {
     margin-bottom: 60px;
