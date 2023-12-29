@@ -10,7 +10,6 @@ const ProductsContextProvider = ({ children }) => {
   const [clothes, setClothes] = useState(products);
   const [currentPage, setCurrentPage] = useLocalStorage("currentPage", 1);
   const [loading, setLoading] = useState(true);
-  const [currentCategory, setCurrentCategory] = useState("");
 
   const addFav = (product) => {
     setClothes((prevState) =>
@@ -41,9 +40,7 @@ const ProductsContextProvider = ({ children }) => {
     clothes,
     currentPage,
     setCurrentPage,
-    loading,
-    setCurrentCategory,
-    currentCategory
+    loading
   };
 
   return (

@@ -9,16 +9,13 @@ import ReturnPolicyPage from "../pages/FooterLinkPages/ReturnPolicyPage";
 import PrivacyPolicyPage from "../pages/FooterLinkPages/PrivacyPolicyPage";
 import NewProductsPage from "../pages/ProductsPages/NewProductsPage";
 import AllProducts from "../pages/ProductsPages/AllProducts";
-import WeddingProducts from "../pages/ProductsPages/WeddingProducts";
-import BanquetProducts from "../pages/ProductsPages/BanquetProducts";
-import WomanProducts from "../pages/ProductsPages/WomanProducts";
-import KidsProducts from "../pages/ProductsPages/KidsProducts";
 import DetailedProductPage from "../pages/ProductsPages/DetailedProductPage";
 import ProductsContextProvider from "../contexts/ProductsContextProvider";
 import { Outlet } from "react-router-dom";
 import { AuthorizationProvider } from "../contexts/AuthorizationContext";
 import { SearchProvider } from "../contexts/SearchFilterContext";
 import FilterContextProvider from "../contexts/FilterContextProvider";
+import ProductsPage from "../pages/ProductsPages/ProductsPage";
 
 const routes = [
   {
@@ -52,20 +49,24 @@ const routes = [
         path: "newProducts",
       },
       {
-        element: <WomanProducts />,
+        element: <ProductsPage />,
         path: "woman",
       },
       {
-        element: <KidsProducts />,
+        element: <ProductsPage />,
         path: "kids",
+      },
+      {
+        element: <ProductsPage />,
+        path: "banquet",
+      },
+      {
+        element: <ProductsPage />,
+        path: "wedding",
       },
       {
         element: <DetailedProductPage />,
         path: "woman/products/:productId",
-      },
-      {
-        element: <BanquetProducts />,
-        path: "Banquet/products/:productId",
       },
       {
         element: <DetailedProductPage />,
@@ -73,15 +74,12 @@ const routes = [
       },
       {
         element: <DetailedProductPage />,
-        path: "Banquet/products/:productId",
+        path: "banquet/products/:productId",
       },
-      {
-        element: <WeddingProducts />,
-        path: "Filtered",
-      },
+     
       {
         element: <DetailedProductPage />,
-        path: "Wedding/products/:productId",
+        path: "wedding/products/:productId",
       },
       {
         element: <FavoritesPage />,

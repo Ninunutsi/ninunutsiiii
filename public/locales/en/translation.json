@@ -1,6 +1,8 @@
 {
   "Woman": "Women",
   "Kids": "Kids",
+  "woman": "Women",
+  "kids": "Kids",
   "Search": "Search",
   "About Us": "About Us",
   "Contact": "Contact",
@@ -41,6 +43,9 @@
   "Banquet": "For Banquet",
   "Wedding": "For Wedding",
   "Childish": "For Kids",
+  "banquet": "For Banquet",
+  "wedding": "For Wedding",
+  "childish": "For Kids",
   "Price": "Price",
   "Low to High": "Low to High",
   "High to Low": "High to Low",
