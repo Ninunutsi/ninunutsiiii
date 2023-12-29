@@ -3851,7 +3851,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
-    category: "Banquet",
+    category: "banquet",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -3865,12 +3865,31 @@ const products = [
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
   {
+    id: "apcCnOI6B2LasazdsfhdgcPxLE",
+    name: "Product 97",
+    image: popularCollection,
+    price: 10,
+    isFavorited: false,
+    category: "banquet",
+    moreImages: [
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+      detailedImage1,
+      detailedImage2,
+      weddingPhoto,
+    ],
+    color: "blue",
+    description:
+      "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
+  },
+  {
     id: "7I7zjhEA-LfasS4XoEm_cCLj",
     name: "Product 97",
     image: popularCollection,
     price: 10,
     isFavorited: false,
-    category: "Banquet",
+    category: "banquet",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -3889,7 +3908,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
-    category: "Wedding",
+    category: "wedding",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -3908,7 +3927,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
-    category: "Wedding",
+    category: "wedding",
     moreImages: [
       detailedImage1,
       detailedImage2,
@@ -3927,7 +3946,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
-    category: "Wedding",
+    category: "wedding",
     moreImages: [
       detailedImage1,
       detailedImage2,
