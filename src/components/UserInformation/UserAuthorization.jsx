@@ -13,6 +13,7 @@ import useToggle from "../../hooks/useToggle";
 import { useAuthorization } from "../../contexts/AuthorizationContext";
 import UserRegister from "./UserRegister";
 import { useTranslation } from "react-i18next";
+import UserButtonsMobile from "./UserButtonsMobile";
 
 const UserAuthorization = () => {
   const { t } = useTranslation();
@@ -29,13 +30,16 @@ const UserAuthorization = () => {
     <UserContent>
       <Authorization>
         {isRegOpen && <UserRegister />}
-        <div className="Heading">
-          <Link to={"/"}>
-            <img src={Logo} alt="Logo" />
-          </Link>
-          <div onClick={closeAuthorization} className="closeBtn">
-            <FontAwesomeIcon icon={faXmark} />
+        <div className="UserHeading">
+          <div className="Heading">
+            <Link className="HeadingLogo" to={"/"}>
+              <img src={Logo} alt="Logo" />
+            </Link>
+            <div onClick={closeAuthorization} className="closeBtn">
+              <FontAwesomeIcon icon={faXmark} />
+            </div>
           </div>
+          <UserButtonsMobile />
         </div>
         <div>
           <h2 className="AuthoText">{t("Authorization")}</h2>

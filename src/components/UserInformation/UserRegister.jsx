@@ -11,6 +11,7 @@ import {
 import useToggle from "../../hooks/useToggle";
 import { useAuthorization } from "../../contexts/AuthorizationContext";
 import { useTranslation } from "react-i18next";
+import UserButtonsMobile from "./UserButtonsMobile";
 
 const UserRegister = () => {
   const { t } = useTranslation();
@@ -22,14 +23,18 @@ const UserRegister = () => {
 
   return (
     <Authorization>
-      <div className="Heading">
-        <Link to={"/"}>
-          <img src={Logo} alt="Logo" />
-        </Link>
-        <div className="closeBtn">
-          <FontAwesomeIcon onClick={closeRegistration} icon={faArrowLeft} />
+      <div className="UserHeading">
+        <div className="Heading">
+          <Link className="HeadingLogo" to={"/"}>
+            <img src={Logo} alt="Logo" />
+          </Link>
+          <div className="closeBtn">
+            <FontAwesomeIcon onClick={closeRegistration} icon={faArrowLeft} />
+          </div>
         </div>
+        <UserButtonsMobile goBack={closeRegistration} />
       </div>
+
       <div className="title">
         <h2>{t("Create Account")}</h2>
       </div>

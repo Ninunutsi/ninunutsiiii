@@ -37,7 +37,7 @@ export const Authorization = styled.div`
     svg {
       position: absolute;
       right: 0;
-      top: 30%;
+      top: 20%;
       cursor: pointer;
       font-size: 22px;
     }
@@ -120,6 +120,30 @@ export const Authorization = styled.div`
 
   @media screen and (max-width: 650px) {
     width: 100%;
+
+    .HeadingLogo {
+      display: none;
+    }
+
+    .Heading svg {
+      right: 95%;
+      font-size: 26px;
+    }
+
+    .AuthoText {
+      padding: 28px 0 30px;
+    }
+  }
+`;
+
+export const UsersContent = styled.div`
+  display: none;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+
+  @media screen and (max-width: 650px) {
+    display: flex;
   }
 `;
 
@@ -234,4 +258,5 @@ export const Overlay = styled.div`
   right: 0;
   background-color: black;
   opacity: 0.6;
+  z-index: 5;
 `;

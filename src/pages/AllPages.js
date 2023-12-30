@@ -203,6 +203,7 @@ export const ProductGrid = styled.div`
   }
 
   @media screen and (max-width: 1023px) {
+
     .product-container {
       width: 33%;
     }
