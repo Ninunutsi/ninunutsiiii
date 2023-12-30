@@ -49,7 +49,7 @@ export const MainContainer = styled.div`
     display: block;
 
     @media screen and (max-width: 767px) {
-      height: 441px;
+      height: 481px;
     }
   }
 
@@ -200,6 +200,7 @@ export const ProductGrid = styled.div`
 
   .product-image {
     width: 100%;
+    height: 500px;
   }
 
   @media screen and (max-width: 1023px) {
@@ -207,28 +208,39 @@ export const ProductGrid = styled.div`
     .product-container {
       width: 33%;
     }
+
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 650px) {
+    
     .product-container {
       width: 50%;
+      margin: 5px 0;
+    }
+
+    .product-image {
+      height: 100%
     }
 
     .product-container:nth-child(5n) {
       width: 100%;
 
       img {
-        height: 480px;
+        height: 512px;
       }
     }
-  }
 
-  @media screen and (max-width: 380px) {
-    .product-container:nth-child(5n) {
+    .product-name,
+    .product-price{
+      margin-top: 5px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+    }
 
-      img {
-        height: 312px;
-      }
+    .product-price {
+      font-weight: 700;
+    }
   }
 `;
 

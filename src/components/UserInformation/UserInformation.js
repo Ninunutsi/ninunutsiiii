@@ -43,6 +43,12 @@ export const Authorization = styled.div`
     }
   }
 
+  @media screen and (max-width: 767px) {
+    svg {
+      font-size: 16px;
+    }
+  }
+
   .buttons {
     display: flex;
     flex-direction: column;
@@ -78,6 +84,7 @@ export const Authorization = styled.div`
     font-size: 22px;
     line-height: 25px;
     padding: 60px 0 40px;
+    color: black;
   }
 
   // .chooseReg {
@@ -116,10 +123,11 @@ export const Authorization = styled.div`
     margin: 30px 0 24px;
     font-weight: 700;
     font-size: 22px;
+    color: black;
   }
 
   @media screen and (max-width: 650px) {
-    width: 100%;
+    width: 102%;
 
     .HeadingLogo {
       display: none;
@@ -127,7 +135,7 @@ export const Authorization = styled.div`
 
     .Heading svg {
       right: 95%;
-      font-size: 26px;
+      font-size: 22px;
     }
 
     .AuthoText {

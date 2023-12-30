@@ -14,6 +14,7 @@ import ProductsPage from "../pages/ProductsPages/ProductsPage";
 import { Outlet } from "react-router-dom";
 import { AuthorizationProvider } from "../contexts/AuthorizationContext";
 import { SearchProvider } from "../contexts/SearchFilterContext";
+import { BurgerMenuProvider } from "../contexts/BurgerMenuProvider";
 
 const routes = [
   {
@@ -23,9 +24,11 @@ const routes = [
           <ProductsContextProvider>
             <SearchProvider>
               <FilterContextProvider>
-                <Header />
-                <Outlet />
-                <Footer />
+                <BurgerMenuProvider>
+                  <Header />
+                  <Outlet />
+                  <Footer />
+                </BurgerMenuProvider>
               </FilterContextProvider>
             </SearchProvider>
           </ProductsContextProvider>

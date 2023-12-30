@@ -17,11 +17,14 @@ import {
 import { useAuthorization } from "../contexts/AuthorizationContext";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { HeaderBg, HeaderContent, Navigation, Parameters } from "./components";
+import BurgerMenu from "./BurgerMenu/BurgerMenu";
+import { useBurgerMenu } from "../contexts/BurgerMenuProvider";
 
 const Header = () => {
   const { t } = useTranslation();
   const { openAuthorization, isOpen } = useAuthorization();
   const { setCurrentPage } = useProductsContext();
+  const { isBurgerMenuOpen, openBurgerMenu } = useBurgerMenu();
   const { handleClick } = useScrollToTop("smooth");
   const [click, setClick] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -37,10 +40,11 @@ const Header = () => {
   return (
     <HeaderBg id="MainHeader">
       {isOpen && <UserAuthorization />}
+      {isBurgerMenuOpen && <BurgerMenu />}
       <HeaderContent className="container">
         <div onClick={() => setClick(!click)}>
           <Navigation className="BurgerMenu">
-            <FontAwesomeIcon icon={faBars} />
+            <FontAwesomeIcon onClick={openBurgerMenu} icon={faBars} />
           </Navigation>
           <Navigation className="MainMenu">
             <li onClick={handleClick}>
