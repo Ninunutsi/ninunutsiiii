@@ -26,7 +26,7 @@ const BurgerMenu = () => {
     <BurgerStyle>
       {isOpen && <UserAuthorization style={{ color: "black" }} />}
       <div className="BurgerHeader">
-        <div onClick={closeBurgerMenu}>
+        <div className="closeBtn" onClick={closeBurgerMenu}>
           <FontAwesomeIcon icon={faTimes} />
         </div>
         <Parameters>
@@ -36,11 +36,11 @@ const BurgerMenu = () => {
               <LanguageToggle />
             </div>
             <div onClick={closeBurgerMenu}>
-              <div onClick={openAuthorization}>
+              <div className="BurgerIcon" onClick={openAuthorization}>
                 <FontAwesomeIcon icon={faUserCircle} />
               </div>
             </div>
-            <div onClick={handleClick}>
+            <div className="BurgerIcon" onClick={handleClick}>
               <Link onClick={closeBurgerMenu} to="/favorites">
                 <FontAwesomeIcon icon={faHeart} />
               </Link>
@@ -60,6 +60,20 @@ const BurgerMenu = () => {
           </Link>
         </li>
       </Navigation>
+      <div className="otherNav">
+        <Link onClick={closeBurgerMenu} to={"/newProducts"}>
+          {t("New Collection")}
+        </Link>
+        <Link onClick={closeBurgerMenu} to={"allProducts"}>
+          {t("allProducts")}
+        </Link>
+        <Link onClick={closeBurgerMenu} to={"wedding"}>
+          {t("Wedding")}
+        </Link>
+        <Link onClick={closeBurgerMenu} to={"banquet"}>
+          {t("Banquet")}
+        </Link>
+      </div>
     </BurgerStyle>
   );
 };

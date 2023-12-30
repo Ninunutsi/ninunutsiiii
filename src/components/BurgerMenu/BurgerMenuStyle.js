@@ -24,7 +24,7 @@ export const BurgerStyle = styled.div`
   width: 100%;
   height: 100%;
   margin-top: 100px;
-  padding: 20px 35px;
+  padding: 16px 16px;
   background-color: rgba(246, 246, 246, 1);
   text-align: center;
   z-index: 1000;
@@ -33,6 +33,9 @@ export const BurgerStyle = styled.div`
 
   svg {
     color: black;
+    &:hover {
+      color: rgba(0, 0, 142, 1);
+    }
   }
 
   .BurgerHeader {
@@ -40,25 +43,46 @@ export const BurgerStyle = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 90px;
+
+    .closeBtn {
+      cursor: pointer;
+
+      &:hover {
+        color: rgba(0, 0, 142, 1);
+      }
+    }
     
     svg,
     input::placeholder {
       color: black;
+
+    &:hover {
+      color: rgba(0, 0, 142, 1);
+    }
     }
 
     svg {
       font-size: 21px;
+      &:hover {
+        color: rgba(0, 0, 142, 1);
+      }
     }
 
     input {
       border: 1px solid black;
       color: black;
-      width: 95%;
+      width: 100%;
     }
     
     button svg {
       color: black;
-      
+      &:hover {
+        color: rgba(0, 0, 142, 1);
+      }
+
+      @media screen and (max-width: 767px) {
+        right: 30px;
+      }
     }
 
     .displayed {
@@ -86,5 +110,29 @@ export const BurgerStyle = styled.div`
     background-color: black;
    }
   
+  }
+
+  .otherNav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+
+    a {
+      color: black;
+      font-size: 18px;
+      gont-weight: 400;
+      line-height: 16px;
+      transition: .3s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: rgba(0, 0, 142, 1);
+    }
+
+    a:nth-child(2) {
+      margin-bottom: 15px;
+    }
   }
 `;
