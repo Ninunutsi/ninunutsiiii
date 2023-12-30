@@ -2,7 +2,7 @@ import footerLogo from "../assets/Footerlogo.png";
 import useScrollToTop from "../hooks/useScrollToTop";
 import { Link } from "react-router-dom";
 import { FooterDiv, Navigation } from "./components";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
@@ -28,10 +28,7 @@ const Footer = () => {
                 <Link to={"/contact"}>{t("Contact")}</Link>
               </li>
               <li>
-                <Link to={"/returnPolicy"}>{t("Return Policy")}</Link>
-              </li>
-              <li>
-                <Link to={"/privacyPolicy"}>{t("Privacy Policy")}</Link>
+                <Link to={""}>{t("location")}</Link>
               </li>
             </Navigation>
           </div>
@@ -41,7 +38,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faFacebook} />
           </Link>
           <Link>
-            <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon icon={faGoogle} />
           </Link>
         </div>
       </FooterDiv>

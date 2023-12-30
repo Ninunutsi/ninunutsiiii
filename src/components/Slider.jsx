@@ -17,7 +17,7 @@ const Slider = ({ images }) => {
 
   useEffect(() => {
     function handleResize() {
-      setSlidesPerView(window.innerWidth < 767 ? 2.5 : 4);
+      setSlidesPerView(window.innerWidth < 1023 ? 2.5 : 4);
     }
 
     window.addEventListener("resize", handleResize);

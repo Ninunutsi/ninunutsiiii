@@ -11,9 +11,9 @@ import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
-  faCircleUser,
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
+import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
 import { useAuthorization } from "../contexts/AuthorizationContext";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { HeaderBg, HeaderContent, Navigation, Parameters } from "./components";
@@ -67,7 +67,7 @@ const Header = () => {
             </div>
             <div>
               <div onClick={openAuthorization}>
-                <FontAwesomeIcon icon={faCircleUser} />
+                <FontAwesomeIcon icon={faUserCircle} />
               </div>
             </div>
             <div onClick={handleClick}>

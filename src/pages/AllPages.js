@@ -49,7 +49,7 @@ export const MainContainer = styled.div`
     display: block;
 
     @media screen and (max-width: 767px) {
-      height: 481px;
+      height: 441px;
     }
   }
 
@@ -201,17 +201,56 @@ export const ProductGrid = styled.div`
   .product-image {
     width: 100%;
   }
+
+  @media screen and (max-width: 1023px) {
+    .product-container {
+      width: 33%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .product-container {
+      width: 50%;
+    }
+
+    .product-container:nth-child(5n) {
+      width: 100%;
+
+      img {
+        height: 480px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .product-container:nth-child(5n) {
+
+      img {
+        height: 312px;
+      }
+  }
 `;
 
 export const ProductsListTop = styled.div`
+  position: relative;
   display: flex;
-  margin: 40px;
+  padding: 0 45px 40px;
   justify-content: space-between;
   margin-top: 140px;
 
   .new-collection-title {
     font-family: ${FontFamily};
     font-size: 28px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    margin-top: 100px;
+    padding: 0 16px 20px;
+
+    .filter-container,
+    .filter-dropdown {
+      right: 16px;
+    }
   }
 `;
 

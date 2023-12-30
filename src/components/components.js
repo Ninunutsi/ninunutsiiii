@@ -83,6 +83,7 @@ export const HeaderContent = styled.header`
 
       .MediaLogo {
         display: block;
+        width: 45px;
       }
 
       img {
@@ -162,7 +163,7 @@ export const Parameters = styled.div`
       top: 70px;
       left: 50%;
       width: 100%;
-      padding: 0 35px;
+      padding: 0 16px;
       transform: translate(-50%, -50%);
 
       input {
@@ -320,6 +321,31 @@ export const SubscriptionStyle = styled.div`
       // border-radius: 10px;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    padding: 38px 0 40px;
+
+    h1 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    form {
+      label {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+      }
+
+      input {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
 `;
 
 export const LoadingDiv = styled.div`
@@ -430,6 +456,31 @@ export const FooterDiv = styled.div`
       &:hover {
         color: gray;
       }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 10px 16px;
+
+    .navHeader {
+      flex-direction: column;
+      align-items: start;
+      padding-bottom: 25px;
+
+      a img {
+        margin: 14px 0 22px;
+        width: 45px;
+      }
+    }
+
+    .navMenu a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .socials {
+      margin: 25px 0 30px;
     }
   }
 `;

@@ -17,7 +17,6 @@ const fadeIn = keyframes`
 
 export const Authorization = styled.div`
   animation: ${fadeIn} 0.5s;
-
   position: fixed;
   top: -100px;
   right: 0;
@@ -117,6 +116,10 @@ export const Authorization = styled.div`
     margin: 30px 0 24px;
     font-weight: 700;
     font-size: 22px;
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 100%;
   }
 `;
 

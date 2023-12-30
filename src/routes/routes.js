@@ -5,17 +5,15 @@ import ErrorPage from "../pages/ErrorPages/ErrorPage";
 import FavoritesPage from "../pages/ProductsPages/FavoritesPage";
 import AboutUsPage from "../pages/FooterLinkPages/AboutUsPage";
 import ContactUsPage from "../pages/FooterLinkPages/ContactUsPage";
-import ReturnPolicyPage from "../pages/FooterLinkPages/ReturnPolicyPage";
-import PrivacyPolicyPage from "../pages/FooterLinkPages/PrivacyPolicyPage";
 import NewProductsPage from "../pages/ProductsPages/NewProductsPage";
 import AllProducts from "../pages/ProductsPages/AllProducts";
 import DetailedProductPage from "../pages/ProductsPages/DetailedProductPage";
 import ProductsContextProvider from "../contexts/ProductsContextProvider";
+import FilterContextProvider from "../contexts/FilterContextProvider";
+import ProductsPage from "../pages/ProductsPages/ProductsPage";
 import { Outlet } from "react-router-dom";
 import { AuthorizationProvider } from "../contexts/AuthorizationContext";
 import { SearchProvider } from "../contexts/SearchFilterContext";
-import FilterContextProvider from "../contexts/FilterContextProvider";
-import ProductsPage from "../pages/ProductsPages/ProductsPage";
 
 const routes = [
   {
@@ -76,7 +74,6 @@ const routes = [
         element: <DetailedProductPage />,
         path: "banquet/products/:productId",
       },
-     
       {
         element: <DetailedProductPage />,
         path: "wedding/products/:productId",
@@ -92,14 +89,6 @@ const routes = [
       {
         element: <ContactUsPage />,
         path: "contact",
-      },
-      {
-        element: <ReturnPolicyPage />,
-        path: "returnPolicy",
-      },
-      {
-        element: <PrivacyPolicyPage />,
-        path: "privacyPolicy",
       },
       {
         element: <ErrorPage />,

@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    /* width: 170px; */
     gap: 6px;
     right: 45px;
     position: absolute;
@@ -14,12 +14,18 @@
   
   .filter-icon{
     margin: auto;
+    position: absolute;
+    right: 10px;
+    top: 5px;
   }
   
-  .filter-dropdown{
+  .filter-dropdown{ 
     height: 100px;
     display: flex;
     width: 170px;
+    right: 45px;
+    top: 35px;
+    position: absolute;
     height: 134.867px;
     background-color: #F2F2F2;
     flex-direction: column;
