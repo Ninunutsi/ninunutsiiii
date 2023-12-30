@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { useBurgerMenu } from "../../contexts/BurgerMenuProvider";
 
 const FilterForm = ({ nav }) => {
   const { handleFilter, setSearch, search } = useSearch();
@@ -12,6 +13,7 @@ const FilterForm = ({ nav }) => {
   const { handleClick } = useScrollToTop("smooth");
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const {setBurgerMenuOpen} = useBurgerMenu()
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,6 +21,7 @@ const FilterForm = ({ nav }) => {
     handleClick();
     navigate(nav);
     setInputValue("");
+    setBurgerMenuOpen(false)
   };
 
   useEffect(() => {
