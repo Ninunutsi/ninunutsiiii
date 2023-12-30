@@ -31,12 +31,6 @@ const DetailedProductPage = () => {
                 <h1 className="detailed-product-name">{prod.name}</h1>
                 <h2 className="d-p-id">{prod.id.slice(-6)}</h2>
                 <h2 className="detailed-product-price">{prod.price}</h2>
-                {/* <div className="product-sizes">
-                  <h2 className="product-size">S</h2>
-                  <h2 className="product-size">M</h2>
-                  <h2 className="product-size">L</h2>
-                  <h2 className="product-size">XL</h2>
-                </div> */}
                 <div onClick={() => addtoFav(prod)} className="d-p-favorite">
                   {}
                   <h2>
