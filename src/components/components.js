@@ -219,7 +219,7 @@ export const Parameters = styled.div`
 
       svg {
         color: white;
-        font-size: 16px;
+        font-size: 21px;
       }
     }
   }

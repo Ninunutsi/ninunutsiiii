@@ -44,8 +44,13 @@ export const Authorization = styled.div`
   }
 
   @media screen and (max-width: 767px) {
+    padding: 16px 16px;
     svg {
       font-size: 16px;
+
+      &:hover {
+        color: rgba(0, 0, 142, 1);
+      }
     }
   }
 
@@ -149,6 +154,11 @@ export const UsersContent = styled.div`
   justify-content: end;
   align-items: center;
   gap: 10px;
+
+  .BurgerIcon {
+    font-size: 21px;
+    transition: 0.3s;
+  }
 
   @media screen and (max-width: 650px) {
     display: flex;

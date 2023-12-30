@@ -207,6 +207,8 @@ export const ProductGrid = styled.div`
 
     .product-container {
       width: 33%;
+
+      
     }
 
   }
@@ -219,7 +221,7 @@ export const ProductGrid = styled.div`
     }
 
     .product-image {
-      height: 100%
+      height: 312px;
     }
 
     .product-container:nth-child(5n) {

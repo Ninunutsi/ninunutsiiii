@@ -10,13 +10,13 @@ const UserButtonsMobile = ({ goBack }) => {
   return (
     <UsersContent>
       <div>
-        <div onClick={goBack}>
-          <FontAwesomeIcon style={styles.svg} icon={faUserCircle} />
+        <div id="BurgerIcon" onClick={goBack}>
+          <FontAwesomeIcon className="BurgerIcon" icon={faUserCircle} />
         </div>
       </div>
       <div onClick={handleClick}>
         <Link to="/favorites">
-          <FontAwesomeIcon style={styles.svg} icon={faHeart} />
+          <FontAwesomeIcon className="BurgerIcon" icon={faHeart} />
         </Link>
       </div>
     </UsersContent>
@@ -25,10 +25,14 @@ const UserButtonsMobile = ({ goBack }) => {
 
 export default UserButtonsMobile;
 
-const styles = {
-  svg: {
-    color: "black",
-    fontSize: "20px",
-    marginTop: "5px",
-  },
-};
+// const styles = {
+//   svg: {
+//     color: "black",
+//     fontSize: "20px",
+//     marginTop: "5px",
+
+//     "&:hover": {
+//       color: "red",
+//     }
+//   },
+// };
