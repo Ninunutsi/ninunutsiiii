@@ -55,7 +55,7 @@
   "Black": "შავი",
   "With Discount": "ფასდაკლებული",
   "Newest": "ახალი",
-  "All Products": "ყველა პროდუქცია",
+  "allProducts": "ყველა პროდუქცია",
   "New products": "ახალი პროდუქცია",
   "Authorization": "ავტორიზაცია"
 }

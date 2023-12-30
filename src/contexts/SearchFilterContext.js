@@ -1,12 +1,16 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { useProductsContext } from "./ProductsContextProvider";
+import { useLocation } from "react-router-dom";
 
 const SearchContext = createContext(null);
 
 export const SearchProvider = ({ children }) => {
   const [search, setSearch] = useState("");
-  const {clothes, currentCategory} = useProductsContext()
+  const {clothes} = useProductsContext()
   const [filteredData, setFilteredData] = useState(clothes);
+  const location = useLocation()
+
+  const currentCategory = location.pathname.slice(1)
 
   const handleFilter = () => {
     if (search === "") {
