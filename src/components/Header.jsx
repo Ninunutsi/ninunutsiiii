@@ -9,8 +9,11 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faHeart } from "@fortawesome/free-solid-svg-icons";
-import { faUserCircle } from "@fortawesome/free-regular-svg-icons";
+import {
+  faBars,
+  faHeart,
+  faUserCircle,
+} from "@fortawesome/free-solid-svg-icons";
 import { useAuthorization } from "../contexts/AuthorizationContext";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { HeaderBg, HeaderContent, Navigation, Parameters } from "./components";
