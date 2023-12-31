@@ -6,8 +6,8 @@ const ProductsContext = createContext(null);
 
 const ProductsContextProvider = ({ children }) => {
   const [mainPhoto, setMainPhoto] = useState(null);
-  const [favorites, setFavorites] = useState([]);
-  const [clothes, setClothes] = useState(products);
+  const [favorites, setFavorites] = useLocalStorage("favorites", []);
+  const [clothes, setClothes] = useLocalStorage("products", products);
   const [currentPage, setCurrentPage] = useLocalStorage("currentPage", 1);
   const [loading, setLoading] = useState(true);
 
@@ -29,7 +29,7 @@ const ProductsContextProvider = ({ children }) => {
 
   useEffect(() => {
     setFavorites(clothes.filter((prod) => prod.isFavorited));
-  }, [clothes]);
+  }, [clothes, setFavorites]);
 
 
   const contextValue = {
