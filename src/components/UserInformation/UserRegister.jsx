@@ -40,8 +40,8 @@ const UserRegister = () => {
       </div>
       <UserForm>
         <div className="input">
-          <label htmlFor="Email">{t("Email address")}</label>
-          <input id="Email" type="text" placeholder={t("Email address")} />
+          <label htmlFor="Email1">{t("Email address")}</label>
+          <input id="Email1" type="text" placeholder={t("Email address")} />
         </div>
         <div className="input">
           <label htmlFor="fName">{t("Full name")}</label>
@@ -52,14 +52,14 @@ const UserRegister = () => {
           <input id="UName" type="text" placeholder={t("User name")} />
         </div>
         <div className="input PasInput marginDel">
-          <label htmlFor="Password">{t("Password")}</label>
+          <label htmlFor="Password1">{t("Password")}</label>
           <input
-            id="Password"
+            id="Password1"
             type={showPassword1 ? "text" : "password"}
             placeholder={t("Password")}
           />
           <FontAwesomeIcon
-            id="PasEye"
+            id="PasEye1"
             icon={showPassword1 ? faEye : faEyeSlash}
             onClick={toggle1}
           />
@@ -72,7 +72,7 @@ const UserRegister = () => {
             placeholder={t("Confirm Password")}
           />
           <FontAwesomeIcon
-            id="PasEye"
+            id="PasEye2"
             icon={showPassword2 ? faEye : faEyeSlash}
             onClick={toggle2}
           />

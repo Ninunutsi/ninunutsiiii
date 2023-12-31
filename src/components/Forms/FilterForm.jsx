@@ -7,13 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useBurgerMenu } from "../../contexts/BurgerMenuProvider";
 
-const FilterForm = ({ nav }) => {
+const FilterForm = ({ nav, iconColor }) => {
   const { handleFilter, setSearch, search } = useSearch();
   const [inputValue, setInputValue] = useState("");
   const { handleClick } = useScrollToTop("smooth");
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const {setBurgerMenuOpen} = useBurgerMenu()
+  const { setBurgerMenuOpen } = useBurgerMenu();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,7 +21,7 @@ const FilterForm = ({ nav }) => {
     handleClick();
     navigate(nav);
     setInputValue("");
-    setBurgerMenuOpen(false)
+    setBurgerMenuOpen(false);
   };
 
   useEffect(() => {
@@ -29,7 +29,10 @@ const FilterForm = ({ nav }) => {
   }, [search]);
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={handleSubmit}
+      className={iconColor === "black" ? "hidden" : "visible"}
+    >
       <input
         onChange={(e) => setSearch(e.target.value)}
         value={inputValue}

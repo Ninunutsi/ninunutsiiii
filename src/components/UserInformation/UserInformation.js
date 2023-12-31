@@ -222,7 +222,9 @@ export const UserForm = styled.form`
     margin-bottom: 0;
   }
 
-  #PasEye {
+  #PasEye,
+  #PasEye1,
+  #PasEye2 {
     position: absolute;
     right: 20px;
     top: 42px;
@@ -276,5 +278,5 @@ export const Overlay = styled.div`
   right: 0;
   background-color: black;
   opacity: 0.6;
-  z-index: 5;
+  z-index: 4;
 `;

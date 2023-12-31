@@ -269,7 +269,6 @@ export const SubmitButton = styled.button`
 `;
 
 export const SubscriptionStyle = styled.div`
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -283,7 +282,8 @@ export const SubscriptionStyle = styled.div`
     text-transform: capitalize;
   }
 
-  form {
+  .EmailForms {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -350,57 +350,37 @@ export const SubscriptionStyle = styled.div`
 
 export const LoadingDiv = styled.div`
   position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  color: #96281b;
+  top: 51px;
+  right: 15px;
+
+  svg {
+    font-size: 20px;
+    color: gray;
+  }
+`;
+
+export const Loading = styled.div`
+  animation: rotate 3s linear infinite;
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 `;
 
 export const ErrorMessage = styled.div`
   position: absolute;
   color: #96281b;
-  top: 62%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-`;
+  top: 51px;
+  right: 15px;
 
-export const Loading = styled.div`
-  width: 4em;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
-
-  div {
-    width: 0.8em;
-    height: 0.8em;
-    border-radius: 50%;
-    background-color: #fc2f70;
-  }
-
-  div:nth-of-type(1) {
-    transform: translateX(-100%);
-    animation: left-swing 0.5s ease-in alternate infinite;
-  }
-
-  div:nth-of-type(3) {
-    transform: translateX(-95%);
-    animation: right-swing 0.5s ease-out alternate infinite;
-  }
-
-  @keyframes left-swing {
-    50%,
-    100% {
-      transform: translateX(95%);
-    }
-  }
-
-  @keyframes right-swing {
-    50% {
-      transform: translateX(-95%);
-    }
-    100% {
-      transform: translateX(100%);
-    }
+  svg {
+    font-size: 20px;
   }
 `;
 
@@ -545,28 +525,28 @@ export const ModalPopupStyle = styled.div`
       }
 
       .error-message {
-        font-family: ${FontFamily};
-        top: -20px;
-        left: 220px;
+        top: 16px;
+        left: 465px;
         width: 300px;
-      }
 
-      .correct-message {
-        font-family: ${FontFamily};
-        top: -20px;
-        left: 250px;
-        width: 300px;
+        svg {
+          color: #d80000;
+        }
       }
 
       .loading {
         position: absolute;
-        left: 50%;
-        top: -20px;
+        left: 320px;
+        top: 16px;
         transform: translate(-50%, -50%);
 
-        div {
-          height: 8px;
+        svg {
+          height: 20px;
         }
+      }
+
+      .checked svg {
+        color: #14ae5c;
       }
     }
 

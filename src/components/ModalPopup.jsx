@@ -3,6 +3,8 @@ import ModalForm from "./Requests/ModalForm";
 import { useState } from "react";
 import { Loading } from "./components";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowsRotate, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const ModalPopup = () => {
   const { t } = useTranslation();
@@ -20,13 +22,11 @@ const ModalPopup = () => {
 
   const loadingProces = (
     <Loading>
-      <div></div>
-      <div></div>
-      <div></div>
+      <FontAwesomeIcon icon={faArrowsRotate} />
     </Loading>
   );
 
-  const emailSent = <p>{t("Thank you for Subscription")}</p>;
+  const emailSent = <FontAwesomeIcon icon={faCheck} />;
 
   if (loading) return <ModalForm loading={loadingProces} />;
   if (sentEmail) return <ModalForm sentEmail={emailSent} />;

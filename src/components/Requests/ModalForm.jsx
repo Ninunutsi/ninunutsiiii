@@ -2,14 +2,15 @@ import useEmailForm from "../../hooks/useEmailForm";
 import modalPhoto from "../../assets/popupimage.jpg";
 import { Overlay } from "../UserInformation/UserInformation";
 import useLocalStorage from "../../hooks/useLocalStorage";
-import { ErrorMessage, ModalPopupStyle } from "../components";
+import { ErrorMessage, LoadingDiv, ModalPopupStyle } from "../components";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 
 function ModalForm({ onFormSubmit, loading, sentEmail }) {
-  const { emailRef, isValidEmail, onSubmit } = useEmailForm(onFormSubmit);
+  const { emailRef, inputStyle, isValidEmail, handleInputChange, onSubmit } =
+    useEmailForm(onFormSubmit);
   const { t } = useTranslation();
   const [isModalClosed, setIsModalClosed] = useLocalStorage(
     "isModalClosed",
@@ -36,26 +37,18 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
               <form onSubmit={onSubmit}>
                 <div className="loading">{loading}</div>
                 <input
-                  style={{
-                    border: isValidEmail
-                      ? "1px solid black"
-                      : "1px solid #96281b",
-                  }}
+                  style={inputStyle}
                   className="email"
+                  id="subscription"
                   type="text"
-                  id="emailInput"
                   placeholder={t("Email address")}
                   ref={emailRef}
+                  onChange={handleInputChange}
                 />
-                <ErrorMessage
-                  className="correct-message"
-                  style={{ color: "#1e824c" }}
-                >
-                  {sentEmail}
-                </ErrorMessage>
+                <div className="loading checked">{sentEmail}</div>
                 {!isValidEmail && (
                   <ErrorMessage className="error-message">
-                    {t("Please enter a valid email address")}
+                    <FontAwesomeIcon icon={faXmark} />
                   </ErrorMessage>
                 )}
                 <button className="submitBtn" type="submit">

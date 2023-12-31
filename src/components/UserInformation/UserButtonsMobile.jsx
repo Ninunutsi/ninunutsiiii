@@ -3,9 +3,11 @@ import useScrollToTop from "../../hooks/useScrollToTop";
 import { faHeart, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { UsersContent } from "./UserInformation";
+import { useAuthorization } from "../../contexts/AuthorizationContext";
 
 const UserButtonsMobile = ({ goBack }) => {
   const { handleClick } = useScrollToTop("smooth");
+  const { closeAuthorization } = useAuthorization(false);
 
   return (
     <UsersContent>
@@ -15,7 +17,7 @@ const UserButtonsMobile = ({ goBack }) => {
         </div>
       </div>
       <div onClick={handleClick}>
-        <Link to="/favorites">
+        <Link onClick={closeAuthorization} to="/favorites">
           <FontAwesomeIcon className="BurgerIcon" icon={faHeart} />
         </Link>
       </div>
@@ -24,15 +26,3 @@ const UserButtonsMobile = ({ goBack }) => {
 };
 
 export default UserButtonsMobile;
-
-// const styles = {
-//   svg: {
-//     color: "black",
-//     fontSize: "20px",
-//     marginTop: "5px",
-
-//     "&:hover": {
-//       color: "red",
-//     }
-//   },
-// };

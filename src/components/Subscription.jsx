@@ -1,10 +1,10 @@
 import useRequest from "../hooks/useRequest";
 import EmailForm from "./Requests/EmailForm";
-import { useTranslation } from "react-i18next";
 import { Loading } from "./components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowsRotate, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const Subscription = () => {
-  const { t } = useTranslation();
   const { loading, sentEmail, sendRequest } = useRequest({
     url: "/api/v1/users",
     method: "POST",
@@ -16,13 +16,11 @@ const Subscription = () => {
 
   const loadingProces = (
     <Loading>
-      <div></div>
-      <div></div>
-      <div></div>
+      <FontAwesomeIcon icon={faArrowsRotate} />
     </Loading>
   );
 
-  const emailSent = <p>{t("Thank you for Subscription")}</p>;
+  const emailSent = <FontAwesomeIcon icon={faCheck} />;
 
   if (loading) return <EmailForm loading={loadingProces} />;
   if (sentEmail) return <EmailForm sentEmail={emailSent} />;

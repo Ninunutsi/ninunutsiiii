@@ -6,32 +6,34 @@ import {
 } from "../components";
 import { useTranslation } from "react-i18next";
 import useEmailForm from "../../hooks/useEmailForm";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const EmailForm = ({ onFormSubmit, loading, sentEmail }) => {
-  const { emailRef, isValidEmail, onSubmit } = useEmailForm(onFormSubmit);
+  const { emailRef, inputStyle, isValidEmail, handleInputChange, onSubmit } =
+    useEmailForm(onFormSubmit);
   const { t } = useTranslation();
 
   return (
     <SubscriptionStyle>
-      <LoadingDiv>{loading}</LoadingDiv>
       <h1>{t("Subscribe to our newsletter")}</h1>
-      <form onSubmit={onSubmit}>
+      <form className="EmailForms" onSubmit={onSubmit}>
         <label htmlFor="subscription">
           {t("subscribe to receive our latest news")}
         </label>
+        <LoadingDiv>{loading}</LoadingDiv>
         <input
-          style={{
-            border: isValidEmail ? "1px solid black" : "1px solid #96281b",
-          }}
+          style={inputStyle}
           id="subscription"
           type="text"
           placeholder={t("enter E-mail")}
           ref={emailRef}
+          onChange={handleInputChange}
         />
-        <ErrorMessage style={{ color: "#1e824c" }}>{sentEmail}</ErrorMessage>
+        <ErrorMessage style={{ color: "#14AE5C" }}>{sentEmail}</ErrorMessage>
         {!isValidEmail && (
           <ErrorMessage className="error-message">
-            {t("Please enter a valid email address")}
+            <FontAwesomeIcon style={{ color: "#d80000" }} icon={faXmark} />
           </ErrorMessage>
         )}
         <SubmitButton>{t("Submit")}</SubmitButton>
