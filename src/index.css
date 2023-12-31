@@ -228,3 +228,11 @@ Main Page and Detailed Product Page  */
 .BurgerIcon:hover {
   color: rgba(0, 0, 142, 1);
 }
+
+.emailSubSuccess::placeholder{
+  color: #14AE5C;
+}
+
+.emailSubFail::placeholder{
+  color: #D80000 !important
+}

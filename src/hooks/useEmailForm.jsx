@@ -4,7 +4,6 @@ const useEmailForm = (onFormSubmit) => {
   const emailRef = useRef();
   const [isValidEmail, setIsValidEmail] = useState(true);
   const [isInputEmpty, setIsInputEmpty] = useState(true);
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -17,8 +16,6 @@ const useEmailForm = (onFormSubmit) => {
     } else {
       setIsValidEmail(false);
     }
-
-    setIsFormSubmitted(true);
   };
 
   const handleInputChange = () => {
@@ -28,18 +25,6 @@ const useEmailForm = (onFormSubmit) => {
     if (!isInputEmpty) {
       setIsValidEmail(true);
     }
-
-    setIsFormSubmitted(false);
-  };
-
-  const inputStyle = {
-    border: isInputEmpty
-      ? "1px solid black"
-      : isValidEmail
-      ? "1px solid black"
-      : "1px solid #D80000",
-
-    color: isValidEmail ? "black" : "#D80000",
   };
 
   return {
@@ -48,8 +33,6 @@ const useEmailForm = (onFormSubmit) => {
     onSubmit,
     isInputEmpty,
     handleInputChange,
-    isFormSubmitted,
-    inputStyle,
   };
 };
 

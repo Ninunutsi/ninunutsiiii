@@ -23,11 +23,11 @@ const Subscription = () => {
   const emailSent = <FontAwesomeIcon icon={faCheck} />;
 
   if (loading) return <EmailForm loading={loadingProces} />;
-  if (sentEmail) return <EmailForm sentEmail={emailSent} />;
+  if (sentEmail) return <EmailForm isFormSubmitted={sentEmail} sentEmail={emailSent} />;
 
   return (
     <div>
-      <EmailForm onFormSubmit={onSubmit} />
+      <EmailForm isFormSubmitted={sentEmail} onFormSubmit={onSubmit} />
     </div>
   );
 };
