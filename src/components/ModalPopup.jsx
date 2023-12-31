@@ -2,12 +2,10 @@ import useRequest from "../hooks/useRequest";
 import ModalForm from "./Requests/ModalForm";
 import { useState } from "react";
 import { Loading } from "./components";
-import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowsRotate, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const ModalPopup = () => {
-  const { t } = useTranslation();
   const [isSubmited, setIsSubmited] = useState(false);
 
   const { loading, sentEmail, sendRequest } = useRequest({

@@ -2,7 +2,7 @@ import useEmailForm from "../../hooks/useEmailForm";
 import modalPhoto from "../../assets/popupimage.jpg";
 import { Overlay } from "../UserInformation/UserInformation";
 import useLocalStorage from "../../hooks/useLocalStorage";
-import { ErrorMessage, LoadingDiv, ModalPopupStyle } from "../components";
+import { ErrorMessage, ModalPopupStyle } from "../components";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
