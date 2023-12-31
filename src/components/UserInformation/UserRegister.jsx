@@ -78,7 +78,7 @@ const UserRegister = () => {
           />
         </div>
         <div className="formButtons">
-          <button id="Register">{t("Create Account")}</button>
+          <button id="Register1">{t("Create Account")}</button>
         </div>
       </UserForm>
     </Authorization>

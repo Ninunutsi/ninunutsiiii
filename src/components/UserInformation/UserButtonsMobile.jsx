@@ -12,7 +12,7 @@ const UserButtonsMobile = ({ goBack }) => {
   return (
     <UsersContent>
       <div>
-        <div id="BurgerIcon" onClick={goBack}>
+        <div id="BurgerIcon1" onClick={goBack}>
           <FontAwesomeIcon className="BurgerIcon" icon={faUserCircle} />
         </div>
       </div>

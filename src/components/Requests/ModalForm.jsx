@@ -39,7 +39,7 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
                 <input
                   style={inputStyle}
                   className="email"
-                  id="subscription"
+                  id="subscription1"
                   type="text"
                   placeholder={t("Email address")}
                   ref={emailRef}
