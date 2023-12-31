@@ -25,21 +25,19 @@ const FilterContextProvider = ({ children }) => {
         [...prevState].sort((a, b) => b.price - a.price)
       );
     }
-    setCurrentPage(1);
-  }, [sortByPrice, setCurrentPage, currentCategory, filteredData]);
-
-  useEffect(() => {
-    let filteredClothes = filteredData;
 
     if (filterByColor.length > 0 && filterByColor !== "color") {
-      filteredClothes = filteredClothes.filter(
+      setFilteredProducts(prevState => prevState.filter(
         (product) => product.color === filterByColor
-      );
-      setCurrentPage(1);
+      ));
     }
+    setCurrentPage(1);
+  }, [filterByColor, sortByPrice, setCurrentPage, currentCategory, filteredData]);
 
-    setFilteredProducts(filteredClothes);
-  }, [filterByColor, setCurrentPage, filteredData]);
+  useEffect(() => {
+    setSortByPrice(null)
+    setFilterByColor("")
+  }, [currentCategory])
 
   const contextValue = {
     setSortByPrice,
