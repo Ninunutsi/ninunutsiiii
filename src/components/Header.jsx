@@ -5,7 +5,7 @@ import useScrollToTop from "../hooks/useScrollToTop";
 import LanguageToggle from "./Buttons/LanguageToggle";
 import ModalPopup from "./ModalPopup";
 import FilterForm from "./Forms/FilterForm";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,6 +28,9 @@ const Header = () => {
   const { handleClick } = useScrollToTop("smooth");
   const [click, setClick] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const location = useLocation();
+
+  const isMainPage = location.pathname === "/";
 
   useEffect(() => {
     setCurrentPage(1);
@@ -44,7 +47,11 @@ const Header = () => {
       <HeaderContent className="container">
         <div onClick={() => setClick(!click)}>
           <Navigation className="BurgerMenu">
-            <FontAwesomeIcon onClick={openBurgerMenu} icon={faBars} />
+            <FontAwesomeIcon
+              onClick={openBurgerMenu}
+              icon={faBars}
+              style={{ color: isMainPage ? "white" : "black" }}
+            />
           </Navigation>
           <Navigation className="MainMenu">
             <li onClick={handleClick}>
@@ -57,13 +64,18 @@ const Header = () => {
         </div>
         <div className="logoDiv" onClick={handleClick}>
           <Link to="/">
-            <img className="MediaLogo" src={MediaLogo} alt="Logo" />
+            <img
+              className="MediaLogo"
+              src={isMainPage ? MediaLogo : Logo}
+              alt="Logo"
+              // style={{ display: isMainPage ? "block" : "none" }}
+            />
           </Link>
           <Link to="/">
             <img className="Logo" src={Logo} alt="Logo" />
           </Link>
         </div>
-        <Parameters>
+        <Parameters isMainPage={isMainPage}>
           <FilterForm nav={"/allProducts"} />
           <div>
             <div className="displayed">
@@ -71,12 +83,18 @@ const Header = () => {
             </div>
             <div>
               <div onClick={openAuthorization}>
-                <FontAwesomeIcon icon={faUserCircle} />
+                <FontAwesomeIcon
+                  icon={faUserCircle}
+                  style={{ color: isMainPage ? "white" : "black" }}
+                />
               </div>
             </div>
             <div onClick={handleClick}>
               <Link to="/favorites">
-                <FontAwesomeIcon icon={faHeart} />
+                <FontAwesomeIcon
+                  icon={faHeart}
+                  style={{ color: isMainPage ? "white" : "black" }}
+                />
               </Link>
             </div>
           </div>

@@ -10,7 +10,7 @@ import { useBurgerMenu } from "../../contexts/BurgerMenuProvider";
 import { Navigation, Parameters } from "../components";
 import FilterForm from "../Forms/FilterForm";
 import LanguageToggle from "../Buttons/LanguageToggle";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useAuthorization } from "../../contexts/AuthorizationContext";
 import UserAuthorization from "../UserInformation/UserAuthorization";
 import useScrollToTop from "../../hooks/useScrollToTop";
@@ -21,6 +21,9 @@ const BurgerMenu = () => {
   const { closeBurgerMenu } = useBurgerMenu();
   const { openAuthorization, isOpen } = useAuthorization();
   const { handleClick } = useScrollToTop("smooth");
+  const location = useLocation();
+
+  const isMainPage = location.pathname === "/";
 
   return (
     <BurgerStyle>
@@ -29,7 +32,7 @@ const BurgerMenu = () => {
         <div className="closeBtn" onClick={closeBurgerMenu}>
           <FontAwesomeIcon icon={faTimes} />
         </div>
-        <Parameters>
+        <Parameters isMainPage={!isMainPage || isMainPage}>
           <FilterForm nav={"/allProducts"} />
           <div>
             <div className="displayed">

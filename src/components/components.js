@@ -159,6 +159,7 @@ export const Parameters = styled.div`
     }
 
     @media screen and (max-width: 767px) {
+      display: ${({ isMainPage }) => (isMainPage ? "block" : "none")};
       position: absolute;
       top: 70px;
       left: 50%;

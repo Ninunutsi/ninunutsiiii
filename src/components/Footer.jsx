@@ -38,7 +38,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={faFacebook} />
           </Link>
           <Link>
-          <FontAwesomeIcon icon={faGoogle} />
+            <FontAwesomeIcon icon={faGoogle} />
           </Link>
         </div>
       </FooterDiv>

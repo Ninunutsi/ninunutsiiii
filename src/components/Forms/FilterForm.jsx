@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useBurgerMenu } from "../../contexts/BurgerMenuProvider";
 
-const FilterForm = ({ nav, iconColor }) => {
+const FilterForm = ({ nav }) => {
   const { handleFilter, setSearch, search } = useSearch();
   const [inputValue, setInputValue] = useState("");
   const { handleClick } = useScrollToTop("smooth");
@@ -29,10 +29,7 @@ const FilterForm = ({ nav, iconColor }) => {
   }, [search]);
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className={iconColor === "black" ? "hidden" : "visible"}
-    >
+    <form onSubmit={handleSubmit}>
       <input
         onChange={(e) => setSearch(e.target.value)}
         value={inputValue}

@@ -12,7 +12,7 @@ const AllProducts = () => {
     <ProductList
       products={AllProducts}
       productsPerPage={20}
-      category={t("All Products")}
+      category={t("allProducts")}
     />
   );
 };

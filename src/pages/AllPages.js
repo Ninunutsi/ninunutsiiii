@@ -204,17 +204,12 @@ export const ProductGrid = styled.div`
   }
 
   @media screen and (max-width: 1023px) {
-
     .product-container {
       width: 33%;
-
-      
     }
-
   }
 
   @media screen and (max-width: 650px) {
-    
     .product-container {
       width: 50%;
       margin: 5px 0;
@@ -233,7 +228,7 @@ export const ProductGrid = styled.div`
     }
 
     .product-name,
-    .product-price{
+    .product-price {
       margin-top: 5px;
       font-weight: 400;
       font-size: 14px;
@@ -266,6 +261,10 @@ export const ProductsListTop = styled.div`
     .filter-dropdown {
       right: 16px;
     }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
   }
 `;
 
