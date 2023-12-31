@@ -31,6 +31,8 @@ const FilterForm = ({ nav }) => {
   return (
     <form  onSubmit={handleSubmit}>
       <input
+        name="SearchBar"
+        id="SearchBar"
         onChange={(e) => setSearch(e.target.value)}
         value={inputValue}
         type="text"

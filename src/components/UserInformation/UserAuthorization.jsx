@@ -60,11 +60,17 @@ const UserAuthorization = () => {
         <UserForm>
           <div className="input">
             <label htmlFor="Email">{t("Email address")}</label>
-            <input id="Email" type="text" placeholder={t("Email address")} />
+            <input
+              name="Email"
+              id="Email"
+              type="text"
+              placeholder={t("Email address")}
+            />
           </div>
           <div className="input PasInput">
             <label htmlFor="Password">{t("Password")}</label>
             <input
+              name="password"
               id="Password"
               type={showPassword ? "text" : "password"}
               placeholder={t("Password")}

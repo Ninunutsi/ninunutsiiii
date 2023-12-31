@@ -36,6 +36,7 @@ const EmailForm = ({ onFormSubmit, loading, sentEmail, isFormSubmitted }) => {
         <LoadingDiv>{loading}</LoadingDiv>
         <input
           style={inputStyle}
+          name="subscription"
           id="subscription"
           type="text"
           placeholder={t("enter E-mail")}

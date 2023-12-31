@@ -38,6 +38,7 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
                 <div className="loading">{loading}</div>
                 <input
                   style={inputStyle}
+                  name="subscription"
                   className="email"
                   id="subscription1"
                   type="text"

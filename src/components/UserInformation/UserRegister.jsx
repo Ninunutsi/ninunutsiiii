@@ -34,26 +34,41 @@ const UserRegister = () => {
         </div>
         <UserButtonsMobile goBack={closeRegistration} />
       </div>
-
       <div className="title">
         <h2>{t("Create Account")}</h2>
       </div>
       <UserForm>
         <div className="input">
           <label htmlFor="Email1">{t("Email address")}</label>
-          <input id="Email1" type="text" placeholder={t("Email address")} />
+          <input
+            name="Email"
+            id="Email1"
+            type="text"
+            placeholder={t("Email address")}
+          />
         </div>
         <div className="input">
           <label htmlFor="fName">{t("Full name")}</label>
-          <input id="fName" type="text" placeholder={t("Full name")} />
+          <input
+            name="name"
+            id="fName"
+            type="text"
+            placeholder={t("Full name")}
+          />
         </div>
         <div className="input">
           <label htmlFor="UName">{t("User name")}</label>
-          <input id="UName" type="text" placeholder={t("User name")} />
+          <input
+            name="uName"
+            id="UName"
+            type="text"
+            placeholder={t("User name")}
+          />
         </div>
         <div className="input PasInput marginDel">
           <label htmlFor="Password1">{t("Password")}</label>
           <input
+            name="Password"
             id="Password1"
             type={showPassword1 ? "text" : "password"}
             placeholder={t("Password")}
@@ -67,6 +82,7 @@ const UserRegister = () => {
         <div className="input PasInput">
           <label htmlFor="cPassword">{t("Confirm Password")}</label>
           <input
+            name="cPassword"
             id="cPassword"
             type={showPassword2 ? "text" : "password"}
             placeholder={t("Confirm Password")}

@@ -30,7 +30,8 @@ const Header = () => {
   const [showModal, setShowModal] = useState(false);
   const location = useLocation();
 
-  const isMainPage = location.pathname === "/";
+  const isMobileView = window.innerWidth <= 768;
+  const isMainPage = isMobileView ? location.pathname === "/" : false;
 
   useEffect(() => {
     setCurrentPage(1);
