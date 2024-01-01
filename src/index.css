@@ -229,10 +229,6 @@ Main Page and Detailed Product Page  */
   color: rgba(0, 0, 142, 1);
 }
 
-/* .emailSubSuccess::placeholder{
-  color: #14AE5C;
+.emailSubSuccess::placeholder{
+  color: #14AE5C !important;
 }
-
-.emailSubFail::placeholder{
-  color: #D80000 !important
-} */

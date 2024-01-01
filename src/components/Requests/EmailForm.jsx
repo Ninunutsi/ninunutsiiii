@@ -22,13 +22,11 @@ const EmailForm = ({ onFormSubmit, loading, sentEmail, isFormSubmitted }) => {
       : isValidEmail && isFormSubmitted
       ? "1px solid green"
       :"1px solid #D80000",
+
+      color: isValidEmail ? "black" : "#D80000"
   };
-  
-  // const emailSubForm = isFormSubmitted
-  // ? isValidEmail
-  //   ? "emailSubSuccess"
-  //   : "emailSubFail"
-  // : "";
+
+  const emailSubForm = isFormSubmitted ? "emailSubSuccess" : ""
 
   return (
     <SubscriptionStyle>
@@ -40,11 +38,12 @@ const EmailForm = ({ onFormSubmit, loading, sentEmail, isFormSubmitted }) => {
         <LoadingDiv>{loading}</LoadingDiv>
         <input
           style={inputStyle}
+          name="subscription"
           id="subscription"
           type="text"
           placeholder={t("enter E-mail")}
           ref={emailRef}
-          // className={emailSubForm}
+          className={emailSubForm}
           onChange={handleInputChange}
         />
         <ErrorMessage style={{ color: "#14AE5C" }}>{sentEmail}</ErrorMessage>
