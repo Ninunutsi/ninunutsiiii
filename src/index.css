@@ -229,10 +229,10 @@ Main Page and Detailed Product Page  */
   color: rgba(0, 0, 142, 1);
 }
 
-.emailSubSuccess::placeholder{
+/* .emailSubSuccess::placeholder{
   color: #14AE5C;
 }
 
 .emailSubFail::placeholder{
   color: #D80000 !important
-}
+} */
