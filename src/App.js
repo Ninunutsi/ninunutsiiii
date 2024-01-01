@@ -1,12 +1,12 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import routes from "./routes/routes";
+import appRoutes from "./routes/AppRoutes";
 import { StyleSheetManager } from "styled-components";
 
 function App() {
   return (
     <div>
       <StyleSheetManager shouldForwardProp={(prop) => prop !== "isMainPage"}>
-        <RouterProvider router={createBrowserRouter(routes)} />
+        <RouterProvider router={createBrowserRouter(appRoutes)} />
       </StyleSheetManager>
     </div>
   );
