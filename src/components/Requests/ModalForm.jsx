@@ -9,13 +9,28 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 
 function ModalForm({ onFormSubmit, loading, sentEmail }) {
-  const { emailRef, inputStyle, isValidEmail, handleInputChange, onSubmit } =
+  const { emailRef, isInputEmpty, isValidEmail, handleInputChange, onSubmit } =
     useEmailForm(onFormSubmit);
   const { t } = useTranslation();
   const [isModalClosed, setIsModalClosed] = useLocalStorage(
     "isModalClosed",
     false
   );
+
+  const inputStyle = {
+    border: isInputEmpty && !sentEmail
+      ? "1px solid black"
+      : isValidEmail && !sentEmail
+      ? "1px solid black"
+      : isValidEmail && sentEmail
+      ? "1px solid green"
+      :"1px solid #D80000",
+
+      color: isValidEmail ? "black" : "#D80000"
+  };
+
+  const emailSubForm = sentEmail ? "emailSubSuccess" : ""
+
 
   useEffect(() => {}, [isModalClosed]);
   const closeModal = () => {
@@ -39,7 +54,7 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
                 <input
                   style={inputStyle}
                   name="subscription"
-                  className="email"
+                  className={`email ${emailSubForm}`}
                   id="subscription1"
                   type="text"
                   placeholder={t("Email address")}

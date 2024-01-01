@@ -526,8 +526,8 @@ export const ModalPopupStyle = styled.div`
       }
 
       .error-message {
-        top: 16px;
-        left: 465px;
+        top: 6px;
+        left: 318px;
         width: 300px;
 
         svg {
