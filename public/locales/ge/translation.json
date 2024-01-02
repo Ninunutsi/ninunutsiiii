@@ -61,5 +61,11 @@
   "mariam’s atelier": "მარიამის ატელიე",
   "tkibuli": "ტყიბული, გამსახურდიას",
   "Working Days": "სამუშაო დღეები",
-  "Monday-Friday": "ორშაბათი-პარასკევი"
+  "Monday-Friday": "ორშაბათი-პარასკევი",
+  "name": "სახელი",
+  "last name": "გვარი",
+  "phone number": "ტელეფონის ნომერი",
+  "message": "მესიჯი",
+  "Send": "გაგზავნა",
+  "Contact Information": "საკონტაქტო ინფორმაცია"
 }
