@@ -22,9 +22,11 @@ const EmailForm = ({ onFormSubmit, loading, sentEmail, isFormSubmitted }) => {
       : isValidEmail && isFormSubmitted
       ? "1px solid green"
       :"1px solid #D80000",
+
+      color: isValidEmail ? "black" : "#D80000"
   };
 
-  const emailSubForm = isValidEmail && isFormSubmitted ? "emailSubSuccess" : "emailSubFail"
+  const emailSubForm = isFormSubmitted ? "emailSubSuccess" : ""
 
   return (
     <SubscriptionStyle>

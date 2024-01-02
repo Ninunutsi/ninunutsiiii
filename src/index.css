@@ -230,9 +230,5 @@ Main Page and Detailed Product Page  */
 }
 
 .emailSubSuccess::placeholder{
-  color: #14AE5C;
-}
-
-.emailSubFail::placeholder{
-  color: #D80000 !important
+  color: #14AE5C !important;
 }

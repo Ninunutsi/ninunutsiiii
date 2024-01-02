@@ -16,7 +16,7 @@ import { AuthorizationProvider } from "../contexts/AuthorizationContext";
 import { SearchProvider } from "../contexts/SearchFilterContext";
 import { BurgerMenuProvider } from "../contexts/BurgerMenuProvider";
 
-const routes = [
+const userRoutes = [
   {
     element: (
       <div>
@@ -101,4 +101,4 @@ const routes = [
   },
 ];
 
-export default routes;
+export default userRoutes;
