@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ContactStyle } from "../AllPages";
 import { useTranslation } from "react-i18next";
@@ -6,13 +6,13 @@ import { useTranslation } from "react-i18next";
 const ContactUsPage = () => {
   const { t } = useTranslation();
   const form = useRef();
-  // const [loading, setLoading] = useState(false);
-  // const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // setLoading(true);
+    setLoading(true);
 
     emailjs
       .sendForm(
@@ -26,14 +26,17 @@ const ContactUsPage = () => {
           console.log(result.text);
           console.log("message sent");
           form.current.reset();
-          // setSuccess(true);
+          setSuccess(true);
         },
         (error) => {
           console.log(error.text);
         }
       )
       .finally(() => {
-        // setLoading(false);
+        setLoading(false);
+        setTimeout(() => {
+          setSuccess(false);
+        }, 2000);
       });
   };
 
@@ -64,9 +67,9 @@ const ContactUsPage = () => {
           />
           <label>{t("message")}</label>
           <textarea name="message" placeholder={t("message")} />
+          {loading && "loading . . ."}
+          {success && "success"}
           <input type="submit" value={t("Send")} />
-          {/* {loading && "loading . . ."}
-        {success && "success"} */}
         </form>
         <div className="contact_info">
           <div className="contact_about">
