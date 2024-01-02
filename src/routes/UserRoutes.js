@@ -15,6 +15,7 @@ import { Outlet } from "react-router-dom";
 import { AuthorizationProvider } from "../contexts/AuthorizationContext";
 import { SearchProvider } from "../contexts/SearchFilterContext";
 import { BurgerMenuProvider } from "../contexts/BurgerMenuProvider";
+import LocationPage from "../pages/FooterLinkPages/LocationPage";
 
 const userRoutes = [
   {
@@ -92,6 +93,10 @@ const userRoutes = [
       {
         element: <ContactUsPage />,
         path: "contact",
+      },
+      {
+        element: <LocationPage />,
+        path: "location",
       },
       {
         element: <ErrorPage />,

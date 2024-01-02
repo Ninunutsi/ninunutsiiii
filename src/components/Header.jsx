@@ -99,7 +99,7 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          {showModal && <ModalPopup />}
+          {isMobileView ? null : showModal && <ModalPopup />}
         </Parameters>
       </HeaderContent>
     </HeaderBg>

@@ -411,3 +411,114 @@ export const FavoritePage = styled.div`
     }
   }
 `;
+
+// Location Page
+
+export const LocationStyle = styled.div`
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+
+  .location_desc {
+    width: 50%;
+    padding: 70px 50px 0 40px;
+
+    .location_display {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      gap: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid gray;
+      margin-bottom: 50px;
+
+      .AtelieLogo {
+        width: 210px;
+        height: 148px;
+      }
+    }
+
+    .title {
+      color: #000;
+      font-family: ${FontFamily};
+      font-size: 26px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 38px;
+    }
+
+    h3 {
+      position: relative;
+      color: #000;
+      font-family: ${FontFamily};
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      margin-bottom: 10px;
+
+      img {
+        position: absolute;
+        right: -80px;
+        bottom: 0;
+      }
+    }
+
+    .Working_days {
+      color: #000;
+      font-family: ${FontFamily};
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    p {
+      color: #000;
+      font-family: ${FontFamily};
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  .location_map {
+    width: 50%;
+    height: 925px;
+  }
+
+  @media screen and (max-width: 1177px) {
+    flex-direction: column;
+    gap: 50px;
+
+    .location_desc,
+    .location_map {
+      width: 100%;
+    }
+
+    .location_map {
+      height: 650px;
+      margin-bottom: 1px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+
+    .location_desc {
+      padding-top: 0;
+      padding-left: 16px;
+  
+    .location_display {
+      width: 100%;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+
+      h3 {
+  
+        img {
+          right: -50px;
+        }
+      }
+    }
+  }
+`;

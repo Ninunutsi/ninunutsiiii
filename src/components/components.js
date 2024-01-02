@@ -582,4 +582,49 @@ export const ModalPopupStyle = styled.div`
       margin-bottom: 20px;
     }
   }
+
+  @media screen and (max-width: 1100px) {
+    height: 338px;
+
+    .image {
+      width: 250px;
+    }
+
+    .modal {
+      width: 250px;
+      justify-content: center;
+
+      form {
+        margin: 0;
+
+        .error-message {
+          left: 175px;
+        }
+        .loading {
+          left: 180px;
+        }
+
+        .email {
+          width: 200px;
+        }
+
+        .submitBtn {
+          padding: 3px 13px;
+          font-size: 16px;
+          line-height: 25px;
+        }
+      }
+
+      .percent,
+      .off {
+        font-size: 32px;
+        line-height: 25px;
+      }
+
+      .text {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
 `;

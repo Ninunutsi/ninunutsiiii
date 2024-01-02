@@ -27,8 +27,8 @@ const Footer = () => {
               <li>
                 <Link to={"/contact"}>{t("Contact")}</Link>
               </li>
-              <li>
-                <Link to={""}>{t("location")}</Link>
+              <li onClick={handleClick}>
+                <Link to={"/location"}>{t("location")}</Link>
               </li>
             </Navigation>
           </div>
@@ -37,9 +37,9 @@ const Footer = () => {
           <Link target="_blank" to={"https://www.facebook.com/mariamisatelie"}>
             <FontAwesomeIcon icon={faFacebook} />
           </Link>
-          <Link>
+          <a href="mailto:mariamtskhovrebashvili74@gmail.com">
             <FontAwesomeIcon icon={faGoogle} />
-          </Link>
+          </a>
         </div>
       </FooterDiv>
     )
