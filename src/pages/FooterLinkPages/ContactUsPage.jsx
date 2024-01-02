@@ -6,9 +6,13 @@ import { useTranslation } from "react-i18next";
 const ContactUsPage = () => {
   const { t } = useTranslation();
   const form = useRef();
+  // const [loading, setLoading] = useState(false);
+  // const [success, setSuccess] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // setLoading(true);
 
     emailjs
       .sendForm(
@@ -21,11 +25,16 @@ const ContactUsPage = () => {
         (result) => {
           console.log(result.text);
           console.log("message sent");
+          form.current.reset();
+          // setSuccess(true);
         },
         (error) => {
           console.log(error.text);
         }
-      );
+      )
+      .finally(() => {
+        // setLoading(false);
+      });
   };
 
   return (
@@ -56,6 +65,8 @@ const ContactUsPage = () => {
           <label>{t("message")}</label>
           <textarea name="message" placeholder={t("message")} />
           <input type="submit" value={t("Send")} />
+          {/* {loading && "loading . . ."}
+        {success && "success"} */}
         </form>
         <div className="contact_info">
           <div className="contact_about">

@@ -24,7 +24,7 @@ const Footer = () => {
               <li>
                 <Link to={"/aboutUs"}>{t("About Us")}</Link>
               </li>
-              <li>
+              <li onClick={handleClick}>
                 <Link to={"/contact"}>{t("Contact")}</Link>
               </li>
               <li onClick={handleClick}>
