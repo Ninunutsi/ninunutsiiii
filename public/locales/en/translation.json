@@ -62,5 +62,11 @@
   "mariam’s atelier": "mariam’s atelier",
   "tkibuli": "Tkibuli Gamsakhurdias",
   "Working Days": "Working Days",
-  "Monday-Friday": "Monday-Friday"
+  "Monday-Friday": "Monday-Friday",
+  "name": "Name",
+  "last name": "Last name",
+  "phone number": "Phone number",
+  "message": "Message",
+  "Send": "Send",
+  "Contact Information": "Contact Information"
 }
