@@ -2,6 +2,9 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ContactStyle } from "../AllPages";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowsRotate, faCheck } from "@fortawesome/free-solid-svg-icons";
+import { Loading } from "../../components/components";
 
 const ContactUsPage = () => {
   const { t } = useTranslation();
@@ -45,31 +48,52 @@ const ContactUsPage = () => {
       <h1>{t("Contact Information")}</h1>
       <div className="about_info">
         <form ref={form} onSubmit={sendEmail}>
-          <label>{t("name")}</label>
-          <input type="text" name="user_name" placeholder={t("name")} />
-          <label>{t("last name")}</label>
+          <label htmlFor="user_name">{t("name")}</label>
           <input
+            id="user_name"
+            type="text"
+            name="user_name"
+            placeholder={t("name")}
+          />
+          <label htmlFor="user_lastName">{t("last name")}</label>
+          <input
+            id="user_lastName"
             type="text"
             name="user_lastName"
             placeholder={t("last name")}
           />
-          <label>{t("Email address")}</label>
+          <label htmlFor="user_email">{t("Email address")}</label>
           <input
+            id="user_email"
             type="email"
             name="user_email"
             placeholder={t("Email address")}
           />
-          <label>{t("phone number")}</label>
+          <label htmlFor="user_phone">{t("phone number")}</label>
           <input
+            id="user_phone"
             type="text"
             name="user_phone"
             placeholder={t("phone number")}
           />
-          <label>{t("message")}</label>
-          <textarea name="message" placeholder={t("message")} />
-          {loading && "loading . . ."}
-          {success && "success"}
-          <input type="submit" value={t("Send")} />
+          <label htmlFor="Message">{t("message")}</label>
+          <textarea id="Message" name="message" placeholder={t("message")} />
+          <div className="inputBtn">
+            <input type="submit" value={t("Send")} />
+            <div className="emailIcons">
+              {loading && (
+                <Loading>
+                  <FontAwesomeIcon
+                    style={{ color: "gray" }}
+                    icon={faArrowsRotate}
+                  />
+                </Loading>
+              )}
+              {success && (
+                <FontAwesomeIcon style={{ color: "green" }} icon={faCheck} />
+              )}
+            </div>
+          </div>
         </form>
         <div className="contact_info">
           <div className="contact_about">

@@ -9,6 +9,8 @@ export const ErrorElement = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
+  padding: 0 40px;
+  text-align: center;
 
   h1 {
     font-family: ${FontFamily};
@@ -32,6 +34,39 @@ export const ErrorElement = styled.div`
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
+  }
+
+  @media screen and (max-width: 1032px) {
+    padding: 0 16px;
+
+    h1 {
+      font-size: 215px;
+      line-height: 224px;
+      margin-top: 50px;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 25px;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 530px) {
+    h1 {
+      font-size: 144px;
+      line-height: 150px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -341,7 +376,7 @@ export const DetailedProducts = styled.div`
     margin-top: 20px;
   }
 
-  .slider-for-mobile{
+  .slider-for-mobile {
     width: 100%;
     height: 492px;
   }
@@ -349,7 +384,7 @@ export const DetailedProducts = styled.div`
   // .slider-container{
   //   width: 100%;
   // }
-  
+
   @media screen and (max-width: 767px) {
     margin-top: 0px;
     flex-direction: column;
@@ -367,7 +402,7 @@ export const DetailedProducts = styled.div`
       margin-top: 0;
     }
 
-    .detailed-name-price{
+    .detailed-name-price {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -377,7 +412,7 @@ export const DetailedProducts = styled.div`
       display: none;
     }
 
-    .d-p-favorite{
+    .d-p-favorite {
       right: 20px;
       top: 480px;
       position: absolute;
@@ -579,7 +614,7 @@ export const LocationStyle = styled.div`
 // Contact Us Page
 
 export const ContactStyle = styled.div`
-  margin-top: 100px;
+  margin-top: 140px;
   padding: 0 40px;
 
   h1 {
@@ -646,6 +681,20 @@ export const ContactStyle = styled.div`
       flex-direction: column;
       align-items: start;
       justify-content: center;
+
+      .inputBtn {
+        position: relative;
+      }
+
+      .emailIcons {
+        position: absolute;
+        top: 18px;
+        right: -30px;
+
+        svg {
+          font-size: 18px;
+        }
+      }
 
       label {
         font-family: ${FontFamily};
@@ -746,4 +795,144 @@ export const ContactStyle = styled.div`
     padding: 0 16px;
   }
 }
+`;
+
+export const AboutStyle = styled.div`
+  margin-top: 140px;
+  padding: 0 40px;
+
+  h2 {
+    font-family: ${FontFamily};
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 21px;
+  }
+
+  .aboutContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+
+    h1 {
+      font-family: ${FontFamily};
+      font-size: 70px;
+      font-weight: 500;
+      line-height: 88px;
+      text-transform: uppercase;
+      max-width: 376px;
+      text-align: center;
+      margin-left: 115px;
+    }
+
+    img {
+      width: 50%;
+      height: 556px;
+    }
+  }
+
+  .aboutContentInfo {
+    margin-bottom: 100px;
+
+    h1 {
+      font-family: ${FontFamily};
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 46px;
+      text-align: center;
+      margin-bottom: 78px;
+    }
+
+    p {
+      font-family: ${FontFamily};
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 27px;
+    }
+
+    .first_paragraph,
+    .third_paragraph {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 41px;
+
+      p {
+        width: 750px;
+      }
+
+      img {
+        width: 555px;
+        height: 393px;
+      }
+    }
+
+    .second_paragraph {
+      margin-bottom: 41px;
+    }
+  }
+
+  @media screen and (max-width: 1096px) {
+    margin-top: 50px;
+    padding: 16px;
+
+    h2 {
+      font-weight: 500;
+    }
+
+    .aboutContent {
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin-top: 40px;
+
+      h1 {
+        margin: 0;
+        max-width: 100%;
+        margin-bottom: 20px;
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .aboutContentInfo {
+      h1 {
+        margin-bottom: 25px;
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .first_paragraph,
+      .third_paragraph {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+        p {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          height: 500px;
+        }
+      }
+
+      .third_paragraph {
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
 `;
