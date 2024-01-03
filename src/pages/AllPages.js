@@ -376,6 +376,10 @@ export const DetailedProducts = styled.div`
     margin-top: 20px;
   }
 
+  .color-icon{
+      margin-top: 15px;
+  }
+
   .slider-for-mobile{
     width: 375px;
     height: 492px;
@@ -433,6 +437,11 @@ export const DetailedProducts = styled.div`
       border: none;
       padding: 10px;
       margin-top: 0px;
+    }
+
+    .back-button{
+      margin-bottom: 10px;
+      margin-left: 15px;
     }
   }
 `;

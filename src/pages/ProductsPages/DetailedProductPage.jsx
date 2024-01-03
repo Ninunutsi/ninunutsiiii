@@ -17,17 +17,20 @@ const DetailedProductPage = () => {
   const imagesForSlider = clothes.filter((product) => product.id !== productId);
   const [details, setDetails] = useState(false)
   const navigate = useNavigate()
-  console.log(navigate)
+
   const isMobileView = window.innerWidth <= 1300
   return (
     <div>
-      <div onClick={() => navigate(-1)}>
-        <FontAwesomeIcon icon={faChevronLeft}/>
-      </div>
       {clothes?.map(
         (prod) =>
           prod.id === productId && (
             <DetailedProducts key={prod.id}>
+              {isMobileView && <FontAwesomeIcon
+                  className="back-button"
+                  onClick={() => navigate(-1)}
+                  icon={faChevronLeft}
+                  size="lg"
+                />}
                 {isMobileView && 
                   <SliderForMobile images={[prod.image, ...prod.moreImages]}/>
                  }  
