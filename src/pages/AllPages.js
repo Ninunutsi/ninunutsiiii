@@ -340,6 +340,20 @@ export const DetailedProducts = styled.div`
     justify-content: center;
     margin-top: 20px;
   }
+
+  .slider-for-mobile{
+    width: 100%;
+    height: 492px;
+  }
+
+  // .slider-container{
+  //   width: 100%;
+  // }
+  
+  @media screen and (max-width: 767px) {
+    // margin-top: 80px;
+    flex-direction: column;
+  }
 `;
 
 export const SimilarProductTitle = styled.h3`
@@ -371,6 +385,11 @@ export const PhotoSwiperContainer = styled.div`
     width: 266px;
     height: 400px;
   }
+
+  @media screen and (max-width: 767px) {
+    visibility: hidden
+   }
+   }
 `;
 
 // Favorite Page
