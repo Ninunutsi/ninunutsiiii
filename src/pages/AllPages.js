@@ -9,6 +9,8 @@ export const ErrorElement = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
+  padding: 0 40px;
+  text-align: center;
 
   h1 {
     font-family: ${FontFamily};
@@ -32,6 +34,39 @@ export const ErrorElement = styled.div`
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
+  }
+
+  @media screen and (max-width: 1032px) {
+    padding: 0 16px;
+
+    h1 {
+      font-size: 215px;
+      line-height: 224px;
+      margin-top: 50px;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 25px;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 530px) {
+    h1 {
+      font-size: 144px;
+      line-height: 150px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 14px;
+    }
   }
 `;
 
