@@ -340,6 +340,54 @@ export const DetailedProducts = styled.div`
     justify-content: center;
     margin-top: 20px;
   }
+
+  .slider-for-mobile{
+    width: 100%;
+    height: 492px;
+  }
+
+  // .slider-container{
+  //   width: 100%;
+  // }
+  
+  @media screen and (max-width: 767px) {
+    margin-top: 0px;
+    flex-direction: column;
+
+    .detailed-product-details {
+      padding: 16px;
+      margin-top: 0;
+    }
+
+    .d-p-id {
+      display: none;
+    }
+
+    .detailed-product-price {
+      margin-top: 0;
+    }
+
+    .detailed-name-price{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .favorites-text {
+      display: none;
+    }
+
+    .d-p-favorite{
+      right: 20px;
+      top: 480px;
+      position: absolute;
+      width: 10px;
+      z-index: 3;
+      justify-content: center;
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
 `;
 
 export const SimilarProductTitle = styled.h3`
@@ -371,6 +419,11 @@ export const PhotoSwiperContainer = styled.div`
     width: 266px;
     height: 400px;
   }
+
+  @media screen and (max-width: 767px) {
+    visibility: hidden
+   }
+   }
 `;
 
 // Favorite Page
