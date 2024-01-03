@@ -376,22 +376,21 @@ export const DetailedProducts = styled.div`
     margin-top: 20px;
   }
 
-  .slider-for-mobile {
-    width: 100%;
+  .slider-for-mobile{
+    width: 375px;
     height: 492px;
+    flex-shrink: 0;
   }
 
-  // .slider-container{
-  //   width: 100%;
-  // }
-
-  @media screen and (max-width: 767px) {
-    margin-top: 0px;
+  @media screen and (max-width: 1300px) {
+    margin-top: 50px;
     flex-direction: column;
+    height: auto;
+    display: block;
 
     .detailed-product-details {
       padding: 16px;
-      margin-top: 0;
+      margin-top: 10px;
     }
 
     .d-p-id {
@@ -402,25 +401,38 @@ export const DetailedProducts = styled.div`
       margin-top: 0;
     }
 
-    .detailed-name-price {
+    .detailed-name-price{
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
+    .product-description {
+      border-radius: 5px;
+      border: 0.5px solid #000;
+      display: flex;
+      width: 343px;
+      height: 32px;
+      padding: 5px 15px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
     .favorites-text {
       display: none;
     }
 
-    .d-p-favorite {
+    .d-p-favorite{
       right: 20px;
       top: 480px;
       position: absolute;
-      width: 10px;
       z-index: 3;
       justify-content: center;
       background-color: white;
       border-radius: 50%;
+      border: none;
+      padding: 10px;
+      margin-top: 0px;
     }
   }
 `;
@@ -455,9 +467,9 @@ export const PhotoSwiperContainer = styled.div`
     height: 400px;
   }
 
-  @media screen and (max-width: 767px) {
-    visibility: hidden
-   }
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
    }
 `;
 
