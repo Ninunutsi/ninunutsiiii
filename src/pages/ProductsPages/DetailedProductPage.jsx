@@ -6,6 +6,7 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useProductsContext } from "../../contexts/ProductsContextProvider";
 import { DetailedProducts, SimilarProductTitle } from "../AllPages";
+import SliderForMobile from "../../components/SliderForMobile";
 
 const DetailedProductPage = () => {
   const { t } = useTranslation();
@@ -13,20 +14,23 @@ const DetailedProductPage = () => {
   const { mainPhoto, addFav: addtoFav, clothes } = useProductsContext();
   const imagesForSlider = clothes.filter((product) => product.id !== productId);
 
+  const isMobileView = window.innerWidth <= 768
   return (
     <div>
       {clothes?.map(
         (prod) =>
           prod.id === productId && (
             <DetailedProducts key={prod.id}>
+                {isMobileView && <div className="slider-container"><SliderForMobile images={[prod.image, ...prod.moreImages]}/></div>}  
               <div className="detailed-slider">
                 <PhotoSwiper photos={prod.moreImages} id={prod.id} />
               </div>
+              {!isMobileView && 
               <img
                 className="detailed-product-image"
                 src={mainPhoto || prod.image}
                 alt=""
-              />
+              />}
               <div className="detailed-product-details">
                 <h1 className="detailed-product-name">{prod.name}</h1>
                 <h2 className="d-p-id">{prod.id.slice(-6)}</h2>

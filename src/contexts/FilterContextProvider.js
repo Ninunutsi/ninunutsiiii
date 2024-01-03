@@ -1,12 +1,12 @@
-import useLocalStorage from "../hooks/useLocalStorage";
 import { createContext, useContext, useState, useEffect } from "react";
 import { useSearch } from "./SearchFilterContext";
 import { useLocation } from "react-router-dom";
+import { useProductsContext } from "./ProductsContextProvider";
 
 const FilterContext = createContext(null);
 
 const FilterContextProvider = ({ children }) => {
-  const [, setCurrentPage] = useLocalStorage("currentPage", 1);
+  const {setCurrentPage} = useProductsContext();
   const [sortByPrice, setSortByPrice] = useState(null);
   const [filterByColor, setFilterByColor] = useState("");
   const {filteredData} = useSearch()
@@ -31,13 +31,16 @@ const FilterContextProvider = ({ children }) => {
         (product) => product.color === filterByColor
       ));
     }
-    setCurrentPage(1);
+    if(filterByColor !=="" || sortByPrice){
+        setCurrentPage(1);
+    }
   }, [filterByColor, sortByPrice, setCurrentPage, currentCategory, filteredData]);
 
   useEffect(() => {
     setSortByPrice(null)
     setFilterByColor("")
-  }, [currentCategory])
+    setCurrentPage(1)
+  }, [currentCategory, setCurrentPage])
 
   const contextValue = {
     setSortByPrice,

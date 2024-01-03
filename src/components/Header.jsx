@@ -34,7 +34,7 @@ const Header = () => {
   const isMainPage = isMobileView ? location.pathname === "/" : false;
 
   useEffect(() => {
-    setCurrentPage(1);
+    // setCurrentPage(1);
     const timer = setTimeout(() => {
       setShowModal(true);
     }, 3000);
