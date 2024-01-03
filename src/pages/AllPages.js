@@ -351,8 +351,42 @@ export const DetailedProducts = styled.div`
   // }
   
   @media screen and (max-width: 767px) {
-    // margin-top: 80px;
+    margin-top: 0px;
     flex-direction: column;
+
+    .detailed-product-details {
+      padding: 16px;
+      margin-top: 0;
+    }
+
+    .d-p-id {
+      display: none;
+    }
+
+    .detailed-product-price {
+      margin-top: 0;
+    }
+
+    .detailed-name-price{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .favorites-text {
+      display: none;
+    }
+
+    .d-p-favorite{
+      right: 20px;
+      top: 480px;
+      position: absolute;
+      width: 10px;
+      z-index: 3;
+      justify-content: center;
+      background-color: white;
+      border-radius: 50%;
+    }
   }
 `;
 
