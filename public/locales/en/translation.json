@@ -4,7 +4,7 @@
   "woman": "Women",
   "kids": "Kids",
   "Search": "Search",
-  "About Us": "About Us",
+  "About Us": "About us",
   "Contact": "Contact",
   "location": "Location",
   "New Collection": "New Collection",
@@ -68,5 +68,7 @@
   "phone number": "Phone number",
   "message": "Message",
   "Send": "Send",
-  "Contact Information": "Contact Information"
+  "Contact Information": "Contact Information",
+  "lorem1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore fugit rerum ratione ex magni laboriosam expedita quod cum laborum, veritatis facilis similique optio minima quas sint. Ipsam minima esse veniam quibusdam vero deleniti neque, sint provident mollitia, aliquid nesciunt soluta quidem similique debitis eum quaerat illo dolores et fuga? Hic!",
+  "title": "Title"
 }

@@ -48,10 +48,10 @@ const UserRegister = () => {
           />
         </div>
         <div className="input">
-          <label htmlFor="fName">{t("Full name")}</label>
+          <label htmlFor="FName">{t("Full name")}</label>
           <input
             name="name"
-            id="fName"
+            id="FName"
             type="text"
             placeholder={t("Full name")}
           />
@@ -80,10 +80,10 @@ const UserRegister = () => {
           />
         </div>
         <div className="input PasInput">
-          <label htmlFor="cPassword">{t("Confirm Password")}</label>
+          <label htmlFor="CPassword">{t("Confirm Password")}</label>
           <input
             name="cPassword"
-            id="cPassword"
+            id="CPassword"
             type={showPassword2 ? "text" : "password"}
             placeholder={t("Confirm Password")}
           />

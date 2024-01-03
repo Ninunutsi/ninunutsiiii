@@ -21,7 +21,7 @@ const Footer = () => {
           </Link>
           <div className="navMenu">
             <Navigation>
-              <li>
+              <li onClick={handleClick}>
                 <Link to={"/aboutUs"}>{t("About Us")}</Link>
               </li>
               <li onClick={handleClick}>
