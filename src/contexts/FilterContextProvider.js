@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect, useMemo } from "react";
 import { useSearch } from "./SearchFilterContext";
 import { useLocation } from "react-router-dom";
 import { useProductsContext } from "./ProductsContextProvider";
@@ -12,7 +12,9 @@ const FilterContextProvider = ({ children }) => {
   const {filteredData} = useSearch()
   const [filteredProducts, setFilteredProducts] = useState(filteredData)
   const location = useLocation()
-  const currentCategory = location.pathname.slice(1)
+  const currentPath = location.pathname.slice(1)
+
+  const currentCategory = useMemo(() => currentPath, [currentPath])
 
   useEffect(() => {
     setFilteredProducts(filteredData);
