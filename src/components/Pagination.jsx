@@ -3,7 +3,7 @@ import Stack from "@mui/material/Stack";
 import Pagination from "@mui/material/Pagination";
 import useScrollToTop from "../hooks/useScrollToTop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faPenToSquare, faCircle } from "@fortawesome/free-solid-svg-icons";
 import { Link, useParams } from "react-router-dom";
 import { ProductGrid, ProductsListTop } from "../pages/AllPages";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
@@ -74,9 +74,12 @@ const ProductList = ({ products, productsPerPage, category }) => {
               </div>
               {photoLoaded && <h2 className="product-name">{product.name}</h2>}
               {photoLoaded && (
-                <div style={{ display: "flex", gap: "5px" }}>
+                <div style={{ display: "flex", gap: "5px", alignItems: "center" }}>
                   <h3 className="product-price">{`${product.price}$`}</h3>
-                  <span style={{ backgroundColor: `${product.color}` }}>.</span>
+                  <FontAwesomeIcon 
+                    icon={faCircle}
+                    style={{color: `${product.color}`}}
+                  />
                 </div>
               )}
             </Link>
