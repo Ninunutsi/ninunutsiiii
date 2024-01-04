@@ -709,8 +709,9 @@ export const ContactStyle = styled.div`
 
       .emailIcons {
         position: absolute;
-        top: 18px;
-        right: -30px;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%)
 
         svg {
           font-size: 18px;
