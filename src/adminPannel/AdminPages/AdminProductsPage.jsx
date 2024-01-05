@@ -1,12 +1,12 @@
 import ProductList from "../../components/Pagination";
 import { useTranslation } from "react-i18next";
 import { useFilterContext } from "../../contexts/FilterContextProvider";
-import { useAdminAuth } from "../../contexts/AdminAuthContext";
 import { useNavigate } from "react-router-dom";
 import useProductFetch from "../AdminHooks/useProductFetch";
 import { LoadingDiv } from "../../components/components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
+import { useAdminAuth } from "../AdminContexts/AdminAuthContext";
 
 const AdminProducts = () => {
   const { t } = useTranslation();
