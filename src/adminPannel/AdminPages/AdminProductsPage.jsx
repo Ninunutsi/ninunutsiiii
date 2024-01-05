@@ -1,7 +1,7 @@
 import ProductList from "../../components/Pagination";
 import { useTranslation } from "react-i18next";
 import { useFilterContext } from "../../contexts/FilterContextProvider";
-import { useAdminAuth } from "../../contexts/AdminAuthContext";
+import { useAdminAuth } from "../AdminContexts/AdminAuthContext";
 import { useNavigate } from "react-router-dom";
 import useProductFetch from "../AdminHooks/useProductFetch";
 import { LoadingDiv } from "../../components/components";
