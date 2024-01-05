@@ -58,13 +58,6 @@ const AdminProducts = () => {
         products={combinedProducts}
         productsPerPage={20}
         category={t("allProducts")}
-        customRender={(product) => (
-          <div key={product.id} style={{ border: "1px solid black" }}>
-            <h3>{product.title}</h3>
-            <h3>{product.price}</h3>
-            <h3>{product.desc}</h3>
-          </div>
-        )}
       />
     </div>
   );
