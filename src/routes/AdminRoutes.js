@@ -12,9 +12,15 @@ import DetailedProductPage from "../pages/ProductsPages/DetailedProductPage";
 const adminRoutes = [
   {
     element: (
-      <AdminAuthProvider>
-        <Outlet />
-      </AdminAuthProvider>
+      <ProductsContextProvider>
+        <SearchProvider>
+          <FilterContextProvider>
+            <AdminAuthProvider>
+              <Outlet />
+            </AdminAuthProvider>
+          </FilterContextProvider>
+        </SearchProvider>
+      </ProductsContextProvider>
     ),
     path: "admin/",
     children: [
@@ -23,15 +29,7 @@ const adminRoutes = [
         index: true,
       },
       {
-        element: (
-          <ProductsContextProvider>
-            <SearchProvider>
-              <FilterContextProvider>
-                <ProtectedRoute element={<AdminProducts />} />
-              </FilterContextProvider>
-            </SearchProvider>
-          </ProductsContextProvider>
-        ),
+        element: <ProtectedRoute element={<AdminProducts />} />,
         path: "products",
       },
       {
