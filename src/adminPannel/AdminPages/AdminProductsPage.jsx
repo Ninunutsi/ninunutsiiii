@@ -16,23 +16,23 @@ const AdminProducts = () => {
   const AdminProducts = filteredProducts.map((prod) => prod);
   const navigate = useNavigate();
 
-  const { error, loading, products } = useProductFetch({
+  const { error, loading } = useProductFetch({
     url: "/api/v1/products",
     method: "GET",
   });
 
-  const productsList =
-    products?.items.map((product) => {
-      return {
-        title: product.title,
-        price: product.price,
-        desc: product.desc,
-        category: product.category,
-        id: product._uuid,
-      };
-    }) || [];
+  // const productsList =
+  //   products?.items.map((product) => {
+  //     return {
+  //       title: product.title,
+  //       price: product.price,
+  //       desc: product.desc,
+  //       category: product.category,
+  //       id: product._uuid,
+  //     };
+  //   }) || [];
 
-  const combinedProducts = [...productsList, ...AdminProducts];
+  // const combinedProducts = [...productsList, ...AdminProducts];
 
   const onClick = () => {
     navigate("/admin/add");
@@ -58,13 +58,13 @@ const AdminProducts = () => {
         products={AdminProducts}
         productsPerPage={20}
         category={t("allProducts")}
-        // customRender={(product) => (
-        //   <div key={product.id} style={{ border: "1px solid black" }}>
-        //     <h3>{product.title}</h3>
-        //     <h3>{product.price}</h3>
-        //     <h3>{product.desc}</h3>
-        //   </div>
-        // )}
+        customRender={(product) => (
+          <div key={product.id} style={{ border: "1px solid black" }}>
+            <h3>{product.title}</h3>
+            <h3>{product.price}</h3>
+            <h3>{product.desc}</h3>
+          </div>
+        )}
       />
     </div>
   );
