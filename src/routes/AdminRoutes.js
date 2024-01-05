@@ -4,7 +4,7 @@ import ProductsContextProvider from "../contexts/ProductsContextProvider";
 import { SearchProvider } from "../contexts/SearchFilterContext";
 import AdminLogin from "../adminPannel/AdminPages/AdminLoginPage";
 import AdminProducts from "../adminPannel/AdminPages/AdminProductsPage";
-import { AdminAuthProvider } from "../contexts/AdminAuthContext";
+import { AdminAuthProvider } from "../adminPannel/AdminContexts/AdminAuthContext";
 import { ProtectedRoute } from "../adminPannel/AdminComponents/ProtectedRoute";
 import AddNewProduct from "../adminPannel/AdminPages/AddNewProductPage";
 import DetailedProductPage from "../pages/ProductsPages/DetailedProductPage";
