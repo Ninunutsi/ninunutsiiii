@@ -88,7 +88,7 @@ const ProductForm = ({ onFormSubmit, title, desc, price, category }) => {
           key={index}
           src={pic}
           alt="img"
-          style={{ width: "400px", height: "500px;" }}
+          style={{ width: "400px",}}
         />
       ))}
     </div>

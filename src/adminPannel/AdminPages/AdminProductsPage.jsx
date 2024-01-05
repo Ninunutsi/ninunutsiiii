@@ -2,10 +2,10 @@ import ProductList from "../../components/Pagination";
 import { useTranslation } from "react-i18next";
 import { useFilterContext } from "../../contexts/FilterContextProvider";
 import { useNavigate } from "react-router-dom";
-import useProductFetch from "../AdminHooks/useProductFetch";
-import { LoadingDiv } from "../../components/components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
+// import useProductFetch from "../AdminHooks/useProductFetch";
+// import { LoadingDiv } from "../../components/components";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
 import { useAdminAuth } from "../AdminContexts/AdminAuthContext";
 
 const AdminProducts = () => {
@@ -16,10 +16,10 @@ const AdminProducts = () => {
   const AdminProducts = filteredProducts.map((prod) => prod);
   const navigate = useNavigate();
 
-  const { error, loading } = useProductFetch({
-    url: "/api/v1/products",
-    method: "GET",
-  });
+  // const { error, loading } = useProductFetch({
+  //   url: "/api/v1/products",
+  //   method: "GET",
+  // });
 
   // const productsList =
   //   products?.items.map((product) => {
@@ -42,13 +42,13 @@ const AdminProducts = () => {
     logout();
   };
 
-  if (loading)
-    return (
-      <LoadingDiv style={{ left: "40px" }}>
-        <FontAwesomeIcon icon={faArrowsRotate} />
-      </LoadingDiv>
-    );
-  if (error) return <p>{error}</p>;
+  // if (loading)
+  //   return (
+  //     <LoadingDiv style={{ left: "40px" }}>
+  //       <FontAwesomeIcon icon={faArrowsRotate} />
+  //     </LoadingDiv>
+  //   );
+  // if (error) return <p>{error}</p>;
 
   return (
     <div>
@@ -58,13 +58,6 @@ const AdminProducts = () => {
         products={AdminProducts}
         productsPerPage={20}
         category={t("allProducts")}
-        customRender={(product) => (
-          <div key={product.id} style={{ border: "1px solid black" }}>
-            <h3>{product.title}</h3>
-            <h3>{product.price}</h3>
-            <h3>{product.desc}</h3>
-          </div>
-        )}
       />
     </div>
   );
