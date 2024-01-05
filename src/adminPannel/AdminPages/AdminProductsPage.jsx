@@ -55,7 +55,7 @@ const AdminProducts = () => {
       <button onClick={handleLogout}>Logout</button>
       <button onClick={onClick}>Add Product</button>
       <ProductList
-        products={combinedProducts}
+        products={AdminProducts}
         productsPerPage={20}
         category={t("allProducts")}
         // customRender={(product) => (
