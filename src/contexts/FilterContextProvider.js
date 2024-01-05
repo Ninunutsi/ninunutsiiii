@@ -6,48 +6,54 @@ import { useProductsContext } from "./ProductsContextProvider";
 const FilterContext = createContext(null);
 
 const FilterContextProvider = ({ children }) => {
-  const {setCurrentPage} = useProductsContext();
+  const { setCurrentPage } = useProductsContext();
   const [sortByPrice, setSortByPrice] = useState(null);
   const [filterByColor, setFilterByColor] = useState("");
-  const {filteredData} = useSearch()
-  const [filteredProducts, setFilteredProducts] = useState(filteredData)
-  const location = useLocation()
-  const currentPath = location.pathname.slice(1)
+  const { filteredData } = useSearch();
+  const [filteredProducts, setFilteredProducts] = useState(filteredData);
+  const location = useLocation();
+  const currentPath = location.pathname.slice(1);
 
-  const currentCategory = useMemo(() => currentPath, [currentPath])
+  const currentCategory = useMemo(() => currentPath, [currentPath]);
 
   useEffect(() => {
     setFilteredProducts(filteredData);
     if (sortByPrice === "low-to-high") {
-        setFilteredProducts((prevState) =>
+      setFilteredProducts((prevState) =>
         [...prevState].sort((a, b) => a.price - b.price)
       );
     } else if (sortByPrice === "high-to-low") {
-        setFilteredProducts((prevState) =>
+      setFilteredProducts((prevState) =>
         [...prevState].sort((a, b) => b.price - a.price)
       );
     }
 
     if (filterByColor.length > 0 && filterByColor !== "color") {
-      setFilteredProducts(prevState => prevState.filter(
-        (product) => product.color === filterByColor
-      ));
+      setFilteredProducts((prevState) =>
+        prevState.filter((product) => product.color === filterByColor)
+      );
     }
-    if(filterByColor !=="" || sortByPrice){
-        setCurrentPage(1);
+    if (filterByColor !== "" || sortByPrice) {
+      setCurrentPage(1);
     }
-  }, [filterByColor, sortByPrice, setCurrentPage, currentCategory, filteredData]);
+  }, [
+    filterByColor,
+    sortByPrice,
+    setCurrentPage,
+    currentCategory,
+    filteredData,
+  ]);
 
   useEffect(() => {
-    setSortByPrice(null)
-    setFilterByColor("")
-    setCurrentPage(1)
-  }, [currentCategory, setCurrentPage])
+    setSortByPrice(null);
+    setFilterByColor("");
+    setCurrentPage(1);
+  }, [currentCategory, setCurrentPage]);
 
   const contextValue = {
     setSortByPrice,
     setFilterByColor,
-    filteredProducts
+    filteredProducts,
   };
 
   return (

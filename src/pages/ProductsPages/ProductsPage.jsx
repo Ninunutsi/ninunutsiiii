@@ -7,13 +7,13 @@ import { useLocation } from "react-router-dom";
 const ProductsPage = () => {
   const { t } = useTranslation();
   const { clothes } = useProductsContext();
-  const {filteredProducts} = useFilterContext()
-  const location = useLocation()
+  const { filteredProducts } = useFilterContext();
+  const location = useLocation();
 
-  const currentCategory = location.pathname.slice(1)
-  const filteredClothes = filteredProducts ? 
-  filteredProducts.filter((prod) => prod.category === currentCategory) :
-  clothes.filter((prod) => prod.category === currentCategory)
+  const currentCategory = location.pathname.slice(1);
+  const filteredClothes = filteredProducts
+    ? filteredProducts.filter((prod) => prod.category === currentCategory)
+    : clothes.filter((prod) => prod.category === currentCategory);
 
   return (
     <ProductList

@@ -5,7 +5,7 @@ import { useState } from "react";
 const AdminLogin = () => {
   const navigate = useNavigate();
   const { login } = useAdminAuth();
-//   დროებით ესე და მერე .env-ში შევინახოთ
+  //   დროებით ესე და მერე .env-ში შევინახოთ
   const validUserName = "cap";
   const validPassword = "12";
   const [username, setUsername] = useState("");

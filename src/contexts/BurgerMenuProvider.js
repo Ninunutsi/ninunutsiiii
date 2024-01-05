@@ -27,7 +27,7 @@ export const BurgerMenuProvider = ({ children }) => {
         isBurgerMenuOpen,
         openBurgerMenu,
         closeBurgerMenu,
-        setBurgerMenuOpen
+        setBurgerMenuOpen,
       }}
     >
       {children}

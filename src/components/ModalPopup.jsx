@@ -6,7 +6,10 @@ import { faArrowsRotate, faCheck } from "@fortawesome/free-solid-svg-icons";
 import useLocalStorage from "../hooks/useLocalStorage";
 
 const ModalPopup = () => {
-  const [isSubmited, setIsSubmited] = useLocalStorage("isModalSubmitted", false)
+  const [isSubmited, setIsSubmited] = useLocalStorage(
+    "isModalSubmitted",
+    false
+  );
 
   const { loading, sentEmail, sendRequest } = useRequest({
     url: "/api/v1/users",

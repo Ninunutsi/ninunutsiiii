@@ -29,7 +29,7 @@ const FilterForm = ({ nav }) => {
   }, [search]);
 
   return (
-    <form  onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <input
         name="SearchBar"
         id="SearchBar"

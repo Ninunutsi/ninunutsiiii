@@ -1,8 +1,7 @@
 import { useState } from "react";
 
-const useRequest = ({ url, method }) => {
+const useProductRequest = ({ url, method }) => {
   const [loading, setLoading] = useState(false);
-  const [sentEmail, setSentEmail] = useState(false);
 
   const sendRequest = async (body, custom) => {
     setLoading(true);
@@ -11,22 +10,18 @@ const useRequest = ({ url, method }) => {
       method,
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.REACT_APP_USERS}`,
+        Authorization: `Bearer ${process.env.REACT_APP_PRODUCTS}`,
       },
       body: !!body && method !== "GET" ? JSON.stringify(body) : undefined,
     });
 
     const data = await res.json();
     setLoading(false);
-    setSentEmail(true);
 
-    setTimeout(() => {
-      setSentEmail(false);
-    }, 1000);
     return data;
   };
 
-  return { loading, sentEmail, sendRequest };
+  return { loading, sendRequest };
 };
 
-export default useRequest;
+export default useProductRequest;

@@ -12,7 +12,7 @@ const Slider = ({ images }) => {
   const [slidesPerView, setSlidesPerView] = useState(getInitialSlidesPerView());
 
   function getInitialSlidesPerView() {
-    return window.innerWidth < 767 ? 3 : 4;
+    return window.innerWidth < 767 ? 2.5 : 4;
   }
 
   useEffect(() => {

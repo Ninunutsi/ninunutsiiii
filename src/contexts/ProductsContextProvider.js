@@ -31,7 +31,6 @@ const ProductsContextProvider = ({ children }) => {
     setFavorites(clothes.filter((prod) => prod.isFavorited));
   }, [clothes, setFavorites]);
 
-
   const contextValue = {
     mainPhoto,
     setMainPhoto,
@@ -40,7 +39,7 @@ const ProductsContextProvider = ({ children }) => {
     clothes,
     currentPage,
     setCurrentPage,
-    loading
+    loading,
   };
 
   return (

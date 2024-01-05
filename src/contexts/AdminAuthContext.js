@@ -8,7 +8,10 @@ export const useAdminAuth = () => {
 };
 
 export const AdminAuthProvider = ({ children }) => {
-  const [ adminAuth, setAdminAuth ] = useLocalStorage("adminAuthentication", false);
+  const [adminAuth, setAdminAuth] = useLocalStorage(
+    "adminAuthentication",
+    false
+  );
   const [authenticated, setAuthenticated] = useState(adminAuth);
   const login = () => {
     setAdminAuth(true);
@@ -16,9 +19,9 @@ export const AdminAuthProvider = ({ children }) => {
   };
 
   const logout = () => {
-    setAuthenticated(false)
-    setAdminAuth(false)
-  }
+    setAuthenticated(false);
+    setAdminAuth(false);
+  };
   return (
     <AdminAuthContext.Provider value={{ authenticated, login, logout }}>
       {children}

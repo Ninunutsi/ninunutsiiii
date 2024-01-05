@@ -376,11 +376,11 @@ export const DetailedProducts = styled.div`
     margin-top: 20px;
   }
 
-  .color-icon{
-      margin-top: 15px;
+  .color-icon {
+    margin-top: 15px;
   }
 
-  .slider-for-mobile{
+  .slider-for-mobile {
     width: 375px;
     height: 492px;
     flex-shrink: 0;
@@ -405,7 +405,7 @@ export const DetailedProducts = styled.div`
       margin-top: 0;
     }
 
-    .detailed-name-price{
+    .detailed-name-price {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -421,12 +421,12 @@ export const DetailedProducts = styled.div`
       justify-content: space-between;
       align-items: center;
     }
-    
+
     .favorites-text {
       display: none;
     }
 
-    .d-p-favorite{
+    .d-p-favorite {
       right: 20px;
       top: 480px;
       position: absolute;
@@ -439,7 +439,7 @@ export const DetailedProducts = styled.div`
       margin-top: 0px;
     }
 
-    .back-button{
+    .back-button {
       margin-bottom: 10px;
       margin-left: 15px;
     }

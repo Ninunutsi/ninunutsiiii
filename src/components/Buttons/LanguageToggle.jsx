@@ -12,12 +12,12 @@ const LanguageToggle = () => {
   const toggleLanguage = () => {
     const newLanguage = i18n.language === "ge" ? "en" : "ge";
     i18n.changeLanguage(newLanguage);
-    setCurrentLanguage(newLanguage)
+    setCurrentLanguage(newLanguage);
   };
 
   useEffect(() => {
-    i18n.changeLanguage(currentLanguage)
-  }, [i18n, currentLanguage])
+    i18n.changeLanguage(currentLanguage);
+  }, [i18n, currentLanguage]);
 
   return (
     <button

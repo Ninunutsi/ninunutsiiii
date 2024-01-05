@@ -18,19 +18,19 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
   );
 
   const inputStyle = {
-    border: isInputEmpty && !sentEmail
-      ? "1px solid black"
-      : isValidEmail && !sentEmail
-      ? "1px solid black"
-      : isValidEmail && sentEmail
-      ? "1px solid green"
-      :"1px solid #D80000",
+    border:
+      isInputEmpty && !sentEmail
+        ? "1px solid black"
+        : isValidEmail && !sentEmail
+        ? "1px solid black"
+        : isValidEmail && sentEmail
+        ? "1px solid green"
+        : "1px solid #D80000",
 
-      color: isValidEmail ? "black" : "#D80000"
+    color: isValidEmail ? "black" : "#D80000",
   };
 
-  const emailSubForm = sentEmail ? "emailSubSuccess" : ""
-
+  const emailSubForm = sentEmail ? "emailSubSuccess" : "";
 
   useEffect(() => {}, [isModalClosed]);
   const closeModal = () => {

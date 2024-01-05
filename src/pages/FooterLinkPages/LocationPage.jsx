@@ -31,7 +31,7 @@ const LocationPage = () => {
           height="100%"
           allowFullScreen={true}
           loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade" 
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </LocationStyle>

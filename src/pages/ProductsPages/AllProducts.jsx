@@ -4,10 +4,10 @@ import { useFilterContext } from "../../contexts/FilterContextProvider";
 
 const AllProducts = () => {
   const { t } = useTranslation();
-  const {filteredProducts} = useFilterContext()
+  const { filteredProducts } = useFilterContext();
 
   const AllProducts = filteredProducts.map((prod) => prod);
-  
+
   return (
     <ProductList
       products={AllProducts}

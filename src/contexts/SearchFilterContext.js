@@ -6,11 +6,11 @@ const SearchContext = createContext(null);
 
 export const SearchProvider = ({ children }) => {
   const [search, setSearch] = useState("");
-  const {clothes} = useProductsContext()
+  const { clothes } = useProductsContext();
   const [filteredData, setFilteredData] = useState(clothes);
-  const location = useLocation()
+  const location = useLocation();
 
-  const currentCategory = location.pathname.slice(1)
+  const currentCategory = location.pathname.slice(1);
 
   const handleFilter = () => {
     if (search === "") {
@@ -37,8 +37,8 @@ export const SearchProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    if(currentCategory !== "allProducts"){
-      setFilteredData(clothes)
+    if (currentCategory !== "allProducts") {
+      setFilteredData(clothes);
     }
   }, [currentCategory, clothes]);
 

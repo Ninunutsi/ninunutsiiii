@@ -15,18 +15,19 @@ const EmailForm = ({ onFormSubmit, loading, sentEmail, isFormSubmitted }) => {
   const { t } = useTranslation();
 
   const inputStyle = {
-    border: isInputEmpty && !isFormSubmitted
-      ? "1px solid black"
-      : isValidEmail && !isFormSubmitted
-      ? "1px solid black"
-      : isValidEmail && isFormSubmitted
-      ? "1px solid green"
-      :"1px solid #D80000",
+    border:
+      isInputEmpty && !isFormSubmitted
+        ? "1px solid black"
+        : isValidEmail && !isFormSubmitted
+        ? "1px solid black"
+        : isValidEmail && isFormSubmitted
+        ? "1px solid green"
+        : "1px solid #D80000",
 
-      color: isValidEmail ? "black" : "#D80000"
+    color: isValidEmail ? "black" : "#D80000",
   };
 
-  const emailSubForm = isFormSubmitted ? "emailSubSuccess" : ""
+  const emailSubForm = isFormSubmitted ? "emailSubSuccess" : "";
 
   return (
     <SubscriptionStyle>
