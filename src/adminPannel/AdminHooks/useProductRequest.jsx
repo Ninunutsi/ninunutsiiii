@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { CRUD_PRODUCTS } from "../../CRUD-API";
 
 const useProductRequest = ({ url, method }) => {
   const [loading, setLoading] = useState(false);
@@ -11,7 +10,7 @@ const useProductRequest = ({ url, method }) => {
       method,
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${CRUD_PRODUCTS}`,
+        Authorization: `Bearer ${process.env.REACT_APP_PRODUCTS}`,
       },
       body: !!body && method !== "GET" ? JSON.stringify(body) : undefined,
     });

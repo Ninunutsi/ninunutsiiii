@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react";
-import { CRUD_PRODUCTS } from "../../CRUD-API";
 
 const useProductFetch = ({ url, method }) => {
   const [products, setProducts] = useState(null);
@@ -12,7 +11,7 @@ const useProductFetch = ({ url, method }) => {
       method,
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${CRUD_PRODUCTS}`,
+        Authorization: `Bearer ${process.env.REACT_APP_PRODUCTS}`,
       },
     })
       .then((res) => {

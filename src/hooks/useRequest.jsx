@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { CRUD_USERS_EMAIL } from "../CRUD-API";
 
 const useRequest = ({ url, method }) => {
   const [loading, setLoading] = useState(false);
@@ -12,7 +11,7 @@ const useRequest = ({ url, method }) => {
       method,
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${CRUD_USERS_EMAIL}`,
+        Authorization: `Bearer ${process.env.REACT_APP_USERS}`,
       },
       body: !!body && method !== "GET" ? JSON.stringify(body) : undefined,
     });
