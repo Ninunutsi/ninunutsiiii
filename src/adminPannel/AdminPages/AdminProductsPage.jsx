@@ -1,7 +1,7 @@
 import ProductList from "../../components/Pagination";
 import { useTranslation } from "react-i18next";
 import { useFilterContext } from "../../contexts/FilterContextProvider";
-import { useAdminAuth } from "../AdminContexts/AdminAuthContext";
+import { useAdminAuth } from "../../contexts/AdminAuthContext";
 import { useNavigate } from "react-router-dom";
 import useProductFetch from "../AdminHooks/useProductFetch";
 import { LoadingDiv } from "../../components/components";
@@ -58,6 +58,13 @@ const AdminProducts = () => {
         products={combinedProducts}
         productsPerPage={20}
         category={t("allProducts")}
+        // customRender={(product) => (
+        //   <div key={product.id} style={{ border: "1px solid black" }}>
+        //     <h3>{product.title}</h3>
+        //     <h3>{product.price}</h3>
+        //     <h3>{product.desc}</h3>
+        //   </div>
+        // )}
       />
     </div>
   );
