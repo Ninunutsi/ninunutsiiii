@@ -1,4 +1,4 @@
-import ProductList from "../../components/Pagination";
+import ProductList from "../AdminComponents/AdminPagination";
 import { useTranslation } from "react-i18next";
 import { useFilterContext } from "../../contexts/FilterContextProvider";
 import { useNavigate } from "react-router-dom";
@@ -58,6 +58,7 @@ const AdminProducts = () => {
         products={AdminProducts}
         productsPerPage={20}
         category={t("allProducts")}
+        adminMode={true}
       />
     </div>
   );
