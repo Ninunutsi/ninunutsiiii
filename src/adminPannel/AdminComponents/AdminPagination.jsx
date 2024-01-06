@@ -1,16 +1,18 @@
-import Filter from "./Filter/Filter";
+import Filter from "../../components/Filter/Filter";
 import Stack from "@mui/material/Stack";
 import Pagination from "@mui/material/Pagination";
-import useScrollToTop from "../hooks/useScrollToTop";
+import useScrollToTop from "../../hooks/useScrollToTop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHeart,
+  faPen,
   faCircle,
+  faTrash,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, useParams } from "react-router-dom";
-import { ProductGrid, ProductsListTop } from "../pages/AllPages";
-import { useProductsContext } from "../contexts/ProductsContextProvider";
+import { ProductGrid, ProductsListTop } from "../../pages/AllPages";
+import { useProductsContext } from "../../contexts/ProductsContextProvider";
 import { useEffect, useState } from "react";
+import useProductRequest from "../AdminHooks/useProductRequest";
 
 const ProductList = ({ products, productsPerPage, category }) => {
   const { setMainPhoto, currentPage, setCurrentPage } = useProductsContext();
@@ -20,6 +22,9 @@ const ProductList = ({ products, productsPerPage, category }) => {
   const { handleClick } = useScrollToTop();
   const { productId } = useParams();
   const [photoLoaded, setPhotoLoaded] = useState(false);
+  const {sendRequest} = useProductRequest({
+    method: "DELETE",
+  })
 
   useEffect(() => {
     setMainPhoto(null);
@@ -32,6 +37,14 @@ const ProductList = ({ products, productsPerPage, category }) => {
     });
     setCurrentPage(value);
   };
+
+  const handleDelete = (id) => {
+    sendRequest(null, `/api/v1/products/${id}`)
+  }
+
+  const handleEdit = () => {
+
+  }
 
   return (
     <div>
@@ -57,13 +70,20 @@ const ProductList = ({ products, productsPerPage, category }) => {
                   alt=""
                   onLoad={() => setPhotoLoaded(true)}
                 />
-                {product.isFavorited && (
+                <div className="product-admin-icons">
                   <FontAwesomeIcon
                     size="lg"
-                    className="product-heart-icon"
-                    icon={faHeart}
+                    className="product-edit-icon"
+                    icon={faPen}
+                    onClick={handleEdit}
                   />
-                )}
+                  <FontAwesomeIcon
+                    size="lg"
+                    className="product-delete-icon"
+                    icon={faTrash}
+                    onClick={() => handleDelete(product.id)}
+                  />
+                </div>
               </div>
               {photoLoaded && <h2 className="product-name">{product.name}</h2>}
               {photoLoaded && (

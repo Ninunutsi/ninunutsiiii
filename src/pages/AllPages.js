@@ -206,19 +206,6 @@ export const ProductGrid = styled.div`
     right: 15px;
   }
 
-  .product-plus-icon {
-    position: absolute;
-    top: 50px;
-    right: 5px;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-
-    &:hover .product-plus-icon {
-      opacity: 1;
-    }
-  }
-
   .product-name {
     font-family: ${FontFamily};
     font-size: 20px;
@@ -237,6 +224,41 @@ export const ProductGrid = styled.div`
     width: 100%;
     height: 500px;
   }
+
+  .product-image:hover + .product-admin-icons{
+    display: flex;
+  }
+
+
+  .product-edit-icon{
+    color: #0000FF;
+    z-index: 3
+  }
+
+  .product-delete-icon{
+    color: #D80000;
+  }
+
+  //admin features -->>
+
+  .product-admin-icons{
+    display: none;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    justify-content: center;
+  }
+
+  
+  // .product-img-and-icon {
+  //  &:hover {
+  //   .product-edit-icon{
+  //     opacity: 1
+  //   }
+  //  }
+  // }
+  // <<--
 
   @media screen and (max-width: 1023px) {
     .product-container {
