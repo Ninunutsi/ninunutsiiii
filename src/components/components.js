@@ -440,7 +440,7 @@ export const FooterDiv = styled.div`
     gap: 40px;
 
     svg {
-      font-size: 28px;
+      font-size: 32px;
       color: white;
       transition: 0.3s;
 

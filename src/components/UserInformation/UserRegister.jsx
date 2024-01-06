@@ -55,7 +55,9 @@ const UserRegister = () => {
     if (isValid) {
       console.log("Form submitted:", userRegister);
       sendRequest([{ userRegister }]).catch((err) => console.log(err));
+      closeRegistration()
     }
+
   };
 
   return (
