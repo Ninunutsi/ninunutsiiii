@@ -224,40 +224,44 @@ export const ProductGrid = styled.div`
     width: 100%;
     height: 500px;
   }
-
+  
+  //admin features -->>
+  
   .product-image:hover + .product-admin-icons{
     display: flex;
   }
 
-
   .product-edit-icon{
     color: #0000FF;
-    z-index: 3
+    z-index: 999;
+
+    &:hover{
+      opacity: 0.6;
+    }
   }
 
   .product-delete-icon{
     color: #D80000;
-  }
+    z-index: 999;
 
-  //admin features -->>
+    &:hover{
+      opacity: 0.6;
+    }
+  }
 
   .product-admin-icons{
     display: none;
     gap: 20px;
     position: absolute;
     top: 50%;
-    right: 40%;
-    justify-content: center;
+    right: 40%; 
+    z-index: 999;
+
+    &:hover{
+      display: flex;
+    }
   }
 
-  
-  // .product-img-and-icon {
-  //  &:hover {
-  //   .product-edit-icon{
-  //     opacity: 1
-  //   }
-  //  }
-  // }
   // <<--
 
   @media screen and (max-width: 1023px) {
