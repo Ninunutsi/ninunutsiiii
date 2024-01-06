@@ -166,6 +166,7 @@ export const UsersContent = styled.div`
 `;
 
 export const UserForm = styled.form`
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -263,6 +264,13 @@ export const UserForm = styled.form`
          opacity: 0.9;
         }
     }
+  }
+
+  .formLoadings {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;
 
