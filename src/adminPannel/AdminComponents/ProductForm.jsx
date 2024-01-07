@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const ProductForm = ({ onFormSubmit, title, desc, price, category }) => {
+const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
   const titleNameRef = useRef();
   const priceRef = useRef();
   const descRef = useRef();
@@ -54,7 +54,7 @@ const ProductForm = ({ onFormSubmit, title, desc, price, category }) => {
           type="text"
           placeholder="Product Title"
           ref={titleNameRef}
-          defaultValue={title}
+          defaultValue={name}
         />
         <input
           type="text"
@@ -66,7 +66,7 @@ const ProductForm = ({ onFormSubmit, title, desc, price, category }) => {
           type="text"
           placeholder="Product description"
           ref={descRef}
-          defaultValue={desc}
+          defaultValue={description}
         />
         <input // აქ შეიძლება გაკეთდეს სელექთი
           type="text"
