@@ -180,6 +180,9 @@ export const SwiperContainer = styled.div`
 
 export const SlidesImages = styled.img`
   width: 100%;
+  height: 500px;
+  aspect-ratio: 320/500;
+  object-fit: cover;
 `;
 
 export const ProductGrid = styled.div`
