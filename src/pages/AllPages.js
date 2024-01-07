@@ -231,12 +231,16 @@ export const ProductGrid = styled.div`
     display: flex;
   }
 
+  .product-container-admin:hover{
+    filter: brightness(70%);
+  }
+
   .product-edit-icon{
     color: #0000FF;
     z-index: 999;
 
     &:hover{
-      opacity: 0.6;
+      color: white;
     }
   }
 
@@ -245,7 +249,7 @@ export const ProductGrid = styled.div`
     z-index: 999;
 
     &:hover{
-      opacity: 0.6;
+      color: white;
     }
   }
 
@@ -253,8 +257,8 @@ export const ProductGrid = styled.div`
     display: none;
     gap: 20px;
     position: absolute;
-    top: 50%;
-    right: 40%; 
+    top: 45%;
+    right: 42%; 
     z-index: 999;
 
     &:hover{
@@ -411,6 +415,15 @@ export const DetailedProducts = styled.div`
     height: 492px;
     flex-shrink: 0;
   }
+
+
+  // admin mode -->>
+
+  .edit-mode{
+    filter: brightness(60%);
+    
+  }
+  //  <<--
 
   @media screen and (max-width: 1300px) {
     margin-top: 50px;

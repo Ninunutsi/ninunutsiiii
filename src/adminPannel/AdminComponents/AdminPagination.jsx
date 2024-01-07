@@ -8,7 +8,7 @@ import { Link, useParams } from "react-router-dom";
 import { ProductGrid, ProductsListTop } from "../../pages/AllPages";
 import { useProductsContext } from "../../contexts/ProductsContextProvider";
 import { useEffect, useState } from "react";
-// import useProductRequest from "../AdminHooks/useProductRequest";
+import useProductRequest from "../AdminHooks/useProductRequest";
 
 const ProductList = ({ products, productsPerPage, category }) => {
   const { setMainPhoto, currentPage, setCurrentPage } = useProductsContext();
@@ -18,9 +18,9 @@ const ProductList = ({ products, productsPerPage, category }) => {
   const { handleClick } = useScrollToTop();
   const { productId } = useParams();
   const [photoLoaded, setPhotoLoaded] = useState(false);
-//   const { sendRequest } = useProductRequest({
-//     method: "DELETE",
-//   });
+  const { sendRequest } = useProductRequest({
+    method: "DELETE",
+  });
 
   useEffect(() => {
     setMainPhoto(null);
@@ -35,12 +35,8 @@ const ProductList = ({ products, productsPerPage, category }) => {
   };
 
   const handleDelete = (id) => {
-    // sendRequest(null, `/api/v1/products/${id}`);
+    sendRequest(null, `/api/v1/products/${id}`);
     console.log("i'm deleting")
-  };
-
-  const handleEdit = () => {
-    console.log("i'm editing");
   };
 
   return (
@@ -52,25 +48,24 @@ const ProductList = ({ products, productsPerPage, category }) => {
       <ProductGrid>
         {currentProducts.map((product) => (
           <div
-            className="product-container"
+            className="product-container product-container-admin"
             key={product.id}
             onClick={handleClick}
           >
-            <Link
-              style={{ color: "black" }}
-              to={`/${product.category}/products/${product.id}`}
-            >
+            <div style={{ color: "black" }}>
               <div className="product-img-and-icon">
                 <img
-                  className="product-image"
+                  className="product-image product-image-admin"
                   src={product.image}
                   alt=""
                   onLoad={() => setPhotoLoaded(true)}
                 />
                 <div className="product-admin-icons">
-                  <div className="product-edit-icon" onClick={handleEdit}>
+                  <Link
+                  to={`/admin/products/${product.id}`}
+                  className="product-edit-icon">
                     <FontAwesomeIcon size="lg" icon={faPen} />
-                  </div>
+                  </Link>
                   <div
                     className="product-delete-icon"
                     onClick={() => handleDelete(product.id)}
@@ -91,7 +86,7 @@ const ProductList = ({ products, productsPerPage, category }) => {
                   />
                 </div>
               )}
-            </Link>
+            </div>
           </div>
         ))}
       </ProductGrid>

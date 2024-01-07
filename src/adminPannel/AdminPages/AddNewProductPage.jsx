@@ -13,8 +13,8 @@ const AddNewProduct = () => {
     method: "POST",
   });
 
-  const onSubmit = (title, price, desc, category) => {
-    sendRequest([{ title, price, desc, category }]);
+  const onSubmit = (name, price, description, category) => {
+    sendRequest([{ name, price, description, category }]);
   };
 
   if (loading)

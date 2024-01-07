@@ -7,36 +7,34 @@ import AdminProducts from "../adminPannel/AdminPages/AdminProductsPage";
 import { AdminAuthProvider } from "../adminPannel/AdminContexts/AdminAuthContext";
 import { ProtectedRoute } from "../adminPannel/AdminComponents/ProtectedRoute";
 import AddNewProduct from "../adminPannel/AdminPages/AddNewProductPage";
-import DetailedProductPage from "../pages/ProductsPages/DetailedProductPage";
+import EditProductPage from "../adminPannel/AdminPages/EditProductPage";
 
 const adminRoutes = [
   {
     element: (
-      <AdminAuthProvider>
-        <Outlet />
-      </AdminAuthProvider>
+      <ProductsContextProvider>
+        <SearchProvider>
+          <FilterContextProvider>
+            <AdminAuthProvider>
+              <Outlet />
+            </AdminAuthProvider>
+          </FilterContextProvider>
+        </SearchProvider>
+      </ProductsContextProvider>
     ),
-    path: "admin/",
+    path: "/admin",
     children: [
       {
         element: <AdminLogin />,
         index: true,
       },
       {
-        element: (
-          <ProductsContextProvider>
-            <SearchProvider>
-              <FilterContextProvider>
-                <ProtectedRoute element={<AdminProducts />} />
-              </FilterContextProvider>
-            </SearchProvider>
-          </ProductsContextProvider>
-        ),
+        element: <ProtectedRoute element={<AdminProducts />} />,
         path: "products",
       },
       {
-        element: <ProtectedRoute element={<DetailedProductPage />} />,
-        path: "admin/products/:productId",
+        element: <ProtectedRoute element={<EditProductPage />} />,
+        path: "products/:productId",
       },
       {
         element: <ProtectedRoute element={<AddNewProduct />} />,
