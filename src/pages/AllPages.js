@@ -175,14 +175,18 @@ export const SwiperContainer = styled.div`
     .swiper-button-prev {
       display: none;
     }
+
   }
 `;
 
 export const SlidesImages = styled.img`
   width: 100%;
-  height: 500px;
-  aspect-ratio: 320/500;
   object-fit: cover;
+  height: 500px;
+
+  @media screen and (max-width: 767px) {
+    height: 150px;
+  }
 `;
 
 export const ProductGrid = styled.div`
