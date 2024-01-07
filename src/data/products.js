@@ -27,7 +27,7 @@ const products = [
   {
     id: "IzzBJKy66-YvAX-bbLjOj",
     name: "Product 2",
-    image: forProductList,
+    image: detailedImage1,
     price: 10,
     isFavorited: false,
     category: "woman",
@@ -46,7 +46,7 @@ const products = [
   {
     id: "7lbRV86qQIOCiFABflW1z",
     name: "Product 3",
-    image: forProductList,
+    image: detailedImage2,
     price: 10,
     isFavorited: false,
     category: "woman",
@@ -84,7 +84,7 @@ const products = [
   {
     id: "7joyifQasuYKM3NQmqgbw",
     name: "Product 5",
-    image: forProductList,
+    image: weddingPhoto,
     price: 10,
     isFavorited: false,
     category: "woman",

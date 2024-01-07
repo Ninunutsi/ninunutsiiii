@@ -223,6 +223,7 @@ export const ProductGrid = styled.div`
   .product-image {
     width: 100%;
     height: 500px;
+    object-fit: cover;
   }
   
   //admin features -->>
@@ -495,24 +496,19 @@ export const SimilarProductTitle = styled.h3`
 `;
 
 export const PhotoSwiperContainer = styled.div`
-  display: flex;
-  overflow-x: auto;
-  gap: 19px;
   position: absolute;
-  left: 0px;
-  bottom: 95px;
-  width: 28%;
+  right: 75%;
+  bottom: 9%;
   z-index: 2;
-  transition-timing-function: linear;
-  height: auto;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  scrollbar-color: transparent transparent;
+  max-width: 532px;
 
   .detailed-slider-images {
     object-fit: cover;
     width: 266px;
     height: 400px;
+    aspect-ratio: 266/400;
+    flex-shrink: 0;
+    min-width: 0;
   }
 
   @media screen and (max-width: 1300px) {

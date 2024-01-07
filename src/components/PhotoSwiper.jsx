@@ -1,56 +1,48 @@
 // PhotoSwiper.jsx
-import React, { useRef, useEffect } from "react";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Keyboard } from "swiper/modules";
 import { PhotoSwiperContainer } from "../pages/AllPages";
 
-const PhotoSwiper = ({ photos, id }) => {
-  const containerRef = useRef(null);
+
+const PhotoSwiper = ({ photos }) => {
   const { setMainPhoto } = useProductsContext();
 
-  useEffect(() => {
-    const container = containerRef.current;
-
-    const handleMouseWheel = (event) => {
-      container.scrollLeft += event.deltaY;
-      event.preventDefault();
-
-      if (
-        container.scrollLeft + container.clientWidth >=
-        container.scrollWidth
-      ) {
-        container.scrollLeft = 320;
-      } else if (container.scrollLeft <= 0 && event.deltaY < 0) {
-        container.scrollLeft = container.scrollWidth - container.clientWidth;
-      }
-    };
-
-    if (container) {
-      container.addEventListener("wheel", handleMouseWheel, { passive: false });
-    }
-
-    return () => {
-      if (container) {
-        container.removeEventListener("wheel", handleMouseWheel);
-      }
-    };
-  }, [containerRef, setMainPhoto]);
-
-  const handleClick = (photo, id) => {
+  const handleClick = (photo) => {
     setMainPhoto(photo);
   };
 
   return (
-    <PhotoSwiperContainer ref={containerRef}>
-      {photos.map((photo, index) => (
-        <img
-          onClick={() => handleClick(photo, id)}
-          key={index}
-          className="detailed-slider-images"
-          src={photo}
-          alt={`${index + 1}`}
-          style={{ marginRight: "10px" }}
-        />
-      ))}
+    <PhotoSwiperContainer>
+    <Swiper
+    modules={[Navigation, Keyboard]}
+    spaceBetween={19}
+    slidesPerView={2}
+    // navigation
+    keyboard={true}
+    loop={true}
+    speed={700}
+    effect="slide"
+    easing="ease"
+    scrollbar={{ draggable: true, hide: false }}
+    style={{
+    height: '400px'
+    }}
+    >
+      
+        {photos.map((photo, index) => (
+          <SwiperSlide className="swiper-slider">
+          <img
+            onClick={() => handleClick(photo)}
+            key={index}
+            className="detailed-slider-images"
+            src={photo}
+            alt={`${index + 1}`}
+          />
+           </SwiperSlide>
+        ))}
+     
+    </Swiper>
     </PhotoSwiperContainer>
   );
 };

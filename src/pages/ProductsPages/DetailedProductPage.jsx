@@ -98,7 +98,10 @@ const DetailedProductPage = () => {
           )
       )}
       <SimilarProductTitle>{t("Similar Products")}</SimilarProductTitle>
-      <Slider images={imagesForSlider} imagesPerView={4} />
+      <div style={{marginBottom: '100px'}}>
+        <Slider images={imagesForSlider} imagesPerView={4} />
+
+      </div>
     </div>
   );
 };
