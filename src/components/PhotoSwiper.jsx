@@ -1,11 +1,10 @@
-// PhotoSwiper.jsx
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Keyboard } from "swiper/modules";
 import { PhotoSwiperContainer } from "../pages/AllPages";
 
 
-const PhotoSwiper = ({ photos }) => {
+const PhotoSwiper = ({ photos, id }) => {
   const { setMainPhoto } = useProductsContext();
 
   const handleClick = (photo) => {
@@ -18,7 +17,6 @@ const PhotoSwiper = ({ photos }) => {
     modules={[Navigation, Keyboard]}
     spaceBetween={19}
     slidesPerView={2}
-    // navigation
     keyboard={true}
     loop={true}
     speed={700}
@@ -31,10 +29,9 @@ const PhotoSwiper = ({ photos }) => {
     >
       
         {photos.map((photo, index) => (
-          <SwiperSlide className="swiper-slider">
+          <SwiperSlide key={id + index} className="swiper-slider">
           <img
             onClick={() => handleClick(photo)}
-            key={index}
             className="detailed-slider-images"
             src={photo}
             alt={`${index + 1}`}

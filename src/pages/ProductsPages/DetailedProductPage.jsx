@@ -1,7 +1,7 @@
 import Slider from "../../components/Slider";
 import PhotoSwiper from "../../components/PhotoSwiper";
 import { useTranslation } from "react-i18next";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import {
   faHeart,
   faChevronRight,
@@ -23,6 +23,10 @@ const DetailedProductPage = () => {
   const [details, setDetails] = useState(false);
   const navigate = useNavigate();
 
+  const location = useLocation()
+  const currentUrl = location.pathname
+  const backPath = currentUrl.split('/')[1];
+
   const isMobileView = window.innerWidth <= 1300;
   return (
     <div>
@@ -33,7 +37,7 @@ const DetailedProductPage = () => {
               {isMobileView && (
                 <FontAwesomeIcon
                   className="back-button"
-                  onClick={() => navigate(-1)}
+                  onClick={() => navigate(`/${backPath}`)}
                   icon={faChevronLeft}
                   size="lg"
                 />

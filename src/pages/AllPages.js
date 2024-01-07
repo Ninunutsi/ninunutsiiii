@@ -184,7 +184,7 @@ export const SlidesImages = styled.img`
   object-fit: cover;
   height: 500px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 480px) {
     height: 150px;
   }
 `;
