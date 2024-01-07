@@ -18,34 +18,25 @@ import useRegistration from "../../hooks/useRegistration";
 import useRequest from "../../hooks/useRequest";
 import { Loading } from "../components";
 
-const UserRegister = ({ onSuccess }) => {
+const UserRessetPassword = ({ onSuccess }) => {
   const { t } = useTranslation();
   const { showPassword: showPassword1, togglePassword: toggle1 } =
     useToggle(false);
   const { showPassword: showPassword2, togglePassword: toggle2 } =
     useToggle(false);
-  const { closeRegistration } = useAuthorization();
+  const { closeRessetPassword } = useAuthorization();
   const { sentEmail, loading, sendRequest } = useRequest({
     url: "/api/v1/users",
     method: "POST",
   });
 
-  const {
-    EmailRef,
-    FNameRef,
-    UNameRef,
-    PasswordRef,
-    CPasswordRef,
-    validateInputs,
-    handleInput,
-  } = useRegistration();
+  const { EmailRef, PasswordRef, CPasswordRef, validateInputs, handleInput } =
+    useRegistration();
 
   const onFormSubmit = (e) => {
     e.preventDefault();
     const userRegister = {
       Email: EmailRef.current.value,
-      FName: FNameRef.current.value,
-      UName: UNameRef.current.value,
       Password: PasswordRef.current.value,
       CPassword: CPasswordRef.current.value,
     };
@@ -69,20 +60,20 @@ const UserRegister = ({ onSuccess }) => {
             <img src={Logo} alt="Logo" />
           </Link>
           <div className="closeBtn">
-            <FontAwesomeIcon onClick={closeRegistration} icon={faArrowLeft} />
+            <FontAwesomeIcon onClick={closeRessetPassword} icon={faArrowLeft} />
           </div>
         </div>
-        <UserButtonsMobile goBack={closeRegistration} />
+        <UserButtonsMobile goBack={closeRessetPassword} />
       </div>
-      <div className="title">
-        <h2>{t("Create Account")}</h2>
+      <div className="title title2">
+        <h2>{t("Resset Password")}</h2>
       </div>
       <UserForm onSubmit={onFormSubmit}>
         <div className="input">
-          <label htmlFor="Email">{t("Email address")}</label>
+          <label htmlFor="Email2">{t("Email address")}</label>
           <input
             name="Email"
-            id="Email"
+            id="Email2"
             type="text"
             placeholder={t("Email address")}
             ref={EmailRef}
@@ -90,35 +81,13 @@ const UserRegister = ({ onSuccess }) => {
             autoComplete="email"
           />
         </div>
-        <div className="input">
-          <label htmlFor="FName">{t("Full name")}</label>
-          <input
-            name="FName"
-            id="FName"
-            type="text"
-            placeholder={t("Full name")}
-            ref={FNameRef}
-            onChange={handleInput}
-          />
-        </div>
-        <div className="input">
-          <label htmlFor="UName">{t("User name")}</label>
-          <input
-            name="UName"
-            id="UName"
-            type="text"
-            placeholder={t("User name")}
-            ref={UNameRef}
-            onChange={handleInput}
-          />
-        </div>
         <div className="input PasInput marginDel">
-          <label htmlFor="Password">{t("Password")}</label>
+          <label htmlFor="Password2">{t("Password")}</label>
           <input
             name="Password"
-            id="Password"
+            id="Password2"
             type={showPassword1 ? "text" : "password"}
-            placeholder={t("Password")}
+            placeholder={t("New Password")}
             ref={PasswordRef}
             onChange={handleInput}
             autoComplete="current-password"
@@ -130,10 +99,10 @@ const UserRegister = ({ onSuccess }) => {
           />
         </div>
         <div className="input PasInput">
-          <label htmlFor="CPassword">{t("Confirm Password")}</label>
+          <label htmlFor="CPassword2">{t("Confirm Password")}</label>
           <input
             name="CPassword"
-            id="CPassword"
+            id="CPassword2"
             type={showPassword2 ? "text" : "password"}
             placeholder={t("Confirm Password")}
             ref={CPasswordRef}
@@ -145,7 +114,7 @@ const UserRegister = ({ onSuccess }) => {
             onClick={toggle2}
           />
         </div>
-        <div className="formLoadings">
+        <div className="formLoadings formLoadings2">
           {loading && (
             <Loading>
               <FontAwesomeIcon icon={faArrowsRotate} />
@@ -156,11 +125,11 @@ const UserRegister = ({ onSuccess }) => {
           )}
         </div>
         <div className="formButtons">
-          <button id="Register1">{t("Create Account")}</button>
+          <button id="Register2">{t("Resset Password")}</button>
         </div>
       </UserForm>
     </Authorization>
   );
 };
 
-export default UserRegister;
+export default UserRessetPassword;

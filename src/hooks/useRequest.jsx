@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useAuthorization } from "../contexts/AuthorizationContext";
 
 const useRequest = ({ url, method }) => {
   const [loading, setLoading] = useState(false);
   const [sentEmail, setSentEmail] = useState(false);
+  const { closeRegistration, closeRessetPassword } = useAuthorization(false);
 
   const sendRequest = async (body, custom) => {
     setLoading(true);
@@ -23,6 +25,12 @@ const useRequest = ({ url, method }) => {
     setTimeout(() => {
       setSentEmail(false);
     }, 1000);
+
+    setTimeout(() => {
+      closeRegistration();
+      closeRessetPassword();
+    }, 1000);
+
     return data;
   };
 

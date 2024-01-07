@@ -49,6 +49,7 @@ const AdminLogin = () => {
         />
         <input type="submit" />
       </form>
+      <button onClick={() => navigate("/")}>Go Back</button>
       {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
   );

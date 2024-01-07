@@ -131,6 +131,10 @@ export const Authorization = styled.div`
     color: black;
   }
 
+  .title2 {
+    margin: 60px 0;
+  }
+
   @media screen and (max-width: 650px) {
     width: 102%;
 
@@ -145,6 +149,46 @@ export const Authorization = styled.div`
 
     .AuthoText {
       padding: 28px 0 30px;
+    }
+  }
+
+  .userInfo {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    @media screen and (max-width: 650px) {
+      margin-top: 28px;
+      padding: 0 16px;
+    }
+
+    h2 {
+      font-family: ${FontFamily};
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 27px;
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      font-family: ${FontFamily};
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-bottom: 60px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: ${FontFamily};
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 23px;
+      color: black;
+      margin-bottom: 21px;
     }
   }
 `;
@@ -204,13 +248,16 @@ export const UserForm = styled.form`
     }
 
     .ResPass {
-      font-family: ${FontFamily};
-      font-size: 10px;
-      font-weight: 600;
-      line-height: 12px;
-      color: black;
       text-align: end;
       padding-right: 5px;
+
+      a {
+        font-family: ${FontFamily};
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 12px;
+        color: black;
+      }
     }
   }
 
@@ -271,6 +318,10 @@ export const UserForm = styled.form`
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .formLoadings2 {
+    top: 80%
   }
 `;
 

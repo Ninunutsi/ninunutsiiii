@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Authorization,
   Overlay,
@@ -14,22 +14,46 @@ import { useAuthorization } from "../../contexts/AuthorizationContext";
 import UserRegister from "./UserRegister";
 import { useTranslation } from "react-i18next";
 import UserButtonsMobile from "./UserButtonsMobile";
+import UserRessetPassword from "./UserRessetPassword";
+import UserLoggedIn from "./UserLoggedIn";
 
 const UserAuthorization = () => {
   const { t } = useTranslation();
   const { showPassword, togglePassword } = useToggle(false);
-  const { closeRegistration, closeAuthorization, isRegOpen, openRegister } =
-    useAuthorization(false);
+  const {
+    closeRegistration,
+    closeAuthorization,
+    isRegOpen,
+    openRegister,
+    isRessOpen,
+    openRessetPassword,
+    closeRessetPassword,
+    isUserOpen,
+    openUserInfo,
+    closeUserInfo,
+  } = useAuthorization(false);
+
+  const [authEmail, setAuthEmail] = useState("");
+  const [authPassword, setAuthPassword] = useState("");
+
+  const RegisterOnSuccess = (email, password) => {
+    setAuthEmail(email);
+    setAuthPassword(password);
+  };
 
   const handleOverlayClick = () => {
     closeAuthorization();
     closeRegistration();
+    closeRessetPassword();
+    closeUserInfo();
   };
 
   return (
     <UserContent>
       <Authorization>
-        {isRegOpen && <UserRegister />}
+        {isRegOpen && <UserRegister onSuccess={RegisterOnSuccess} />}
+        {isRessOpen && <UserRessetPassword onSuccess={RegisterOnSuccess} />}
+        {isUserOpen && <UserLoggedIn />}
         <div className="UserHeading">
           <div className="Heading">
             <Link className="HeadingLogo" to={"/"}>
@@ -44,46 +68,43 @@ const UserAuthorization = () => {
         <div>
           <h2 className="AuthoText">{t("Authorization")}</h2>
         </div>
-        {/* <div className="buttons">
-          <button>
-            <img src={Facebook} alt="facebook" />
-            {t("Continue with Facebook")}
-          </button>
-          <button>
-            <img src={Google} alt="google" />
-            {t("Continue with Google")}
-          </button>
-        </div> */}
-        {/* <div>
-          <h2 className="chooseReg">{t("or")}</h2>
-        </div> */}
         <UserForm>
           <div className="input">
-            <label htmlFor="Email">{t("Email address")}</label>
+            <label htmlFor="Email1">{t("Email address")}</label>
             <input
-              name="Email"
-              id="Email"
+              name="Email1"
+              id="Email1"
               type="text"
               placeholder={t("Email address")}
+              value={authEmail}
+              onChange={(e) => setAuthEmail(e.target.value)}
+              autoComplete="email"
             />
           </div>
           <div className="input PasInput">
-            <label htmlFor="Password">{t("Password")}</label>
+            <label htmlFor="Password1">{t("Password")}</label>
             <input
-              name="password"
-              id="Password"
+              name="password1"
+              id="Password1"
               type={showPassword ? "text" : "password"}
               placeholder={t("Password")}
+              value={authPassword}
+              onChange={(e) => setAuthPassword(e.target.value)}
+              autoComplete="current-password"
             />
             <FontAwesomeIcon
               id="PasEye"
               icon={showPassword ? faEye : faEyeSlash}
               onClick={togglePassword}
             />
-            <Link className="ResPass">{t("Recover Password")}</Link>
+            <div onClick={openRessetPassword} className="ResPass">
+              <Link onClick={openRessetPassword}>{t("Recover Password")}</Link>
+            </div>
           </div>
           <div className="formButtons">
-            <button id="LogIn">{t("Log in")}</button>
+            <button id="LogIn" onClick={openUserInfo}>
+              {t("Log in")}
+            </button>
             <button id="Register" onClick={openRegister}>
               {t("Register")}
             </button>
