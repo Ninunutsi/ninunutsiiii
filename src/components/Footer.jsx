@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import { useProductsContext } from "../contexts/ProductsContextProvider";
 
 const Footer = () => {
-  const { handleClick } = useScrollToTop();
+  const { handleClick } = useScrollToTop('smooth');
   const { loading } = useProductsContext();
   const { t } = useTranslation();
 
