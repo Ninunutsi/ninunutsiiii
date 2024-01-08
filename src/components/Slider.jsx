@@ -5,19 +5,31 @@ import useScrollToTop from "../hooks/useScrollToTop";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Keyboard } from "swiper/modules";
 import { Link } from "react-router-dom";
-import { SlidesImages, SwiperContainer } from "../pages/AllPages";
+import { SliderDiv, SlidesImages, SwiperContainer } from "../pages/AllPages";
 
 const Slider = ({ images }) => {
   const { handleClick } = useScrollToTop("instant");
   const [slidesPerView, setSlidesPerView] = useState(getInitialSlidesPerView());
 
   function getInitialSlidesPerView() {
-    return window.innerWidth < 767 ? 2.5 : 4;
+    if (window.innerWidth < 767) {
+      return 2.5;
+    } else if (window.innerWidth < 1023) {
+      return 3;
+    } else {
+      return 4;
+    }
   }
 
   useEffect(() => {
     function handleResize() {
-      setSlidesPerView(window.innerWidth < 1023 ? 2.5 : 4);
+      if (window.innerWidth < 767) {
+        setSlidesPerView(2.5);
+      } else if (window.innerWidth < 1023) {
+        setSlidesPerView(3);
+      } else {
+        setSlidesPerView(4);
+      }
     }
 
     window.addEventListener("resize", handleResize);
@@ -43,11 +55,11 @@ const Slider = ({ images }) => {
       >
         {images.map((product) => (
           <SwiperSlide key={product.id}>
-            <div style={{ width: "100%" }} onClick={handleClick}>
+            <SliderDiv style={{ width: "100%" }} onClick={handleClick}>
               <Link to={`/${product.category}/products/${product.id}`} replace>
-                <SlidesImages src={product.image} alt="" />
+                <SlidesImages src={product.image} alt="image" />
               </Link>
-            </div>
+            </SliderDiv>
           </SwiperSlide>
         ))}
       </Swiper>

@@ -175,17 +175,36 @@ export const SwiperContainer = styled.div`
     .swiper-button-prev {
       display: none;
     }
+  }
+`;
 
+export const SliderDiv = styled.div`
+  height: 550px;
+
+  @media screen and (max-width: 1200px) {
+    height: 400px;
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 350px;
+  }
+
+  @media screen and (max-width: 560px) {
+    height: 280px;
+  }
+
+  @media screen and (max-width: 450px) {
+    height: 220px;
   }
 `;
 
 export const SlidesImages = styled.img`
   width: 100%;
-  object-fit: cover;
-  height: 500px;
+  // object-fit: cover;
+  height: 100%;
 
-  @media screen and (max-width: 480px) {
-    height: 150px;
+  @media screen and (max-width: 1023px) {
+    // height: 170px;
   }
 `;
 
@@ -232,44 +251,44 @@ export const ProductGrid = styled.div`
     height: 500px;
     object-fit: cover;
   }
-  
+
   //admin features -->>
-  
-  .product-image:hover + .product-admin-icons{
+
+  .product-image:hover + .product-admin-icons {
     display: flex;
   }
 
-  .product-container-admin:hover{
+  .product-container-admin:hover {
     filter: brightness(70%);
   }
 
-  .product-edit-icon{
-    color: #0000FF;
+  .product-edit-icon {
+    color: #0000ff;
     z-index: 999;
 
-    &:hover{
+    &:hover {
       color: white;
     }
   }
 
-  .product-delete-icon{
-    color: #D80000;
+  .product-delete-icon {
+    color: #d80000;
     z-index: 999;
 
-    &:hover{
+    &:hover {
       color: white;
     }
   }
 
-  .product-admin-icons{
+  .product-admin-icons {
     display: none;
     gap: 20px;
     position: absolute;
     top: 45%;
-    right: 42%; 
+    right: 42%;
     z-index: 999;
 
-    &:hover{
+    &:hover {
       display: flex;
     }
   }
@@ -424,12 +443,10 @@ export const DetailedProducts = styled.div`
     flex-shrink: 0;
   }
 
-
   // admin mode -->>
 
-  .edit-mode{
+  .edit-mode {
     filter: brightness(60%);
-    
   }
   //  <<--
 
