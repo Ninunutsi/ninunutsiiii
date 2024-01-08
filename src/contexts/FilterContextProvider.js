@@ -8,7 +8,9 @@ const FilterContext = createContext(null);
 const FilterContextProvider = ({ children }) => {
   const { setCurrentPage } = useProductsContext();
   const [sortByPrice, setSortByPrice] = useState(null);
+  const [sortByNewestDate, setSortByNewestDate] = useState(false);
   const [filterByColor, setFilterByColor] = useState("");
+  const [filterBySale, setFilterBySale] = useState(false);
   const { filteredData } = useSearch();
   const [filteredProducts, setFilteredProducts] = useState(filteredData);
   const location = useLocation();
@@ -33,7 +35,16 @@ const FilterContextProvider = ({ children }) => {
         prevState.filter((product) => product.color === filterByColor)
       );
     }
-    if (filterByColor !== "" || sortByPrice) {
+
+    if(filterBySale){
+      setFilteredProducts((prevState) => prevState.filter((product) => product.isOnSale))
+    }
+
+    if(sortByNewestDate){
+      setFilteredProducts((prevState) => [...prevState].sort((a,b) => new Date(b.date) - new Date(a.date)))
+    }
+
+    if (filterByColor !== "" || sortByPrice || filterBySale || sortByNewestDate) {
       setCurrentPage(1);
     }
   }, [
@@ -42,6 +53,8 @@ const FilterContextProvider = ({ children }) => {
     setCurrentPage,
     currentCategory,
     filteredData,
+    filterBySale,
+    sortByNewestDate
   ]);
 
   useEffect(() => {
@@ -54,6 +67,8 @@ const FilterContextProvider = ({ children }) => {
     setSortByPrice,
     setFilterByColor,
     filteredProducts,
+    setFilterBySale,
+    setSortByNewestDate,
   };
 
   return (
