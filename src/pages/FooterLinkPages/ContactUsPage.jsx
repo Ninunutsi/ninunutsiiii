@@ -97,10 +97,10 @@ const ContactUsPage = () => {
         </form>
         <div className="contact_info">
           <div className="contact_about">
-            <h2>contact us:</h2>
+            <h2>{t("contact us")}:</h2>
             <h3>Mariamsatelier@gmail.com</h3>
             <h3>+995 599 999 999</h3>
-            <h3>ტყიბული, გამსახურდიას 23</h3>
+            <h3> {t("tkibuli")} 23</h3>
           </div>
         </div>
       </div>

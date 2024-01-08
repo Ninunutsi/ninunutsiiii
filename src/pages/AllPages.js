@@ -774,7 +774,11 @@ export const ContactStyle = styled.div`
         position: absolute;
         top: 50%;
         left: 75%;
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%);
+
+        @media screen and (max-width: 1095px) {
+            left: 95px;
+        }
 
         svg {
           font-size: 18px;
@@ -932,8 +936,8 @@ export const AboutStyle = styled.div`
     p {
       font-family: ${FontFamily};
       font-weight: 400;
-      font-size: 24px;
-      line-height: 27px;
+      font-size: 20px;
+      line-height: 30px;
     }
 
     .first_paragraph,
@@ -944,17 +948,28 @@ export const AboutStyle = styled.div`
       margin-bottom: 41px;
 
       p {
-        width: 750px;
+        width: 60%;
       }
 
       img {
-        width: 555px;
+        width: 30%;
         height: 393px;
       }
     }
 
     .second_paragraph {
       margin-bottom: 41px;
+    }
+
+    .third_paragraph {
+      gap: 80px;
+      img {
+        width: 40%;
+      }
+
+      p {
+        width: 60%;
+      }
     }
   }
 

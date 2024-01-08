@@ -52,7 +52,7 @@ const DetailedProductPage = () => {
                 <img
                   className="detailed-product-image"
                   src={mainPhoto || prod.image}
-                  alt=""
+                  alt="img"
                 />
               )}
               <div className="detailed-product-details">

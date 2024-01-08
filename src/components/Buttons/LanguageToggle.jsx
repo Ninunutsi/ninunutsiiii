@@ -28,7 +28,7 @@ const LanguageToggle = () => {
       }}
       onClick={toggleLanguage}
     >
-      {i18n.language === "ge" ? "GE" : "EN"}
+      {i18n.language === "ge" ? "EN" : "GE"}
     </button>
   );
 };
