@@ -113,6 +113,7 @@ const EditProductPage = () => {
                     <input
                       style={{ borderColor: "#0000FF" }}
                       className="detailed-product-name"
+                      name="name"
                       type="text"
                       defaultValue={prod.name}
                       ref={nameRef}
@@ -121,6 +122,7 @@ const EditProductPage = () => {
                     <input
                       style={{ borderColor: "#0000FF" }}
                       className="detailed-product-name"
+                      name="price"
                       type="number"
                       defaultValue={prod.price}
                       ref={priceRef}
@@ -147,9 +149,11 @@ const EditProductPage = () => {
                       style={{ borderColor: "#0000FF" }}
                       className="product-description-text"
                       type="text"
+                      name="description"
                       defaultValue={prod.description}
                       ref={descriptionRef}
-                    />
+                      >
+                      </textarea>
                   )}
                 </div>
               </div>
