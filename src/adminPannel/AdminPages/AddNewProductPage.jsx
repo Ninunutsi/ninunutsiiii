@@ -15,6 +15,7 @@ const AddNewProduct = () => {
 
   const onSubmit = (name, price, description, category) => {
     sendRequest([{ name, price, description, category }]);
+    navigate(-1);
   };
 
   if (loading)

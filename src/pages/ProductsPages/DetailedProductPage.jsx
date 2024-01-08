@@ -23,9 +23,9 @@ const DetailedProductPage = () => {
   const [details, setDetails] = useState(false);
   const navigate = useNavigate();
 
-  const location = useLocation()
-  const currentUrl = location.pathname
-  const backPath = currentUrl.split('/')[1];
+  const location = useLocation();
+  const currentUrl = location.pathname;
+  const backPath = currentUrl.split("/")[1];
 
   const isMobileView = window.innerWidth <= 1300;
   return (
@@ -102,9 +102,8 @@ const DetailedProductPage = () => {
           )
       )}
       <SimilarProductTitle>{t("Similar Products")}</SimilarProductTitle>
-      <div style={{marginBottom: '100px'}}>
+      <div style={{ marginBottom: "100px" }}>
         <Slider images={imagesForSlider} imagesPerView={4} />
-
       </div>
     </div>
   );

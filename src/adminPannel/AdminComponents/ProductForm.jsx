@@ -51,30 +51,35 @@ const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
     <div>
       <form onSubmit={onSubmit}>
         <input
+          name="title"
           type="text"
           placeholder="Product Title"
           ref={titleNameRef}
           defaultValue={name}
         />
         <input
+          name="price"
           type="text"
           placeholder="Product Price"
           ref={priceRef}
           defaultValue={price}
         />
         <input
+          name="description"
           type="text"
           placeholder="Product description"
           ref={descRef}
           defaultValue={description}
         />
         <input // აქ შეიძლება გაკეთდეს სელექთი
+          name="category"
           type="text"
           placeholder="Product Category"
           ref={categoryRef}
           defaultValue={category}
         />
         <input
+          name="file"
           type="file"
           accept="image/jpg, image/jpeg, image/png"
           multiple
@@ -84,12 +89,7 @@ const ProductForm = ({ onFormSubmit, name, description, price, category }) => {
         <button>Submit</button>
       </form>
       {previews.map((pic, index) => (
-        <img
-          key={index}
-          src={pic}
-          alt="img"
-          style={{ width: "400px",}}
-        />
+        <img key={index} src={pic} alt="img" style={{ width: "400px" }} />
       ))}
     </div>
   );

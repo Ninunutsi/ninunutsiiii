@@ -82,7 +82,7 @@ const EditProductPage = () => {
                   <img
                     className="detailed-product-image edit-mode"
                     src={mainPhoto || prod.image}
-                    alt=""
+                    alt="img"
                   />
                   <div
                     style={{

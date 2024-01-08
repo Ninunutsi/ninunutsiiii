@@ -697,6 +697,10 @@ export const ContactStyle = styled.div`
   margin-top: 140px;
   padding: 0 40px;
 
+  @media screen and (max-width: 767px) {
+    margin-top: 70px;
+  }
+
   h1 {
     font-family: ${FontFamily};
     color: black;

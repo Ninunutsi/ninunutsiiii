@@ -34,6 +34,7 @@ const AdminLogin = () => {
     >
       <form onSubmit={handleSubmit}>
         <input
+          name="adminName"
           type="text"
           placeholder="user"
           required
@@ -41,6 +42,7 @@ const AdminLogin = () => {
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
+          name="adminPassword"
           type="password"
           placeholder="password"
           required

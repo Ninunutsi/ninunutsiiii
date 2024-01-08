@@ -36,7 +36,7 @@ const ProductList = ({ products, productsPerPage, category }) => {
 
   const handleDelete = (id) => {
     sendRequest(null, `/api/v1/products/${id}`);
-    console.log("i'm deleting")
+    console.log("i'm deleting");
   };
 
   return (
@@ -57,13 +57,14 @@ const ProductList = ({ products, productsPerPage, category }) => {
                 <img
                   className="product-image product-image-admin"
                   src={product.image}
-                  alt=""
+                  alt="img"
                   onLoad={() => setPhotoLoaded(true)}
                 />
                 <div className="product-admin-icons">
                   <Link
-                  to={`/admin/products/${product.id}`}
-                  className="product-edit-icon">
+                    to={`/admin/products/${product.id}`}
+                    className="product-edit-icon"
+                  >
                     <FontAwesomeIcon size="lg" icon={faPen} />
                   </Link>
                   <div
