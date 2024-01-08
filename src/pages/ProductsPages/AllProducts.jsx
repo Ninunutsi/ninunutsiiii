@@ -8,12 +8,21 @@ const AllProducts = () => {
 
   const AllProducts = filteredProducts.map((prod) => prod);
 
+  // if (AllProducts.length === 0) {
+  //   const styledHeight = "100vh";
+  //   return styledHeight;
+  // }
+
+  const productsPerPage = 20;
+
   return (
-    <ProductList
-      products={AllProducts}
-      productsPerPage={20}
-      category={t("allProducts")}
-    />
+    <div style={{ height: AllProducts.length === 0 ? "100vh" : "" }}>
+      <ProductList
+        products={AllProducts}
+        productsPerPage={productsPerPage}
+        category={t("allProducts")}
+      />
+    </div>
   );
 };
 
