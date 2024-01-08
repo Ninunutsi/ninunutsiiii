@@ -11,6 +11,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -21,15 +22,17 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
   {
     id: "IzzBJKy66-YvAX-bbLjOj",
     name: "Product 2",
-    image: forProductList,
+    image: detailedImage1,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -40,15 +43,17 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
   {
     id: "7lbRV86qQIOCiFABflW1z",
     name: "Product 3",
-    image: forProductList,
+    image: detailedImage2,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -59,6 +64,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -68,6 +74,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -78,15 +85,17 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
   {
     id: "7joyifQasuYKM3NQmqgbw",
     name: "Product 5",
-    image: forProductList,
+    image: weddingPhoto,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -97,6 +106,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -106,6 +116,7 @@ const products = [
     image: forProductList,
     price: 40,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -116,6 +127,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -125,6 +137,7 @@ const products = [
     image: forProductList,
     price: 30,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -135,6 +148,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -144,6 +158,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -154,6 +169,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -163,6 +179,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -173,6 +190,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -182,6 +200,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -192,6 +211,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -201,6 +221,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -211,6 +232,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -220,6 +242,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -230,6 +253,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -239,6 +263,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -249,6 +274,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -258,6 +284,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -268,6 +295,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -277,6 +305,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -287,6 +316,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -296,6 +326,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -306,6 +337,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -315,6 +347,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -325,6 +358,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -334,6 +368,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -344,6 +379,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -353,6 +389,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -363,6 +400,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -372,6 +410,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -382,6 +421,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -391,6 +431,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -401,6 +442,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -410,6 +452,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -420,6 +463,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -429,6 +473,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -439,6 +484,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -448,6 +494,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -458,6 +505,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -467,6 +515,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -477,6 +526,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -486,6 +536,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -496,6 +547,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -505,6 +557,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -515,6 +568,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -524,6 +578,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -534,6 +589,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -543,6 +599,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -553,6 +610,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -562,6 +620,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -572,6 +631,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -581,6 +641,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -591,6 +652,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -600,6 +662,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -610,6 +673,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -619,6 +683,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -629,6 +694,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -638,6 +704,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -648,6 +715,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -657,6 +725,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -667,6 +736,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -676,6 +746,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -686,6 +757,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -695,6 +767,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -705,6 +778,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -714,6 +788,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -724,6 +799,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -733,6 +809,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -743,6 +820,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -752,6 +830,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -762,6 +841,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -771,6 +851,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -781,6 +862,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -790,6 +872,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -800,6 +883,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -809,6 +893,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -819,6 +904,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -828,6 +914,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -838,6 +925,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -847,6 +935,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -857,6 +946,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -866,6 +956,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -876,6 +967,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -885,6 +977,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -895,6 +988,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -904,6 +998,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -914,6 +1009,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -923,6 +1019,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -933,6 +1030,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -942,6 +1040,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -952,6 +1051,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -961,6 +1061,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -971,6 +1072,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -980,6 +1082,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -990,6 +1093,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -999,6 +1103,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1009,6 +1114,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1018,6 +1124,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1028,6 +1135,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1037,6 +1145,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1047,6 +1156,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1056,6 +1166,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1066,6 +1177,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1075,6 +1187,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1085,6 +1198,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1094,6 +1208,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1104,6 +1219,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1113,6 +1229,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1123,6 +1240,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1132,6 +1250,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1142,6 +1261,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1151,6 +1271,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1161,6 +1282,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1170,6 +1292,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1180,6 +1303,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1189,6 +1313,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1199,6 +1324,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1208,6 +1334,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1218,6 +1345,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1227,6 +1355,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1237,6 +1366,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1246,6 +1376,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1256,6 +1387,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1265,6 +1397,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1275,6 +1408,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1284,6 +1418,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1294,6 +1429,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1303,6 +1439,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1313,6 +1450,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1322,6 +1460,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1332,6 +1471,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1341,6 +1481,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1351,6 +1492,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1360,6 +1502,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1370,6 +1513,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1379,6 +1523,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1389,6 +1534,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1398,6 +1544,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1408,6 +1555,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1417,6 +1565,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1427,6 +1576,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1436,6 +1586,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1446,6 +1597,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1455,6 +1607,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1465,6 +1618,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1474,6 +1628,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1484,6 +1639,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1493,6 +1649,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1503,6 +1660,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1512,6 +1670,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1522,6 +1681,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1531,6 +1691,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1541,6 +1702,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1550,6 +1712,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1560,6 +1723,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1569,6 +1733,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1579,6 +1744,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1588,6 +1754,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1598,6 +1765,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-15",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1607,6 +1775,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1617,6 +1786,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1626,6 +1796,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1636,6 +1807,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1645,6 +1817,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1655,6 +1828,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1664,6 +1838,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1674,6 +1849,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1683,6 +1859,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1693,6 +1870,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1702,6 +1880,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1712,6 +1891,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1721,6 +1901,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1731,6 +1912,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1740,6 +1922,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1750,6 +1933,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1759,6 +1943,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1769,6 +1954,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1778,6 +1964,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1788,6 +1975,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1797,6 +1985,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1807,6 +1996,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1816,6 +2006,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1826,6 +2017,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1835,6 +2027,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1845,6 +2038,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1854,6 +2048,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1864,6 +2059,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1873,6 +2069,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1883,6 +2080,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1892,6 +2090,7 @@ const products = [
     image: forProductList,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "woman",
     moreImages: [
       detailedImage1,
@@ -1902,6 +2101,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1911,6 +2111,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1921,6 +2122,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1930,6 +2132,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1940,6 +2143,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1949,6 +2153,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1959,6 +2164,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1968,6 +2174,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1978,6 +2185,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -1987,6 +2195,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -1997,6 +2206,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2006,6 +2216,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2016,6 +2227,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2025,6 +2237,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2035,6 +2248,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2044,6 +2258,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2054,6 +2269,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2063,6 +2279,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2073,6 +2290,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2082,6 +2300,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2092,6 +2311,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2101,6 +2321,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2111,6 +2332,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2120,6 +2342,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2130,6 +2353,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2139,6 +2363,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2149,6 +2374,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2158,6 +2384,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2168,6 +2395,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2177,6 +2405,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2187,6 +2416,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2196,6 +2426,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2206,6 +2437,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2215,6 +2447,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2225,6 +2458,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2234,6 +2468,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2244,6 +2479,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2253,6 +2489,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2263,6 +2500,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2272,6 +2510,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2282,6 +2521,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2291,6 +2531,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: true,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2301,6 +2542,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2310,6 +2552,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2320,6 +2563,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2329,6 +2573,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2339,6 +2584,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2348,6 +2594,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2358,6 +2605,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2367,6 +2615,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2377,6 +2626,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2386,6 +2636,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2396,6 +2647,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2405,6 +2657,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2415,6 +2668,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2424,6 +2678,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2434,6 +2689,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2443,6 +2699,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2453,6 +2710,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2462,6 +2720,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2472,6 +2731,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2481,6 +2741,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2491,6 +2752,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2500,6 +2762,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2510,6 +2773,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2519,6 +2783,7 @@ const products = [
     image: popularCollection,
     price: 20,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2529,6 +2794,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2538,6 +2804,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2548,6 +2815,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2557,6 +2825,7 @@ const products = [
     image: popularCollection,
     price: 40,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2567,6 +2836,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2576,6 +2846,7 @@ const products = [
     image: popularCollection,
     price: 15,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2586,6 +2857,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2595,6 +2867,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2605,6 +2878,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2614,6 +2888,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2624,6 +2899,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2633,6 +2909,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2643,6 +2920,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2652,6 +2930,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2662,6 +2941,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2671,6 +2951,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2681,6 +2962,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2690,6 +2972,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2700,6 +2983,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2709,6 +2993,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2719,6 +3004,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2728,6 +3014,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2738,6 +3025,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2747,6 +3035,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2757,6 +3046,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2766,6 +3056,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2776,6 +3067,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2785,6 +3077,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2795,6 +3088,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2804,6 +3098,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2814,6 +3109,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2823,6 +3119,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2833,6 +3130,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2842,6 +3140,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2852,6 +3151,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2861,6 +3161,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2871,6 +3172,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2880,6 +3182,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2890,6 +3193,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2899,6 +3203,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2909,6 +3214,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2918,6 +3224,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2928,6 +3235,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2024-01-03",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2937,6 +3245,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2947,6 +3256,7 @@ const products = [
       weddingPhoto,
     ],
     color: "black",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2956,6 +3266,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2966,6 +3277,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2975,6 +3287,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -2985,6 +3298,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -2994,6 +3308,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3004,6 +3319,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3013,6 +3329,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3023,6 +3340,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3032,6 +3350,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3042,6 +3361,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3051,6 +3371,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3061,6 +3382,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3070,6 +3392,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3080,6 +3403,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3089,6 +3413,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3099,6 +3424,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3108,6 +3434,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3118,6 +3445,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3127,6 +3455,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3137,6 +3466,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3146,6 +3476,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3156,6 +3487,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3165,6 +3497,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3175,6 +3508,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3184,6 +3518,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3194,6 +3529,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3203,6 +3539,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3213,6 +3550,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3222,6 +3560,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3232,6 +3571,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3241,6 +3581,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3251,6 +3592,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3260,6 +3602,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3270,6 +3613,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3279,6 +3623,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3289,6 +3634,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3298,6 +3644,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3308,6 +3655,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3317,6 +3665,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3327,6 +3676,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3336,6 +3686,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3346,6 +3697,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3355,6 +3707,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3365,6 +3718,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3374,6 +3728,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3384,6 +3739,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3393,6 +3749,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3403,6 +3760,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3412,6 +3770,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3422,6 +3781,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3431,6 +3791,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3441,6 +3802,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3450,6 +3812,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3460,6 +3823,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3469,6 +3833,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3479,6 +3844,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3488,6 +3854,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3498,6 +3865,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3507,6 +3875,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3517,6 +3886,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3526,6 +3896,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3536,6 +3907,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3545,6 +3917,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3555,6 +3928,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3564,6 +3938,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3574,6 +3949,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3583,6 +3959,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3593,6 +3970,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3602,6 +3980,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3612,6 +3991,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3621,6 +4001,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3631,6 +4012,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3640,6 +4022,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3650,6 +4033,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3659,6 +4043,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3669,6 +4054,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3678,6 +4064,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3688,6 +4075,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-10-27",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3697,6 +4085,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3707,6 +4096,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3716,6 +4106,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3726,6 +4117,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3735,6 +4127,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3745,6 +4138,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3754,6 +4148,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3764,6 +4159,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3773,6 +4169,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3783,6 +4180,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3792,6 +4190,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     moreImages: [
       detailedImage1,
@@ -3802,6 +4201,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3811,6 +4211,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     result: "new product",
     moreImages: [
@@ -3822,6 +4223,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3831,6 +4233,7 @@ const products = [
     image: popularCollection,
     price: 40,
     isFavorited: false,
+    isOnSale: false,
     category: "kids",
     result: "new product",
     moreImages: [
@@ -3842,6 +4245,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3851,6 +4255,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "banquet",
     moreImages: [
       detailedImage1,
@@ -3861,6 +4266,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3870,6 +4276,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "banquet",
     moreImages: [
       detailedImage1,
@@ -3880,6 +4287,7 @@ const products = [
       weddingPhoto,
     ],
     color: "blue",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3889,6 +4297,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "banquet",
     moreImages: [
       detailedImage1,
@@ -3899,6 +4308,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3908,6 +4318,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "wedding",
     moreImages: [
       detailedImage1,
@@ -3918,6 +4329,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3927,6 +4339,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "wedding",
     moreImages: [
       detailedImage1,
@@ -3937,6 +4350,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },
@@ -3946,6 +4360,7 @@ const products = [
     image: popularCollection,
     price: 10,
     isFavorited: false,
+    isOnSale: false,
     category: "wedding",
     moreImages: [
       detailedImage1,
@@ -3956,6 +4371,7 @@ const products = [
       weddingPhoto,
     ],
     color: "red",
+    date: "2023-12-22",
     description:
       "Deserunt nisi commodo nostrud reprehenderit anim excepteur incididunt est et dolore exercitation. Labore eu tempor duis magna pariatur velit ex tempor in. Duis velit enim.",
   },

@@ -1,5 +1,3 @@
-import Slider from "../../components/Slider";
-// import PhotoSwiper from "../../components/PhotoSwiper";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useParams } from "react-router-dom";
 import {
@@ -11,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useProductsContext } from "../../contexts/ProductsContextProvider";
-import { DetailedProducts, SimilarProductTitle } from "../../pages/AllPages";
+import { DetailedProducts } from "../../pages/AllPages";
 import SliderForMobile from "../../components/SliderForMobile";
 import { useState, useRef } from "react";
 import useProductRequest from "../AdminHooks/useProductRequest";
@@ -21,8 +19,7 @@ import useProductFetch from "../AdminHooks/useProductFetch";
 const EditProductPage = () => {
   const { t } = useTranslation();
   const { productId } = useParams();
-  const { mainPhoto, clothes } = useProductsContext();
-  const imagesForSlider = clothes.filter((product) => product.id !== productId);
+  const { mainPhoto } = useProductsContext();
   const {sendRequest} = useProductRequest({url: `/api/v1/products/${productId}`, method: "PUT"})
   const [details, setDetails] = useState(false);
   const navigate = useNavigate();
@@ -78,8 +75,7 @@ const EditProductPage = () => {
               {isMobileView && (
                 <SliderForMobile images={[prod.image, ...prod.moreImages]} />
               )}
-              <div className="detailed-slider">
-                {/* <PhotoSwiper photos={prod.moreImages} id={prod.id} /> */}
+              <div style={{marginBottom: "30px"}} className="detailed-slider">
               </div>
               {!isMobileView && (
                 <div>
@@ -163,8 +159,6 @@ const EditProductPage = () => {
             </DetailedProducts>
           )
       )}
-      <SimilarProductTitle>{t("Similar Products")}</SimilarProductTitle>
-      <Slider images={imagesForSlider} imagesPerView={4} />
     </div>
   );
 };

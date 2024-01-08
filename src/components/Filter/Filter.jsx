@@ -8,7 +8,7 @@ const Filter = () => {
   const [selectedPriceOption, setSelectedPriceOption] = useState("");
   const [selectedColorOption, setSelectedColorOption] = useState("");
   const { t } = useTranslation();
-  const { setSortByPrice, setFilterByColor } = useFilterContext();
+  const { setSortByPrice, setFilterByColor, setFilterBySale, setSortByNewestDate } = useFilterContext();
 
   useEffect(() => {
     setSortByPrice(selectedPriceOption);
@@ -26,6 +26,16 @@ const Filter = () => {
     setSelectedPriceOption(event.target.value);
     setShowFilter(false);
   };
+
+  const handleOnSale = () => {
+    setFilterBySale(true)
+    setShowFilter(false);
+  }
+
+  const handleNewest = () => {
+    setSortByNewestDate(true)
+    setShowFilter(false)
+  }
 
   const handleColorChange = useCallback(
     (event) => {
@@ -71,8 +81,8 @@ const Filter = () => {
             <option value="white">{t("White")}</option>
             <option value="black">{t("Black")}</option>
           </select>
-          <span className="filter-options">{t("With Discount")}</span>
-          <span className="filter-options">{t("Newest")}</span>
+          <span onClick={handleOnSale} className="filter-options">{t("With Discount")}</span>
+          <span onClick={handleNewest}className="filter-options">{t("Newest")}</span>
         </div>
       )}
     </div>
