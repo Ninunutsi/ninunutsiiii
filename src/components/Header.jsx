@@ -34,19 +34,25 @@ const Header = () => {
   const isMainPage = isMobileView ? location.pathname === "/" : false;
 
   useEffect(() => {
-    // setCurrentPage(1);
     const timer = setTimeout(() => {
       setShowModal(true);
     }, 3000);
     return () => clearTimeout(timer);
-  }, [click, setCurrentPage]);
+  }, []);
+
+  useEffect(() => {
+    if(click){
+      setCurrentPage(1)
+    }
+  }, [click, setCurrentPage])
+  
 
   return (
-    <HeaderBg id="MainHeader">
+    <HeaderBg id="MainHeader" onClick={() => setClick(!click)}>
       {isOpen && <UserAuthorization />}
       {isBurgerMenuOpen && <BurgerMenu />}
       <HeaderContent className="container">
-        <div onClick={() => setClick(!click)}>
+        <div>
           <Navigation className="BurgerMenu">
             <FontAwesomeIcon
               onClick={openBurgerMenu}
