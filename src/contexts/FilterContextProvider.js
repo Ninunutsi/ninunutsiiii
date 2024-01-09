@@ -1,6 +1,5 @@
-import { createContext, useContext, useState, useEffect, useMemo } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 import { useSearch } from "./SearchFilterContext";
-import { useLocation } from "react-router-dom";
 import { useProductsContext } from "./ProductsContextProvider";
 
 const FilterContext = createContext(null);
@@ -13,10 +12,6 @@ const FilterContextProvider = ({ children }) => {
   const [filterBySale, setFilterBySale] = useState(false);
   const { filteredData } = useSearch();
   const [filteredProducts, setFilteredProducts] = useState(filteredData);
-  const location = useLocation();
-  const currentPath = location.pathname.slice(1);
-
-  const currentCategory = useMemo(() => currentPath, [currentPath]);
 
   useEffect(() => {
     setFilteredProducts(filteredData);
@@ -51,17 +46,10 @@ const FilterContextProvider = ({ children }) => {
     filterByColor,
     sortByPrice,
     setCurrentPage,
-    currentCategory,
     filteredData,
     filterBySale,
     sortByNewestDate
   ]);
-
-  useEffect(() => {
-    setSortByPrice(null);
-    setFilterByColor("");
-    setCurrentPage(1);
-  }, [currentCategory, setCurrentPage]);
 
   const contextValue = {
     setSortByPrice,
