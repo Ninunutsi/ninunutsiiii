@@ -14,6 +14,7 @@ import { useProductsContext } from "../../contexts/ProductsContextProvider";
 import { DetailedProducts, SimilarProductTitle } from "../AllPages";
 import SliderForMobile from "../../components/SliderForMobile";
 import { useState } from "react";
+import CommentForm from "../../components/Requests/CommentForm";
 
 const DetailedProductPage = () => {
   const { t } = useTranslation();
@@ -102,9 +103,10 @@ const DetailedProductPage = () => {
           )
       )}
       <SimilarProductTitle>{t("Similar Products")}</SimilarProductTitle>
-      <div style={{ marginBottom: "100px" }}>
+      <div style={{ marginBottom: "50px" }}>
         <Slider images={imagesForSlider} imagesPerView={4} />
       </div>
+      <CommentForm />
     </div>
   );
 };

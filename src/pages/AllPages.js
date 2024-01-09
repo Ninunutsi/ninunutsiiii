@@ -1036,3 +1036,100 @@ export const AboutStyle = styled.div`
     }
   }
 `;
+
+export const RatesStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-family: ${FontFamily};
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+    label {
+      font-family: ${FontFamily};
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 23px;
+    }
+
+    textarea {
+      padding: 10px;
+      width: 670px;
+      height: 150px;
+      resize: none;
+      outline: none;
+      color: black;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 18px;
+
+      ::placeholder {
+        color #B4B4B4;
+      }
+    }
+    
+    button {
+      align-self: end;
+      padding: 10px 20px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .commentSection {
+    margin-bottom: 102px;
+    
+    .comments {
+      width: 670px;
+      align-self: center;
+      text-align: start;
+      display: flex;
+      flex-direction: column;
+      gap: 38px;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.30);;
+  
+      h2 {
+        font-family: ${FontFamily};
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        align-self: start;
+      }
+  
+      p {
+        color: #000;
+        font-family: Helvetica;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+
+    .viewMore {
+      color: #000;
+      font-family: ${FontFamily};
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: .3s;
+
+      &:hover {
+        color: rgba(0, 0, 142, 1);
+      }
+    }
+  }
+`;
