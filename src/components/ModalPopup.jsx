@@ -11,9 +11,10 @@ const ModalPopup = () => {
     false
   );
 
-  const { loading, sentEmail, sendRequest } = useRequest({
+  const { loading, sentRequest, sendRequest } = useRequest({
     url: "/api/v1/users",
     method: "POST",
+    envVariable: "REACT_APP_USERS",
   });
 
   const onSubmit = (email) => {
@@ -30,7 +31,7 @@ const ModalPopup = () => {
   const emailSent = <FontAwesomeIcon icon={faCheck} />;
 
   if (loading) return <ModalForm loading={loadingProces} />;
-  if (sentEmail) return <ModalForm sentEmail={emailSent} />;
+  if (sentRequest) return <ModalForm sentEmail={emailSent} />;
 
   return (
     !isSubmited && (

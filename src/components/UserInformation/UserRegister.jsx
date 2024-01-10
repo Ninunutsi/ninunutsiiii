@@ -25,9 +25,11 @@ const UserRegister = ({ onSuccess }) => {
   const { showPassword: showPassword2, togglePassword: toggle2 } =
     useToggle(false);
   const { closeRegistration } = useAuthorization();
-  const { sentEmail, loading, sendRequest } = useRequest({
+
+  const { loading, sentRequest, sendRequest } = useRequest({
     url: "/api/v1/users",
     method: "POST",
+    envVariable: "REACT_APP_USERS",
   });
 
   const {
@@ -151,7 +153,7 @@ const UserRegister = ({ onSuccess }) => {
               <FontAwesomeIcon icon={faArrowsRotate} />
             </Loading>
           )}
-          {sentEmail && (
+          {sentRequest && (
             <FontAwesomeIcon style={{ color: "green" }} icon={faCheck} />
           )}
         </div>

@@ -1,30 +1,42 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import { RatesStyle } from "../../pages/AllPages";
 import { SubmitButton } from "../components";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowsRotate, faCheck } from "@fortawesome/free-solid-svg-icons";
+import useRequest from "../../hooks/useRequest";
+import Comments from "../Comments";
+import useFetch from "../../hooks/useFetch";
 
 const CommentForm = () => {
   const { t } = useTranslation();
-  const [comments, setComments] = useState(["უი რა კაი კაბაა ქალო"]);
-  const currentTextareaRef = useRef("");
+  const commentRef = useRef(null);
 
-  const handleChange = (e) => {
-    currentTextareaRef.current = e.target.value;
-  };
+  const { sendRequest, loading, sentRequest } = useRequest({
+    url: "/api/v1/comments",
+    method: "POST",
+    envVariable: "REACT_APP_COMMENTS",
+  });
+
+  const { fetchRequest, resendRequest } = useFetch({
+    url: "/api/v1/comments",
+    method: "GET",
+    envVariable: "REACT_APP_COMMENTS",
+  });
 
   const onSubmit = (e) => {
     e.preventDefault();
+    const userComment = commentRef.current.value.trim();
+    if (userComment === "") return;
 
-    const currentTextareaValue = currentTextareaRef.current.trim();
-
-    if (currentTextareaValue === "") return;
-
-    setComments((prevComments) => [currentTextareaValue, ...prevComments]);
-
-    currentTextareaRef.current = "";
+    sendRequest([{ userComment }])
+      .then(() => {
+        console.log(userComment);
+      })
+      .then(() => {
+        resendRequest();
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -36,21 +48,18 @@ const CommentForm = () => {
           name="Rates"
           id="Rates"
           placeholder={t("Rate")}
-          onChange={handleChange}
+          ref={commentRef}
         />
-        <SubmitButton type="submit">{t("Send")}</SubmitButton>
+        <div className="submitBtn">
+          <SubmitButton type="submit">{t("Send")}</SubmitButton>
+          {loading && (
+            <FontAwesomeIcon className="icon" icon={faArrowsRotate} />
+          )}
+          {sentRequest && <FontAwesomeIcon icon={faCheck} />}
+        </div>
       </form>
       <div className="commentSection">
-        {comments.map((comment, index) => (
-          <div className="comments" key={index}>
-            <h2>{t("User name")}</h2>
-            <p>{comment}</p>
-          </div>
-        ))}
-        <Link className="viewMore">
-          {t("View more")}
-          <FontAwesomeIcon icon={faChevronDown} />
-        </Link>
+        <Comments comments={fetchRequest} />
       </div>
     </RatesStyle>
   );

@@ -5,9 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowsRotate, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const Subscription = () => {
-  const { loading, sentEmail, sendRequest } = useRequest({
+  const { loading, sentRequest, sendRequest } = useRequest({
     url: "/api/v1/users",
     method: "POST",
+    envVariable: "REACT_APP_USERS",
   });
 
   const onSubmit = (email) => {
@@ -23,12 +24,12 @@ const Subscription = () => {
   const emailSent = <FontAwesomeIcon icon={faCheck} />;
 
   if (loading) return <EmailForm loading={loadingProces} />;
-  if (sentEmail)
-    return <EmailForm isFormSubmitted={sentEmail} sentEmail={emailSent} />;
+  if (sentRequest)
+    return <EmailForm isFormSubmitted={sentRequest} sentEmail={emailSent} />;
 
   return (
     <div>
-      <EmailForm isFormSubmitted={sentEmail} onFormSubmit={onSubmit} />
+      <EmailForm isFormSubmitted={sentRequest} onFormSubmit={onSubmit} />
     </div>
   );
 };

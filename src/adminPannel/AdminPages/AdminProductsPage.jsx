@@ -16,11 +16,11 @@ const AdminProducts = () => {
   const AdminProducts = filteredProducts.map((prod) => prod);
   const navigate = useNavigate();
 
-  const { error, loading, products} = useProductFetch({
+  const { error, loading, products } = useProductFetch({
     url: "/api/v1/products",
     method: "GET",
   });
-  
+
   const productsList =
     products?.items.map((product) => {
       return {
@@ -32,7 +32,7 @@ const AdminProducts = () => {
       };
     }) || [];
 
-    const combinedProducts = [...productsList, ...AdminProducts];
+  const combinedProducts = [...productsList, ...AdminProducts];
 
   const onClick = () => {
     navigate("/admin/add");

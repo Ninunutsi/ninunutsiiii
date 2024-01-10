@@ -25,9 +25,11 @@ const UserRessetPassword = ({ onSuccess }) => {
   const { showPassword: showPassword2, togglePassword: toggle2 } =
     useToggle(false);
   const { closeRessetPassword } = useAuthorization();
-  const { sentEmail, loading, sendRequest } = useRequest({
+
+  const { loading, sentRequest, sendRequest } = useRequest({
     url: "/api/v1/users",
     method: "POST",
+    envVariable: "REACT_APP_USERS",
   });
 
   const { EmailRef, PasswordRef, CPasswordRef, validateInputs, handleInput } =
@@ -120,7 +122,7 @@ const UserRessetPassword = ({ onSuccess }) => {
               <FontAwesomeIcon icon={faArrowsRotate} />
             </Loading>
           )}
-          {sentEmail && (
+          {sentRequest && (
             <FontAwesomeIcon style={{ color: "green" }} icon={faCheck} />
           )}
         </div>

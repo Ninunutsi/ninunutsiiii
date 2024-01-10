@@ -1079,12 +1079,39 @@ export const RatesStyle = styled.div`
         color #B4B4B4;
       }
     }
-    
-    button {
+    .submitBtn {
       align-self: end;
-      padding: 10px 20px;
-      margin-bottom: 50px;
+      position: relative;
     }
+
+      svg {
+        color: #14ae5c;
+        font-size: 20px;
+        position: absolute;
+        left: -28px;
+        top: 20%;
+        }
+
+        .icon {
+          color: gray;
+          animation: rotate 3s linear infinite;
+
+        @keyframes rotate {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+        
+      button {
+        padding: 10px 20px;
+        margin-bottom: 50px;
+      }
+    }
+  
   }
 
   .commentSection {
@@ -1131,5 +1158,11 @@ export const RatesStyle = styled.div`
         color: rgba(0, 0, 142, 1);
       }
     }
+  }
+
+  .showComments {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 `;
