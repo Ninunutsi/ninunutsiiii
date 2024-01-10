@@ -254,7 +254,7 @@ export const ProductGrid = styled.div`
 
   //admin features -->>
 
-  .product-image:hover + .product-admin-icons {
+  .product-image-admin:hover + .product-admin-icons {
     display: flex;
   }
 

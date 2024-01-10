@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronUp, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { RatesStyle } from "../pages/AllPages";
+import useRequest from "../hooks/useRequest";
 
 const Comments = ({ comments }) => {
   const { t } = useTranslation();
   const [showComment, setShowComment] = useState(2);
   const [hideComment, setHideComment] = useState(false);
+  const {sendRequest} = useRequest({method: "DELETE",  envVariable: "REACT_APP_COMMENTS"})
 
   const commentsList =
     comments?.items.map((comment) => {
@@ -28,6 +30,10 @@ const Comments = ({ comments }) => {
     setHideComment(false);
   };
 
+  const deleteComment = (id) => {
+    sendRequest(null, `/api/v1/comments/${id}`)
+  }
+
   return (
     <RatesStyle>
       <div className="commentSection">
@@ -35,6 +41,7 @@ const Comments = ({ comments }) => {
           <div className="comments" key={comment.id}>
             <h2>{t("User name")}</h2>
             <p>{comment.text}</p>
+            <FontAwesomeIcon onClick={() => deleteComment(comment.id)} icon={faTrash}/>
           </div>
         ))}
         <div className="showComments">
