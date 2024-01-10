@@ -32,6 +32,7 @@ const CommentForm = () => {
     sendRequest([{ userComment }])
       .then(() => {
         console.log(userComment);
+        commentRef.current.value = "";
       })
       .then(() => {
         resendRequest();
