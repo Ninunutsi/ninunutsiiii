@@ -10,7 +10,7 @@ import { useProductsContext } from "../../contexts/ProductsContextProvider";
 import { useEffect, useState } from "react";
 import useProductRequest from "../AdminHooks/useProductRequest";
 
-const ProductList = ({ products, productsPerPage, category }) => {
+const ProductList = ({ products, resendRequest, productsPerPage, category }) => {
   const { setMainPhoto, currentPage, setCurrentPage } = useProductsContext();
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
@@ -35,8 +35,10 @@ const ProductList = ({ products, productsPerPage, category }) => {
   };
 
   const handleDelete = (id) => {
-    sendRequest(null, `/api/v1/products/${id}`);
-    console.log("i'm deleting");
+    sendRequest(null, `/api/v1/products/${id}`)
+    .then(() => {
+      resendRequest();
+    })
   };
 
   return (
