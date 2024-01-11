@@ -31,7 +31,6 @@ const CommentForm = () => {
 
     sendRequest([{ userComment }])
       .then(() => {
-        console.log(userComment);
         commentRef.current.value = "";
       })
       .then(() => {
@@ -60,7 +59,7 @@ const CommentForm = () => {
         </div>
       </form>
       <div className="commentSection">
-        <Comments comments={fetchRequest} />
+        <Comments comments={fetchRequest} resendRequest={resendRequest}/>
       </div>
     </RatesStyle>
   );

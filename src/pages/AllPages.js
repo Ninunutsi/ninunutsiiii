@@ -254,7 +254,7 @@ export const ProductGrid = styled.div`
 
   //admin features -->>
 
-  .product-image:hover + .product-admin-icons {
+  .product-image-admin:hover + .product-admin-icons {
     display: flex;
   }
 
@@ -1122,26 +1122,51 @@ export const RatesStyle = styled.div`
       align-self: center;
       text-align: start;
       display: flex;
-      flex-direction: column;
-      gap: 38px;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
       margin-bottom: 30px;
       padding-bottom: 30px;
       border-bottom: 2px solid rgba(0, 0, 0, 0.30);;
-  
-      h2 {
-        font-family: ${FontFamily};
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 23px;
-        align-self: start;
+      
+      
+      .comment-sub-section{
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        
+        h2 {
+          font-family: ${FontFamily};
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 23px;
+          align-self: start;
+        }
+    
+        p {
+          color: #000;
+          font-family: Helvetica;
+          font-size: 20px;
+          font-weight: 300;
+        }
+        
       }
-  
-      p {
-        color: #000;
-        font-family: Helvetica;
-        font-size: 20px;
-        font-weight: 400;
+
+      .comment-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        padding: 10px;
+        right: 6px;
+        top: 6px;
+        background-color: #F2F2F2;
+
+        span{
+          cursor: pointer;
+        }
       }
+
     }
 
     .viewMore {
