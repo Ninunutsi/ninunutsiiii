@@ -1,3 +1,4 @@
+import "../../index.css";
 import Filter from "../../components/Filter/Filter";
 import Stack from "@mui/material/Stack";
 import Pagination from "@mui/material/Pagination";

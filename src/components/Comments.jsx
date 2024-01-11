@@ -16,14 +16,14 @@ const Comments = ({ comments, resendRequest }) => {
   const [hideComment, setHideComment] = useState(false);
   const [commentMenu, setCommentMenu] = useState(false);
   const [editMode, setEditMode] = useState(false);
-  const [currentlyEditingCommentId, setCurrentlyEditingCommentId] =
-    useState(null);
+  const [editingCommentId, setEditingCommentId] = useState(null);
   const edittedComment = useRef(null);
 
   const { sendRequest } = useRequest({
     method: "DELETE",
     envVariable: "REACT_APP_COMMENTS",
   });
+
   const { sendRequest: sendRequestForEdit } = useRequest({
     method: "PUT",
     envVariable: "REACT_APP_COMMENTS",
@@ -78,7 +78,7 @@ const Comments = ({ comments, resendRequest }) => {
             <div className="comment-sub-section">
               <h2>{t("User name")}</h2>
               <p>{comment.text}</p>
-              {editMode && comment.id === currentlyEditingCommentId && (
+              {editMode && comment.id === editingCommentId && (
                 <form onSubmit={(e) => onSubmit(e, comment.id)}>
                   <textarea
                     name="commentEdit"
@@ -94,12 +94,12 @@ const Comments = ({ comments, resendRequest }) => {
               <FontAwesomeIcon
                 onClick={() => {
                   setCommentMenu((prevState) => !prevState);
-                  setCurrentlyEditingCommentId(comment.id);
+                  setEditingCommentId(comment.id);
                 }}
                 icon={faEllipsisVertical}
               />
             </div>
-            {commentMenu && comment.id === currentlyEditingCommentId && (
+            {commentMenu && comment.id === editingCommentId && (
               <div className="comment-menu">
                 <span onClick={() => deleteComment(comment.id)}>
                   {t("delete")}
