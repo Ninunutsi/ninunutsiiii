@@ -33,7 +33,7 @@ const useFetch = ({ url, method, envVariable }) => {
 
   useEffect(() => {
     onFetch();
-  }, [onFetch, fetchRequest]);
+  }, [onFetch]);
 
   return { fetchRequest, error, loading, resendRequest: onFetch };
 };
