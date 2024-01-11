@@ -255,14 +255,14 @@ export const ProductGrid = styled.div`
     filter: brightness(70%);
   }
   .product-edit-icon {
-    color: #0000FF;
+    color: #0000ff;
     z-index: 999;
     &:hover {
       color: white;
     }
   }
   .product-delete-icon {
-    color: #D80000;
+    color: #d80000;
     z-index: 999;
     &:hover {
       color: white;
@@ -305,6 +305,55 @@ export const ProductGrid = styled.div`
     }
     .product-price {
       font-weight: 700;
+    }
+  }
+`;
+
+// Admin Login
+export const AdminLoginDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 10px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    gap: 46px;
+    margin-top: 60px;
+
+    .form-input {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input {
+      height: 40px;
+      padding: 10px;
+    }
+
+    button {
+      border: none;
+      color: white;
+      background: #000;
+    }
+  }
+
+  button {
+    border-radius: 3px;
+    border: 1px solid #000;
+    width: 440px;
+    background: rgba(0, 0, 0, 0);
+    padding: 15px 0px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
     }
   }
 `;

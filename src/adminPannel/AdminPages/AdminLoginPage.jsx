@@ -1,6 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { useAdminAuth } from "../AdminContexts/AdminAuthContext";
 import { useState } from "react";
+import { AdminLoginDiv } from "../../pages/AllPages";
+import Logo from "../../assets/MA.png"
+import { Link } from "react-router-dom";
 
 const AdminLogin = () => {
   const navigate = useNavigate();
@@ -23,37 +26,38 @@ const AdminLogin = () => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        marginTop: "50px",
-        gap: "10px",
-      }}
-    >
+    <AdminLoginDiv>
+      <Link to={"/"}>
+            <img src={Logo} alt="Logo" />
+      </Link>
       <form onSubmit={handleSubmit}>
-        <input
-          name="adminName"
-          type="text"
-          placeholder="user"
-          required
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
-          name="adminPassword"
-          type="password"
-          placeholder="password"
-          required
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <input type="submit" />
+        <div className="form-input">
+          <label>User</label>
+          <input
+            name="adminName"
+            type="text"
+            placeholder="user"
+            required
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </div>
+        <div className="form-input">
+          <label>Password</label>
+          <input
+            name="adminPassword"
+            type="password"
+            placeholder="password"
+            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <button type="submit">Login</button>
       </form>
       <button onClick={() => navigate("/")}>Go Back</button>
       {error && <p style={{ color: "red" }}>{error}</p>}
-    </div>
+    </AdminLoginDiv>
   );
 };
 
