@@ -213,25 +213,26 @@ export const ProductGrid = styled.div`
   flex-wrap: wrap;
   margin-bottom: 16px;
   margin: 5px;
-
   .product-container {
     width: 25%;
     padding: 5px;
     margin: 12px 0px;
     color: white;
   }
-
   .product-img-and-icon {
     position: relative;
+    height: 500px; // რენდომულია ჯერ
+    cursor: pointer;
+    &:hover .product-admin-icons {
+      display: flex;
+    }
   }
-
   .product-heart-icon {
     color: brown;
     position: absolute;
     top: 15px;
     right: 15px;
   }
-
   .product-name {
     font-family: ${FontFamily};
     font-size: 20px;
@@ -239,47 +240,34 @@ export const ProductGrid = styled.div`
     text-transform: capitalize;
     margin: 9px 0px;
   }
-
   .product-price {
     font-family: ${FontFamily};
     font-size: 20px;
     font-weight: 400;
   }
-
   .product-image {
     width: 100%;
     height: 500px;
     object-fit: cover;
   }
-
   //admin features -->>
-
-  .product-image-admin:hover + .product-admin-icons {
-    display: flex;
-  }
-
   .product-container-admin:hover {
     filter: brightness(70%);
   }
-
   .product-edit-icon {
     color: #0000ff;
     z-index: 999;
-
     &:hover {
       color: white;
     }
   }
-
   .product-delete-icon {
     color: #d80000;
     z-index: 999;
-
     &:hover {
       color: white;
     }
   }
-
   .product-admin-icons {
     display: none;
     gap: 20px;
@@ -287,38 +275,27 @@ export const ProductGrid = styled.div`
     top: 45%;
     right: 42%;
     z-index: 999;
-
-    &:hover {
-      display: flex;
-    }
   }
-
   // <<--
-
   @media screen and (max-width: 1023px) {
     .product-container {
       width: 33%;
     }
   }
-
   @media screen and (max-width: 650px) {
     .product-container {
       width: 50%;
       margin: 5px 0;
     }
-
     .product-image {
       height: 312px;
     }
-
     .product-container:nth-child(5n) {
       width: 100%;
-
       img {
         height: 512px;
       }
     }
-
     .product-name,
     .product-price {
       margin-top: 5px;
@@ -326,9 +303,57 @@ export const ProductGrid = styled.div`
       font-size: 14px;
       line-height: 16px;
     }
-
     .product-price {
       font-weight: 700;
+    }
+  }
+`;
+
+// Admin Login
+export const AdminLoginDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 10px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    gap: 46px;
+    margin-top: 60px;
+
+    .form-input {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input {
+      height: 40px;
+      padding: 10px;
+    }
+
+    button {
+      border: none;
+      color: white;
+      background: #000;
+    }
+  }
+
+  button {
+    border-radius: 3px;
+    border: 1px solid #000;
+    width: 440px;
+    background: rgba(0, 0, 0, 0);
+    padding: 15px 0px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
     }
   }
 `;
