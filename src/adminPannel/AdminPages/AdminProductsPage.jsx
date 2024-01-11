@@ -16,7 +16,7 @@ const AdminProducts = () => {
   const AdminProducts = filteredProducts.map((prod) => prod);
   const navigate = useNavigate();
 
-  const { error, loading, products } = useProductFetch({
+  const { error, loading, products, resendRequest } = useProductFetch({
     url: "/api/v1/products",
     method: "GET",
   });
@@ -56,6 +56,7 @@ const AdminProducts = () => {
       <button onClick={onClick}>Add Product</button>
       <ProductList
         products={combinedProducts}
+        resendRequest={resendRequest}
         productsPerPage={20}
         category={t("allProducts")}
       />
