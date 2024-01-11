@@ -4,6 +4,7 @@ import { useState } from "react";
 import { AdminLoginDiv } from "../../pages/AllPages";
 import Logo from "../../assets/MA.png"
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const AdminLogin = () => {
   const navigate = useNavigate();
@@ -14,6 +15,7 @@ const AdminLogin = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const { t } = useTranslation();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,30 +34,30 @@ const AdminLogin = () => {
       </Link>
       <form onSubmit={handleSubmit}>
         <div className="form-input">
-          <label>User</label>
+          <label>{t('user')}</label>
           <input
             name="adminName"
             type="text"
-            placeholder="user"
+            placeholder={t('user')}
             required
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
         </div>
         <div className="form-input">
-          <label>Password</label>
+          <label>{t('Password')}</label>
           <input
             name="adminPassword"
             type="password"
-            placeholder="password"
+            placeholder={t('Password')}
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit">{t('Log in')}</button>
       </form>
-      <button onClick={() => navigate("/")}>Go Back</button>
+      <button onClick={() => navigate("/")}>{t('go back')}</button>
       {error && <p style={{ color: "red" }}>{error}</p>}
     </AdminLoginDiv>
   );
