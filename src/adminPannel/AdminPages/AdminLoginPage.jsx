@@ -50,6 +50,7 @@ const AdminLogin = () => {
             name="adminPassword"
             type="password"
             placeholder={t("Password")}
+            autoComplete="off"
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
