@@ -1,11 +1,17 @@
 import AboutUs from "../../assets/New.png";
-import AboutUs2 from "../../assets/aboutUs2.jpg";
+import AboutUs2 from "../../assets/mariamsAtelier.mp4";
 import AboutUs3 from "../../assets/aboutUs3.jpg";
 import { useTranslation } from "react-i18next";
 import { AboutStyle } from "../AllPages";
+import { useState } from "react";
 
 const AboutUsPage = () => {
   const { t } = useTranslation();
+  const [muted, setMuted] = useState(true);
+
+  const toggleMute = () => {
+    setMuted((prev) => !prev);
+  };
 
   return (
     <AboutStyle>
@@ -21,13 +27,15 @@ const AboutUsPage = () => {
             {t("lorem1")}
             {t("lorem1")}
           </p>
-          <img src={AboutUs2} alt="img" />
+          <video autoPlay muted={muted} onClick={toggleMute}>
+            <source src={AboutUs2} type="video/mp4" />
+          </video>
         </div>
         <div className="second_paragraph">
           <p>{t("lorem1")}</p>
         </div>
         <div className="third_paragraph">
-          <img src={AboutUs3} alt="" />
+          <img src={AboutUs3} alt="aboutUs" />
           <p>
             {t("lorem1")}
             {t("lorem1")}

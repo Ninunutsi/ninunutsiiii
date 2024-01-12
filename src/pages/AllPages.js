@@ -1012,15 +1012,19 @@ export const AboutStyle = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 41px;
+      margin-bottom: 11px;
 
       p {
         width: 60%;
       }
 
-      img {
-        width: 30%;
+      video {
+        width: 550px;
         height: 393px;
+
+        @media screen and (max-width: 1096px) {
+          width: 100%;
+        }
       }
     }
 
