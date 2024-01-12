@@ -20,13 +20,15 @@ const DetailedProductPage = () => {
   const { t } = useTranslation();
   const { productId } = useParams();
   const { mainPhoto, addFav: addtoFav, clothes } = useProductsContext();
-  const imagesForSlider = clothes.filter((product) => product.id !== productId);
+
   const [details, setDetails] = useState(false);
   const navigate = useNavigate();
 
   const location = useLocation();
   const currentUrl = location.pathname;
   const backPath = currentUrl.split("/")[1];
+
+  const imagesForSlider = clothes.filter((product) => product.category === backPath &&  product.id !== productId);
 
   const isMobileView = window.innerWidth <= 1300;
   return (
