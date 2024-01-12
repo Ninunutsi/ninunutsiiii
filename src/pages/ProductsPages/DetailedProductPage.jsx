@@ -70,7 +70,6 @@ const DetailedProductPage = () => {
                   />
                 </div>
                 <div onClick={() => addtoFav(prod)} className="d-p-favorite">
-                  {}
                   <h2 className="favorites-text">
                     {prod.isFavorited
                       ? ` ${t("Added To Favorites")} `

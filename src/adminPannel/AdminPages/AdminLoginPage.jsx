@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useAdminAuth } from "../AdminContexts/AdminAuthContext";
 import { useState } from "react";
 import { AdminLoginDiv } from "../../pages/AllPages";
-import Logo from "../../assets/MA.png"
+import Logo from "../../assets/MA.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -30,34 +30,36 @@ const AdminLogin = () => {
   return (
     <AdminLoginDiv>
       <Link to={"/"}>
-            <img src={Logo} alt="Logo" />
+        <img src={Logo} alt="Logo" />
       </Link>
       <form onSubmit={handleSubmit}>
         <div className="form-input">
-          <label>{t('user')}</label>
+          <label>{t("user")}</label>
           <input
             name="adminName"
             type="text"
-            placeholder={t('user')}
+            placeholder={t("user")}
             required
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
         </div>
         <div className="form-input">
-          <label>{t('Password')}</label>
+          <label>{t("Password")}</label>
           <input
             name="adminPassword"
             type="password"
-            placeholder={t('Password')}
+            placeholder={t("Password")}
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">{t('Log in')}</button>
+        <button type="submit">{t("Log in")}</button>
       </form>
-      <button onClick={() => navigate("/")}>{t('go back')}</button>
+      <button className="goBack" onClick={() => navigate("/")}>
+        {t("go back")}
+      </button>
       {error && <p style={{ color: "red" }}>{error}</p>}
     </AdminLoginDiv>
   );

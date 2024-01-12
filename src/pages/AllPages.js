@@ -213,26 +213,30 @@ export const ProductGrid = styled.div`
   flex-wrap: wrap;
   margin-bottom: 16px;
   margin: 5px;
+
   .product-container {
     width: 25%;
     padding: 5px;
     margin: 12px 0px;
     color: white;
   }
+
   .product-img-and-icon {
     position: relative;
-    height: 500px; // რენდომულია ჯერ
     cursor: pointer;
+
     &:hover .product-admin-icons {
       display: flex;
     }
   }
+
   .product-heart-icon {
     color: brown;
     position: absolute;
     top: 15px;
     right: 15px;
   }
+
   .product-name {
     font-family: ${FontFamily};
     font-size: 20px;
@@ -240,34 +244,42 @@ export const ProductGrid = styled.div`
     text-transform: capitalize;
     margin: 9px 0px;
   }
+
   .product-price {
     font-family: ${FontFamily};
     font-size: 20px;
     font-weight: 400;
   }
+
   .product-image {
     width: 100%;
-    height: 500px;
-    object-fit: cover;
+    height: 100%;
   }
-  //admin features -->>
+
+  // //admin features -->>
+
   .product-container-admin:hover {
     filter: brightness(70%);
   }
+
   .product-edit-icon {
     color: #0000ff;
     z-index: 999;
+
     &:hover {
       color: white;
     }
   }
+
   .product-delete-icon {
     color: #d80000;
     z-index: 999;
+
     &:hover {
       color: white;
     }
   }
+
   .product-admin-icons {
     display: none;
     gap: 20px;
@@ -276,26 +288,33 @@ export const ProductGrid = styled.div`
     right: 42%;
     z-index: 999;
   }
+
   // <<--
+
   @media screen and (max-width: 1023px) {
     .product-container {
       width: 33%;
     }
   }
+
   @media screen and (max-width: 650px) {
     .product-container {
       width: 50%;
       margin: 5px 0;
     }
+
     .product-image {
       height: 312px;
     }
+
     .product-container:nth-child(5n) {
       width: 100%;
+
       img {
         height: 512px;
       }
     }
+
     .product-name,
     .product-price {
       margin-top: 5px;
@@ -303,6 +322,7 @@ export const ProductGrid = styled.div`
       font-size: 14px;
       line-height: 16px;
     }
+
     .product-price {
       font-weight: 700;
     }
@@ -321,7 +341,7 @@ export const AdminLoginDiv = styled.div`
     display: flex;
     flex-direction: column;
     width: 440px;
-    gap: 46px;
+    gap: 30px;
     margin-top: 60px;
 
     .form-input {
@@ -329,6 +349,7 @@ export const AdminLoginDiv = styled.div`
       flex-direction: column;
       gap: 10px;
     }
+
     input {
       height: 40px;
       padding: 10px;
@@ -354,6 +375,19 @@ export const AdminLoginDiv = styled.div`
 
     &:hover {
       opacity: 0.7;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    padding: 16px;
+
+    form {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
     }
   }
 `;
@@ -466,6 +500,10 @@ export const DetailedProducts = styled.div`
     width: 375px;
     height: 492px;
     flex-shrink: 0;
+
+    @media screen and (max-width: 375px) {
+      width: 100%;
+    }
   }
 
   // admin mode -->>
@@ -509,6 +547,10 @@ export const DetailedProducts = styled.div`
       padding: 5px 15px;
       justify-content: space-between;
       align-items: center;
+
+      @media screen and (max-width: 767px) {
+        width: 320px;
+      }
     }
 
     .favorites-text {
@@ -999,7 +1041,7 @@ export const AboutStyle = styled.div`
   }
 
   @media screen and (max-width: 1096px) {
-    margin-top: 50px;
+    margin-top: 80px;
     padding: 16px;
 
     h2 {
@@ -1060,12 +1102,21 @@ export const AboutStyle = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 50px;
+  }
 `;
 
 export const RatesStyle = styled.div`
+  padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+
+  }
 
   h1 {
     font-family: ${FontFamily};
@@ -1073,6 +1124,11 @@ export const RatesStyle = styled.div`
     font-size: 35px;
     line-height: 40px;
     margin-bottom: 30px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 28px;
+      line-height: 30px;
+    }
   }
 
   form {
@@ -1087,6 +1143,11 @@ export const RatesStyle = styled.div`
       font-size: 20px;
       font-weight: 700;
       line-height: 23px;
+
+      @media screen and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 18px;
+      }
     }
 
     textarea {
@@ -1099,6 +1160,14 @@ export const RatesStyle = styled.div`
       font-size: 14px;
       font-weight: 700;
       line-height: 18px;
+
+      @media screen and (max-width: 767px) {
+        width: 450px;
+      }
+
+      @media screen and (max-width: 460px) {
+        width: 320px;
+      }
 
       ::placeholder {
         color #B4B4B4;
@@ -1135,12 +1204,14 @@ export const RatesStyle = styled.div`
         padding: 10px 20px;
         margin-bottom: 50px;
       }
-    }
-  
+    }  
   }
 
   .commentSection {
     margin-bottom: 102px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 50px;
+    }
     
     .comments {
       width: 670px;
@@ -1153,7 +1224,14 @@ export const RatesStyle = styled.div`
       margin-bottom: 30px;
       padding-bottom: 30px;
       border-bottom: 2px solid rgba(0, 0, 0, 0.30);;
-      
+
+      @media screen and (max-width: 767px) {
+        width: 450px; 
+      }
+
+      @media screen and (max-width: 460px) {
+        width: 320px;
+      }
       
       .comment-sub-section{
         display: flex;
@@ -1166,6 +1244,11 @@ export const RatesStyle = styled.div`
           font-weight: 700;
           line-height: 23px;
           align-self: start;
+
+          @media screen and (max-width: 767px) {
+            font-size: 18px;
+            font-weight: 500;
+          }
         }
     
         p {
@@ -1173,6 +1256,11 @@ export const RatesStyle = styled.div`
           font-family: Helvetica;
           font-size: 20px;
           font-weight: 300;
+
+          @media screen and (max-width: 767px) {
+            font-size: 18px;
+            font-weight: 500;
+          }
         }
         
       }

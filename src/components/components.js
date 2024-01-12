@@ -70,6 +70,15 @@ export const HeaderContent = styled.header`
     display: none;
   }
 
+  @media screen and (max-width: 1000px) {
+    .logoDiv {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
   @media screen and (max-width: 767px) {
     .logoDiv {
       .Logo {
@@ -156,6 +165,10 @@ export const Parameters = styled.div`
         width: 15px;
         height: 15px;
       }
+    }
+
+    @media screen and (max-width: 1000px) {
+      display: none;
     }
 
     @media screen and (max-width: 767px) {
