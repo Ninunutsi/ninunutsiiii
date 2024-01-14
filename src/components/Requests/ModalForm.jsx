@@ -49,7 +49,7 @@ function ModalForm({ onFormSubmit, loading, sentEmail }) {
               </span>
               <h1 className="percent">15%</h1>
               <p className="text">{t("Sign up")}</p>
-              <form onSubmit={onSubmit}>
+              <form className="TabletMode" onSubmit={onSubmit}>
                 <div className="loading">{loading}</div>
                 <input
                   style={inputStyle}

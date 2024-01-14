@@ -253,7 +253,11 @@ export const ProductGrid = styled.div`
 
   .product-image {
     width: 100%;
-    height: 100%;
+    height: 500px;
+
+    @media screen and (max-width: 1023px) {
+      height: 400px;
+    }
   }
 
   // //admin features -->>

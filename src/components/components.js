@@ -494,6 +494,18 @@ export const ModalPopupStyle = styled.div`
   grid-template-columns: repeat(2, 1fr);
   transition: 0.5s;
 
+  @media screen and (max-width: 1000px) {
+    .TabletMode {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .TabletMode {
+      display: none;
+    }
+  }
+
   position: fixed;
   height: 550px;
   top: 50%;
